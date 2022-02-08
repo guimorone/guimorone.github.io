@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    text-align: center;
+    /* font-family: verdana, sans-serif; /*se verdana n existir no browser, muda pra sans-serif   */
+    font-family: 'Merriweather', serif;
+    color: #40514E;
+} h1 {
+    margin: 50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 562.5%; /* mesma coisa q 90px, só q n eh estático */
+    color: #66BFBF;
+} h2{ /* 16px = 100% = 1em = 1rem*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #66BFBF;
+    font-weight: normal;
+    line-height: 2;
+} h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+} hr{
+    border: dotted grey 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+} a{
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+} a:hover{
+    color: #EAF6F6;
+} p{
+    line-height: 2;
+}
+
+
+/* div {
+    border: solid;
+    border-color: blueviolet;
+    border-width: 0 10px;
+    background-color: #E4F9F5;
+    padding: 20px; /* padding = margem interior (bordas com o conteúdo) */
+    /* margin: 10px;
+} */
+
+
+#top-container {
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.stu{
+    text-decoration: underline;
+} .bottom-cloud{
+    position: absolute;
+    height: 100px;
+    width: 150px;
+    left: 300px;
+    bottom: 300px;
+} .mountain{
+    height: 400px;
+    width: 550px;
+} .top-cloud {
+    position: absolute;
+    height: 100px;
+    width: 150px;
+    right: 300px;
+    top: 50px;
+} .circular{
+    border-radius: 100%;
+    height: 250px;
+    width: 250px;
+} .skills-images{
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+} .skill-row{
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+} .skills-gifs {
+    width: 25%;
+    float: right;
+    margin-right: 30px;
+} .bottom-container {
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
+} .middle-container{
+    margin: 100px 0;
+} .intro{
+    width: 30%;
+    margin: auto;
+} .contact-message{
+    width: 40%;
+    margin: 40px auto 60px; /*   40px top, auto dos lados e 60px bottom    */
+} .myButton {
+    background: linear-gradient(to bottom, #11cdd4 5%, #11999e 100%);
+    background-color: #11cdd4;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 12px 37px;
+    text-decoration: none;
+    text-shadow: 0px 0px 0px #283966;
+} .myButton:hover {
+    background: linear-gradient(to bottom, #30e3cb 5%, #2bc4ad 100%);
+    background-color: #11cdd4;
+} .myButton:active {
+    position: relative;
+    top: 1px;
+} .copyright{
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
