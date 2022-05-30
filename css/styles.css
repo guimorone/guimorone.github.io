@@ -1,12 +1,19 @@
 body {
-  background-color: #000000;
+	background-color: #000000;
 }
 
 a {
-  color: #8e05c2;
+	color: #8e05c2;
+}
+
+noscript {
+	color: #fff;
+	position: absolute;
+	transform: translate(-50%, 0);
+	left: 50%;
 }
 
 .footer-container p {
-  color: #b4a5a5;
-  font-size: 0.75rem;
+	color: #b4a5a5;
+	font-size: 0.75rem;
 }
