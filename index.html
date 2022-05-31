@@ -23,7 +23,7 @@
 			>
 			<a class="mx-1" href="https://github.com/guimorone" target="_blank">GitHub</a>
 			<a class="mx-1" href="https://resume.io/r/XzhBpprz5" target="_blank">Resume</a>
-			<p class="py-3">&copy; 2022 Guilherme Morone</p>
+			<p class="py-3">&copy; <span id="year"></span> Guilherme Morone</p>
 		</footer>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -51,5 +51,8 @@
 		></script>
 		<script src="js/three.js"></script>
 		<script src="js/animation.js"></script>
+		<script type="text/javascript">
+			$('#year').text(new Date().getFullYear());
+		</script>
 	</body>
 </html>
