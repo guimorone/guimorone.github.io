@@ -24,8 +24,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ vars.NODE_VERSION }}
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
 
       - name: Build with npm
         run: |
