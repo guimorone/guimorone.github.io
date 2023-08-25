@@ -24,9 +24,18 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ vars.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
 
-      - name: Deploy with npm
+      - name: Build with npm
         run: |
           cd $GITHUB_WORKSPACE/website
           npm install
-          npm run deploy
+          npm run build
+
+      - name: Deploy with gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./dist
+            publish_branch: gh-pages
