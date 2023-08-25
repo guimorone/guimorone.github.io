@@ -1,0 +1,32 @@
+name: Deploy CI/CD
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'website/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+jobs:
+  job:
+    name: Build website
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: '0'
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ vars.NODE_VERSION }}
+
+      - name: Deploy with npm
+        run: |
+          cd $GITHUB_WORKSPACE/website
+          npm install
+          npm run deploy
