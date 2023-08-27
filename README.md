@@ -1,5 +1,7 @@
 # Personal WebSite
 
+Personal WebSite using TailwindCSS and ReactJS
+
 ## Dependencies
 
 - Node.js v18.16.0
