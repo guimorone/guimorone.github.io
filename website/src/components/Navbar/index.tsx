@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useLocation, Link } from 'react-router-dom';
 import { Dialog } from '@headlessui/react';
 import {
 	BriefcaseIcon,
@@ -10,6 +10,7 @@ import {
 	PuzzlePieceIcon,
 } from '@heroicons/react/20/solid';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { classNames } from '../../utils';
 import { MY_PHOTO } from '../../constants/urls';
 import * as paths from '../../constants/paths';
 
@@ -19,11 +20,19 @@ const navigation = [
 	{ name: 'Jobs', href: paths.JOBS, Icon: BriefcaseIcon, useLink: true },
 	{ name: 'Projects', href: paths.PROJECTS, Icon: ClipboardDocumentListIcon, useLink: true },
 	{ name: 'Games', href: paths.GAMES, Icon: PuzzlePieceIcon, useLink: true },
-	{ name: 'Links', href: `#${paths.LINKS}`, Icon: LinkIcon, useLink: false },
+	{ name: 'Links & Contact', href: `#${paths.LINKS}`, Icon: LinkIcon, useLink: false },
 ];
 
 export default function Navbar() {
+	const location = useLocation();
+	const [currentPath, setCurrentPath] = useState<string | undefined>(undefined);
 	const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
+
+	useEffect(() => {
+		const current = location.pathname;
+		if (current !== '/' && current !== paths.HOME) setCurrentPath(current);
+		else setCurrentPath(undefined);
+	}, [location]);
 
 	return (
 		<header className="sticky inset-x-0 top-0 z-50 backdrop-blur-md">
@@ -45,29 +54,41 @@ export default function Navbar() {
 					</button>
 				</div>
 				<div className="hidden lg:flex lg:gap-x-12">
-					{navigation.map(item => (
-						<>
-							{item.useLink ? (
-								<Link
-									key={item.name}
-									to={item.href}
-									className="flex gap-x-1.5 items-center text-sm font-semibold leading-6 text-white hover:underline hover:underline-offset-2"
-								>
-									<item.Icon className="w-4 h-4" />
-									<span>{item.name}</span>
-								</Link>
-							) : (
-								<a
-									key={item.name}
-									href={item.href}
-									className="flex gap-x-1.5 items-center text-sm font-semibold leading-6 text-white hover:underline hover:underline-offset-2"
-								>
-									<item.Icon className="w-4 h-4" />
-									<span>{item.name}</span>
-								</a>
-							)}
-						</>
-					))}
+					{navigation.map((item, index) => {
+						const isCurrent = item.useLink && currentPath === item.href;
+
+						return (
+							<>
+								{item.useLink ? (
+									<Link
+										key={`navbar_item_${item.name}_${index}`}
+										to={item.href}
+										className={classNames(
+											isCurrent
+												? 'text-indigo-300 hover:cursor-default'
+												: 'text-white hover:underline hover:underline-offset-2 hover:cursor-pointer',
+											'flex gap-x-1.5 items-center text-sm font-semibold leading-6 '
+										)}
+									>
+										<item.Icon className="w-4 h-4" />
+										<span>{item.name}</span>
+									</Link>
+								) : (
+									<>
+										<hr className="-mx-6 w-[1.5px] h-auto border-t-0 bg-gray-400" />
+										<a
+											key={`navbar_item_${item.name}_${index}`}
+											href={item.href}
+											className="flex gap-x-1.5 items-center text-sm font-semibold leading-6 text-white hover:underline hover:underline-offset-2"
+										>
+											<item.Icon className="w-4 h-4" />
+											<span>{item.name}</span>
+										</a>
+									</>
+								)}
+							</>
+						);
+					})}
 				</div>
 			</nav>
 			<Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -76,7 +97,7 @@ export default function Navbar() {
 					<div className="flex items-center justify-between">
 						<button
 							type="button"
-							className="-m-2.5 rounded-md p-2.5 text-gray-400"
+							className="-m-2.5 rounded-md p-2.5 text-gray-400 hover:text-gray-500"
 							onClick={() => setMobileMenuOpen(false)}
 						>
 							<span className="sr-only">Close menu</span>
@@ -84,33 +105,43 @@ export default function Navbar() {
 						</button>
 					</div>
 					<div className="mt-6 flow-root">
-						<div className="-my-6 divide-y divide-gray-500/25">
+						<div className="-my-6">
 							<div className="space-y-2 py-6">
-								{navigation.map(item => (
-									<>
-										{item.useLink ? (
-											<Link
-												key={item.name}
-												to={item.href}
-												onClick={() => setMobileMenuOpen(false)}
-												className="-mx-3 flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
-											>
-												<item.Icon className="w-4 h-4" />
-												<span>{item.name}</span>
-											</Link>
-										) : (
-											<a
-												key={item.name}
-												href={item.href}
-												onClick={() => setMobileMenuOpen(false)}
-												className="-mx-3 flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
-											>
-												<item.Icon className="w-4 h-4" />
-												<span>{item.name}</span>
-											</a>
-										)}
-									</>
-								))}
+								{navigation.map((item, index) => {
+									const isCurrent = item.useLink && currentPath === item.href;
+
+									return (
+										<>
+											{item.useLink ? (
+												<Link
+													key={`navbar_item_${item.name}_${index}`}
+													to={item.href}
+													onClick={() => setMobileMenuOpen(false)}
+													className={classNames(
+														isCurrent ? 'bg-gray-800 hover:cursor-default' : 'hover:bg-gray-800 hover:cursor-pointer',
+														'-mx-3 flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white'
+													)}
+												>
+													<item.Icon className="w-4 h-4" />
+													<span>{item.name}</span>
+												</Link>
+											) : (
+												<>
+													<hr className="-mx-6 h-px w-auto border-t-0 bg-gray-400" />
+													<a
+														key={`navbar_item_${item.name}_${index}`}
+														href={item.href}
+														onClick={() => setMobileMenuOpen(false)}
+														className="-mx-3 flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
+													>
+														<item.Icon className="w-4 h-4" />
+														<span>{item.name}</span>
+													</a>
+												</>
+											)}
+										</>
+									);
+								})}
 							</div>
 						</div>
 					</div>
