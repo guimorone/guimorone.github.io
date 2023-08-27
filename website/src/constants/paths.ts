@@ -7,4 +7,4 @@ export const JOBS = '/jobs';
 export const PROJECTS = '/projects';
 
 // Indexes
-export const SOCIAL = 'social';
+export const LINKS = 'links';
