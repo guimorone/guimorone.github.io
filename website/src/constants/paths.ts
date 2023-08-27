@@ -7,5 +7,4 @@ export const JOBS = '/jobs';
 export const PROJECTS = '/projects';
 
 // Indexes
-export const LANDING = 'landing';
 export const SOCIAL = 'social';

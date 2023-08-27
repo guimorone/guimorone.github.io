@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Button } from 'flowbite-react';
 import { PDFIcon } from '../../utils/icons';
 import { LAST_UPDATE_CV } from '../../constants';
-import { LANDING } from '../../constants/paths';
 import CV from '../../assets/CV-Guilherme.pdf';
 
 const fileName = 'CV-Guilherme.pdf';
@@ -30,7 +29,7 @@ export default function Home() {
 
 	return (
 		<div className="p-6 sm:p-0">
-			<div id={LANDING} className="mx-auto max-w-2xl pt-24 text-center sm:pt-40 space-y-6">
+			<div className="mx-auto max-w-2xl pt-24 text-center sm:pt-40 space-y-6">
 				<h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Welcome!</h2>
 				<p className="text-lg leading-8 text-gray-300">
 					It is my pleasure to have you here.
