@@ -1,3 +1,4 @@
+import { Tooltip } from 'flowbite-react';
 import { CodeBracketIcon, EnvelopeIcon } from '@heroicons/react/20/solid';
 import { InstagramIcon, GitHubIcon, LinkedInIcon } from '../../utils/icons';
 import { INSTAGRAM, GITHUB, LINKEDIN, WEBSITE_CODE_URL, MAILTO_URL } from '../../constants/urls';
@@ -8,7 +9,7 @@ const navigation = [
 	{ name: 'GitHub', href: GITHUB, target: '_blank', icon: GitHubIcon },
 	{ name: 'LinkedIn', href: LINKEDIN, target: '_blank', icon: LinkedInIcon },
 	{ name: 'E-mail', href: MAILTO_URL, icon: EnvelopeIcon },
-	{ name: 'WebSiteCode', href: WEBSITE_CODE_URL, target: '_blank', icon: CodeBracketIcon },
+	{ name: 'Source code', href: WEBSITE_CODE_URL, target: '_blank', icon: CodeBracketIcon },
 ];
 
 export default function Footer() {
@@ -24,8 +25,10 @@ export default function Footer() {
 							target={item.target}
 							className="text-gray-200 hover:cursor-pointer hover:text-gray-400"
 						>
-							<span className="sr-only">{item.name}</span>
-							<item.icon className="h-6 w-6" aria-hidden="true" />
+							<Tooltip content={item.name}>
+								<span className="sr-only">{item.name}</span>
+								<item.icon className="h-6 w-6" aria-hidden="true" />
+							</Tooltip>
 						</a>
 					))}
 				</div>

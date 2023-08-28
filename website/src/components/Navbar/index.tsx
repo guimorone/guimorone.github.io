@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { Dialog } from '@headlessui/react';
 import {
@@ -13,6 +13,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { classNames } from '../../utils';
 import { MY_PHOTO } from '../../constants/urls';
 import * as paths from '../../constants/paths';
+import type { FC } from 'react';
 
 const navigation = [
 	{ name: 'About me', href: paths.ABOUT, Icon: NewspaperIcon, useLink: true },
@@ -23,22 +24,31 @@ const navigation = [
 	{ name: 'Links & Contact', href: `#${paths.LINKS}`, Icon: LinkIcon, useLink: false },
 ];
 
-export default function Navbar() {
-	const location = useLocation();
+interface INavbarProps {
+	show: boolean;
+}
+
+const Navbar: FC<INavbarProps> = ({ show }) => {
+	const { pathname } = useLocation();
 	const [currentPath, setCurrentPath] = useState<string | undefined>(undefined);
 	const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
 
 	useEffect(() => {
-		const current = location.pathname;
+		const current = pathname;
 		if (current !== '/' && current !== paths.HOME) setCurrentPath(current);
 		else setCurrentPath(undefined);
-	}, [location]);
+	}, [pathname]);
 
 	return (
-		<header className="sticky inset-x-0 top-0 z-50 backdrop-blur-md">
+		<header
+			className={classNames(
+				show ? 'visible transition-all duration-500' : 'invisible transition-all duration-500 -translate-y-full',
+				'sticky inset-x-0 top-0 z-50 backdrop-blur-md'
+			)}
+		>
 			<nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
 				<div className="flex lg:flex-1">
-					<Link to={paths.HOME} className="-m-1.5 p-1.5">
+					<Link to={paths.HOME} className="-m-1.5 p-1.5 motion-safe:hover:animate-spin">
 						<span className="sr-only">Guilherme's photo</span>
 						<img className="h-8 w-auto sm:h-10 lg:h-12 rounded-full" src={MY_PHOTO} alt="Guilherme's photo" />
 					</Link>
@@ -58,10 +68,9 @@ export default function Navbar() {
 						const isCurrent = item.useLink && currentPath === item.href;
 
 						return (
-							<>
+							<Fragment key={`navbar_item_${item.name}_${index}`}>
 								{item.useLink ? (
 									<Link
-										key={`navbar_item_${item.name}_${index}`}
 										to={item.href}
 										className={classNames(
 											isCurrent
@@ -77,7 +86,6 @@ export default function Navbar() {
 									<>
 										<hr className="-mx-6 w-[1.5px] h-auto border-t-0 bg-gray-400" />
 										<a
-											key={`navbar_item_${item.name}_${index}`}
 											href={item.href}
 											className="flex gap-x-1.5 items-center text-sm font-semibold leading-6 text-white hover:underline hover:underline-offset-2"
 										>
@@ -86,7 +94,7 @@ export default function Navbar() {
 										</a>
 									</>
 								)}
-							</>
+							</Fragment>
 						);
 					})}
 				</div>
@@ -111,10 +119,9 @@ export default function Navbar() {
 									const isCurrent = item.useLink && currentPath === item.href;
 
 									return (
-										<>
+										<Fragment key={`navbar_item_${item.name}_${index}`}>
 											{item.useLink ? (
 												<Link
-													key={`navbar_item_${item.name}_${index}`}
 													to={item.href}
 													onClick={() => setMobileMenuOpen(false)}
 													className={classNames(
@@ -129,7 +136,6 @@ export default function Navbar() {
 												<>
 													<hr className="-mx-6 h-px w-auto border-t-0 bg-gray-400" />
 													<a
-														key={`navbar_item_${item.name}_${index}`}
 														href={item.href}
 														onClick={() => setMobileMenuOpen(false)}
 														className="-mx-3 flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
@@ -139,7 +145,7 @@ export default function Navbar() {
 													</a>
 												</>
 											)}
-										</>
+										</Fragment>
 									);
 								})}
 							</div>
@@ -149,4 +155,6 @@ export default function Navbar() {
 			</Dialog>
 		</header>
 	);
-}
+};
+
+export default Navbar;

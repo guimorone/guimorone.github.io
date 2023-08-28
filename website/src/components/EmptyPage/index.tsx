@@ -7,8 +7,8 @@ export default function EmptyPage() {
 		<div className="min-h-full">
 			<div className="px-6 sm:px-0 py-16 sm:pt-40 text-center">
 				<div className="inline-flex items-center gap-x-2">
-					<PersonDiggingIcon className="ml-2 h-4 w-4 text-yellow-200" />
-					<span className="text-base font-semibold leading-8 text-white">Working...</span>
+					<PersonDiggingIcon className="ml-2 h-4 w-4 text-yellow-200 motion-safe:animate-bounce" />
+					<span className="text-base font-semibold leading-8 text-white motion-safe:animate-pulse">Working...</span>
 				</div>
 				<h1 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-5xl">
 					This page has not been done yet
