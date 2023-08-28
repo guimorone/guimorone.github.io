@@ -11,6 +11,7 @@ export default function DefaultPage() {
 	const { pathname } = useLocation();
 	const navigate = useNavigate();
 	const [_, setDocumentTitle] = useDocumentTitle();
+	const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
 	const [showNavbar, setShowNavbar] = useState<boolean>(true);
 
 	function controlNavbar(this: Window, ev: WheelEvent): void {
@@ -18,10 +19,23 @@ export default function DefaultPage() {
 		else setShowNavbar(true);
 	}
 
+	function handleScroll(this: Window, _ev: Event) {
+		const currentScrollPos = this.scrollY;
+
+		if (currentScrollPos > prevScrollPos) setShowNavbar(false);
+		else setShowNavbar(true);
+
+		setPrevScrollPos(currentScrollPos);
+	}
+
 	useEffect(() => {
 		window.addEventListener('wheel', controlNavbar);
+		window.addEventListener('scroll', handleScroll);
 
-		return () => window.removeEventListener('wheel', controlNavbar);
+		return () => {
+			window.removeEventListener('wheel', controlNavbar);
+			window.removeEventListener('scroll', handleScroll);
+		};
 	}, []);
 
 	useEffect(() => {
@@ -32,7 +46,9 @@ export default function DefaultPage() {
 	return (
 		<main className="mx-auto max-w-7xl min-h-screen">
 			<Navbar show={showNavbar} />
-			<Outlet />
+			<div className="px-6 sm:px-8 mt-2 sm:mt-4">
+				<Outlet />
+			</div>
 			<Footer />
 		</main>
 	);

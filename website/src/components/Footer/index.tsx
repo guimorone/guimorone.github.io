@@ -14,7 +14,7 @@ const navigation = [
 
 export default function Footer() {
 	return (
-		<footer className="mt-16 sm:mt-24 -z-20 md:z-auto" aria-labelledby={LINKS}>
+		<footer className="mt-14 sm:mt-20 -z-20 md:z-auto" aria-labelledby={LINKS}>
 			<h2 className="sr-only">Social Medias</h2>
 			<div id={LINKS} className="px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
 				<div className="flex justify-center space-x-6 md:order-2">
@@ -23,9 +23,9 @@ export default function Footer() {
 							key={`footer_item_${item.name}_${index}`}
 							href={item.href}
 							target={item.target}
-							className="text-gray-200 hover:cursor-pointer hover:text-gray-400"
+							className="text-zinc-200 hover:cursor-pointer hover:text-zinc-400"
 						>
-							<Tooltip content={item.name}>
+							<Tooltip content={item.name} animation="duration-300">
 								<span className="sr-only">{item.name}</span>
 								<item.icon className="h-6 w-6" aria-hidden="true" />
 							</Tooltip>
@@ -33,7 +33,7 @@ export default function Footer() {
 					))}
 				</div>
 				<div className="mt-8 md:order-1 md:mt-0">
-					<p className="text-center text-xs leading-5 text-gray-200">&copy; Guilherme Morone Araujo</p>
+					<p className="text-center text-xs leading-5 text-zinc-200">&copy; Guilherme Morone Araujo</p>
 				</div>
 			</div>
 		</footer>
