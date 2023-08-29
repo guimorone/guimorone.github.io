@@ -46,11 +46,11 @@ const Navbar: FC<INavbarProps> = ({ show }) => {
 				'sticky inset-x-0 top-0 z-50 backdrop-blur-md'
 			)}
 		>
-			<nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+			<nav className="flex items-center justify-between px-4 p-2 sm:p-4 md:p-6 lg:px-8" aria-label="Global">
 				<div className="flex lg:flex-1">
 					<Link to={paths.HOME} className="-m-1.5 p-1.5 motion-safe:hover:animate-spin">
 						<span className="sr-only">Guilherme's photo</span>
-						<img className="h-8 w-auto sm:h-10 lg:h-12 rounded-full" src={MY_PHOTO} alt="Guilherme's photo" />
+						<img className="h-4 w-auto sm:h-8 md:10 lg:h-12 rounded-full" src={MY_PHOTO} alt="Guilherme's photo" />
 					</Link>
 				</div>
 				<div className="flex lg:hidden">
@@ -60,7 +60,7 @@ const Navbar: FC<INavbarProps> = ({ show }) => {
 						onClick={() => setMobileMenuOpen(true)}
 					>
 						<span className="sr-only">Open main menu</span>
-						<Bars3Icon className="h-6 w-6" aria-hidden="true" />
+						<Bars3Icon className="h-4 w-auto sm:h-8 md:10 lg:h-12" aria-hidden="true" />
 					</button>
 				</div>
 				<div className="hidden lg:flex lg:gap-x-12">

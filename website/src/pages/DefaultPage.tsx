@@ -44,9 +44,9 @@ export default function DefaultPage() {
 	}, [pathname]);
 
 	return (
-		<main className="mx-auto max-w-7xl min-h-screen">
+		<main className="flex flex-col mx-auto justify-between max-w-7xl min-h-screen">
 			<Navbar show={showNavbar} />
-			<div className="px-6 sm:px-8 mt-2 sm:mt-4">
+			<div className="flex flex-1 flex-col justify-center w-full px-6 lg:px-8 py-12">
 				<Outlet />
 			</div>
 			<Footer />

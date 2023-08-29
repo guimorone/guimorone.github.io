@@ -4,7 +4,7 @@ import Eu from '../../assets/images/Eu.jpeg';
 const title = "Hello, I'm Guilherme, and here is a nutshell version of who I am.";
 const descriptions = [
 	"Originally from Rio but now based in Recife, I've had the privilege of growing up in two vibrant cities. My passions are as diverse as my background, ranging from an avid love for games and books to an insatiable curiosity for travel and technology.",
-	"Currently, I'm dedicated to expanding my horizons as a Computer Engineering student at CIn - UFPE. Beyond academics, I'm also actively contributing my skills as a Software Engineer at Oncase, where I have the opportunity to bring innovative ideas to life.",
+	"Currently, I'm dedicated to expanding my horizons as a Computer Engineering student Federal University of Pernambuco. Beyond academics, I'm also actively contributing my skills as a Software Engineer at Oncase, where I have the opportunity to bring innovative ideas to life.",
 ];
 
 export default function About() {

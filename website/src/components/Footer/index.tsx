@@ -14,7 +14,7 @@ const navigation = [
 
 export default function Footer() {
 	return (
-		<footer className="mt-14 sm:mt-20 -z-20 md:z-auto" aria-labelledby={LINKS}>
+		<footer className="-z-20 sm:z-auto" aria-labelledby={LINKS}>
 			<h2 className="sr-only">Social Medias</h2>
 			<div id={LINKS} className="px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
 				<div className="flex justify-center space-x-6 md:order-2">
