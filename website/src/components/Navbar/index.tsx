@@ -137,11 +137,11 @@ const Navbar: FC<INavbarProps> = ({ show }) => {
 												</Link>
 											) : (
 												<>
-													<hr className="-mx-6 h-px w-auto border-t-0 bg-zinc-400" />
+													<hr className="hidden md:block -mx-6 h-px w-auto border-t-0 bg-zinc-400" />
 													<a
 														href={item.href}
 														onClick={() => setMobileMenuOpen(false)}
-														className="-mx-3 flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-zinc-100 hover:bg-zinc-800"
+														className="hidden -mx-3 md:flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-zinc-100 hover:bg-zinc-800"
 													>
 														<item.Icon className="w-4 h-4" />
 														<span>{item.name}</span>
