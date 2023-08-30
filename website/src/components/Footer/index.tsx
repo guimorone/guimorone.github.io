@@ -25,7 +25,7 @@ export default function Footer() {
 							target={item.target}
 							className="text-zinc-200 hover:cursor-pointer hover:text-zinc-400"
 						>
-							<Tooltip content={item.name} animation="duration-300">
+							<Tooltip content={item.name} animation="duration-150">
 								<span className="sr-only">{item.name}</span>
 								<item.icon className="h-6 w-6" aria-hidden="true" />
 							</Tooltip>

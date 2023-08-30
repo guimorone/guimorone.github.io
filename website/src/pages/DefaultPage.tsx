@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate, Outlet } from 'react-router-dom';
+import Center from '../components/Center';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { capitalizeString } from '../utils';
@@ -44,12 +45,12 @@ export default function DefaultPage() {
 	}, [pathname]);
 
 	return (
-		<main className="flex flex-col mx-auto justify-between max-w-7xl min-h-screen">
+		<div className="flex flex-col mx-auto justify-between max-w-7xl min-h-screen">
 			<Navbar show={showNavbar} />
-			<div className="flex flex-1 flex-col justify-center w-full px-6 lg:px-8 py-12">
+			<Center className="flex-col w-full px-6 lg:px-8 py-12" HtmlTag="main">
 				<Outlet />
-			</div>
+			</Center>
 			<Footer />
-		</main>
+		</div>
 	);
 }

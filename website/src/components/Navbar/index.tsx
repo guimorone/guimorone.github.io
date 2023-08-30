@@ -1,4 +1,4 @@
-import { useState, useEffect, Fragment } from 'react';
+import { useState, Fragment } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { Dialog } from '@headlessui/react';
 import {
@@ -11,7 +11,7 @@ import {
 } from '@heroicons/react/20/solid';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { classNames } from '../../utils';
-import { MY_PHOTO } from '../../constants/urls';
+import { ICON_PHOTO } from '../../constants/urls';
 import * as paths from '../../constants/paths';
 import type { FC } from 'react';
 
@@ -30,14 +30,10 @@ interface INavbarProps {
 
 const Navbar: FC<INavbarProps> = ({ show }) => {
 	const { pathname } = useLocation();
-	const [currentPath, setCurrentPath] = useState<string | undefined>(undefined);
 	const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
 
-	useEffect(() => {
-		const current = pathname;
-		if (current !== '/' && current !== paths.HOME) setCurrentPath(current);
-		else setCurrentPath(undefined);
-	}, [pathname]);
+	const handleOpenMobileMenu = (): void => setMobileMenuOpen(true);
+	const handleCloseMobileMenu = (): void => setMobileMenuOpen(false);
 
 	return (
 		<header
@@ -46,26 +42,26 @@ const Navbar: FC<INavbarProps> = ({ show }) => {
 				'sticky inset-x-0 top-0 z-50 backdrop-blur-md'
 			)}
 		>
-			<nav className="flex items-center justify-between px-4 p-2 sm:p-4 md:p-6 lg:px-8" aria-label="Global">
+			<nav className="flex items-center justify-between px-4 py-4 sm:py-6 lg:px-8" aria-label="Global">
 				<div className="flex lg:flex-1">
 					<Link to={paths.HOME} className="-m-1.5 p-1.5 motion-safe:hover:animate-spin">
 						<span className="sr-only">Guilherme's photo</span>
-						<img className="h-4 w-auto sm:h-8 md:10 lg:h-12 rounded-full" src={MY_PHOTO} alt="Guilherme's photo" />
+						<img className="h-8 w-auto sm:h-10 lg:h-12 rounded-full" src={ICON_PHOTO} alt="Guilherme's photo" />
 					</Link>
 				</div>
 				<div className="flex lg:hidden">
 					<button
 						type="button"
 						className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-zinc-400"
-						onClick={() => setMobileMenuOpen(true)}
+						onClick={handleOpenMobileMenu}
 					>
 						<span className="sr-only">Open main menu</span>
-						<Bars3Icon className="h-4 w-auto sm:h-8 md:10 lg:h-12" aria-hidden="true" />
+						<Bars3Icon className="h-8 w-auto sm:10 lg:h-12" aria-hidden="true" />
 					</button>
 				</div>
 				<div className="hidden lg:flex lg:gap-x-12">
 					{navigation.map((item, index) => {
-						const isCurrent = item.useLink && currentPath === item.href;
+						const isCurrent = item.useLink && pathname === item.href;
 
 						return (
 							<Fragment key={`navbar_item_${item.name}_${index}`}>
@@ -109,7 +105,7 @@ const Navbar: FC<INavbarProps> = ({ show }) => {
 						<button
 							type="button"
 							className="-m-2.5 rounded-md p-2.5 text-zinc-300 hover:text-zinc-400"
-							onClick={() => setMobileMenuOpen(false)}
+							onClick={handleCloseMobileMenu}
 						>
 							<span className="sr-only">Close menu</span>
 							<XMarkIcon className="h-6 w-6" aria-hidden="true" />
@@ -119,14 +115,14 @@ const Navbar: FC<INavbarProps> = ({ show }) => {
 						<div className="-my-6">
 							<div className="space-y-2 py-6">
 								{navigation.map((item, index) => {
-									const isCurrent = item.useLink && currentPath === item.href;
+									const isCurrent = item.useLink && pathname === item.href;
 
 									return (
 										<Fragment key={`navbar_item_${item.name}_${index}`}>
 											{item.useLink ? (
 												<Link
 													to={item.href}
-													onClick={() => setMobileMenuOpen(false)}
+													onClick={handleCloseMobileMenu}
 													className={classNames(
 														isCurrent ? 'bg-zinc-800 hover:cursor-default' : 'hover:bg-zinc-800 hover:cursor-pointer',
 														'-mx-3 flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-zinc-100'
@@ -140,7 +136,7 @@ const Navbar: FC<INavbarProps> = ({ show }) => {
 													<hr className="hidden md:block -mx-6 h-px w-auto border-t-0 bg-zinc-400" />
 													<a
 														href={item.href}
-														onClick={() => setMobileMenuOpen(false)}
+														onClick={handleCloseMobileMenu}
 														className="hidden -mx-3 md:flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-zinc-100 hover:bg-zinc-800"
 													>
 														<item.Icon className="w-4 h-4" />

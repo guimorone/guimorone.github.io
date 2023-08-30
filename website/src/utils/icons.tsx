@@ -1,4 +1,4 @@
-import type { SVGProps } from 'react';
+import type { SVGProps, JSX } from 'react';
 
 export const PDFIcon = (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
 	<svg fill="currentColor" viewBox="0 0 512 512" {...props}>

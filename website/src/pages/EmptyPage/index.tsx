@@ -15,7 +15,7 @@ export default function EmptyPage() {
 			<p className="mt-4 mb-8 text-base text-zinc-100/70 sm:mt-6">
 				New content will be displayed here, as soon as possible.
 			</p>
-			<Link to={HOME} className="text-sm font-semibold leading-7 text-zinc-100 hover:text-zinc-200">
+			<Link to={HOME} className="text-sm font-semibold leading-7 text-zinc-100 hover:text-zinc-300">
 				<span aria-hidden="true">&larr;</span> Back to home
 			</Link>
 		</div>
