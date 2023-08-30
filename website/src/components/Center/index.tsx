@@ -8,11 +8,7 @@ interface IFuncProps {
 }
 
 const Center: FC<IFuncProps> = ({ children, className, HtmlTag = 'div' }) => {
-	return (
-		<HtmlTag className={classNames(className, 'flex flex-1 self-center items-center justify-center')}>
-			{children}
-		</HtmlTag>
-	);
+	return <HtmlTag className={classNames(className, 'flex flex-1 self-center items-center')}>{children}</HtmlTag>;
 };
 
 export default Center;
