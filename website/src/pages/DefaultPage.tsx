@@ -15,10 +15,10 @@ export default function DefaultPage() {
 	const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
 	const [showNavbar, setShowNavbar] = useState<boolean>(true);
 
-	function controlNavbar(this: Window, ev: WheelEvent): void {
+	/* function controlNavbar(this: Window, ev: WheelEvent): void {
 		if ('wheelDeltaY' in ev && (ev.wheelDeltaY as number) < 0) setShowNavbar(false);
 		else setShowNavbar(true);
-	}
+	} */
 
 	function handleScroll(this: Window, _ev: Event) {
 		const currentScrollPos = this.scrollY;
@@ -30,11 +30,11 @@ export default function DefaultPage() {
 	}
 
 	useEffect(() => {
-		window.addEventListener('wheel', controlNavbar);
+		// window.addEventListener('wheel', controlNavbar);
 		window.addEventListener('scroll', handleScroll);
 
 		return () => {
-			window.removeEventListener('wheel', controlNavbar);
+			// window.removeEventListener('wheel', controlNavbar);
 			window.removeEventListener('scroll', handleScroll);
 		};
 	}, []);

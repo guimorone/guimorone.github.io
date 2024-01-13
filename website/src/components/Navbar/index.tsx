@@ -11,8 +11,8 @@ import {
 } from '@heroicons/react/20/solid';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { classNames } from '../../utils';
-import { ICON_PHOTO } from '../../constants/urls';
 import * as paths from '../../constants/paths';
+import IconLogo from '../../assets/images/EuLogo.jpg';
 import type { FC } from 'react';
 
 const navigation = [
@@ -44,9 +44,9 @@ const Navbar: FC<INavbarProps> = ({ show }) => {
 		>
 			<nav className="flex items-center justify-between px-4 py-4 sm:py-6 lg:px-8" aria-label="Global">
 				<div className="flex lg:flex-1">
-					<Link to={paths.HOME} className="-m-1.5 p-1.5 motion-safe:hover:animate-spin">
+					<Link to={paths.HOME} className="-m-1.5 p-1.5">
 						<span className="sr-only">Guilherme's photo</span>
-						<img className="h-8 w-auto sm:h-10 lg:h-12 rounded-full" src={ICON_PHOTO} alt="Guilherme's photo" />
+						<img className="h-8 w-auto sm:h-10 lg:h-12 rounded-lg" src={IconLogo} alt="Guilherme's photo" />
 					</Link>
 				</div>
 				<div className="flex lg:hidden">
