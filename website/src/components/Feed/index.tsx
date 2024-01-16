@@ -9,6 +9,7 @@ export interface IFeedProps {
 		description: string;
 		comments?: string[];
 		Icon?: { Element: IconType; background?: string };
+		links?: string[];
 	}[];
 }
 
@@ -44,6 +45,18 @@ const Feed: FC<IFeedProps> = ({ activity }) => {
 											))}
 										</div>
 									)}
+									{item.links &&
+										item.links.length &&
+										item.links.map((link, idx) => (
+											<a
+												key={`${link}_${idx}`}
+												href={link}
+												target="_blank"
+												className="text-indigo-300 hover:text-indigo-200 text-xs md:text-sm"
+											>
+												{link}
+											</a>
+										))}
 								</div>
 							</div>
 						</div>

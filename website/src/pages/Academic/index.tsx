@@ -14,7 +14,10 @@ export default function Academic() {
 			subtitle: 'Federal University of Pernambuco. Jun 2022 - Current',
 			description:
 				'Dedicated Student Teaching Assistant in the field of Software and Systems Engineering. Providing invaluable support to students in software development and requirements engineering, with a primary goal of crafting top-tier applications of exceptional quality.',
-			comments: ['Technologies used: React, Node, Python and more.'],
+			comments: [
+				'Technologies used: ReactJS, Redux, NodeJS, Python, HTML, CSS, Unity Tests, JJest, Supertest, Enzyme and more.',
+			],
+			links: ['https://github.com/guimorone/ess-delivery-app'],
 			Icon: { Element: ChalkboardUser, background: 'bg-rose-600' },
 		},
 		{
