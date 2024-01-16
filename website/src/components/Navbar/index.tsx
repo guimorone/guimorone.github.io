@@ -46,7 +46,11 @@ const Navbar: FC<INavbarProps> = ({ show }) => {
 				<div className="flex lg:flex-1">
 					<Link to={paths.HOME} className="-m-1.5 p-1.5">
 						<span className="sr-only">Guilherme's photo</span>
-						<img className="h-8 w-auto sm:h-10 lg:h-12 rounded-lg" src={IconLogo} alt="Guilherme's photo" />
+						<img
+							className="h-8 w-auto sm:h-10 md:h-12 lg:h-16 rounded-lg lg:rounded-xl"
+							src={IconLogo}
+							alt="Guilherme's photo"
+						/>
 					</Link>
 				</div>
 				<div className="flex lg:hidden">

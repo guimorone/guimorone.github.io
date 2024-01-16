@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useLocation, useNavigate, Outlet } from 'react-router-dom';
 import Center from '../components/Center';
 import Navbar from '../components/Navbar';
@@ -12,32 +12,6 @@ export default function DefaultPage() {
 	const { pathname } = useLocation();
 	const navigate = useNavigate();
 	const [_, setDocumentTitle] = useDocumentTitle();
-	const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
-	const [showNavbar, setShowNavbar] = useState<boolean>(true);
-
-	/* function controlNavbar(this: Window, ev: WheelEvent): void {
-		if ('wheelDeltaY' in ev && (ev.wheelDeltaY as number) < 0) setShowNavbar(false);
-		else setShowNavbar(true);
-	} */
-
-	function handleScroll(this: Window, _ev: Event) {
-		const currentScrollPos = this.scrollY;
-
-		if (currentScrollPos > prevScrollPos) setShowNavbar(false);
-		else setShowNavbar(true);
-
-		setPrevScrollPos(currentScrollPos);
-	}
-
-	useEffect(() => {
-		// window.addEventListener('wheel', controlNavbar);
-		window.addEventListener('scroll', handleScroll);
-
-		return () => {
-			// window.removeEventListener('wheel', controlNavbar);
-			window.removeEventListener('scroll', handleScroll);
-		};
-	}, []);
 
 	useEffect(() => {
 		if (pathname === '/') navigate(HOME);
@@ -46,7 +20,7 @@ export default function DefaultPage() {
 
 	return (
 		<div className="flex flex-col mx-auto justify-between max-w-7xl min-h-screen">
-			<Navbar show={showNavbar} />
+			<Navbar show />
 			<Center className="flex-col w-full px-6 lg:px-8 py-12" HtmlTag="main">
 				<Outlet />
 			</Center>

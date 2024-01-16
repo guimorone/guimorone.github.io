@@ -23,7 +23,7 @@ export default function Academic() {
 			subtitle: 'Federal University of Pernambuco. Feb 2019 - Current',
 			description:
 				'I am engaged in the study of designing systems that integrate computer functionality with control systems, communications, and hardware components.',
-			comments: ['Expect to graduate by the end of 2024.', 'GPA: 9.05/10'],
+			comments: ['Expect to graduate by August 2024.', 'GPA: 9.07/10'],
 			Icon: { Element: GraduationCap, background: 'bg-rose-600' },
 		},
 	];
