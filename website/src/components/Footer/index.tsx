@@ -14,9 +14,9 @@ const navigation = [
 
 export default function Footer() {
 	return (
-		<footer className="-z-20 sm:z-auto" aria-labelledby={LINKS}>
+		<footer className="-z-20 clear-both w-full sm:z-auto mt-auto max-w-7xl mx-auto" aria-labelledby={LINKS}>
 			<h2 className="sr-only">Social Medias</h2>
-			<div id={LINKS} className="px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+			<section id={LINKS} className="px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
 				<div className="flex justify-center space-x-6 md:order-2">
 					{navigation.map((item, index) => (
 						<a
@@ -35,7 +35,7 @@ export default function Footer() {
 				<div className="mt-8 md:order-1 md:mt-0">
 					<p className="text-center text-xs leading-5 text-zinc-200">&copy; Guilherme Morone Araujo</p>
 				</div>
-			</div>
+			</section>
 		</footer>
 	);
 }

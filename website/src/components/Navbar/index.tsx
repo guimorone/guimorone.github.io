@@ -42,52 +42,52 @@ const Navbar: FC<INavbarProps> = ({ show }) => {
 				'sticky inset-x-0 top-0 z-50 backdrop-blur-md'
 			)}
 		>
-			<nav className="flex items-center justify-between px-4 py-4 sm:py-6 lg:px-8" aria-label="Global">
-				<div className="flex lg:flex-1">
-					<Link to={paths.HOME} className="-m-1.5 p-1.5">
-						<span className="sr-only">Guilherme's photo</span>
-						<img
-							className="h-8 w-auto sm:h-10 md:h-12 lg:h-16 rounded-lg lg:rounded-xl"
-							src={IconLogo}
-							alt="Guilherme's photo"
-						/>
-					</Link>
-				</div>
-				<div className="flex lg:hidden">
-					<button
-						type="button"
-						className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-zinc-400"
-						onClick={handleOpenMobileMenu}
-					>
-						<span className="sr-only">Open main menu</span>
-						<Bars3Icon className="h-8 w-auto sm:10 lg:h-12" aria-hidden="true" />
-					</button>
-				</div>
-				<div className="hidden lg:flex lg:gap-x-12">
-					{navigation.map((item, index) => {
-						const isCurrent = item.useLink && pathname === item.href;
+			<nav className="shadow-md" aria-label="Global">
+				<div className="flex items-center justify-between max-w-7xl mx-auto w-full h-auto max-h-20 px-4 py-4 sm:py-6 lg:px-8">
+					<div className="flex lg:flex-1">
+						<Link to={paths.HOME} className="-m-1.5 p-1.5">
+							<span className="sr-only">Guilherme's photo</span>
+							<img
+								className="h-8 w-auto sm:h-10 md:h-12 lg:h-16 rounded-lg lg:rounded-xl"
+								src={IconLogo}
+								alt="Guilherme's photo"
+							/>
+						</Link>
+					</div>
+					<div className="flex lg:hidden">
+						<button
+							type="button"
+							className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-zinc-400"
+							onClick={handleOpenMobileMenu}
+						>
+							<span className="sr-only">Open main menu</span>
+							<Bars3Icon className="h-8 w-auto sm:10 lg:h-12" aria-hidden="true" />
+						</button>
+					</div>
+					<div className="hidden lg:flex lg:gap-x-12">
+						{navigation.map((item, index) => {
+							const isCurrent = item.useLink && pathname === item.href;
 
-						return (
-							<Fragment key={`navbar_item_${item.name}_${index}`}>
-								{item.useLink ? (
-									<Link
-										to={item.href}
-										className={classNames(
-											isCurrent
-												? 'text-teal-400 hover:cursor-default relative'
-												: 'text-zinc-100 hover:underline hover:underline-offset-2 hover:cursor-pointer',
-											'flex gap-x-1.5 items-center text-sm font-semibold leading-6 '
-										)}
-									>
-										<item.Icon className="w-4 h-4" />
-										<span>{item.name}</span>
-										{isCurrent && (
-											<span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-400/0 via-teal-400/40 to-teal-400/0"></span>
-										)}
-									</Link>
-								) : (
-									<>
-										<hr className="-mx-6 w-[1.5px] h-auto border-t-0 bg-zinc-400" />
+							return (
+								<Fragment key={`navbar_item_${item.name}_${index}`}>
+									{!item.useLink && <hr className="-mx-6 w-[1.5px] h-auto border-t-0 bg-zinc-400" />}
+									{item.useLink ? (
+										<Link
+											to={item.href}
+											className={classNames(
+												isCurrent
+													? 'text-teal-400 hover:cursor-default relative'
+													: 'text-zinc-100 hover:underline hover:underline-offset-2 hover:cursor-pointer',
+												'flex gap-x-1.5 items-center text-sm font-semibold leading-6 '
+											)}
+										>
+											<item.Icon className="w-4 h-4" />
+											<span>{item.name}</span>
+											{isCurrent && (
+												<span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-400/0 via-teal-400/40 to-teal-400/0"></span>
+											)}
+										</Link>
+									) : (
 										<a
 											href={item.href}
 											className="flex gap-x-1.5 items-center text-sm font-semibold leading-6 text-zinc-100 hover:underline hover:underline-offset-2"
@@ -95,11 +95,11 @@ const Navbar: FC<INavbarProps> = ({ show }) => {
 											<item.Icon className="w-4 h-4" />
 											<span>{item.name}</span>
 										</a>
-									</>
-								)}
-							</Fragment>
-						);
-					})}
+									)}
+								</Fragment>
+							);
+						})}
+					</div>
 				</div>
 			</nav>
 			<Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
