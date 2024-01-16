@@ -2,7 +2,7 @@ import { classNames } from '../../utils';
 import type { FC } from 'react';
 import type { IconType } from '../../utils/icons';
 
-interface IFeedProps {
+export interface IFeedProps {
 	activity: {
 		title: string;
 		subtitle: string;

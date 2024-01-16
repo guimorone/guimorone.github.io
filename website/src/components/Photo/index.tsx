@@ -1,6 +1,6 @@
 import type { FC, ImgHTMLAttributes } from 'react';
 
-interface IPhotoProps extends ImgHTMLAttributes<HTMLElement> {
+export interface IPhotoProps extends ImgHTMLAttributes<HTMLElement> {
 	containerClassName?: string;
 	className?: string;
 }
