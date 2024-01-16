@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Academic from './pages/Academic';
 import Jobs from './pages/Jobs';
-import Projects from './pages/Projects';
+import Skills from './pages/Skills';
 import Games from './pages/Games';
 import * as urlPaths from './constants/paths';
 
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
 			{ path: urlPaths.ABOUT, element: <About /> },
 			{ path: urlPaths.ACADEMIC, element: <Academic /> },
 			{ path: urlPaths.JOBS, element: <Jobs /> },
-			{ path: urlPaths.PROJECTS, element: <Projects /> },
+			{ path: urlPaths.SKILLS, element: <Skills /> },
 			{ path: urlPaths.GAMES, element: <Games /> },
 		],
 	},

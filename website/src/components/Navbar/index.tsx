@@ -19,7 +19,7 @@ const navigation = [
 	{ name: 'About me', href: paths.ABOUT, Icon: NewspaperIcon, useLink: true },
 	{ name: 'Academic', href: paths.ACADEMIC, Icon: AcademicCapIcon, useLink: true },
 	{ name: 'Jobs', href: paths.JOBS, Icon: BriefcaseIcon, useLink: true },
-	{ name: 'Projects', href: paths.PROJECTS, Icon: ClipboardDocumentListIcon, useLink: true },
+	{ name: 'Skills', href: paths.SKILLS, Icon: ClipboardDocumentListIcon, useLink: true },
 	{ name: 'Games', href: paths.GAMES, Icon: PuzzlePieceIcon, useLink: true },
 	{ name: 'Links & Contact', href: `#${paths.LINKS}`, Icon: LinkIcon, useLink: false },
 ];

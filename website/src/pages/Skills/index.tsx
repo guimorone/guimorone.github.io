@@ -1,5 +1,5 @@
 import EmptyPage from '../EmptyPage';
 
-export default function Projects() {
+export default function Skills() {
 	return <EmptyPage />;
 }
