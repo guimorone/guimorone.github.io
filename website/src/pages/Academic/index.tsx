@@ -1,7 +1,7 @@
 import Banner from '../../components/Banner';
 import Page from '../../components/Page';
-import { GraduationCap, ChalkboardUser } from '../../utils/icons';
-import { CIN_UFPE_URL } from '../../constants/urls';
+import { ChalkboardUser, GraduationCap } from '../../utils/icons';
+import { CIN_UFPE_URL, ESS_DELIVERY_APP_PROJECT } from '../../constants/urls';
 import UFPE from '../../assets/images/UFPE.png';
 
 export default function Academic() {
@@ -15,9 +15,9 @@ export default function Academic() {
 			description:
 				'Dedicated Student Teaching Assistant in the field of Software and Systems Engineering. Providing invaluable support to students in software development and requirements engineering, with a primary goal of crafting top-tier applications of exceptional quality.',
 			comments: [
-				'Technologies used: ReactJS, Redux, NodeJS, Python, HTML, CSS, Unity Tests, JJest, Supertest, Enzyme and more.',
+				'Skills/Technologies: ReactJS · Redux · NodeJS · Python · HTML · CSS · Unit Tests · Jest · Supertest · Enzyme · TypeScript · Web Development · Responsive Web Design · Software Development · SASS · Programming · REST APIs · Front-End Development · React Hooks and more.',
 			],
-			links: ['https://github.com/guimorone/ess-delivery-app'],
+			links: [ESS_DELIVERY_APP_PROJECT],
 			Icon: { Element: ChalkboardUser, background: 'bg-rose-600' },
 		},
 		{

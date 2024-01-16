@@ -1,8 +1,15 @@
-import type { SVGProps, JSX } from 'react';
+import type { ForwardRefExoticComponent, PropsWithoutRef, SVGProps, RefAttributes, JSX } from 'react';
 
-export type IconType = (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => JSX.Element;
+export type IconType =
+	| ForwardRefExoticComponent<
+			PropsWithoutRef<SVGProps<SVGSVGElement>> & {
+				title?: string;
+				titleId?: string;
+			} & RefAttributes<SVGSVGElement>
+	  >
+	| ((props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => JSX.Element);
 
-export const PDFIcon: IconType = props => (
+export const PDFIcon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => JSX.Element = props => (
 	<svg fill="currentColor" viewBox="0 0 512 512" {...props}>
 		<path
 			fillRule="evenodd"
@@ -12,7 +19,7 @@ export const PDFIcon: IconType = props => (
 	</svg>
 );
 
-export const InstagramIcon: IconType = props => (
+export const InstagramIcon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => JSX.Element = props => (
 	<svg fill="currentColor" viewBox="0 0 24 24" {...props}>
 		<path
 			fillRule="evenodd"
@@ -22,7 +29,7 @@ export const InstagramIcon: IconType = props => (
 	</svg>
 );
 
-export const GitHubIcon: IconType = props => (
+export const GitHubIcon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => JSX.Element = props => (
 	<svg fill="currentColor" viewBox="0 0 24 24" {...props}>
 		<path
 			fillRule="evenodd"
@@ -32,7 +39,7 @@ export const GitHubIcon: IconType = props => (
 	</svg>
 );
 
-export const LinkedInIcon: IconType = props => (
+export const LinkedInIcon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => JSX.Element = props => (
 	<svg fill="currentColor" viewBox="0 0 448 512" {...props}>
 		<path
 			fillRule="evenodd"
@@ -42,7 +49,7 @@ export const LinkedInIcon: IconType = props => (
 	</svg>
 );
 
-export const PersonDiggingIcon: IconType = props => (
+export const PersonDiggingIcon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => JSX.Element = props => (
 	<svg fill="currentColor" viewBox="0 0 576 512" {...props}>
 		<path
 			fillRule="evenodd"
@@ -52,7 +59,7 @@ export const PersonDiggingIcon: IconType = props => (
 	</svg>
 );
 
-export const GraduationCap: IconType = props => (
+export const GraduationCap: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => JSX.Element = props => (
 	<svg fill="currentColor" viewBox="0 0 640 512" {...props}>
 		<path
 			fillRule="evenodd"
@@ -62,7 +69,7 @@ export const GraduationCap: IconType = props => (
 	</svg>
 );
 
-export const ChalkboardUser: IconType = props => (
+export const ChalkboardUser: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => JSX.Element = props => (
 	<svg fill="currentColor" viewBox="0 0 640 512" {...props}>
 		<path
 			fillRule="evenodd"

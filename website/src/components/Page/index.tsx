@@ -4,7 +4,7 @@ import type { FC, ImgHTMLAttributes } from 'react';
 
 interface IPageProps {
 	title: string;
-	subtitle: string;
+	subtitle?: string;
 	photo?: ImgHTMLAttributes<HTMLElement>;
 	activity: IFeedProps['activity'];
 }
@@ -14,7 +14,7 @@ const Page: FC<IPageProps> = ({ title, subtitle, photo, activity }) => {
 		<div className="lg:flex lg:justify-between lg:gap-x-12 space-y-12 lg:space-y-0">
 			<div className="w-full max-w-2xl flex flex-col -gap-1">
 				<h2 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">{title}</h2>
-				<p className="mt-6 text-base text-zinc-300 text-justify">{subtitle}</p>
+				{subtitle && <p className="mt-6 text-base text-zinc-300 text-justify">{subtitle}</p>}
 				{photo && (
 					<Photo
 						{...photo}
