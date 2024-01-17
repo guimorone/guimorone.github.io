@@ -1,4 +1,4 @@
-import { useState, Fragment } from 'react';
+import { useState, Fragment, type FC } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { GiSkills } from 'react-icons/gi';
 import { Dialog } from '@headlessui/react';
@@ -14,7 +14,6 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { classNames } from '../../utils';
 import * as paths from '../../constants/paths';
 import IconLogo from '../../assets/images/EuLogo.jpg';
-import type { FC } from 'react';
 
 const navigation = [
 	{ name: 'About me', href: paths.ABOUT, Icon: NewspaperIcon, useLink: true },

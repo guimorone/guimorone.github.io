@@ -1,7 +1,6 @@
-import { useState, Fragment } from 'react';
+import { useState, Fragment, type FC } from 'react';
 import { Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/20/solid';
-import type { FC } from 'react';
 
 interface IBannerProps {
 	title?: string;
