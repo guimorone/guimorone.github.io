@@ -11,7 +11,7 @@ export default function Academic() {
 	const experiences = [
 		{
 			title: 'Student Teaching Assistant',
-			subtitle: 'Federal University of Pernambuco. Jun 2022 - Current',
+			subtitle: 'Federal University of Pernambuco. Jun 2022 - Present',
 			description:
 				'Dedicated Student Teaching Assistant in the field of Software and Systems Engineering. Providing invaluable support to students in software development and requirements engineering, with a primary goal of crafting top-tier applications of exceptional quality.',
 			comments: [
@@ -22,7 +22,7 @@ export default function Academic() {
 		},
 		{
 			title: 'Bachelor in Computer Engineering',
-			subtitle: 'Federal University of Pernambuco. Feb 2019 - Current',
+			subtitle: 'Federal University of Pernambuco. Feb 2019 - Present',
 			description:
 				'I am engaged in the study of designing systems that integrate computer functionality with control systems, communications, and hardware components.',
 			comments: ['Expect to graduate by August 2024.', 'GPA: 9.07/10'],

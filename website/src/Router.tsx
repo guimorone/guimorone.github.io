@@ -6,6 +6,7 @@ import About from './pages/About';
 import Academic from './pages/Academic';
 import Jobs from './pages/Jobs';
 import Skills from './pages/Skills';
+import Projects from './pages/Projects';
 import Games from './pages/Games';
 import * as urlPaths from './constants/paths';
 
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
 			{ path: urlPaths.ACADEMIC, element: <Academic /> },
 			{ path: urlPaths.JOBS, element: <Jobs /> },
 			{ path: urlPaths.SKILLS, element: <Skills /> },
+			{ path: urlPaths.PROJECTS, element: <Projects /> },
 			{ path: urlPaths.GAMES, element: <Games /> },
 		],
 	},

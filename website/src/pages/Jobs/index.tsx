@@ -13,6 +13,7 @@ import {
 
 export default function Jobs() {
 	const title = 'Experience';
+	const subtitle = 'Allow me to show you my jobs with clients and in tech companies.';
 
 	const experiences = [
 		{
@@ -58,5 +59,5 @@ export default function Jobs() {
 		},
 	];
 
-	return <Page title={title} activity={experiences} />;
+	return <Page title={title} subtitle={subtitle} activity={experiences} />;
 }
