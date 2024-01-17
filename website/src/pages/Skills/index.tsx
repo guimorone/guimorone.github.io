@@ -22,8 +22,13 @@ import {
 	SiJquery,
 	SiMongodb,
 	SiHaskell,
+	SiCsharp,
+	SiConstruct3,
+	SiFlutter,
+	SiJupyter,
+	SiWebpack,
 } from 'react-icons/si';
-import { DiGoogleCloudPlatform } from 'react-icons/di';
+import { DiGoogleCloudPlatform, DiRuby } from 'react-icons/di';
 import { BiLogoPostgresql } from 'react-icons/bi';
 import { TbBrandReactNative, TbSql } from 'react-icons/tb';
 import { classNames } from '../../utils';
@@ -32,7 +37,7 @@ import { LINKEDIN_SKILLS_URL } from '../../constants/urls';
 export default function Skills() {
 	const title = 'Skills';
 	const subtitle =
-		'Here I show you my expertise in programming languages and other technologies, based on time of experience and in how much I used in my projects through life.';
+		'Here I show you my expertise in programming languages, frameworks and other technologies, based on time of experience and in how much I used in my projects through life.';
 
 	let skills = [
 		{ Icon: { Element: SiDjango, color: 'text-[#0A2F20]' }, label: 'Django', rating: 5 },
@@ -59,6 +64,12 @@ export default function Skills() {
 		{ Icon: { Element: FaAws, color: 'text-[#FF9900]' }, label: 'AWS', rating: 2 },
 		{ Icon: { Element: DiGoogleCloudPlatform, color: 'text-[#2FA1FB]' }, label: 'GCP', rating: 2 },
 		{ Icon: { Element: SiHaskell, color: 'text-[#999999]' }, label: 'Haskell', rating: 1 },
+		{ Icon: { Element: DiRuby, color: 'text-[#9D0401]' }, label: 'Ruby', rating: 2 },
+		{ Icon: { Element: SiCsharp, color: 'text-[#9A4F96]' }, label: 'C#', rating: 1 },
+		{ Icon: { Element: SiConstruct3, color: 'text-[#DAE8F6]' }, label: 'Construct 3', rating: 3 },
+		{ Icon: { Element: SiFlutter, color: 'text-[#54C4F8]' }, label: 'Flutter', rating: 1 },
+		{ Icon: { Element: SiJupyter, color: 'text-[#F47820]' }, label: 'PyNotebooks', rating: 3 },
+		{ Icon: { Element: SiWebpack, color: 'text-[#8ED6FB]' }, label: 'Webpack', rating: 2 },
 	];
 
 	skills = skills
@@ -67,7 +78,7 @@ export default function Skills() {
 
 	return (
 		<div className="flex flex-col gap-y-12">
-			<div className="flex flex-col -gap-1 text-center mx-auto max-w-2xl">
+			<div className="flex flex-col -gap-1 text-center mx-auto max-w-xl lg:max-w-3xl">
 				<h2 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">{title}</h2>
 				<p className="mt-6 text-base text-zinc-300">{subtitle}</p>
 			</div>
