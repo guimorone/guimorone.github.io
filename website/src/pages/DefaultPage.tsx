@@ -19,7 +19,7 @@ export default function DefaultPage() {
 	}, [pathname]);
 
 	return (
-		<div className="flex flex-col mx-auto justify-between min-h-screen">
+		<div className="sm:flex flex-col mx-auto justify-between min-h-screen">
 			<Navbar show />
 			<Center className="flex-col w-full px-6 lg:px-8 py-12 max-w-7xl" HtmlTag="main">
 				<Outlet />
