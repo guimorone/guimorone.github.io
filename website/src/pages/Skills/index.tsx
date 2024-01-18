@@ -78,7 +78,7 @@ export default function Skills() {
 
 	return (
 		<div className="flex flex-col gap-y-12">
-			<div className="flex flex-col -gap-1 text-center mx-auto max-w-xl lg:max-w-3xl">
+			<div className="flex flex-col -gap-1 text-left max-w-xl lg:max-w-3xl">
 				<h2 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">{title}</h2>
 				<p className="mt-6 text-base text-zinc-300">{subtitle}</p>
 			</div>
@@ -107,7 +107,7 @@ export default function Skills() {
 					</div>
 				))}
 			</div>
-			<p className="text-xs md:text-sm self-start">
+			<p className="text-xs md:text-sm">
 				If you want to know more,&nbsp;
 				<a href={LINKEDIN_SKILLS_URL} target="_blank" className="text-indigo-300 hover:text-indigo-200">
 					click here
