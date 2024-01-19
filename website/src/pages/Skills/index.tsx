@@ -52,7 +52,7 @@ export default function Skills() {
 		{ Icon: { Element: FaJava, color: 'text-[#EB2F2E]' }, label: 'Java', rating: 2 },
 		{ Icon: { Element: SiFlask }, label: 'Flask', rating: 5 },
 		{ Icon: { Element: TbBrandReactNative, color: 'text-[#61DBFB]' }, label: 'React Native', rating: 4 },
-		{ Icon: { Element: FaNodeJs, color: 'text-[#90C43F]' }, label: 'Node', rating: 5 },
+		{ Icon: { Element: FaNodeJs, color: 'text-[#90C43F]' }, label: 'Node', rating: 4 },
 		{ Icon: { Element: FaGolang, color: 'text-[#05ACD7]' }, label: 'Go', rating: 2 },
 		{ Icon: { Element: FaHtml5, color: 'text-[#E54C25]' }, label: 'HTML5', rating: 5 },
 		{ Icon: { Element: FaCss3Alt, color: 'text-[#28A9DF]' }, label: 'CSS3', rating: 4 },
