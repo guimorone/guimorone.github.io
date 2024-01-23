@@ -1,6 +1,7 @@
 import { FaGamepad } from 'react-icons/fa';
-import { CodeBracketIcon, DevicePhoneMobileIcon } from '@heroicons/react/24/solid';
+import { CodeBracketIcon, DevicePhoneMobileIcon, GlobeAltIcon } from '@heroicons/react/24/solid';
 import Page from '../../components/Page';
+import { LinkedInIcon } from '../../utils/icons';
 import {
 	ONCASE_URL,
 	ONCASE_LINKEDIN_URL,
@@ -24,7 +25,10 @@ export default function Jobs() {
 			comments: [
 				'Skills/Technologies: Django · React.js · TypeScript · Continuous Integration and Continuous Delivery (CI/CD) · Docker · Cloud Computing · Git · Object-Relational Mapping (ORM) · Web Services API · Responsive Web Design · Python · Software Development · SASS · Databases · Amazon Web Services (AWS) · Programming · Extract, Transform, Load (ETL) · Google Cloud Platform (GCP) · REST APIs · Flask · Redux.js · React Hooks · Linux · Big Data · JavaScript · Amazon Web Services · DevOps · HTML5 · CSS · SQL · MongoDB and more.',
 			],
-			links: [ONCASE_URL, ONCASE_LINKEDIN_URL],
+			links: [
+				{ Icon: GlobeAltIcon, label: 'Website', url: ONCASE_URL },
+				{ Icon: LinkedInIcon, label: 'LinkedIn', url: ONCASE_LINKEDIN_URL },
+			],
 			Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
 		},
 		{
@@ -35,7 +39,7 @@ export default function Jobs() {
 			comments: [
 				'Skills/Technologies: Django · TypeScript · Software Development · React.js · Redux.js · React Hooks · Continuous Integration and Continuous Delivery (CI/CD) · Docker · Linux.',
 			],
-			links: [CHEQUEFACIL_URL],
+			links: [{ Icon: GlobeAltIcon, label: 'Website', url: CHEQUEFACIL_URL }],
 			Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
 		},
 		{
@@ -43,7 +47,10 @@ export default function Jobs() {
 			subtitle: 'InSpace. Aug 2022 - Oct 2022',
 			description: 'Identification of objects (censored specificity) from a mobile camera for legal purposes.',
 			comments: ['Skills/Technologies: TypeScript · Software Development · Redux.js · React Native · React Hooks.'],
-			links: [INSPACE_URL, INSPACE_LINKEDIN_URL],
+			links: [
+				{ Icon: GlobeAltIcon, label: 'Website', url: INSPACE_URL },
+				{ Icon: LinkedInIcon, label: 'LinkedIn', url: INSPACE_LINKEDIN_URL },
+			],
 			Icon: { Element: DevicePhoneMobileIcon, background: 'bg-indigo-600' },
 		},
 		{
@@ -54,7 +61,10 @@ export default function Jobs() {
 			comments: [
 				'Skills/Technologies: Construct 3 · Object-Oriented Programming (OOP) · Programming · JavaScript · HTML5 · CSS · Web Development.',
 			],
-			links: [EDUCANDUS_URL, EDUCANDUS_LINKEDIN_URL],
+			links: [
+				{ Icon: GlobeAltIcon, label: 'Website', url: EDUCANDUS_URL },
+				{ Icon: LinkedInIcon, label: 'LinkedIn', url: EDUCANDUS_LINKEDIN_URL },
+			],
 			Icon: { Element: FaGamepad, background: 'bg-indigo-600' },
 		},
 	];

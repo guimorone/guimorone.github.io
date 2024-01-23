@@ -1,3 +1,4 @@
+import { Tooltip } from 'flowbite-react';
 import { classNames } from '../../utils';
 import type { FC } from 'react';
 import type { IconType } from '../../utils/icons';
@@ -6,10 +7,10 @@ export interface IFeedProps {
 	activity: {
 		title: string;
 		subtitle: string;
-		description: string;
+		description?: string;
 		comments?: string[];
 		Icon?: { Element: IconType; background?: string };
-		links?: string[];
+		links?: { Icon: IconType; color?: string; label: string; url: string }[];
 	}[];
 }
 
@@ -37,7 +38,9 @@ const Feed: FC<IFeedProps> = ({ activity }) => {
 										<h3 className="text-lg md:text-xl text-zinc-100">{item.title}</h3>
 										<p className="text-xs md:text-sm text-zinc-300">{item.subtitle}</p>
 									</div>
-									<p className="text-sm md:text-base text-zinc-300 text-justify">{item.description}</p>
+									{item.description && (
+										<p className="text-sm md:text-base text-zinc-300 text-justify">{item.description}</p>
+									)}
 									{item.comments && (
 										<div className="text-xs md:text-sm text-zinc-300">
 											{item.comments.map((c, idx) => (
@@ -45,17 +48,20 @@ const Feed: FC<IFeedProps> = ({ activity }) => {
 											))}
 										</div>
 									)}
-									<div className="flex flex-col gap-y-0.5">
+									<div className="flex gap-x-2 md:gap-x-4">
 										{item.links &&
-											item.links.length &&
+											item.links.length > 0 &&
 											item.links.map((link, idx) => (
 												<a
-													key={`${link}_${idx}`}
-													href={link}
+													key={`${link.label}_${idx}`}
+													href={link.url}
 													target="_blank"
-													className="text-indigo-300 hover:text-indigo-200 text-xs md:text-sm"
+													className={classNames(link.color || 'text-zinc-300 hover:text-zinc-200')}
 												>
-													{link}
+													<Tooltip content={link.label} animation="duration-150">
+														<link.Icon className="w-6 h-6" aria-hidden="true" />
+													</Tooltip>
+													<span className="sr-only">{link.label}</span>
 												</a>
 											))}
 									</div>

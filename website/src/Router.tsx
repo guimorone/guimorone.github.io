@@ -7,7 +7,7 @@ import Academic from './pages/Academic';
 import Jobs from './pages/Jobs';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
-import Games from './pages/Games';
+import Certifications from './pages/Certifications';
 import * as urlPaths from './constants/paths';
 
 const router = createBrowserRouter([
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
 			{ path: urlPaths.JOBS, element: <Jobs /> },
 			{ path: urlPaths.SKILLS, element: <Skills /> },
 			{ path: urlPaths.PROJECTS, element: <Projects /> },
-			{ path: urlPaths.GAMES, element: <Games /> },
+			{ path: urlPaths.CERTIFICATIONS, element: <Certifications /> },
 		],
 	},
 	{ path: '*', loader: () => redirect('/') },

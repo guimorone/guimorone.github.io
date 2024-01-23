@@ -1,6 +1,6 @@
 import Banner from '../../components/Banner';
 import Page from '../../components/Page';
-import { ChalkboardUser, GraduationCap } from '../../utils/icons';
+import { ChalkboardUser, GraduationCap, GitHubIcon } from '../../utils/icons';
 import { CIN_UFPE_URL, ESS_DELIVERY_APP_PROJECT } from '../../constants/urls';
 import UFPE from '../../assets/images/UFPE.png';
 
@@ -17,7 +17,13 @@ export default function Academic() {
 			comments: [
 				'Skills/Technologies: ReactJS · Redux · NodeJS · Python · HTML · CSS · Unit Tests · Jest · Supertest · Enzyme · TypeScript · Web Development · Responsive Web Design · Software Development · SASS · Programming · REST APIs · Front-End Development · React Hooks and more.',
 			],
-			links: [ESS_DELIVERY_APP_PROJECT],
+			links: [
+				{
+					Icon: GitHubIcon,
+					label: 'GitHub',
+					url: ESS_DELIVERY_APP_PROJECT,
+				},
+			],
 			Icon: { Element: ChalkboardUser, background: 'bg-rose-600' },
 		},
 		{
