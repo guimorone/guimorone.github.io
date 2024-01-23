@@ -8,7 +8,6 @@ import { BriefcaseIcon, NewspaperIcon, LinkIcon, AcademicCapIcon } from '@heroic
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { classNames } from '../../utils';
 import * as paths from '../../constants/paths';
-import IconLogo from '../../assets/images/EuLogo.jpg';
 
 const navigation = [
 	{ name: 'About me', href: paths.ABOUT, Icon: NewspaperIcon, useLink: true },
@@ -41,13 +40,9 @@ const Navbar: FC<INavbarProps> = ({ show }) => {
 			<nav className="shadow-md" aria-label="Global">
 				<div className="flex items-center justify-between max-w-7xl mx-auto w-full h-auto max-h-20 px-4 py-4 sm:py-6 lg:px-8 gap-x-2">
 					<div className="flex xl:flex-1">
-						<Link to={paths.HOME} className="-m-1.5 p-1.5">
-							<span className="sr-only">Guilherme's photo</span>
-							<img
-								className="h-8 w-auto sm:h-10 md:h-12 lg:h-16 rounded-lg lg:rounded-xl"
-								src={IconLogo}
-								alt="Guilherme's photo"
-							/>
+						<Link to={paths.HOME} className="-m-1.5 p-1.5 text-zinc-300 hover:text-zinc-200">
+							<span className="sr-only">Logo</span>
+							<h1 className="font-[Pacifico] text-sm md:text-base">Guilherme Morone</h1>
 						</Link>
 					</div>
 					<div className="flex xl:hidden">
@@ -74,7 +69,7 @@ const Navbar: FC<INavbarProps> = ({ show }) => {
 												isCurrent
 													? 'text-teal-400 hover:cursor-default relative'
 													: 'text-zinc-100 hover:underline hover:underline-offset-2 hover:cursor-pointer',
-												'flex gap-x-1.5 items-center text-sm font-semibold leading-6 '
+												'flex gap-x-1.5 items-center text-sm font-semibold leading-6'
 											)}
 										>
 											<item.Icon className="w-4 h-4" />
