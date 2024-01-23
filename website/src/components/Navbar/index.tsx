@@ -1,15 +1,10 @@
 import { useState, Fragment, type FC } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { GiSkills } from 'react-icons/gi';
-import { Dialog } from '@headlessui/react';
-import {
-	BriefcaseIcon,
-	NewspaperIcon,
-	LinkIcon,
-	ClipboardDocumentListIcon,
-	AcademicCapIcon,
-} from '@heroicons/react/20/solid';
+import { GrProjects } from 'react-icons/gr';
 import { BiSolidCertification } from 'react-icons/bi';
+import { Dialog } from '@headlessui/react';
+import { BriefcaseIcon, NewspaperIcon, LinkIcon, AcademicCapIcon } from '@heroicons/react/20/solid';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { classNames } from '../../utils';
 import * as paths from '../../constants/paths';
@@ -20,7 +15,7 @@ const navigation = [
 	{ name: 'Academic', href: paths.ACADEMIC, Icon: AcademicCapIcon, useLink: true },
 	{ name: 'Jobs', href: paths.JOBS, Icon: BriefcaseIcon, useLink: true },
 	{ name: 'Skills', href: paths.SKILLS, Icon: GiSkills, useLink: true },
-	{ name: 'Projects', href: paths.PROJECTS, Icon: ClipboardDocumentListIcon, useLink: true },
+	{ name: 'Projects', href: paths.PROJECTS, Icon: GrProjects, useLink: true },
 	{ name: 'Licenses & Certifications', href: paths.CERTIFICATIONS, Icon: BiSolidCertification, useLink: true },
 	{ name: 'Links & Contact', href: `#${paths.LINKS}`, Icon: LinkIcon, useLink: false },
 ];
@@ -61,7 +56,7 @@ const Navbar: FC<INavbarProps> = ({ show }) => {
 							className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-zinc-400"
 							onClick={handleOpenMobileMenu}
 						>
-							<span className="sr-only">Open main menu</span>
+							<span className="sr-only">Open menu</span>
 							<Bars3Icon className="h-8 w-auto sm:10 lg:h-12" aria-hidden="true" />
 						</button>
 					</div>

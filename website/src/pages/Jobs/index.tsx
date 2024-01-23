@@ -23,7 +23,7 @@ export default function Jobs() {
 			description:
 				'I developed Big Data applications that demanded high efficiency and scalability, as well as low cost.',
 			comments: [
-				'Skills/Technologies: Django · React.js · TypeScript · Continuous Integration and Continuous Delivery (CI/CD) · Docker · Cloud Computing · Git · Object-Relational Mapping (ORM) · Web Services API · Responsive Web Design · Python · Software Development · SASS · Databases · Amazon Web Services (AWS) · Programming · Extract, Transform, Load (ETL) · Google Cloud Platform (GCP) · REST APIs · Flask · Redux.js · React Hooks · Linux · Big Data · JavaScript · Amazon Web Services · DevOps · HTML5 · CSS · SQL · MongoDB and more.',
+				'Skills/Technologies: Django · React.js · TailwindCSS · TypeScript · Continuous Integration and Continuous Delivery (CI/CD) · Docker · Cloud Computing · Git · Object-Relational Mapping (ORM) · Web Services API · Responsive Web Design · Python · Software Development · SASS · Databases · Amazon Web Services (AWS) · Programming · Extract, Transform, Load (ETL) · Google Cloud Platform (GCP) · REST APIs · Flask · Redux.js · React Hooks · Linux · Big Data · JavaScript · Amazon Web Services · DevOps · HTML5 · CSS · SQL · MongoDB and more.',
 			],
 			links: [
 				{ Icon: GlobeAltIcon, label: 'Website', url: ONCASE_URL },
@@ -37,7 +37,7 @@ export default function Jobs() {
 			description:
 				'Website made with 3 more colleagues. The main purpose is to identify bank check fields easily, so you do not have to type manually. It also offers API Integration, history download and other features.',
 			comments: [
-				'Skills/Technologies: Django · TypeScript · Software Development · React.js · Redux.js · React Hooks · Continuous Integration and Continuous Delivery (CI/CD) · Docker · Linux.',
+				'Skills/Technologies: Django · TypeScript · Software Development · React.js · Redux.js · React Hooks · TailwindCSS · Continuous Integration and Continuous Delivery (CI/CD) · Docker · Linux.',
 			],
 			links: [{ Icon: GlobeAltIcon, label: 'Website', url: CHEQUEFACIL_URL }],
 			Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
@@ -59,7 +59,7 @@ export default function Jobs() {
 			description:
 				'I have worked as a game developer using Construct 3 software and JavaScript, building educational games for students from preschool to high school levels.',
 			comments: [
-				'Skills/Technologies: Construct 3 · Object-Oriented Programming (OOP) · Programming · JavaScript · HTML5 · CSS · Web Development.',
+				'Skills/Technologies: Construct 3 · Object-Oriented Programming (OOP) · Programming · JavaScript · HTML5 · CSS · Web Development · Game Development.',
 			],
 			links: [
 				{ Icon: GlobeAltIcon, label: 'Website', url: EDUCANDUS_URL },
