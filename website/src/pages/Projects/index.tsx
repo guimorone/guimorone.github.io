@@ -15,7 +15,7 @@ import {
 export default function Projects() {
 	const title = 'Projects';
 	const subtitle =
-		"Allow me to show you some projects I've (been) worked on throughout my career. Some projects will not be shown here due to legal purposes, and I would also like to advise that none of them have any interest in profits or any kind of commercial usage.";
+		"Allow me to show you some side projects I've worked/been working on throughout my career, whether alone or at college. I would also like to advise that none of them have any interest in profits or any kind of commercial usage.";
 	const projects = [
 		{
 			title: 'Type War',
