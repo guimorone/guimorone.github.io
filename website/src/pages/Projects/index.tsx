@@ -1,9 +1,11 @@
 import { SiInstagram } from 'react-icons/si';
 import { FaGamepad } from 'react-icons/fa';
+import { RiLockPasswordLine } from 'react-icons/ri';
 import { FaZ, FaChessQueen } from 'react-icons/fa6';
 import Page from '../../components/Page';
 import { GitHubIcon } from '../../utils/icons';
 import {
+	RANDOM_PASSWORD_GENERATOR_PROJECT_URL,
 	TYPEWAR_GAME_URL,
 	TYPEWAR_GAME_PROJECT_URL,
 	ZTYPE_GAME_URL,
@@ -17,6 +19,20 @@ export default function Projects() {
 	const subtitle =
 		"Allow me to show you some side projects I've worked/been working on throughout my career, whether alone or at college. I would also like to advise that none of them have any interest in profits or any kind of commercial usage.";
 	const projects = [
+		{
+			title: 'Random Password Generator',
+			subtitle: 'Feb 2024',
+			description: 'Program to generate a secure random password.',
+			comments: ['Skills/Technologies: Python.'],
+			links: [
+				{
+					Icon: GitHubIcon,
+					label: 'Project URL',
+					url: RANDOM_PASSWORD_GENERATOR_PROJECT_URL,
+				},
+			],
+			Icon: { Element: RiLockPasswordLine, background: 'bg-red-500' },
+		},
 		{
 			title: 'Type War',
 			subtitle: 'Feb 2023 - Apr 2023',

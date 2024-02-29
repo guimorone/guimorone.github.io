@@ -13,6 +13,7 @@ export const INSPACE_LINKEDIN_URL = 'https://www.linkedin.com/company/inspacetec
 export const CHEQUEFACIL_URL = 'https://chequefacil.com';
 export const EDUCANDUS_URL = 'https://educandus.com.br';
 export const EDUCANDUS_LINKEDIN_URL = 'https://www.linkedin.com/company/s.c.a-technology-ltda';
+export const RANDOM_PASSWORD_GENERATOR_PROJECT_URL = 'https://github.com/guimorone/random-password-generator';
 export const TYPEWAR_GAME_URL = 'https://type-war-game-cin.vercel.app';
 export const TYPEWAR_GAME_PROJECT_URL = 'https://github.com/guimorone/projeto-jogos';
 export const ZTYPE_GAME_URL = 'https://zty.pe';

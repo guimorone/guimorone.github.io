@@ -4,7 +4,7 @@ import { GiSkills } from 'react-icons/gi';
 import { GrProjects } from 'react-icons/gr';
 import { BiSolidCertification } from 'react-icons/bi';
 import { Dialog } from '@headlessui/react';
-import { BriefcaseIcon, NewspaperIcon, LinkIcon, AcademicCapIcon } from '@heroicons/react/20/solid';
+import { BriefcaseIcon, NewspaperIcon, AcademicCapIcon } from '@heroicons/react/20/solid';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { classNames } from '../../utils';
 import * as paths from '../../constants/paths';
@@ -16,7 +16,6 @@ const navigation = [
 	{ name: 'Skills', href: paths.SKILLS, Icon: GiSkills, useLink: true },
 	{ name: 'Projects', href: paths.PROJECTS, Icon: GrProjects, useLink: true },
 	{ name: 'Licenses & Certifications', href: paths.CERTIFICATIONS, Icon: BiSolidCertification, useLink: true },
-	{ name: 'Links & Contact', href: `#${paths.LINKS}`, Icon: LinkIcon, useLink: false },
 ];
 
 interface INavbarProps {

@@ -1,4 +1,4 @@
-import { redirect, createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { redirect, createHashRouter, RouterProvider } from 'react-router-dom';
 import { Spinner } from 'flowbite-react';
 import DefaultPage from './pages/DefaultPage';
 import Home from './pages/Home';
@@ -10,7 +10,7 @@ import Projects from './pages/Projects';
 import Certifications from './pages/Certifications';
 import * as urlPaths from './constants/paths';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 	{
 		path: urlPaths.DEFAULT,
 		element: <DefaultPage />,
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
 			{ path: urlPaths.CERTIFICATIONS, element: <Certifications /> },
 		],
 	},
-	{ path: '*', loader: () => redirect('/') },
+	{ path: '*', loader: () => redirect(urlPaths.DEFAULT) },
 ]);
 
 export default function Router() {

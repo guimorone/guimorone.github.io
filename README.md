@@ -4,5 +4,5 @@ Application using TailwindCSS and ReactJS.
 
 ## Dependencies
 
-- Node.js v18.16.0
-- npm v9.8.1
+- Node.js v20.11.0
+- npm v10.4.0

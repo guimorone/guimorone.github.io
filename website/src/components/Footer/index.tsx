@@ -2,7 +2,6 @@ import { Tooltip } from 'flowbite-react';
 import { CodeBracketIcon, EnvelopeIcon } from '@heroicons/react/20/solid';
 import { InstagramIcon, GitHubIcon, LinkedInIcon } from '../../utils/icons';
 import { INSTAGRAM, GITHUB, LINKEDIN, WEBSITE_CODE_URL, MAILTO_URL } from '../../constants/urls';
-import { LINKS } from '../../constants/paths';
 
 const navigation = [
 	{ name: 'Instagram', href: INSTAGRAM, target: '_blank', icon: InstagramIcon },
@@ -14,9 +13,9 @@ const navigation = [
 
 export default function Footer() {
 	return (
-		<footer className="npmclear-both w-full sm:z-auto mt-auto max-w-7xl mx-auto" aria-labelledby={LINKS}>
+		<footer className="npmclear-both w-full sm:z-auto mt-auto max-w-7xl mx-auto">
 			<h2 className="sr-only">Social Medias</h2>
-			<section id={LINKS} className="px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+			<section className="px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
 				<div className="flex justify-center space-x-6 md:order-2">
 					{navigation.map((item, index) => (
 						<a
