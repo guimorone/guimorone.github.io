@@ -34,7 +34,7 @@ export default function Jobs() {
 		},
 		{
 			title: 'Mobile Engineer | Freelance',
-			subtitle: 'aca.so. Mar 2024 - Mar 2024',
+			subtitle: 'aca.so. Mar 2024',
 			description: 'Worked as a Mobile Engineer in a Freelancer project using React Native.',
 			comments: ['Skills/Technologies: TypeScript · React Native · React Hooks.'],
 			links: [
