@@ -10,6 +10,10 @@ import {
 	CHEQUEFACIL_URL,
 	EDUCANDUS_URL,
 	EDUCANDUS_LINKEDIN_URL,
+	ACASO_URL,
+	ACASO_LINKEDIN_URL,
+	JALAN_URL,
+	JALAN_LINKEDIN_URL,
 } from '../../constants/urls';
 
 export default function Jobs() {
@@ -17,6 +21,28 @@ export default function Jobs() {
 	const subtitle = 'Allow me to show you my jobs with clients and in tech companies.';
 
 	const experiences = [
+		{
+			title: 'Software Engineer | Full-time',
+			subtitle: 'Jalan. Apr 2024 - Present',
+			description: '',
+			comments: ['Skills/Technologies: Vue · Python · AWS.'],
+			links: [
+				{ Icon: GlobeAltIcon, label: 'Website', url: JALAN_URL },
+				{ Icon: LinkedInIcon, label: 'LinkedIn', url: JALAN_LINKEDIN_URL },
+			],
+			Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
+		},
+		{
+			title: 'Mobile Engineer | Freelance',
+			subtitle: 'aca.so. Mar 2024 - Mar 2024',
+			description: 'Worked as a Mobile Engineer in a Freelancer project using React Native.',
+			comments: ['Skills/Technologies: TypeScript · React Native · React Hooks.'],
+			links: [
+				{ Icon: GlobeAltIcon, label: 'Website', url: ACASO_URL },
+				{ Icon: LinkedInIcon, label: 'LinkedIn', url: ACASO_LINKEDIN_URL },
+			],
+			Icon: { Element: DevicePhoneMobileIcon, background: 'bg-indigo-600' },
+		},
 		{
 			title: 'Software Engineer | Full-time',
 			subtitle: 'Oncase. Feb 2022 - Dec 2023 (Feb 2022 - Aug 2022 as an intern)',
