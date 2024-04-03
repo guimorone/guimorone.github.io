@@ -62,7 +62,7 @@ export default function Skills() {
 		{ Icon: { Element: TbSql, color: 'text-[#0279D6]' }, label: 'SQL', rating: 3 },
 		{ Icon: { Element: BiLogoPostgresql, color: 'text-[#306793]' }, label: 'PostgreSQL', rating: 2 },
 		{ Icon: { Element: SiMongodb, color: 'text-[#05AC4E]' }, label: 'MongoDB', rating: 2 },
-		{ Icon: { Element: FaAws, color: 'text-[#FF9900]' }, label: 'AWS', rating: 2 },
+		{ Icon: { Element: FaAws, color: 'text-[#FF9900]' }, label: 'AWS', rating: 3 },
 		{ Icon: { Element: DiGoogleCloudPlatform, color: 'text-[#2FA1FB]' }, label: 'GCP', rating: 2 },
 		{ Icon: { Element: SiHaskell, color: 'text-[#999999]' }, label: 'Haskell', rating: 2 },
 		{ Icon: { Element: DiRuby, color: 'text-[#9D0401]' }, label: 'Ruby', rating: 2 },
