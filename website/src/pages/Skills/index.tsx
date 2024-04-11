@@ -46,8 +46,8 @@ export default function Skills() {
 		{ Icon: { Element: FaPython, color: 'text-[#326FA0]' }, label: 'Python', rating: 5 },
 		{ Icon: { Element: SiJavascript, color: 'text-[#F7DF1C]' }, label: 'JavaScript', rating: 5 },
 		{ Icon: { Element: SiTypescript, color: 'text-[#2E79C7]' }, label: 'TypeScript', rating: 5 },
-		{ Icon: { Element: FaC, color: 'text-[#5D6BC1]' }, label: 'C', rating: 3 },
-		{ Icon: { Element: SiCplusplus, color: 'text-[#659BD3]' }, label: 'C++', rating: 3 },
+		{ Icon: { Element: FaC, color: 'text-[#5D6BC1]' }, label: 'C', rating: 4 },
+		{ Icon: { Element: SiCplusplus, color: 'text-[#659BD3]' }, label: 'C++', rating: 4 },
 		{ Icon: { Element: FaDocker, color: 'text-[#0091E2]' }, label: 'Docker', rating: 4 },
 		{ Icon: { Element: FaGitAlt, color: 'text-[#F05033]' }, label: 'Git', rating: 4 },
 		{ Icon: { Element: FaJava, color: 'text-[#EB2F2E]' }, label: 'Java', rating: 2 },
@@ -71,7 +71,7 @@ export default function Skills() {
 		{ Icon: { Element: SiFlutter, color: 'text-[#54C4F8]' }, label: 'Flutter', rating: 3 },
 		{ Icon: { Element: SiJupyter, color: 'text-[#F47820]' }, label: 'PyNotebooks', rating: 3 },
 		{ Icon: { Element: SiWebpack, color: 'text-[#8ED6FB]' }, label: 'Webpack', rating: 2 },
-		{ Icon: { Element: SiVuedotjs, color: 'text-[#3EB984]' }, label: 'Vue', rating: 2 },
+		{ Icon: { Element: SiVuedotjs, color: 'text-[#3EB984]' }, label: 'Vue', rating: 4 },
 	];
 
 	skills = skills
