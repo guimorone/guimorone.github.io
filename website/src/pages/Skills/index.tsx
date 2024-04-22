@@ -50,7 +50,7 @@ export default function Skills() {
 		{ Icon: { Element: SiCplusplus, color: 'text-[#659BD3]' }, label: 'C++', rating: 4 },
 		{ Icon: { Element: FaDocker, color: 'text-[#0091E2]' }, label: 'Docker', rating: 4 },
 		{ Icon: { Element: FaGitAlt, color: 'text-[#F05033]' }, label: 'Git', rating: 4 },
-		{ Icon: { Element: FaJava, color: 'text-[#EB2F2E]' }, label: 'Java', rating: 2 },
+		{ Icon: { Element: FaJava, color: 'text-[#EB2F2E]' }, label: 'Java', rating: 3 },
 		{ Icon: { Element: SiFlask }, label: 'Flask', rating: 5 },
 		{ Icon: { Element: TbBrandReactNative, color: 'text-[#61DBFB]' }, label: 'React Native', rating: 4 },
 		{ Icon: { Element: FaNodeJs, color: 'text-[#90C43F]' }, label: 'Node', rating: 4 },

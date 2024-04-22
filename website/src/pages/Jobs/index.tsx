@@ -12,6 +12,8 @@ import {
 	EDUCANDUS_LINKEDIN_URL,
 	ACASO_URL,
 	ACASO_LINKEDIN_URL,
+	NEUROTECH_URL,
+	NEUROTECH_LINKEDIN_URL,
 	JALAN_URL,
 	JALAN_LINKEDIN_URL,
 } from '../../constants/urls';
@@ -23,8 +25,20 @@ export default function Jobs() {
 	const experiences = [
 		{
 			title: 'Software Engineer | Full-time',
-			subtitle: 'Jalan. Apr 2024 - Present',
+			subtitle: 'Neurotech. Apr 2024 - Present',
 			description: '',
+			comments: ['Skills/Technologies: Java · Python · AWS.'],
+			links: [
+				{ Icon: GlobeAltIcon, label: 'Website', url: NEUROTECH_URL },
+				{ Icon: LinkedInIcon, label: 'LinkedIn', url: NEUROTECH_LINKEDIN_URL },
+			],
+			Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
+		},
+		{
+			title: 'Software Engineer | Full-time',
+			subtitle: 'Jalan. Apr 2024 - Present',
+			description:
+				'Working as a Full Stack developer using VueJS and Quasar along with Python and Lambda Functions (AWS).',
 			comments: ['Skills/Technologies: Vue · Python · AWS.'],
 			links: [
 				{ Icon: GlobeAltIcon, label: 'Website', url: JALAN_URL },
