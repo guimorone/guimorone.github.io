@@ -71,7 +71,7 @@ export default function Skills() {
 		{ Icon: { Element: SiFlutter, color: 'text-[#54C4F8]' }, label: 'Flutter', rating: 3 },
 		{ Icon: { Element: SiJupyter, color: 'text-[#F47820]' }, label: 'PyNotebooks', rating: 3 },
 		{ Icon: { Element: SiWebpack, color: 'text-[#8ED6FB]' }, label: 'Webpack', rating: 2 },
-		{ Icon: { Element: SiVuedotjs, color: 'text-[#3EB984]' }, label: 'Vue', rating: 4 },
+		{ Icon: { Element: SiVuedotjs, color: 'text-[#3EB984]' }, label: 'Vue', rating: 2 },
 	];
 
 	skills = skills

@@ -36,7 +36,7 @@ export default function Home() {
 				Feel free to explore and learn more about me.
 			</p>
 			<div className="flex flex-col items-center gap-y-1">
-				<p className="mb-1.5 text-base leading-6 text-zinc-300">If you just want my Resumè, here it is:</p>
+				<p className="mb-1.5 text-base leading-6 text-zinc-300">If you just want my Résumé, here it is:</p>
 				<Button isProcessing={isProcessing} color="dark" onClick={onDownloadFile}>
 					<PDFIcon className="mr-2 h-5 w-5" /> Download CV
 				</Button>
