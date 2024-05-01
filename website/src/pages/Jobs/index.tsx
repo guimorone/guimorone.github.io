@@ -26,8 +26,8 @@ export default function Jobs() {
 		{
 			title: 'Software Engineer | Full-time',
 			subtitle: 'Neurotech. Apr 2024 - Present',
-			description: 'Backend Engineer.',
-			comments: ['Skills/Technologies: Java · Python · AWS.'],
+			description: 'Backend Engineer and Data Engineer with Python and FastAPI.',
+			comments: ['Skills/Technologies: Python · FastAPI · AWS · Airflow · Java.'],
 			links: [
 				{ Icon: GlobeAltIcon, label: 'Website', url: NEUROTECH_URL },
 				{ Icon: LinkedInIcon, label: 'LinkedIn', url: NEUROTECH_LINKEDIN_URL },
