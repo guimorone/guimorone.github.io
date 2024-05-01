@@ -1,6 +1,6 @@
 # Personal WebSite
 
-Application using TailwindCSS and ReactJS.
+Application using React with TypeScript and TailwindCSS.
 
 ## Dependencies
 
