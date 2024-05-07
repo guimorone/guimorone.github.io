@@ -36,9 +36,9 @@ export default function Jobs() {
 		},
 		{
 			title: 'Software Engineer | Full-time',
-			subtitle: 'Jalan. Apr 2024 - Present',
+			subtitle: 'Jalan. Apr 2024 - May 2024',
 			description:
-				'Working as a Full Stack developer using VueJS and Quasar along with Python and Lambda Functions (AWS).',
+				'Worked as a Full Stack developer using VueJS and Quasar along with Python and Lambda Functions (AWS).',
 			comments: ['Skills/Technologies: Vue · Python · AWS.'],
 			links: [
 				{ Icon: GlobeAltIcon, label: 'Website', url: JALAN_URL },
