@@ -30,6 +30,7 @@ import {
 	SiVuedotjs,
 	SiFastapi,
 	SiApacheairflow,
+	SiTerraform,
 } from 'react-icons/si';
 import { DiGoogleCloudPlatform, DiRuby } from 'react-icons/di';
 import { BiLogoPostgresql } from 'react-icons/bi';
@@ -76,6 +77,7 @@ export default function Skills() {
 		{ Icon: { Element: SiVuedotjs, color: 'text-[#3EB984]' }, label: 'Vue', rating: 1 },
 		{ Icon: { Element: SiFastapi, color: 'text-[#04978A]' }, label: 'FastAPI', rating: 5 },
 		{ Icon: { Element: SiApacheairflow, color: 'text-[#FF7557]' }, label: 'Airflow', rating: 3 },
+		{ Icon: { Element: SiTerraform, color: 'text-[#7B42BC]' }, label: 'Terraform', rating: 3 },
 	];
 
 	skills = skills
