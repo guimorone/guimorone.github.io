@@ -7,7 +7,7 @@ export interface IFeedProps {
 	activity: {
 		title: string;
 		subtitle: string;
-		description?: string;
+		description?: string | string[];
 		comments?: string[];
 		Icon?: { Element: IconType; background?: string };
 		links?: { Icon: IconType; color?: string; label: string; url: string }[];
@@ -38,9 +38,21 @@ const Feed: FC<IFeedProps> = ({ activity }) => {
 										<h3 className="text-lg md:text-xl text-zinc-100">{item.title}</h3>
 										<p className="text-xs md:text-sm text-zinc-300">{item.subtitle}</p>
 									</div>
-									{item.description && (
-										<p className="text-sm md:text-base text-zinc-300 text-justify">{item.description}</p>
-									)}
+									{item.description &&
+										(item.description instanceof Array ? (
+											<ul role="list" className="space-y-0.5 list-inside list-disc">
+												{item.description.map((d, idx) => (
+													<li
+														key={`feed_${item.title}_${index}_description_${idx}`}
+														className="text-sm md:text-base text-zinc-300 text-justify"
+													>
+														{d}
+													</li>
+												))}
+											</ul>
+										) : (
+											<p className="text-sm md:text-base text-zinc-300 text-justify">{item.description}</p>
+										))}
 									{item.comments && (
 										<div className="text-xs md:text-sm text-zinc-300">
 											{item.comments.map((c, idx) => (

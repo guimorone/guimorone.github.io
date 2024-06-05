@@ -26,8 +26,13 @@ export default function Jobs() {
 		{
 			title: 'Software Engineer | Full-time',
 			subtitle: 'Neurotech. Apr 2024 - Present',
-			description: 'Backend Engineer and Data Engineer with Python and FastAPI.',
-			comments: ['Skills/Technologies: Python · FastAPI · AWS · Terraform · Airflow · Java.'],
+			description: [
+				'In general, using skills in backend development (FastAPI), data engineering, Terraform, Git, Airflow and cloud computing (AWS).',
+				'Collaborate with cross-functional teams to achieve project goals.',
+				'Ensure high-quality, scalable application development.',
+				'Using Amazon Web Services such as Lambda, DynamoDB, EC2, Athena, S3 and more.',
+			],
+			comments: ['Skills/Technologies: Python · FastAPI · AWS · Terraform · Airflow.'],
 			links: [
 				{ Icon: GlobeAltIcon, label: 'Website', url: NEUROTECH_URL },
 				{ Icon: LinkedInIcon, label: 'LinkedIn', url: NEUROTECH_LINKEDIN_URL },
@@ -60,8 +65,18 @@ export default function Jobs() {
 		{
 			title: 'Software Engineer | Full-time',
 			subtitle: 'Oncase. Feb 2022 - Dec 2023 (Feb 2022 - Aug 2022 as an intern)',
-			description:
-				'I developed Big Data applications that demanded high efficiency and scalability, as well as low cost.',
+			description: [
+				'Developed Big Data applications with a focus on high efficiency, scalability, and low cost.',
+				'Developed frontend applications using React (JavaScript, TypeScript and HTML/CSS) and Redux.',
+				'Implemented backend functionality using Python frameworks Flask and Django.',
+				'Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.',
+				'In general, utilized skills in web development (Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing.',
+				'Collaborated with cross-functional teams to achieve project goals.',
+				'Enhanced customer relationships through the delivery of top-notch solutions.',
+				'Ensured high-quality and scalable application development.',
+				'Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.',
+				'Utilized Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.',
+			],
 			comments: [
 				'Skills/Technologies: Django · React.js · TailwindCSS · TypeScript · Continuous Integration and Continuous Delivery (CI/CD) · Docker · Cloud Computing · Git · Object-Relational Mapping (ORM) · Web Services API · Responsive Web Design · Python · Software Development · SASS · Databases · Amazon Web Services (AWS) · Programming · Extract, Transform, Load (ETL) · Google Cloud Platform (GCP) · REST APIs · Flask · Redux.js · React Hooks · Linux · Big Data · JavaScript · Amazon Web Services · DevOps · HTML5 · CSS · SQL · MongoDB and more.',
 			],

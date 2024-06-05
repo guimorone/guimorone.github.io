@@ -21,6 +21,15 @@ export default function Projects() {
 		"Allow me to show you some side projects I've worked/been working on throughout my career, whether alone or at college. I would also like to advise that none of them have any interest in profits or any kind of commercial usage.";
 	const projects = [
 		{
+			title: 'Instagram Stats',
+			subtitle: 'Jan 2023 - Nov 2023 and Jun 2024',
+			description:
+				'A Python program to get specific data from Instagram. The project is on hold, but is currently working to get CSV files from followers, followings, and people who do not follow back the account you choose.',
+			comments: ['Skills/Technologies: Programming · Python · Instaloader.'],
+			links: [{ Icon: GitHubIcon, label: 'Project URL', url: INSTAGRAM_STATS_PROJECT_URL }],
+			Icon: { Element: SiInstagram, background: 'bg-[#B733AA]' },
+		},
+		{
 			title: 'URL Shortener',
 			subtitle: 'April 2024',
 			description: 'Program to generate a shortened URL with a focus on using server-side rendering.',
@@ -74,15 +83,6 @@ export default function Projects() {
 				},
 			],
 			Icon: { Element: FaGamepad, background: 'bg-[#0A344D]' },
-		},
-		{
-			title: 'Instagram Stats',
-			subtitle: 'Jan 2023 - Nov 2023',
-			description:
-				'A Python program to get specific data from Instagram. The project is on hold, but is currently working to get CSV files from followers, followings, and people who do not follow back the account you choose.',
-			comments: ['Skills/Technologies: Programming · Python · Instaloader.'],
-			links: [{ Icon: GitHubIcon, label: 'Project URL', url: INSTAGRAM_STATS_PROJECT_URL }],
-			Icon: { Element: SiInstagram, background: 'bg-[#B733AA]' },
 		},
 		{
 			title: 'N-Queens Solver',
