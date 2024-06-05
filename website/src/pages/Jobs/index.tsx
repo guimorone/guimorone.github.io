@@ -52,7 +52,7 @@ export default function Jobs() {
 			Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
 		},
 		{
-			title: 'Mobile Engineer | Freelance',
+			title: 'Mobile Engineer | Freelancer',
 			subtitle: 'aca.so. Mar 2024',
 			description: 'Worked as a Mobile Engineer in a Freelancer project (aca.so mobile app) using React Native.',
 			comments: ['Skills/Technologies: TypeScript · React Native · React Hooks.'],
@@ -87,7 +87,7 @@ export default function Jobs() {
 			Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
 		},
 		{
-			title: 'FullStack Developer | Freelance',
+			title: 'FullStack Developer | Freelancer',
 			subtitle: 'Cheque Fácil. Sep 2023 - Dec 2023',
 			description:
 				'Website made with 3 more colleagues. The main purpose is to identify bank check fields easily, so you do not have to type manually. It also offers API Integration, history download and other features.',
@@ -98,7 +98,7 @@ export default function Jobs() {
 			Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
 		},
 		{
-			title: 'Mobile Engineer | Freelance',
+			title: 'Mobile Engineer | Freelancer',
 			subtitle: 'InSpace. Aug 2022 - Oct 2022',
 			description: 'Identification of objects (censored specificity) from a mobile camera for legal purposes.',
 			comments: ['Skills/Technologies: TypeScript · Software Development · Redux.js · React Native · React Hooks.'],
