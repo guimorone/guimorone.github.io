@@ -87,7 +87,7 @@ export default function Jobs() {
 			Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
 		},
 		{
-			title: 'FullStack Developer | Freelancer',
+			title: 'Full Stack Developer | Freelancer',
 			subtitle: 'Cheque Fácil. Sep 2023 - Dec 2023',
 			description: [
 				'Website made with 3 more colleagues to an external customer.',
