@@ -63,30 +63,6 @@ export default function Jobs() {
 			Icon: { Element: DevicePhoneMobileIcon, background: 'bg-indigo-600' },
 		},
 		{
-			title: 'Software Engineer | Full-time',
-			subtitle: 'Oncase. Feb 2022 - Dec 2023 (Feb 2022 - Aug 2022 as an intern)',
-			description: [
-				'Developed Big Data applications with a focus on high efficiency, scalability, and low cost.',
-				'Developed frontend applications using React (JavaScript, TypeScript and HTML/CSS) and Redux.',
-				'Implemented backend functionality using Python frameworks Flask and Django.',
-				'Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.',
-				'In general, utilized skills in web development (Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing.',
-				'Collaborated with cross-functional teams to achieve project goals.',
-				'Enhanced customer relationships through the delivery of top-notch solutions.',
-				'Ensured high-quality and scalable application development.',
-				'Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.',
-				'Utilized Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.',
-			],
-			comments: [
-				'Skills/Technologies: Django · React.js · TailwindCSS · TypeScript · Continuous Integration and Continuous Delivery (CI/CD) · Docker · Cloud Computing · Git · Object-Relational Mapping (ORM) · Web Services API · Responsive Web Design · Python · Software Development · SASS · Databases · Amazon Web Services (AWS) · Programming · Extract, Transform, Load (ETL) · Google Cloud Platform (GCP) · REST APIs · Flask · Redux.js · React Hooks · Linux · Big Data · JavaScript · Amazon Web Services · DevOps · HTML5 · CSS · SQL · MongoDB and more.',
-			],
-			links: [
-				{ Icon: GlobeAltIcon, label: 'Website', url: ONCASE_URL },
-				{ Icon: LinkedInIcon, label: 'LinkedIn', url: ONCASE_LINKEDIN_URL },
-			],
-			Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
-		},
-		{
 			title: 'Full Stack Developer | Freelancer',
 			subtitle: 'Cheque Fácil. Sep 2023 - Dec 2023',
 			description: [
@@ -112,6 +88,30 @@ export default function Jobs() {
 				{ Icon: LinkedInIcon, label: 'LinkedIn', url: INSPACE_LINKEDIN_URL },
 			],
 			Icon: { Element: DevicePhoneMobileIcon, background: 'bg-indigo-600' },
+		},
+		{
+			title: 'Software Engineer | Full-time',
+			subtitle: 'Oncase. Feb 2022 - Dec 2023 (Feb 2022 - Aug 2022 as an intern)',
+			description: [
+				'Developed Big Data applications with a focus on high efficiency, scalability, and low cost.',
+				'Developed frontend applications using React (JavaScript, TypeScript and HTML/CSS) and Redux.',
+				'Implemented backend functionality using Python frameworks Flask and Django.',
+				'Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.',
+				'In general, utilized skills in web development (Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing.',
+				'Collaborated with cross-functional teams to achieve project goals.',
+				'Enhanced customer relationships through the delivery of top-notch solutions.',
+				'Ensured high-quality and scalable application development.',
+				'Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.',
+				'Utilized Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.',
+			],
+			comments: [
+				'Skills/Technologies: Django · React.js · TailwindCSS · TypeScript · Continuous Integration and Continuous Delivery (CI/CD) · Docker · Cloud Computing · Git · Object-Relational Mapping (ORM) · Web Services API · Responsive Web Design · Python · Software Development · SASS · Databases · Amazon Web Services (AWS) · Programming · Extract, Transform, Load (ETL) · Google Cloud Platform (GCP) · REST APIs · Flask · Redux.js · React Hooks · Linux · Big Data · JavaScript · Amazon Web Services · DevOps · HTML5 · CSS · SQL · MongoDB and more.',
+			],
+			links: [
+				{ Icon: GlobeAltIcon, label: 'Website', url: ONCASE_URL },
+				{ Icon: LinkedInIcon, label: 'LinkedIn', url: ONCASE_LINKEDIN_URL },
+			],
+			Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
 		},
 		{
 			title: 'Game Developer | Internship',
