@@ -89,8 +89,13 @@ export default function Jobs() {
 		{
 			title: 'FullStack Developer | Freelancer',
 			subtitle: 'Cheque Fácil. Sep 2023 - Dec 2023',
-			description:
-				'Website made with 3 more colleagues. The main purpose is to identify bank check fields easily, so you do not have to type manually. It also offers API Integration, history download and other features.',
+			description: [
+				'Website made with 3 more colleagues to an external customer.',
+				'The main purpose is to identify bank check fields easily, so you do not have to type manually.',
+				"The bank check OCR is based on our customer's API, we did not implement it, just the website.",
+				'It also offers API Integration, history download and other features',
+				'Developed using React, TypeScript, TailwindCSS and Django (Python).',
+			],
 			comments: [
 				'Skills/Technologies: Django · TypeScript · Software Development · React.js · Redux.js · React Hooks · TailwindCSS · Continuous Integration and Continuous Delivery (CI/CD) · Docker · Linux.',
 			],
