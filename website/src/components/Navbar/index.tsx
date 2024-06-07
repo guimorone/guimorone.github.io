@@ -19,10 +19,10 @@ const navigation = [
 ];
 
 interface INavbarProps {
-	show: boolean;
+	show?: boolean;
 }
 
-const Navbar: FC<INavbarProps> = ({ show }) => {
+const Navbar: FC<INavbarProps> = ({ show = true }) => {
 	const { pathname } = useLocation();
 	const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
 

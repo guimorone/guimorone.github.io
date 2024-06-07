@@ -4,7 +4,7 @@ import { PDFIcon } from '../../utils/icons';
 import { LAST_UPDATE_CV } from '../../constants';
 import CV from '../../assets/CV-Guilherme.pdf';
 
-const fileName = 'CV-Guilherme.pdf';
+const filename = 'CV-Guilherme.pdf';
 
 export default function Home() {
 	const [isProcessing, setIsProcessing] = useState<boolean>(false);
@@ -19,7 +19,7 @@ export default function Home() {
 
 					const hiddenElement = document.createElement('a');
 					hiddenElement.href = fileURL;
-					hiddenElement.download = fileName;
+					hiddenElement.download = filename;
 					hiddenElement.click();
 					hiddenElement.remove();
 				});

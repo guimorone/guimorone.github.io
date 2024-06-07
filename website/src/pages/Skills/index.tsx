@@ -88,7 +88,7 @@ export default function Skills() {
 		<div className="flex flex-col gap-y-12">
 			<div className="flex flex-col -gap-1 text-left max-w-xl lg:max-w-3xl">
 				<h2 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">{title}</h2>
-				<p className="mt-6 text-base text-zinc-300">{subtitle}</p>
+				<p className="mt-6 text-base text-zinc-300 text-justify">{subtitle}</p>
 			</div>
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 self-center">
 				{skills?.map(({ Icon, label, rating }, index) => (
