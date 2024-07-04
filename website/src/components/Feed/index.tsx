@@ -54,28 +54,28 @@ const Feed: FC<IFeedProps> = ({ activity }) => {
 											<p className="text-sm md:text-base text-zinc-300 text-justify">{item.description}</p>
 										))}
 									{item.comments && (
-										<div className="text-xs md:text-sm text-zinc-300">
-											{item.comments.map((c, idx) => (
-												<p key={`feed_comments_${idx}`}>{c}</p>
+										<div className="space-y-0.5">
+											{item.comments?.map((c, idx) => (
+												<p key={`feed_comments_${idx}`} className="text-xs md:text-sm text-zinc-300">
+													{c}
+												</p>
 											))}
 										</div>
 									)}
 									<div className="flex gap-x-2 md:gap-x-4">
-										{item.links &&
-											item.links.length > 0 &&
-											item.links.map((link, idx) => (
-												<a
-													key={`${link.label}_${idx}`}
-													href={link.url}
-													target="_blank"
-													className={classNames(link.color || 'text-zinc-300 hover:text-zinc-200')}
-												>
-													<Tooltip content={link.label} animation="duration-150">
-														<link.Icon className="w-6 h-6" aria-hidden="true" />
-													</Tooltip>
-													<span className="sr-only">{link.label}</span>
-												</a>
-											))}
+										{item?.links?.map((link, idx) => (
+											<a
+												key={`${link.label}_${idx}`}
+												href={link.url}
+												target="_blank"
+												className={classNames(link.color || 'text-zinc-300 hover:text-zinc-200')}
+											>
+												<Tooltip content={link.label} animation="duration-150">
+													<link.Icon className="w-6 h-6" aria-hidden="true" />
+												</Tooltip>
+												<span className="sr-only">{link.label}</span>
+											</a>
+										))}
 									</div>
 								</div>
 							</div>
