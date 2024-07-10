@@ -80,17 +80,28 @@ export default function Skills() {
 		{ Icon: { Element: SiTerraform, color: 'text-[#7B42BC]' }, label: 'Terraform', rating: 3 },
 	];
 
+	let languages = [
+		{ label: 'Portuguese', description: 'Native', rating: 5 },
+		{ label: 'English', description: 'Advanced', rating: 4 },
+		{ label: 'German', description: 'Beginner', rating: 1 },
+	];
+
 	skills = skills
+		.sort((s1, s2) => (s1.label > s2.label ? 1 : s2.label > s1.label ? -1 : 0))
+		.sort((s1, s2) => s2.rating - s1.rating);
+
+	languages = languages
 		.sort((s1, s2) => (s1.label > s2.label ? 1 : s2.label > s1.label ? -1 : 0))
 		.sort((s1, s2) => s2.rating - s1.rating);
 
 	return (
 		<div className="flex flex-col gap-y-12">
-			<div className="flex flex-col -gap-1 text-left max-w-xl lg:max-w-3xl">
+			<div className="flex flex-col -gap-1 text-left max-w-xl lg:max-w-3xl gap-y-6">
 				<h2 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">{title}</h2>
-				<p className="mt-6 text-base text-zinc-300 text-justify">{subtitle}</p>
+				<p className="text-base text-zinc-300 text-justify">{subtitle}</p>
 			</div>
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 self-center">
+			<h3 className="text-2xl font-bold tracking-tight text-zinc-100 sm:text-3xl">Tools</h3>
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 self-center sm:self-auto">
 				{skills?.map(({ Icon, label, rating }, index) => (
 					<div key={`skill_${label}_${index}`} className="flex items-center gap-x-2">
 						<Icon.Element
@@ -98,6 +109,30 @@ export default function Skills() {
 							aria-hidden="true"
 						/>
 						<p className="text-sm md:text-base text-zinc-100">{label}</p>
+						<Rating size="xs" className="flex items-center md:hidden">
+							<Rating.Star filled={rating >= 1} />
+							<Rating.Star filled={rating >= 2} />
+							<Rating.Star filled={rating >= 3} />
+							<Rating.Star filled={rating >= 4} />
+							<Rating.Star filled={rating >= 5} />
+						</Rating>
+						<Rating size="sm" className="hidden md:flex md:items-center">
+							<Rating.Star filled={rating >= 1} />
+							<Rating.Star filled={rating >= 2} />
+							<Rating.Star filled={rating >= 3} />
+							<Rating.Star filled={rating >= 4} />
+							<Rating.Star filled={rating >= 5} />
+						</Rating>
+					</div>
+				))}
+			</div>
+			<h3 className="text-2xl font-bold tracking-tight text-zinc-100 sm:text-3xl">Languages</h3>
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 self-center sm:self-auto">
+				{languages?.map(({ label, description, rating }, index) => (
+					<div key={`language_${label}_${index}`} className="flex items-center gap-x-2">
+						<p className="text-sm md:text-base text-zinc-100">
+							{label} <span className="text-xs md:text-md text-zinc-300">({description})</span>
+						</p>
 						<Rating size="xs" className="flex items-center md:hidden">
 							<Rating.Star filled={rating >= 1} />
 							<Rating.Star filled={rating >= 2} />
