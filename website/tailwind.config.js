@@ -2,10 +2,10 @@
 import colors from 'tailwindcss/colors';
 import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
-import flowbite from 'flowbite/plugin';
+import flowbite from 'flowbite-react/tailwind';
 
 export default {
-  content: ['node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}', './index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: [flowbite.content(), './index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: { sky: colors.sky, teal: colors.teal, rose: colors.rose },
@@ -15,6 +15,6 @@ export default {
       transitionDuration: { 300: '300ms' },
     },
   },
-  plugins: [forms, typography, flowbite],
+  plugins: [forms, typography, flowbite.plugin()],
   corePlugins: { transitionProperty: false },
 };
