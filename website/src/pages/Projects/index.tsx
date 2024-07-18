@@ -63,7 +63,7 @@ export default function Projects() {
 			description:
 				'A 2D game made with other college colleagues. Inspired in the famous ZType game, but in Portuguese.',
 			comments: [
-				'Skills/Technologies: Game Development · React.js · React Hooks · TailwindCSS · Programming · TypeScript.',
+				'Skills/Technologies: Game Development · React.js · React Hooks · Tailwind CSS · Programming · TypeScript.',
 			],
 			links: [
 				{

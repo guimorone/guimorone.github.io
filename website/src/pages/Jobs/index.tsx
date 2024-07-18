@@ -32,7 +32,7 @@ export default function Jobs() {
 				'Ensure high-quality, scalable application development.',
 				'Using Amazon Web Services such as Lambda, DynamoDB, EC2, Athena, S3 and more.',
 			],
-			comments: ['Skills/Technologies: Python · FastAPI · AWS · Terraform · Airflow.'],
+			comments: ['Skills/Technologies: Python · FastAPI · AWS · Terraform · Airflow · Shell.'],
 			links: [
 				{ Icon: GlobeAltIcon, label: 'Website', url: NEUROTECH_URL },
 				{ Icon: LinkedInIcon, label: 'LinkedIn', url: NEUROTECH_LINKEDIN_URL },
@@ -43,8 +43,8 @@ export default function Jobs() {
 			title: 'Software Engineer | Full-time',
 			subtitle: 'Jalan. Apr 2024 - May 2024',
 			description:
-				'Worked as a Full Stack developer using VueJS and Quasar along with Python and Lambda Functions (AWS).',
-			comments: ['Skills/Technologies: Vue · Python · AWS.'],
+				'Worked as a Full Stack developer using Vue.js and Quasar along with Python and Lambda Functions (AWS).',
+			comments: ['Skills/Technologies: Vue · Python · AWS · Shell.'],
 			links: [
 				{ Icon: GlobeAltIcon, label: 'Website', url: JALAN_URL },
 				{ Icon: LinkedInIcon, label: 'LinkedIn', url: JALAN_LINKEDIN_URL },
@@ -69,11 +69,11 @@ export default function Jobs() {
 				'Website made with 3 more colleagues to an external customer.',
 				'The main purpose is to identify bank check fields easily, so you do not have to type manually.',
 				"The bank check OCR is based on our customer's API, we did not implement it, just the website.",
-				'It also offers API Integration, history download and other features',
-				'Developed using React, TypeScript, TailwindCSS and Django (Python).',
+				'It also offers API Integration, history download and other features.',
+				'Developed using React, TypeScript, Tailwind CSS and Django (Python).',
 			],
 			comments: [
-				'Skills/Technologies: Django · TypeScript · Software Development · React.js · Redux.js · React Hooks · TailwindCSS · Continuous Integration and Continuous Delivery (CI/CD) · Docker · Linux.',
+				'Skills/Technologies: Django · TypeScript · Software Development · React.js · Redux.js · React Hooks · Tailwind CSS · Continuous Integration and Continuous Delivery (CI/CD) · Docker · Linux · Shell.',
 			],
 			links: [{ Icon: GlobeAltIcon, label: 'Website', url: CHEQUEFACIL_URL }],
 			Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
@@ -105,7 +105,7 @@ export default function Jobs() {
 				'Utilized Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.',
 			],
 			comments: [
-				'Skills/Technologies: Django · React.js · TailwindCSS · TypeScript · Continuous Integration and Continuous Delivery (CI/CD) · Docker · Cloud Computing · Git · Object-Relational Mapping (ORM) · Web Services API · Responsive Web Design · Python · Software Development · SASS · Databases · Amazon Web Services (AWS) · Programming · Extract, Transform, Load (ETL) · Google Cloud Platform (GCP) · REST APIs · Flask · Redux.js · React Hooks · Linux · Big Data · JavaScript · Amazon Web Services · DevOps · HTML5 · CSS · SQL · MongoDB and more.',
+				'Skills/Technologies: Django · React.js · Tailwind CSS · TypeScript · Continuous Integration and Continuous Delivery (CI/CD) · Docker · Cloud Computing · Git · Object-Relational Mapping (ORM) · Web Services API · Responsive Web Design · Python · Software Development · SASS · Databases · Amazon Web Services (AWS) · Programming · Extract, Transform, Load (ETL) · Google Cloud Platform (GCP) · REST APIs · Flask · Redux.js · React Hooks · Linux · Big Data · JavaScript · Amazon Web Services · DevOps · HTML5 · CSS · SQL · MongoDB · Shell and more.',
 			],
 			links: [
 				{ Icon: GlobeAltIcon, label: 'Website', url: ONCASE_URL },

@@ -31,10 +31,14 @@ import {
 	SiFastapi,
 	SiApacheairflow,
 	SiTerraform,
+	SiGithub,
+	SiPowershell,
+	SiTailwindcss,
 } from 'react-icons/si';
 import { DiGoogleCloudPlatform, DiRuby } from 'react-icons/di';
 import { BiLogoPostgresql } from 'react-icons/bi';
 import { TbBrandReactNative, TbSql } from 'react-icons/tb';
+import { VscTerminalBash } from 'react-icons/vsc';
 import { classNames } from '../../utils';
 import { LINKEDIN_SKILLS_URL } from '../../constants/urls';
 
@@ -43,7 +47,7 @@ export default function Skills() {
 	const subtitle =
 		'Here I show you my expertise in programming languages, frameworks and other technologies, based on time of experience and in how much I used in my projects through life.';
 
-	let skills = [
+	const skills = [
 		{ Icon: { Element: SiDjango, color: 'text-[#0A2F20]' }, label: 'Django', rating: 5 },
 		{ Icon: { Element: FaReact, color: 'text-[#61DBFB]' }, label: 'React', rating: 5 },
 		{ Icon: { Element: FaPython, color: 'text-[#326FA0]' }, label: 'Python', rating: 5 },
@@ -58,8 +62,8 @@ export default function Skills() {
 		{ Icon: { Element: TbBrandReactNative, color: 'text-[#61DBFB]' }, label: 'React Native', rating: 4 },
 		{ Icon: { Element: FaNodeJs, color: 'text-[#90C43F]' }, label: 'Node', rating: 4 },
 		{ Icon: { Element: FaGolang, color: 'text-[#05ACD7]' }, label: 'Go', rating: 3 },
-		{ Icon: { Element: FaHtml5, color: 'text-[#E54C25]' }, label: 'HTML5', rating: 5 },
-		{ Icon: { Element: FaCss3Alt, color: 'text-[#28A9DF]' }, label: 'CSS3', rating: 4 },
+		{ Icon: { Element: FaHtml5, color: 'text-[#E54C25]' }, label: 'HTML', rating: 5 },
+		{ Icon: { Element: FaCss3Alt, color: 'text-[#28A9DF]' }, label: 'CSS', rating: 4 },
 		{ Icon: { Element: FcLinux }, label: 'Linux', rating: 3 },
 		{ Icon: { Element: SiJquery, color: 'text-[#0C68AC]' }, label: 'JQuery', rating: 3 },
 		{ Icon: { Element: TbSql, color: 'text-[#0279D6]' }, label: 'SQL', rating: 3 },
@@ -78,19 +82,19 @@ export default function Skills() {
 		{ Icon: { Element: SiFastapi, color: 'text-[#04978A]' }, label: 'FastAPI', rating: 5 },
 		{ Icon: { Element: SiApacheairflow, color: 'text-[#FF7557]' }, label: 'Airflow', rating: 3 },
 		{ Icon: { Element: SiTerraform, color: 'text-[#7B42BC]' }, label: 'Terraform', rating: 3 },
-	];
-
-	let languages = [
-		{ label: 'Portuguese', description: 'Native', rating: 5 },
-		{ label: 'English', description: 'Advanced', rating: 4 },
-		{ label: 'German', description: 'Beginner', rating: 1 },
-	];
-
-	skills = skills
+		{ Icon: { Element: SiGithub }, label: 'GitHub', rating: 5 },
+		{ Icon: { Element: VscTerminalBash }, label: 'Bash', rating: 4 },
+		{ Icon: { Element: SiPowershell, color: 'text-[#2671BE]' }, label: 'PowerShell', rating: 3 },
+		{ Icon: { Element: SiTailwindcss, color: 'text-[#09B9D8]' }, label: 'Tailwind CSS', rating: 5 },
+	]
 		.sort((s1, s2) => (s1.label > s2.label ? 1 : s2.label > s1.label ? -1 : 0))
 		.sort((s1, s2) => s2.rating - s1.rating);
 
-	languages = languages
+	const languages = [
+		{ label: 'Portuguese', description: 'Native', rating: 5 },
+		{ label: 'English', description: 'Advanced', rating: 4 },
+		{ label: 'German', description: 'Beginner', rating: 1 },
+	]
 		.sort((s1, s2) => (s1.label > s2.label ? 1 : s2.label > s1.label ? -1 : 0))
 		.sort((s1, s2) => s2.rating - s1.rating);
 
