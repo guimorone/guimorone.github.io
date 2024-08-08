@@ -5,7 +5,6 @@ export const LINKEDIN_SKILLS_URL = 'https://www.linkedin.com/in/guimorone/detail
 export const WEBSITE_CODE_URL = 'https://github.com/guimorone/guimorone.github.io';
 export const MAILTO_URL = 'mailto:guimorone@gmail.com';
 export const CIN_UFPE_URL = 'https://portal.cin.ufpe.br';
-export const ESS_DELIVERY_APP_PROJECT = 'https://github.com/guimorone/ess-delivery-app';
 export const ONCASE_URL = 'https://www.oncase.com.br';
 export const ONCASE_LINKEDIN_URL = 'https://www.linkedin.com/company/oncase';
 export const INSPACE_URL = 'https://inspace.tech';
