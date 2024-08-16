@@ -82,7 +82,9 @@ export default function Jobs() {
 			title: 'Mobile Engineer | Freelancer',
 			subtitle: 'InSpace. Aug 2022 - Oct 2022',
 			description: 'Identification of objects (censored specificity) from a mobile camera for legal purposes.',
-			comments: ['Skills/Technologies: TypeScript · Software Development · Redux.js · React Native · React Hooks.'],
+			comments: [
+				'Skills/Technologies: TypeScript · Software Development · Redux.js · React Native · React Hooks.',
+			],
 			links: [
 				{ Icon: GlobeAltIcon, label: 'Website', url: INSPACE_URL },
 				{ Icon: LinkedInIcon, label: 'LinkedIn', url: INSPACE_LINKEDIN_URL },

@@ -15,7 +15,12 @@ const navigation = [
 	{ name: 'Jobs', href: paths.JOBS, Icon: BriefcaseIcon, useLink: true },
 	{ name: 'Skills', href: paths.SKILLS, Icon: GiSkills, useLink: true },
 	{ name: 'Projects', href: paths.PROJECTS, Icon: GrProjects, useLink: true },
-	{ name: 'Licenses & Certifications', href: paths.CERTIFICATIONS, Icon: BiSolidCertification, useLink: true },
+	{
+		name: 'Licenses & Certifications',
+		href: paths.CERTIFICATIONS,
+		Icon: BiSolidCertification,
+		useLink: true,
+	},
 ];
 
 interface INavbarProps {
@@ -118,7 +123,9 @@ const Navbar: FC<INavbarProps> = ({ show = true }) => {
 													to={item.href}
 													onClick={handleCloseMobileMenu}
 													className={classNames(
-														isCurrent ? 'bg-zinc-800 hover:cursor-default' : 'hover:bg-zinc-800 hover:cursor-pointer',
+														isCurrent
+															? 'bg-zinc-800 hover:cursor-default'
+															: 'hover:bg-zinc-800 hover:cursor-pointer',
 														'-mx-3 flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-zinc-100'
 													)}
 												>
