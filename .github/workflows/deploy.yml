@@ -21,11 +21,12 @@ jobs:
           ref: ${{ github.sha }}
           fetch-depth: '0'
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ vars.NODE_VERSION }}
 
-      - name: Deploy with npm
+      - name: Deploy
         run: |
           cd $GITHUB_WORKSPACE/website
           npm install
