@@ -28,20 +28,6 @@ export default function Certifications() {
 			Icon: { Element: SiUdemy, background: 'bg-[#A632F1]' },
 		},
 		{
-			title: 'Google Cloud Computing Foundations: Cloud Computing Fundamentals - Locales',
-			subtitle: 'Google Cloud Skills Boost. Mar 2023',
-			description: 'Credential ID: 3302433',
-			links: [
-				{
-					Icon: GrCertificate,
-					color: 'text-teal-300 hover:text-teal-200',
-					label: 'Credential URL',
-					url: GOOGLE_CLOUD_FUNDAMENTALS_COURSE_CERT_URL,
-				},
-			],
-			Icon: { Element: SiGooglecloud, background: 'bg-blue-600' },
-		},
-		{
 			title: 'Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud - Locales',
 			subtitle: 'Google Cloud Skills Boost. Mar 2023',
 			description: 'Credential ID: 3311200',
@@ -79,6 +65,20 @@ export default function Certifications() {
 					color: 'text-teal-300 hover:text-teal-200',
 					label: 'Credential URL',
 					url: GOOGLE_CLOUD_NETWORKING_COURSE_CERT_URL,
+				},
+			],
+			Icon: { Element: SiGooglecloud, background: 'bg-blue-600' },
+		},
+		{
+			title: 'Google Cloud Computing Foundations: Cloud Computing Fundamentals - Locales',
+			subtitle: 'Google Cloud Skills Boost. Mar 2023',
+			description: 'Credential ID: 3302433',
+			links: [
+				{
+					Icon: GrCertificate,
+					color: 'text-teal-300 hover:text-teal-200',
+					label: 'Credential URL',
+					url: GOOGLE_CLOUD_FUNDAMENTALS_COURSE_CERT_URL,
 				},
 			],
 			Icon: { Element: SiGooglecloud, background: 'bg-blue-600' },
