@@ -11,10 +11,8 @@ export default function Academic() {
 	const experiences = [
 		{
 			title: 'Bachelor in Computer Engineering',
-			subtitle: 'Federal University of Pernambuco. Feb 2019 - Present',
-			description:
-				'I am engaged in the study of designing systems that integrate computer functionality with control systems, communications, and hardware components.',
-			comments: ['Expect to graduate by August 2024.', 'GPA (CR): 9.03/10.0'],
+			subtitle: 'Federal University of Pernambuco. Feb 2019 - Aug 2024',
+			comments: ['Final grade (GPA): 9.03/10.0'],
 			Icon: { Element: GraduationCap, background: 'bg-rose-600' },
 		},
 		{
