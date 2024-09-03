@@ -79,19 +79,6 @@ export default function Jobs() {
 			Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
 		},
 		{
-			title: 'Mobile Engineer | Freelancer',
-			subtitle: 'InSpace. Aug 2022 - Oct 2022',
-			description: 'Identification of objects (censored specificity) from a mobile camera for legal purposes.',
-			comments: [
-				'Skills/Technologies: TypeScript · Software Development · Redux.js · React Native · React Hooks.',
-			],
-			links: [
-				{ Icon: GlobeAltIcon, label: 'Website', url: INSPACE_URL },
-				{ Icon: LinkedInIcon, label: 'LinkedIn', url: INSPACE_LINKEDIN_URL },
-			],
-			Icon: { Element: DevicePhoneMobileIcon, background: 'bg-indigo-600' },
-		},
-		{
 			title: 'Software Engineer | Full-time',
 			subtitle: 'Oncase. Feb 2022 - Dec 2023 (Feb 2022 - Aug 2022 as an intern)',
 			description: [
@@ -114,6 +101,19 @@ export default function Jobs() {
 				{ Icon: LinkedInIcon, label: 'LinkedIn', url: ONCASE_LINKEDIN_URL },
 			],
 			Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
+		},
+		{
+			title: 'Mobile Engineer | Freelancer',
+			subtitle: 'InSpace. Aug 2022 - Oct 2022',
+			description: 'Identification of objects (censored specificity) from a mobile camera for legal purposes.',
+			comments: [
+				'Skills/Technologies: TypeScript · Software Development · Redux.js · React Native · React Hooks.',
+			],
+			links: [
+				{ Icon: GlobeAltIcon, label: 'Website', url: INSPACE_URL },
+				{ Icon: LinkedInIcon, label: 'LinkedIn', url: INSPACE_LINKEDIN_URL },
+			],
+			Icon: { Element: DevicePhoneMobileIcon, background: 'bg-indigo-600' },
 		},
 		{
 			title: 'Game Developer | Internship',
