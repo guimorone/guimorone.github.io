@@ -4,8 +4,6 @@ export const LINKEDIN = 'https://www.linkedin.com/in/guimorone';
 export const LINKEDIN_SKILLS_URL = 'https://www.linkedin.com/in/guimorone/details/skills';
 export const WEBSITE_CODE_URL = 'https://github.com/guimorone/guimorone.github.io';
 export const MAILTO_URL = 'mailto:guimorone@gmail.com';
-export const TURING_PROFILE_URL =
-	'https://matching.turing.com/developer-resume-preview/b5cae09b27e9f6881482224f37bfd5db40ee6352fababb';
 export const CIN_UFPE_URL = 'https://portal.cin.ufpe.br';
 export const ONCASE_URL = 'https://www.oncase.com.br';
 export const ONCASE_LINKEDIN_URL = 'https://www.linkedin.com/company/oncase';
