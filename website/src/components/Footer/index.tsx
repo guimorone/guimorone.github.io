@@ -27,7 +27,7 @@ export default function Footer() {
 				<div className="flex justify-center space-x-6 md:order-2">
 					{navigation.map(({ name, href, target, Icon }, index) => (
 						<a
-							key={`footer_item_${name}_${index}`}
+							key={`footer-item-${name}-${index}`}
 							href={href}
 							target={target}
 							className="text-zinc-200 hover:cursor-pointer hover:text-zinc-400"

@@ -19,7 +19,7 @@ const Feed: FC<IFeedProps> = ({ activity }) => {
 		<div className="flow-root">
 			<ul role="list" className="-mb-8">
 				{activity.map((item, index) => (
-					<li key={`feed_${item.title}_${index}`}>
+					<li key={`feed-${item.title}-${index}`}>
 						<div className="relative pb-8">
 							{index !== activity.length - 1 ? (
 								<span className="absolute left-4 top-4 -ml-px h-full w-0.5 bg-zinc-400" aria-hidden="true" />
@@ -43,7 +43,7 @@ const Feed: FC<IFeedProps> = ({ activity }) => {
 											<ul role="list" className="space-y-0.5 list-inside list-disc">
 												{item.description.map((d, idx) => (
 													<li
-														key={`feed_${item.title}_${index}_description_${idx}`}
+														key={`feed-${item.title}-${index}-description-${idx}`}
 														className="text-sm md:text-base text-zinc-300 text-justify"
 													>
 														{d}
@@ -56,7 +56,7 @@ const Feed: FC<IFeedProps> = ({ activity }) => {
 									{item.comments && (
 										<div className="space-y-0.5">
 											{item.comments?.map((c, idx) => (
-												<p key={`feed_comments_${idx}`} className="text-xs md:text-sm text-zinc-300">
+												<p key={`feed-comments-${idx}`} className="text-xs md:text-sm text-zinc-300">
 													{c}
 												</p>
 											))}
@@ -65,7 +65,7 @@ const Feed: FC<IFeedProps> = ({ activity }) => {
 									<div className="flex gap-x-2 md:gap-x-4">
 										{item?.links?.map((link, idx) => (
 											<a
-												key={`${link.label}_${idx}`}
+												key={`${link.label}-${idx}`}
 												href={link.url}
 												target="_blank"
 												className={classNames(link.color || 'text-zinc-300 hover:text-zinc-200')}

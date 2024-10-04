@@ -3,7 +3,7 @@ import { useLocation, Link } from 'react-router-dom';
 import { GiSkills } from 'react-icons/gi';
 import { GrProjects } from 'react-icons/gr';
 import { BiSolidCertification } from 'react-icons/bi';
-import { Dialog } from '@headlessui/react';
+import { Dialog, DialogPanel } from '@headlessui/react';
 import { BriefcaseIcon, NewspaperIcon, AcademicCapIcon } from '@heroicons/react/20/solid';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { classNames } from '../../utils';
@@ -56,7 +56,7 @@ const Navbar: FC<INavbarProps> = ({ show = true }) => {
 							onClick={handleOpenMobileMenu}
 						>
 							<span className="sr-only">Open menu</span>
-							<Bars3Icon className="h-8 w-auto sm:10 lg:h-12" aria-hidden="true" />
+							<Bars3Icon className="h-8 w-auto sm:10" aria-hidden="true" />
 						</button>
 					</div>
 					<div className="hidden xl:flex xl:gap-x-12">
@@ -64,7 +64,7 @@ const Navbar: FC<INavbarProps> = ({ show = true }) => {
 							const isCurrent = item.useLink && pathname === item.href;
 
 							return (
-								<Fragment key={`navbar_item_${item.name}_${index}`}>
+								<Fragment key={`navbar-item-${item.name}-${index}`}>
 									{!item.useLink && <hr className="-mx-6 w-[1.5px] h-auto border-t-0 bg-zinc-400" />}
 									{item.useLink ? (
 										<Link
@@ -99,7 +99,7 @@ const Navbar: FC<INavbarProps> = ({ show = true }) => {
 			</nav>
 			<Dialog as="div" className="xl:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
 				<div className="fixed inset-0 z-50" />
-				<Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-b from-zinc-500 to-zinc-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+				<DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-b from-zinc-500 to-zinc-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
 					<div className="flex items-center justify-between">
 						<button
 							type="button"
@@ -117,7 +117,7 @@ const Navbar: FC<INavbarProps> = ({ show = true }) => {
 									const isCurrent = item.useLink && pathname === item.href;
 
 									return (
-										<Fragment key={`navbar_item_${item.name}_${index}`}>
+										<Fragment key={`navbar-menu-item-${item.name}-${index}`}>
 											{item.useLink ? (
 												<Link
 													to={item.href}
@@ -151,7 +151,7 @@ const Navbar: FC<INavbarProps> = ({ show = true }) => {
 							</div>
 						</div>
 					</div>
-				</Dialog.Panel>
+				</DialogPanel>
 			</Dialog>
 		</header>
 	);

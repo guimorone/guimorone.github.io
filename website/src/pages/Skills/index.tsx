@@ -61,7 +61,7 @@ export default function Skills() {
 		{ Icon: { Element: SiFlask }, label: 'Flask', rating: 5 },
 		{ Icon: { Element: TbBrandReactNative, color: 'text-[#61DBFB]' }, label: 'React Native', rating: 4 },
 		{ Icon: { Element: FaNodeJs, color: 'text-[#90C43F]' }, label: 'Node', rating: 4 },
-		{ Icon: { Element: FaGolang, color: 'text-[#05ACD7]' }, label: 'Go', rating: 3 },
+		{ Icon: { Element: FaGolang, color: 'text-[#05ACD7]' }, label: 'Go', rating: 2 },
 		{ Icon: { Element: FaHtml5, color: 'text-[#E54C25]' }, label: 'HTML', rating: 5 },
 		{ Icon: { Element: FaCss3Alt, color: 'text-[#28A9DF]' }, label: 'CSS', rating: 4 },
 		{ Icon: { Element: FcLinux }, label: 'Linux', rating: 3 },
@@ -107,7 +107,7 @@ export default function Skills() {
 			<h3 className="text-2xl font-bold tracking-tight text-zinc-100 sm:text-3xl">Tools</h3>
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 self-center sm:self-auto">
 				{skills?.map(({ Icon, label, rating }, index) => (
-					<div key={`skill_${label}_${index}`} className="flex items-center gap-x-2">
+					<div key={`skill-${label}-${index}`} className="flex items-center gap-x-2">
 						<Icon.Element
 							className={classNames(Icon.color || 'text-zinc-100', 'w-auto h-4 sm:h-5 md:h-6')}
 							aria-hidden="true"
@@ -133,7 +133,7 @@ export default function Skills() {
 			<h3 className="text-2xl font-bold tracking-tight text-zinc-100 sm:text-3xl">Languages</h3>
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 self-center sm:self-auto">
 				{languages?.map(({ label, description, rating }, index) => (
-					<div key={`language_${label}_${index}`} className="flex items-center gap-x-2">
+					<div key={`language-${label}-${index}`} className="flex items-center gap-x-2">
 						<p className="text-sm md:text-base text-zinc-100">
 							{label} <span className="text-xs md:text-md text-zinc-300">({description})</span>
 						</p>
