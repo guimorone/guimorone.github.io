@@ -12,7 +12,7 @@ export default function Academic() {
 		{
 			title: 'Bachelor in Computer Engineering',
 			subtitle: 'Federal University of Pernambuco. Feb 2019 - Aug 2024',
-			comments: ['Final grade (GPA): 9.03/10.0'],
+			comments: ['Final grade (GPA): 9.01/10.0'],
 			Icon: { Element: GraduationCap, background: 'bg-rose-600' },
 		},
 		{

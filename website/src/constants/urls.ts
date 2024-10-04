@@ -2,6 +2,8 @@ export const INSTAGRAM = 'https://www.instagram.com/guimorone';
 export const GITHUB = 'https://github.com/guimorone';
 export const LINKEDIN = 'https://www.linkedin.com/in/guimorone';
 export const LINKEDIN_SKILLS_URL = 'https://www.linkedin.com/in/guimorone/details/skills';
+export const TURING_PROFILE_URL =
+	'https://matching.turing.com/developer-resume-preview/ffc1b5dfe786117fdfb82eed8b1b458480ccec76b9b3e5';
 export const WEBSITE_CODE_URL = 'https://github.com/guimorone/guimorone.github.io';
 export const MAILTO_URL = 'mailto:guimorone@gmail.com';
 export const CIN_UFPE_URL = 'https://portal.cin.ufpe.br';
