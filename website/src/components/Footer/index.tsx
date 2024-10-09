@@ -1,4 +1,5 @@
 import { Tooltip } from 'flowbite-react';
+import { GiEuropeanFlag } from 'react-icons/gi';
 import { CodeBracketIcon, EnvelopeIcon } from '@heroicons/react/20/solid';
 import { InstagramIcon, GitHubIcon, LinkedInIcon, TuringLogo } from '../../utils/icons';
 import {
@@ -7,6 +8,7 @@ import {
 	LINKEDIN,
 	WEBSITE_CODE_URL,
 	TURING_PROFILE_URL,
+	EUROPASS_PROFILE_URL,
 	MAILTO_URL,
 } from '../../constants/urls';
 
@@ -15,8 +17,9 @@ const navigation = [
 	{ name: 'GitHub', href: GITHUB, target: '_blank', Icon: GitHubIcon },
 	{ name: 'LinkedIn', href: LINKEDIN, target: '_blank', Icon: LinkedInIcon },
 	{ name: 'Turing Profile', href: TURING_PROFILE_URL, target: '_blank', Icon: TuringLogo },
+	{ name: 'Europass Profile', href: EUROPASS_PROFILE_URL, target: '_blank', Icon: GiEuropeanFlag },
 	{ name: 'E-mail', href: MAILTO_URL, Icon: EnvelopeIcon },
-	{ name: 'Source code', href: WEBSITE_CODE_URL, target: '_blank', Icon: CodeBracketIcon },
+	{ name: 'Source Code', href: WEBSITE_CODE_URL, target: '_blank', Icon: CodeBracketIcon },
 ];
 
 export default function Footer() {

@@ -27,7 +27,7 @@ export default function Jobs() {
 			title: 'Software Engineer | Full-time',
 			subtitle: 'Neurotech. Apr 2024 - Present',
 			description: [
-				'In general, using skills in backend development (FastAPI), data engineering, Terraform, Git, Airflow and cloud computing (AWS).',
+				'In general, using skills in software and backend development with Python, FastAPI, Terraform, Git, Airflow, Bash and cloud computing on AWS.',
 				'Collaborate with cross-functional teams to achieve project goals.',
 				'Ensure high-quality, scalable application development.',
 				'Using Amazon Web Services such as Lambda, DynamoDB, EC2, Athena, S3 and more.',
