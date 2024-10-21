@@ -19,6 +19,7 @@ export default function Projects() {
 	const title = 'Projects';
 	const subtitle =
 		"Allow me to show you some side projects I've worked/been working on throughout my career, whether alone or at college. I would also like to advise that none of them have any interest in profits or any kind of commercial usage.";
+
 	const projects = [
 		{
 			title: 'Instagram Stats',

@@ -11,8 +11,9 @@ import {
 } from '../../constants/urls';
 
 export default function Certifications() {
-	const title = 'License & Certifications';
+	const title = 'Licenses & Certifications';
 	const subtitle = 'Allow me to showcase my certifications on different top-rated online platforms.';
+
 	const licenses = [
 		{
 			title: 'The Complete Flutter Development Bootcamp with Dart',
