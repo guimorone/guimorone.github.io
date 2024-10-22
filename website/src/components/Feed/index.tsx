@@ -3,25 +3,26 @@ import { classNames } from '../../utils';
 import type { FC } from 'react';
 import type { IconType } from '../../utils/icons';
 
-export interface IFeedProps {
-	activity: {
-		title: string;
-		subtitle: string;
-		description?: string | string[];
-		comments?: string[];
-		Icon?: { Element: IconType; background?: string };
-		links?: { Icon: IconType; color?: string; label: string; url: string }[];
-	}[];
+export type ActivityType = {
+	title: string;
+	subtitle: string;
+	description?: string | string[];
+	comments?: string[];
+	Icon?: { Element: IconType; background?: string };
+	links?: { Icon: IconType; color?: string; label: string; url: string }[];
+};
+interface IFeedProps {
+	activities: ActivityType[];
 }
 
-const Feed: FC<IFeedProps> = ({ activity }) => {
+const Feed: FC<IFeedProps> = ({ activities }) => {
 	return (
 		<div className="flow-root">
 			<ul role="list" className="-mb-8">
-				{activity.map((item, index) => (
+				{activities.map((item, index) => (
 					<li key={`feed-${item.title}-${index}`}>
 						<div className="relative pb-8">
-							{index !== activity.length - 1 ? (
+							{index !== activities.length - 1 ? (
 								<span className="absolute left-4 top-4 -ml-px h-full w-0.5 bg-zinc-400" aria-hidden="true" />
 							) : null}
 							<div className="relative flex gap-x-3">
