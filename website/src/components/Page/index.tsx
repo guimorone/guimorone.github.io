@@ -1,6 +1,6 @@
-import ObjectFeed from './ObjectFeed';
 import Photo from '../Photo';
 import Feed, { type ActivityType } from '../Feed';
+import ObjectFeed from '../Feed/ObjectFeed';
 import { classNames } from '../../utils';
 import type { FC, ImgHTMLAttributes } from 'react';
 

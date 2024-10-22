@@ -15,16 +15,17 @@ const ObjectFeed: FC<IObjectFeedProps> = ({ title, activities }) => {
 
 	return (
 		<div className="space-y-6">
-			<div className="flex items-center gap-x-4">
-				<button onClick={handleCollapseToggle}>
-					{isCollapsed ? (
-						<ChevronDownIcon className="h-8 w-auto" aria-hidden="true" />
-					) : (
-						<ChevronUpIcon className="h-8 w-auto" aria-hidden="true" />
-					)}
-				</button>
-				<h2 className="text-2xl font-bold tracking-tight text-zinc-100 sm:text-3xl">{title}</h2>
-			</div>
+			<button
+				onClick={handleCollapseToggle}
+				className="flex items-center gap-x-4 text-zinc-100 hover:text-zinc-300"
+			>
+				{isCollapsed ? (
+					<ChevronDownIcon className="h-8 w-auto" aria-hidden="true" />
+				) : (
+					<ChevronUpIcon className="h-8 w-auto" aria-hidden="true" />
+				)}
+				<h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{title}</h2>
+			</button>
 			<Transition
 				as="div"
 				show={!isCollapsed}
