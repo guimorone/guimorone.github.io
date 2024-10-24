@@ -3,7 +3,7 @@ import { Button } from 'flowbite-react';
 import { downloadFile } from '../../utils';
 import { PDFIcon } from '../../utils/icons';
 import { LAST_UPDATE_CV } from '../../constants';
-import CV from '../../assets/CV-Guilherme.pdf';
+import CV from '../../assets/pdfs/CV-Guilherme.pdf';
 
 const filename = 'CV-Guilherme.pdf';
 
