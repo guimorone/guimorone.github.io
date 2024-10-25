@@ -36,3 +36,8 @@ export interface PhotoProps extends ImgHTMLAttributes<HTMLElement> {
 	containerClassName?: string;
 	className?: string;
 }
+
+export interface TitleProps {
+	title: string;
+	subtitle?: string;
+}

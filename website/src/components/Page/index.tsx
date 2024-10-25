@@ -4,6 +4,7 @@ import ObjectFeed from '../Feed/ObjectFeed';
 import { classNames } from '../../utils';
 import type { FC } from 'react';
 import type { PageProps } from '../../@types/components';
+import Title from '../Title';
 
 const Page: FC<PageProps> = ({ title, subtitle, photo, activities }) => {
 	return (
@@ -14,8 +15,7 @@ const Page: FC<PageProps> = ({ title, subtitle, photo, activities }) => {
 			)}
 		>
 			<div className="w-full max-w-2xl flex flex-col -gap-1">
-				<h2 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">{title}</h2>
-				{subtitle && <p className="mt-6 text-base text-zinc-300 text-justify">{subtitle}</p>}
+				<Title title={title} subtitle={subtitle} />
 				{photo && (
 					<Photo
 						{...photo}

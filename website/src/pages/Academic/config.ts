@@ -10,14 +10,14 @@ export const subtitle: string =
 export const experiences: ActivityType[] = [
 	{
 		title: 'Bachelor in Computer Engineering',
-		subtitle: 'Federal University of Pernambuco. Feb 2019 - Aug 2024',
+		subtitle: 'Federal University of Pernambuco (UFPE). Feb 2019 - Aug 2024',
 		comments: ['Final grade (GPA): 9.01/10.0'],
 		Icon: { Element: GraduationCap, background: 'bg-rose-600' },
 		links: [{ Icon: GiNotebook, label: 'Undergraduate Thesis (PT-BR)', url: TCC_ATTENA_URL }],
 	},
 	{
 		title: 'Student Teaching Assistant',
-		subtitle: 'Federal University of Pernambuco. Jun 2022 - Mar 2024',
+		subtitle: 'Federal University of Pernambuco (UFPE). Jun 2022 - Mar 2024',
 		description: [
 			'Dedicated Student Teaching Assistant in the field of Software and Systems Engineering.',
 			'Provided invaluable support to students in software development and requirements engineering, with a primary goal of crafting top-tier applications of exceptional quality.',
