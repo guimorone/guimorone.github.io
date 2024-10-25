@@ -1,11 +1,12 @@
 export const INSTAGRAM = 'https://www.instagram.com/guimorone';
 export const GITHUB = 'https://github.com/guimorone';
 export const LINKEDIN = 'https://www.linkedin.com/in/guimorone';
-export const LINKEDIN_SKILLS_URL = 'https://www.linkedin.com/in/guimorone/details/skills';
-export const WEBSITE_CODE_URL = 'https://github.com/guimorone/guimorone.github.io';
+export const CODEVOLVELABS = 'https://www.codevolvelabs.com.br';
 export const MAILTO_URL = 'mailto:guimorone@gmail.com';
+export const WEBSITE_CODE_URL = 'https://github.com/guimorone/guimorone.github.io';
 export const CIN_UFPE_URL = 'https://portal.cin.ufpe.br';
 export const TCC_ATTENA_URL = 'https://repositorio.ufpe.br/handle/123456789/58235';
+export const LINKEDIN_SKILLS_URL = 'https://www.linkedin.com/in/guimorone/details/skills';
 export const ONCASE_URL = 'https://www.oncase.com.br';
 export const ONCASE_LINKEDIN_URL = 'https://www.linkedin.com/company/oncase';
 export const INSPACE_URL = 'https://inspace.tech';
