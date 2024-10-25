@@ -1,4 +1,6 @@
+import { GiNotebook } from 'react-icons/gi';
 import { ChalkboardUser, GraduationCap } from '../../utils/icons';
+import { TCC_ATTENA_URL } from '../../constants/urls';
 import type { ActivityType } from '../../@types';
 
 export const title: string = 'Education';
@@ -23,5 +25,6 @@ export const experiences: ActivityType[] = [
 			'Skills/Technologies: ReactJS · Redux · NodeJS · Python · HTML · CSS · Unit Tests · Jest · Supertest · Enzyme · TypeScript · Web Development · Responsive Web Design · Software Development · SASS · Programming · REST APIs · Front-End Development · React Hooks and more.',
 		],
 		Icon: { Element: ChalkboardUser, background: 'bg-rose-600' },
+		links: [{ Icon: GiNotebook, label: 'Undergraduate Thesis (PT-BR)', url: TCC_ATTENA_URL }],
 	},
 ];

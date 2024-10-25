@@ -15,7 +15,7 @@ export default function DefaultPage() {
 
 	useEffect(() => {
 		if (pathname === '/') navigate(HOME);
-		else setDocumentTitle(capitalizeString(pathname.slice(1)) + ' / ' + DEFAULT_DOCUMENT_TITLE);
+		else setDocumentTitle(capitalizeString(pathname.slice(1)) + ' | ' + DEFAULT_DOCUMENT_TITLE);
 	}, [pathname]);
 
 	return (
