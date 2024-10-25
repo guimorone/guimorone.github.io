@@ -3,9 +3,8 @@ import { useLocation, useNavigate, Outlet } from 'react-router-dom';
 import Center from '../components/Center';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { capitalizeString } from '../utils';
+import { getDocumentTitle } from '../utils';
 import { useDocumentTitle } from '../utils/hooks';
-import { DEFAULT_DOCUMENT_TITLE } from '../constants';
 import { HOME } from '../constants/paths';
 
 export default function DefaultPage() {
@@ -15,7 +14,7 @@ export default function DefaultPage() {
 
 	useEffect(() => {
 		if (pathname === '/') navigate(HOME);
-		else setDocumentTitle(capitalizeString(pathname.slice(1)) + ' / ' + DEFAULT_DOCUMENT_TITLE);
+		else setDocumentTitle(getDocumentTitle(pathname));
 	}, [pathname]);
 
 	return (

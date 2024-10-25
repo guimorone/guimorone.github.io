@@ -1,3 +1,4 @@
+import { DEFAULT_DOCUMENT_TITLE } from '../constants';
 import type { Dispatch, SetStateAction } from 'react';
 
 export function classNames(...classes: any[]): string {
@@ -10,6 +11,9 @@ export const capitalizeString = (str: string): string => {
 
 	return `${firstChar}${remainingChars}`;
 };
+
+export const getDocumentTitle = (pathname: string): string =>
+	capitalizeString(pathname.slice(1)) + ' | ' + DEFAULT_DOCUMENT_TITLE;
 
 export async function downloadFile(
 	filePath: string,
