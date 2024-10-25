@@ -1,13 +1,8 @@
 import { classNames } from '../../utils';
-import type { FC, ReactNode, JSX } from 'react';
+import type { FC } from 'react';
+import type { CenterProps } from '../../@types/components';
 
-interface IFuncProps {
-	children: ReactNode;
-	className?: string;
-	HtmlTag?: keyof JSX.IntrinsicElements;
-}
-
-const Center: FC<IFuncProps> = ({ children, className, HtmlTag = 'div' }) => {
+const Center: FC<CenterProps> = ({ children, className, HtmlTag = 'div' }) => {
 	return (
 		<HtmlTag className={classNames(className, 'flex flex-1 self-center items-center justify-center')}>
 			{children}

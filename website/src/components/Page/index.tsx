@@ -1,17 +1,11 @@
 import Photo from '../Photo';
-import Feed, { type ActivityType } from '../Feed';
+import Feed from '../Feed';
 import ObjectFeed from '../Feed/ObjectFeed';
 import { classNames } from '../../utils';
-import type { FC, ImgHTMLAttributes } from 'react';
+import type { FC } from 'react';
+import type { PageProps } from '../../@types/components';
 
-interface IPageProps {
-	title: string;
-	subtitle?: string;
-	photo?: ImgHTMLAttributes<HTMLElement>;
-	activities: ActivityType[] | { [key: string]: ActivityType[] };
-}
-
-const Page: FC<IPageProps> = ({ title, subtitle, photo, activities }) => {
+const Page: FC<PageProps> = ({ title, subtitle, photo, activities }) => {
 	return (
 		<div
 			className={classNames(

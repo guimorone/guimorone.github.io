@@ -1,11 +1,7 @@
-import type { FC, ImgHTMLAttributes } from 'react';
+import type { FC } from 'react';
+import type { PhotoProps } from '../../@types/components';
 
-export interface IPhotoProps extends ImgHTMLAttributes<HTMLElement> {
-	containerClassName?: string;
-	className?: string;
-}
-
-const Photo: FC<IPhotoProps> = ({
+const Photo: FC<PhotoProps> = ({
 	containerClassName = 'max-w-xs px-2.5 lg:max-w-none rounded-2xl bg-zinc-300',
 	className = 'aspect-square rotate-3 rounded-2xl object-cover bg-zinc-800',
 	src,

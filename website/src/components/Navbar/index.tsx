@@ -8,6 +8,7 @@ import { BriefcaseIcon, NewspaperIcon, AcademicCapIcon } from '@heroicons/react/
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { classNames } from '../../utils';
 import * as paths from '../../constants/paths';
+import type { NavbarProps } from '../../@types/components';
 
 const navigation = [
 	{ name: 'About me', href: paths.ABOUT, Icon: NewspaperIcon, useLink: true },
@@ -23,11 +24,7 @@ const navigation = [
 	},
 ];
 
-interface INavbarProps {
-	show?: boolean;
-}
-
-const Navbar: FC<INavbarProps> = ({ show = true }) => {
+const Navbar: FC<NavbarProps> = ({ show = true }) => {
 	const { pathname } = useLocation();
 	const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
 

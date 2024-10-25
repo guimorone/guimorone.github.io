@@ -8,7 +8,7 @@ import {
 	UDEMY_WEB_DEV_COURSE_CERT_URL,
 	UDEMY_FLUTTER_COURSE_CERT_URL,
 } from '../../constants/urls';
-import type { ActivityType } from '../../components/Feed';
+import type { ActivityType } from '../../@types';
 
 export const title: string = 'Licenses & Certifications';
 export const subtitle: string = 'Allow me to showcase my certifications on different top-rated online platforms.';

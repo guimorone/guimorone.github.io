@@ -1,21 +1,9 @@
 import { Tooltip } from 'flowbite-react';
 import { classNames } from '../../utils';
 import type { FC } from 'react';
-import type { IconType } from '../../utils/icons';
+import type { FeedProps } from '../../@types/components';
 
-export type ActivityType = {
-	title: string;
-	subtitle: string;
-	description?: string | string[];
-	comments?: string[];
-	Icon?: { Element: IconType; background?: string };
-	links?: { Icon: IconType; color?: string; label: string; url: string }[];
-};
-interface IFeedProps {
-	activities: ActivityType[];
-}
-
-const Feed: FC<IFeedProps> = ({ activities }) => {
+const Feed: FC<FeedProps> = ({ activities }) => {
 	return (
 		<div className="flow-root">
 			<ul role="list" className="-mb-8">

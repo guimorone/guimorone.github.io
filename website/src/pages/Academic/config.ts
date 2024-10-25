@@ -1,5 +1,5 @@
 import { ChalkboardUser, GraduationCap } from '../../utils/icons';
-import type { ActivityType } from '../../components/Feed';
+import type { ActivityType } from '../../@types';
 
 export const title: string = 'Education';
 export const subtitle: string =
