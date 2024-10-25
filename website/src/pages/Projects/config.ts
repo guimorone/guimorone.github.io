@@ -13,7 +13,7 @@ import {
 	JOJOSUE_PROJECT_URL,
 	URL_SHORTENER_PROJECT_URL,
 } from '../../constants/urls';
-import type { ActivityType } from '../../components/Feed';
+import type { ActivityType } from '../../@types';
 
 export const title: string = 'Projects';
 export const subtitle: string =

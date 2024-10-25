@@ -8,6 +8,7 @@ import Jobs from './pages/Jobs';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Certifications from './pages/Certifications';
+import Warehouse from './pages/Warehouse';
 import * as urlPaths from './constants/paths';
 
 const router = createHashRouter([
@@ -22,6 +23,7 @@ const router = createHashRouter([
 			{ path: urlPaths.SKILLS, element: <Skills /> },
 			{ path: urlPaths.PROJECTS, element: <Projects /> },
 			{ path: urlPaths.CERTIFICATIONS, element: <Certifications /> },
+			{ path: urlPaths.WAREHOUSE, element: <Warehouse /> },
 		],
 	},
 	{ path: '*', loader: () => redirect(urlPaths.DEFAULT) },

@@ -1,13 +1,9 @@
 import { useState, Fragment, type FC } from 'react';
 import { Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/20/solid';
+import type { BannerProps } from '../../@types/components';
 
-interface IBannerProps {
-	title?: string;
-	link: { url: string; label: string };
-}
-
-const Banner: FC<IBannerProps> = ({ title = 'Hey, right here!', link }) => {
+const Banner: FC<BannerProps> = ({ title = 'Hey, right here!', link }) => {
 	const [isShowing, setIsShowing] = useState<boolean>(true);
 
 	const handleCloseBanner = (): void => setIsShowing(false);

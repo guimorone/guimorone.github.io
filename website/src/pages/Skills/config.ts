@@ -38,7 +38,7 @@ import { DiGoogleCloudPlatform, DiRuby } from 'react-icons/di';
 import { BiLogoPostgresql } from 'react-icons/bi';
 import { TbBrandReactNative, TbSql } from 'react-icons/tb';
 import { VscTerminalBash } from 'react-icons/vsc';
-import type { IconType } from '../../utils/icons';
+import type { IconType } from '../../@types/icons';
 
 export const title: string = 'Skills';
 export const subtitle: string =

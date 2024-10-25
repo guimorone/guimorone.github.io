@@ -1,14 +1,10 @@
 import { useState, type FC } from 'react';
 import { Transition } from '@headlessui/react';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
-import Feed, { type ActivityType } from '../Feed';
+import Feed from '../Feed';
+import type { ObjectFeedProps } from '../../@types/components';
 
-interface IObjectFeedProps {
-	title: string;
-	activities: ActivityType[];
-}
-
-const ObjectFeed: FC<IObjectFeedProps> = ({ title, activities }) => {
+const ObjectFeed: FC<ObjectFeedProps> = ({ title, activities }) => {
 	const [isCollapsed, setIsCollapsed] = useState<boolean>(false);
 
 	const handleCollapseToggle = (): void => setIsCollapsed(prev => !prev);
