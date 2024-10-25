@@ -1,5 +1,6 @@
 import type { ReactNode, JSX, ImgHTMLAttributes } from 'react';
 import type { ActivityType } from '.';
+import type { IconType } from './icons';
 
 export interface NavbarProps {
 	show?: boolean;
@@ -40,4 +41,24 @@ export interface PhotoProps extends ImgHTMLAttributes<HTMLElement> {
 export interface TitleProps {
 	title: string;
 	subtitle?: string;
+}
+
+export interface DownloadableProps {
+	title: string;
+	label: string;
+	footerText?: string;
+	filePath: string;
+	filename: string;
+	Icon: IconType;
+}
+
+export interface GridProps {
+	title?: string;
+	children?: ReactNode;
+}
+
+export interface GridContainerProps {
+	title: string;
+	subtitle: string;
+	children?: ReactNode;
 }

@@ -1,10 +1,16 @@
-import Title from '../../components/Title';
-import { title, subtitle } from './config';
+import Grid from '../../components/Grid';
+import GridContainer from '../../components/Grid/Container';
+import Downloadable from '../../components/Downloadable';
+import { title, subtitle, files } from './config';
 
 export default function Warehouse() {
 	return (
-		<div className="w-full mb-auto">
-			<Title title={title} subtitle={subtitle} />
-		</div>
+		<GridContainer title={title} subtitle={subtitle}>
+			<Grid>
+				{files.map((file, index) => (
+					<Downloadable key={`warehouse-file-${file.label}-${index}`} {...file} />
+				))}
+			</Grid>
+		</GridContainer>
 	);
 }

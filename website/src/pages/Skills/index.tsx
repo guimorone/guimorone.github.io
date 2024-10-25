@@ -1,15 +1,14 @@
 import { Rating } from 'flowbite-react';
-import Title from '../../components/Title';
+import Grid from '../../components/Grid';
+import GridContainer from '../../components/Grid/Container';
 import { title, subtitle, skills, languages } from './config';
 import { classNames } from '../../utils';
 import { LINKEDIN_SKILLS_URL } from '../../constants/urls';
 
 export default function Skills() {
 	return (
-		<div className="flex flex-col gap-y-12">
-			<Title title={title} subtitle={subtitle} />
-			<h3 className="text-2xl font-bold tracking-tight text-zinc-100 sm:text-3xl">Tools</h3>
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 self-center sm:self-auto">
+		<GridContainer title={title} subtitle={subtitle}>
+			<Grid title="Tools">
 				{skills?.map(({ Icon, label, rating }, index) => (
 					<div key={`skill-${label}-${index}`} className="flex items-center gap-x-2">
 						<Icon.Element
@@ -33,9 +32,8 @@ export default function Skills() {
 						</Rating>
 					</div>
 				))}
-			</div>
-			<h3 className="text-2xl font-bold tracking-tight text-zinc-100 sm:text-3xl">Languages</h3>
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 self-center sm:self-auto">
+			</Grid>
+			<Grid title="Languages">
 				{languages?.map(({ label, description, rating }, index) => (
 					<div key={`language-${label}-${index}`} className="flex items-center gap-x-2">
 						<p className="text-sm md:text-base text-zinc-100">
@@ -57,13 +55,13 @@ export default function Skills() {
 						</Rating>
 					</div>
 				))}
-			</div>
+			</Grid>
 			<p className="text-xs md:text-sm">
 				If you want to know more,&nbsp;
 				<a href={LINKEDIN_SKILLS_URL} target="_blank" className="text-indigo-300 hover:text-indigo-200">
 					click here
 				</a>
 			</p>
-		</div>
+		</GridContainer>
 	);
 }

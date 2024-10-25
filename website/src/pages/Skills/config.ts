@@ -43,6 +43,7 @@ import type { IconType } from '../../@types/icons';
 export const title: string = 'Skills';
 export const subtitle: string =
 	'Here I show you my expertise in programming languages, frameworks and other technologies, based on time of experience and in how much I used in my projects through life.';
+export const label: string = 'Tools';
 
 export const skills: { Icon: { Element: IconType; color?: string }; label: string; rating: number }[] = [
 	{ Icon: { Element: SiDjango, color: 'text-[#0A2F20]' }, label: 'Django', rating: 5 },
