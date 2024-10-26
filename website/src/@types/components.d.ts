@@ -49,6 +49,7 @@ export interface DownloadableProps {
 	footerText?: string;
 	filePath: string;
 	filename: string;
+	preview?: boolean;
 	Icon: IconType;
 }
 
