@@ -1,25 +1,11 @@
 import { useState, Fragment, type FC } from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import { GiSkills } from 'react-icons/gi';
-import { GrProjects } from 'react-icons/gr';
-import { BiSolidCertification } from 'react-icons/bi';
-import { FaWarehouse } from 'react-icons/fa6';
 import { Dialog, DialogPanel } from '@headlessui/react';
-import { BriefcaseIcon, NewspaperIcon, AcademicCapIcon } from '@heroicons/react/20/solid';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { navigation } from './config';
 import { classNames } from '../../utils';
-import * as paths from '../../constants/paths';
+import { HOME } from '../../constants/paths';
 import type { NavbarProps } from '../../@types/components';
-
-const navigation = [
-	{ name: 'About me', href: paths.ABOUT, Icon: NewspaperIcon, useLink: true },
-	{ name: 'Academic', href: paths.ACADEMIC, Icon: AcademicCapIcon, useLink: true },
-	{ name: 'Jobs', href: paths.JOBS, Icon: BriefcaseIcon, useLink: true },
-	{ name: 'Skills', href: paths.SKILLS, Icon: GiSkills, useLink: true },
-	{ name: 'Projects', href: paths.PROJECTS, Icon: GrProjects, useLink: true },
-	{ name: 'Licenses & Certifications', href: paths.CERTIFICATIONS, Icon: BiSolidCertification, useLink: true },
-	{ name: 'Warehouse', href: paths.WAREHOUSE, Icon: FaWarehouse, useLink: true },
-];
 
 const Navbar: FC<NavbarProps> = ({ show = true }) => {
 	const { pathname } = useLocation();
@@ -38,7 +24,7 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 			<nav className="shadow-md" aria-label="Global">
 				<div className="flex items-center justify-between max-w-7xl mx-auto w-full h-auto max-h-20 px-4 py-4 sm:py-6 lg:px-8 gap-x-2">
 					<div className="flex xl:flex-1">
-						<Link to={paths.HOME} className="-m-1.5 p-1.5 text-zinc-300 hover:text-zinc-200">
+						<Link to={HOME} className="-m-1.5 p-1.5 text-zinc-300 hover:text-zinc-200">
 							<span className="sr-only">Logo</span>
 							<h1 className="font-[Pacifico] text-sm md:text-base">Guilherme Morone</h1>
 						</Link>
