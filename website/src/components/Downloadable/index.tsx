@@ -23,7 +23,7 @@ const Downloadable: FC<DownloadableProps> = ({
 	return (
 		<>
 			<div className="flex flex-col items-center gap-y-1">
-				<p className="mb-1.5 text-base leading-6 text-zinc-300">{title}</p>
+				<p className="mb-1.5 text-base text-center leading-6 text-zinc-300">{title}</p>
 				<div className="flex flex-col lg:flex-row items-center gap-2">
 					{preview && (
 						<Button color="light" onClick={handleShowPreview}>
