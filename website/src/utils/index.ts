@@ -12,8 +12,8 @@ export const capitalizeString = (str: string): string => {
 	return `${firstChar}${remainingChars}`;
 };
 
-export const getDocumentTitle = (pathname: string): string =>
-	capitalizeString(pathname.slice(1)) + ' | ' + DEFAULT_DOCUMENT_TITLE;
+export const getDocumentTitle = (pathname: string, separator: string = ' | '): string =>
+	capitalizeString(pathname.slice(1)) + separator + DEFAULT_DOCUMENT_TITLE;
 
 export async function downloadFile(
 	filePath: string,
