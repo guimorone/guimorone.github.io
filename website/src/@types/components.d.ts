@@ -63,3 +63,8 @@ export interface GridContainerProps {
 	subtitle: string;
 	children?: ReactNode;
 }
+
+export interface CollapsableProps {
+	title: string;
+	children?: ReactNode;
+}

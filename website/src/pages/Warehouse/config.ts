@@ -6,19 +6,24 @@ import type { DownloadableProps } from '../../@types/components';
 export const title: string = 'Warehouse';
 export const subtitle: string = 'Here is where you can view other shared files/documents.';
 
-export const files: DownloadableProps[] = [
+export const documents: { title: string; files: DownloadableProps[] }[] = [
 	{
-		title: "German Course A1.1's conclusion statement",
-		label: 'A1.1',
-		filePath: DeutschunterrichtA11,
-		filename: 'German Course A1.1 - Guilherme.pdf',
-		Icon: PDFIcon,
+		title: 'Languages',
+		files: [
+			{
+				title: "German Course A1.1's conclusion statement",
+				label: 'A1.1',
+				filePath: DeutschunterrichtA11,
+				filename: 'German Course A1.1 - Guilherme.pdf',
+				Icon: PDFIcon,
+			},
+			{
+				title: "German Course A1.2's conclusion statement",
+				label: 'A1.2',
+				filePath: DeutschunterrichtA12,
+				filename: 'German Course A1.2 - Guilherme.pdf',
+				Icon: PDFIcon,
+			},
+		].sort((f1, f2) => (f1.title > f2.title ? 1 : f2.title > f1.title ? -1 : 0)),
 	},
-	{
-		title: "German Course A1.2's conclusion statement",
-		label: 'A1.2',
-		filePath: DeutschunterrichtA12,
-		filename: 'German Course A1.2 - Guilherme.pdf',
-		Icon: PDFIcon,
-	},
-];
+].sort((d1, d2) => (d1.title > d2.title ? 1 : d2.title > d1.title ? -1 : 0));
