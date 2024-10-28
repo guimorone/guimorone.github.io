@@ -8,9 +8,7 @@ export default {
   content: [flowbite.content(), './index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      colors: { sky: colors.sky, teal: colors.teal, rose: colors.rose },
-      width: { 110: '30rem', 200: '40rem' },
-      maxHeight: { 110: '30rem', 200: '40rem' },
+      colors: { teal: colors.teal, rose: colors.rose },
       transitionProperty: { opacity: 'opacity' },
       transitionDuration: { 300: '300ms' },
     },
