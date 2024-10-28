@@ -1,5 +1,5 @@
 import Downloadable from '../../components/Downloadable';
-import { title, label, footerText, filePath, Icon } from './config';
+import { title, label, footerText, filePath, filename, Icon } from './config';
 
 export default function Home() {
 	return (
@@ -10,7 +10,14 @@ export default function Home() {
 				<br />
 				Feel free to explore and learn more about me.
 			</p>
-			<Downloadable title={title} label={label} footerText={footerText} filePath={filePath} Icon={Icon} />
+			<Downloadable
+				title={title}
+				label={label}
+				footerText={footerText}
+				filename={filename}
+				filePath={filePath}
+				Icon={Icon}
+			/>
 		</div>
 	);
 }
