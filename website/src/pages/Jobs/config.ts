@@ -27,12 +27,12 @@ export const experiences: ActivityType[] = [
 		title: 'Software Engineer | Full-time',
 		subtitle: 'Neurotech. Apr 2024 - Present',
 		description: [
-			'In general, using skills in software and backend development with Python, FastAPI, Terraform, Git, Airflow, Bash and cloud computing on AWS.',
+			'In general, using skills in software, data engineering and backend development with Python, FastAPI, Terraform, Git, Airflow, Bash and cloud computing on AWS.',
 			'Collaborate with cross-functional teams to achieve project goals.',
 			'Ensure high-quality, scalable application development.',
 			'Using Amazon Web Services such as Lambda, DynamoDB, EC2, Athena, S3 and more.',
 		],
-		comments: ['Skills/Technologies: Python · FastAPI · AWS · Terraform · Airflow · Shell.'],
+		comments: ['Skills/Technologies: Python · FastAPI · AWS · Terraform · Docker · Airflow · Shell.'],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: NEUROTECH_URL },
 			{ Icon: LinkedInIcon, label: 'LinkedIn', url: NEUROTECH_LINKEDIN_URL },
