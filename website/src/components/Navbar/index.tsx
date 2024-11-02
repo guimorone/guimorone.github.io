@@ -40,15 +40,15 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 						</button>
 					</div>
 					<div className="hidden xl:flex xl:gap-x-12">
-						{navigation.map((item, index) => {
-							const isCurrent = item.useLink && pathname === item.href;
+						{navigation.map(({ name, href, Icon, useLink }, index) => {
+							const isCurrent = useLink && pathname === href;
 
 							return (
-								<Fragment key={`navbar-item-${item.name}-${index}`}>
-									{!item.useLink && <hr className="-mx-6 w-[1.5px] h-auto border-t-0 bg-zinc-400" />}
-									{item.useLink ? (
+								<Fragment key={`navbar-item-${name}-${index}`}>
+									{!useLink && <hr className="-mx-6 w-[1.5px] h-auto border-t-0 bg-zinc-400" />}
+									{useLink ? (
 										<Link
-											to={item.href}
+											to={href}
 											className={classNames(
 												isCurrent
 													? 'text-teal-400 hover:cursor-default relative'
@@ -56,19 +56,19 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 												'flex gap-x-1.5 items-center text-sm font-semibold leading-6'
 											)}
 										>
-											<item.Icon className="w-4 h-4" />
-											<span>{item.name}</span>
+											<Icon className="w-4 h-4" />
+											<span>{name}</span>
 											{isCurrent && (
 												<span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-400/0 via-teal-400/40 to-teal-400/0"></span>
 											)}
 										</Link>
 									) : (
 										<a
-											href={item.href}
+											href={href}
 											className="flex gap-x-1.5 items-center text-sm font-semibold leading-6 text-zinc-100 hover:underline hover:underline-offset-2"
 										>
-											<item.Icon className="w-4 h-4" />
-											<span>{item.name}</span>
+											<Icon className="w-4 h-4" />
+											<span>{name}</span>
 										</a>
 									)}
 								</Fragment>
@@ -93,14 +93,14 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 					<div className="mt-6 flow-root">
 						<div className="-my-6">
 							<div className="space-y-2 py-6">
-								{navigation.map((item, index) => {
-									const isCurrent = item.useLink && pathname === item.href;
+								{navigation.map(({ name, href, Icon, useLink }, index) => {
+									const isCurrent = useLink && pathname === href;
 
 									return (
-										<Fragment key={`navbar-menu-item-${item.name}-${index}`}>
-											{item.useLink ? (
+										<Fragment key={`navbar-menu-item-${name}-${index}`}>
+											{useLink ? (
 												<Link
-													to={item.href}
+													to={href}
 													onClick={handleCloseMobileMenu}
 													className={classNames(
 														isCurrent
@@ -109,19 +109,19 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 														'-mx-3 flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-zinc-100'
 													)}
 												>
-													<item.Icon className="w-4 h-4" />
-													<span>{item.name}</span>
+													<Icon className="w-4 h-4" />
+													<span>{name}</span>
 												</Link>
 											) : (
 												<>
 													<hr className="hidden md:block -mx-6 h-px w-auto border-t-0 bg-zinc-400" />
 													<a
-														href={item.href}
+														href={href}
 														onClick={handleCloseMobileMenu}
 														className="hidden -mx-3 md:flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-zinc-100 hover:bg-zinc-800"
 													>
-														<item.Icon className="w-4 h-4" />
-														<span>{item.name}</span>
+														<Icon className="w-4 h-4" />
+														<span>{name}</span>
 													</a>
 												</>
 											)}

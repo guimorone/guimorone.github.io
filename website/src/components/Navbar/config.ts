@@ -4,8 +4,9 @@ import { BiSolidCertification } from 'react-icons/bi';
 import { FaWarehouse } from 'react-icons/fa6';
 import { BriefcaseIcon, NewspaperIcon, AcademicCapIcon } from '@heroicons/react/20/solid';
 import * as paths from '../../constants/paths';
+import type { NavigationType } from '../../@types';
 
-export const navigation = [
+export const navigation: NavigationType[] = [
 	{ name: 'About me', href: paths.ABOUT, Icon: NewspaperIcon, useLink: true },
 	{ name: 'Academic', href: paths.ACADEMIC, Icon: AcademicCapIcon, useLink: true },
 	{ name: 'Jobs', href: paths.JOBS, Icon: BriefcaseIcon, useLink: true },
