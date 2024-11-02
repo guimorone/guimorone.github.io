@@ -1,6 +1,6 @@
 import { GiNotebook } from 'react-icons/gi';
-import { ChalkboardUser, GraduationCap } from '../../utils/icons';
-import { TCC_ATTENA_URL } from '../../constants/urls';
+import { GraduationCap, GitHubIcon, ChalkboardUser } from '../../utils/icons';
+import { TCC_ATTENA_URL, TCC_PROJECT_URL } from '../../constants/urls';
 import type { ActivityType } from '../../@types';
 
 export const title: string = 'Education';
@@ -13,7 +13,10 @@ export const experiences: ActivityType[] = [
 		subtitle: 'Federal University of Pernambuco (UFPE). Feb 2019 - Aug 2024',
 		comments: ['Final grade (GPA): 9.02/10.0'],
 		Icon: { Element: GraduationCap, background: 'bg-rose-600' },
-		links: [{ Icon: GiNotebook, label: 'Undergraduate Thesis (PT-BR)', url: TCC_ATTENA_URL }],
+		links: [
+			{ Icon: GiNotebook, label: 'Undergraduate Thesis (PT-BR)', url: TCC_ATTENA_URL },
+			{ Icon: GitHubIcon, label: 'Final Project URL', url: TCC_PROJECT_URL },
+		],
 	},
 	{
 		title: 'Student Teaching Assistant',

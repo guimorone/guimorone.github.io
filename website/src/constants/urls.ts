@@ -6,6 +6,7 @@ export const MAILTO_URL = 'mailto:guimorone@gmail.com';
 export const WEBSITE_CODE_URL = 'https://github.com/guimorone/guimorone.github.io';
 export const CIN_UFPE_URL = 'https://portal.cin.ufpe.br';
 export const TCC_ATTENA_URL = 'https://repositorio.ufpe.br/handle/123456789/58235';
+export const TCC_PROJECT_URL = 'https://github.com/guimorone/tcc';
 export const LINKEDIN_SKILLS_URL = 'https://www.linkedin.com/in/guimorone/details/skills';
 export const ONCASE_URL = 'https://www.oncase.com.br';
 export const ONCASE_LINKEDIN_URL = 'https://www.linkedin.com/company/oncase';
