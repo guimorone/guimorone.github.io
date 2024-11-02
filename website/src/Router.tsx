@@ -10,6 +10,7 @@ import Projects from './pages/Projects';
 import Certifications from './pages/Certifications';
 import Warehouse from './pages/Warehouse';
 import * as urlPaths from './constants/paths';
+import type { FC } from 'react';
 
 const router = createHashRouter([
 	{
@@ -29,6 +30,8 @@ const router = createHashRouter([
 	{ path: '*', loader: () => redirect(urlPaths.DEFAULT) },
 ]);
 
+const FallbackElement: FC = () => <Spinner className="h-6 w-6" aria-hidden="true" />;
+
 export default function Router() {
-	return <RouterProvider router={router} fallbackElement={<Spinner className="h-6 w-6" aria-hidden="true" />} />;
+	return <RouterProvider router={router} fallbackElement={<FallbackElement />} />;
 }
