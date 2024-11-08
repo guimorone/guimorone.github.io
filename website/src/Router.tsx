@@ -30,7 +30,7 @@ const router = createHashRouter([
 	{ path: '*', loader: () => redirect(urlPaths.DEFAULT) },
 ]);
 
-const FallbackElement: FC = () => <Spinner className="h-6 w-6" aria-hidden="true" />;
+const FallbackElement: FC = () => <Spinner className="w-6 h-6" aria-hidden="true" />;
 
 export default function Router() {
 	return <RouterProvider router={router} fallbackElement={<FallbackElement />} />;

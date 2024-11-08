@@ -15,7 +15,7 @@ const Downloadable: FC<DownloadableProps> = ({
 		<>
 			<div className="flex flex-col items-center gap-y-1">
 				<p className="mb-1.5 text-base text-center leading-6 text-zinc-300">{title}</p>
-				<div className="flex flex-col lg:flex-row items-center gap-2">
+				<div className="flex flex-col items-center gap-2 lg:flex-row">
 					{preview && (
 						<a
 							href={filePath}

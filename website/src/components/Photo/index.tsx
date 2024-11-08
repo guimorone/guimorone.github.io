@@ -3,7 +3,7 @@ import type { PhotoProps } from '../../@types/components';
 
 const Photo: FC<PhotoProps> = ({
 	containerClassName = 'max-w-xs px-2.5 lg:max-w-none rounded-2xl bg-zinc-300',
-	className = 'aspect-square rotate-3 rounded-2xl object-cover bg-zinc-800',
+	className = 'object-cover aspect-square rotate-3 rounded-2xl bg-zinc-800',
 	src,
 	alt,
 	...props

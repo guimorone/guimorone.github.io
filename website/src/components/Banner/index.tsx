@@ -19,7 +19,7 @@ const Banner: FC<BannerProps> = ({ title = 'Hey, right here!', link }) => {
 			leaveFrom="opacity-100"
 			leaveTo="opacity-0"
 		>
-			<div className="pointer-events-none fixed inset-x-0 bottom-0 sm:flex sm:justify-center sm:px-6 sm:pb-5 lg:px-8">
+			<div className="fixed inset-x-0 bottom-0 pointer-events-none sm:flex sm:justify-center sm:px-6 sm:pb-5 lg:px-8">
 				<div className="pointer-events-auto flex items-center justify-between gap-x-6 bg-zinc-100 px-6 py-2.5 sm:rounded-xl sm:py-3 sm:pl-4 sm:pr-3.5">
 					<p className="text-sm leading-6 text-zinc-900 hover:text-zinc-700">
 						<a href={link.url} target="_blank">
@@ -36,7 +36,7 @@ const Banner: FC<BannerProps> = ({ title = 'Hey, right here!', link }) => {
 						className="-m-1.5 flex-none p-1.5 text-zinc-900 hover:text-zinc-700"
 					>
 						<span className="sr-only">Dismiss</span>
-						<XMarkIcon className="h-5 w-5" aria-hidden="true" />
+						<XMarkIcon className="w-5 h-5" aria-hidden="true" />
 					</button>
 				</div>
 			</div>

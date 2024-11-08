@@ -15,9 +15,9 @@ const Collapsable: FC<CollapsableProps> = ({ title, children }) => {
 				className="flex items-center gap-x-4 text-zinc-100 hover:text-zinc-300 w-fit"
 			>
 				{isCollapsed ? (
-					<ChevronDownIcon className="h-8 w-auto" aria-hidden="true" />
+					<ChevronDownIcon className="w-auto h-8" aria-hidden="true" />
 				) : (
-					<ChevronUpIcon className="h-8 w-auto" aria-hidden="true" />
+					<ChevronUpIcon className="w-auto h-8" aria-hidden="true" />
 				)}
 				<h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{title}</h2>
 			</button>

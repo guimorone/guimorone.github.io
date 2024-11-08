@@ -20,7 +20,7 @@ const Feed: FC<FeedProps> = ({ activities }) => {
 										'h-8 w-8 rounded-full flex items-center justify-center ring-4 ring-white'
 									)}
 								>
-									{item.Icon && <item.Icon.Element className="h-5 w-5 text-zinc-100" aria-hidden="true" />}
+									{item.Icon && <item.Icon.Element className="w-5 h-5 text-zinc-100" aria-hidden="true" />}
 								</span>
 								<div className="flex min-w-0 flex-1 flex-col justify-between pt-1.5 gap-y-2.5">
 									<div className="-space-y-0.5">
@@ -33,14 +33,14 @@ const Feed: FC<FeedProps> = ({ activities }) => {
 												{item.description.map((d, idx) => (
 													<li
 														key={`feed-${item.title}-${index}-description-${idx}`}
-														className="text-sm md:text-base text-zinc-300 text-justify"
+														className="text-sm text-justify md:text-base text-zinc-300"
 													>
 														{d}
 													</li>
 												))}
 											</ul>
 										) : (
-											<p className="text-sm md:text-base text-zinc-300 text-justify">{item.description}</p>
+											<p className="text-sm text-justify md:text-base text-zinc-300">{item.description}</p>
 										))}
 									{item.comments && (
 										<div className="space-y-0.5">

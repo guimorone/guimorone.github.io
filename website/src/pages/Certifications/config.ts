@@ -7,6 +7,7 @@ import {
 	GOOGLE_CLOUD_NETWORKING_COURSE_CERT_URL,
 	UDEMY_WEB_DEV_COURSE_CERT_URL,
 	UDEMY_FLUTTER_COURSE_CERT_URL,
+	UDEMY_CYBER_SECURITY_COURSE_1_URL,
 } from '../../constants/urls';
 import type { ActivityType } from '../../@types';
 
@@ -14,6 +15,19 @@ export const title: string = 'Licenses & Certifications';
 export const subtitle: string = 'Allow me to showcase my certifications on different top-rated online platforms.';
 
 export const licenses: ActivityType[] = [
+	{
+		title: 'The Complete Cyber Security Course - Volume 1: Hackers Exposed!',
+		subtitle: 'Udemy. Nov 2024',
+		links: [
+			{
+				Icon: GrCertificate,
+				color: 'text-teal-300 hover:text-teal-200',
+				label: 'Credential URL',
+				url: UDEMY_CYBER_SECURITY_COURSE_1_URL,
+			},
+		],
+		Icon: { Element: SiUdemy, background: 'bg-[#A632F1]' },
+	},
 	{
 		title: 'The Complete Flutter Development Bootcamp with Dart',
 		subtitle: 'Udemy. Apr 2024',
