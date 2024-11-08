@@ -14,7 +14,7 @@ const Page: FC<PageProps> = ({ title, subtitle, photo, activities }) => {
 				'w-full mb-auto'
 			)}
 		>
-			<div className="w-full max-w-2xl flex flex-col -gap-1">
+			<div className="flex flex-col w-full max-w-2xl -gap-1">
 				<Title title={title} subtitle={subtitle} />
 				{photo && (
 					<Photo
@@ -27,7 +27,7 @@ const Page: FC<PageProps> = ({ title, subtitle, photo, activities }) => {
 			{Array.isArray(activities) ? (
 				<Feed activities={activities} />
 			) : (
-				<div className="space-y-12 mt-12">
+				<div className="mt-12 space-y-12">
 					{Object.keys(activities).map((activitiesTitle, index) => (
 						<ObjectFeed
 							key={`object-feed-${title}-${activitiesTitle}-${index}`}

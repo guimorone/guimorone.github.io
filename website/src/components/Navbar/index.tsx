@@ -22,7 +22,7 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 			)}
 		>
 			<nav className="shadow-md" aria-label="Global">
-				<div className="flex items-center justify-between max-w-7xl mx-auto w-full h-auto max-h-20 px-4 py-4 sm:py-6 lg:px-8 gap-x-2">
+				<div className="flex items-center justify-between w-full h-auto px-4 py-4 mx-auto max-w-7xl max-h-20 sm:py-6 lg:px-8 gap-x-2">
 					<div className="flex xl:flex-1">
 						<Link to={HOME} className="-m-1.5 p-1.5 text-zinc-300 hover:text-zinc-200">
 							<span className="sr-only">Logo</span>
@@ -36,7 +36,7 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 							onClick={handleOpenMobileMenu}
 						>
 							<span className="sr-only">Open menu</span>
-							<Bars3Icon className="h-8 w-auto sm:10" aria-hidden="true" />
+							<Bars3Icon className="w-auto h-8 sm:10" aria-hidden="true" />
 						</button>
 					</div>
 					<div className="hidden xl:flex xl:gap-x-12">
@@ -59,7 +59,7 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 											<Icon className="w-4 h-4" />
 											<span>{name}</span>
 											{isCurrent && (
-												<span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-400/0 via-teal-400/40 to-teal-400/0"></span>
+												<span className="absolute h-px inset-x-1 -bottom-px bg-gradient-to-r from-teal-400/0 via-teal-400/40 to-teal-400/0"></span>
 											)}
 										</Link>
 									) : (
@@ -79,7 +79,7 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 			</nav>
 			<Dialog as="div" className="xl:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
 				<div className="fixed inset-0 z-50" />
-				<DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-b from-zinc-500 to-zinc-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+				<DialogPanel className="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-gradient-to-b from-zinc-500 to-zinc-900 sm:max-w-sm sm:ring-1 sm:ring-white/10">
 					<div className="flex items-center justify-between">
 						<button
 							type="button"
@@ -87,12 +87,12 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 							onClick={handleCloseMobileMenu}
 						>
 							<span className="sr-only">Close menu</span>
-							<XMarkIcon className="h-6 w-6" aria-hidden="true" />
+							<XMarkIcon className="w-6 h-6" aria-hidden="true" />
 						</button>
 					</div>
-					<div className="mt-6 flow-root">
+					<div className="flow-root mt-6">
 						<div className="-my-6">
-							<div className="space-y-2 py-6">
+							<div className="py-6 space-y-2">
 								{navigation.map(({ name, href, Icon, useLink }, index) => {
 									const isCurrent = useLink && pathname === href;
 
@@ -114,7 +114,7 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 												</Link>
 											) : (
 												<>
-													<hr className="hidden md:block -mx-6 h-px w-auto border-t-0 bg-zinc-400" />
+													<hr className="hidden w-auto h-px -mx-6 border-t-0 md:block bg-zinc-400" />
 													<a
 														href={href}
 														onClick={handleCloseMobileMenu}
