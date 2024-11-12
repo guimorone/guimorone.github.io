@@ -35,6 +35,7 @@ export const GOOGLE_CLOUD_NETWORKING_COURSE_CERT_URL =
 export const UDEMY_WEB_DEV_COURSE_CERT_URL = 'https://ude.my/UC-5d594204-a414-4cb1-a388-72e3daf7c1c6';
 export const UDEMY_FLUTTER_COURSE_CERT_URL = 'https://ude.my/UC-3fd9599a-bff2-4960-8d34-dbb3b41ced55';
 export const UDEMY_CYBER_SECURITY_COURSE_1_URL = 'https://ude.my/UC-1acdc51c-9652-40d8-80af-24d65aa27727';
+export const UDEMY_GRAPHQL_COURSE_URL = 'https://ude.my/UC-2f72d8c0-5e8c-4c08-a657-cb379948c6f1';
 export const ACASO_URL = 'https://aca.so';
 export const ACASO_LINKEDIN_URL = 'https://www.linkedin.com/company/aca-so';
 export const NEUROTECH_URL = 'https://www.neurotech.com.br';

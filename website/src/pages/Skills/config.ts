@@ -15,6 +15,7 @@ import { FcLinux } from 'react-icons/fc';
 import {
 	SiDjango,
 	SiCplusplus,
+	SiCyberdefenders,
 	SiJavascript,
 	SiTypescript,
 	SiFlask,
@@ -22,6 +23,7 @@ import {
 	SiMongodb,
 	SiHaskell,
 	SiCsharp,
+	SiGraphql,
 	SiConstruct3,
 	SiFlutter,
 	SiJupyter,
@@ -83,6 +85,8 @@ export const skills: { Icon: { Element: IconType; color?: string }; label: strin
 	{ Icon: { Element: VscTerminalBash }, label: 'Bash', rating: 4 },
 	{ Icon: { Element: SiPowershell, color: 'text-[#2671BE]' }, label: 'PowerShell', rating: 3 },
 	{ Icon: { Element: SiTailwindcss, color: 'text-[#09B9D8]' }, label: 'Tailwind CSS', rating: 5 },
+	{ Icon: { Element: SiCyberdefenders }, label: 'Cyber Security', rating: 1 },
+	{ Icon: { Element: SiGraphql, color: 'text-[#E534AB]' }, label: 'GraphQL', rating: 3 },
 ]
 	.sort((s1, s2) => (s1.label > s2.label ? 1 : s2.label > s1.label ? -1 : 0))
 	.sort((s1, s2) => s2.rating - s1.rating);
