@@ -31,6 +31,7 @@ export const experiences: ActivityType[] = [
 			'Collaborate with cross-functional teams to achieve project goals.',
 			'Ensure high-quality, scalable application development.',
 			'Using Amazon Web Services such as Lambda, DynamoDB, EC2, Athena, S3 and more.',
+			'Extract data from different sources and make it available for many users in a data lake.',
 		],
 		comments: ['Skills/Technologies: Python · FastAPI · AWS · Terraform · Docker · Airflow · Shell.'],
 		links: [
