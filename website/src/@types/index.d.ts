@@ -1,6 +1,8 @@
 import type { HTMLAttributeAnchorTarget } from 'react';
 import type { IconType } from './icons';
 
+export type GenericData = { [key: string]: any };
+
 export type ActivityType = {
 	title: string;
 	subtitle: string;

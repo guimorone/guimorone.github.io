@@ -40,6 +40,7 @@ import { DiGoogleCloudPlatform, DiRuby } from 'react-icons/di';
 import { BiLogoPostgresql } from 'react-icons/bi';
 import { TbBrandReactNative, TbSql } from 'react-icons/tb';
 import { VscTerminalBash } from 'react-icons/vsc';
+import { sortByTitleOrLabelFunction } from '../../utils';
 import type { IconType } from '../../@types/icons';
 
 export const title: string = 'Skills';
@@ -88,7 +89,7 @@ export const skills: { Icon: { Element: IconType; color?: string }; label: strin
 	{ Icon: { Element: SiCyberdefenders }, label: 'Cyber Security', rating: 1 },
 	{ Icon: { Element: SiGraphql, color: 'text-[#E534AB]' }, label: 'GraphQL', rating: 3 },
 ]
-	.sort((s1, s2) => (s1.label > s2.label ? 1 : s2.label > s1.label ? -1 : 0))
+	.sort(sortByTitleOrLabelFunction)
 	.sort((s1, s2) => s2.rating - s1.rating);
 
 export const languages: { label: string; description: string; rating: number }[] = [
@@ -96,5 +97,5 @@ export const languages: { label: string; description: string; rating: number }[]
 	{ label: 'English', description: 'Advanced', rating: 4 },
 	{ label: 'German', description: 'Beginner', rating: 1 },
 ]
-	.sort((s1, s2) => (s1.label > s2.label ? 1 : s2.label > s1.label ? -1 : 0))
+	.sort(sortByTitleOrLabelFunction)
 	.sort((s1, s2) => s2.rating - s1.rating);

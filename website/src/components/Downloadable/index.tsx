@@ -19,7 +19,7 @@ const Downloadable: FC<DownloadableProps> = ({
 					<a
 						href={filePath}
 						target="_blank"
-						className="inline-flex items-center gap-x-2 rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-zinc-900 shadow-sm hover:bg-zinc-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						className="inline-flex items-center text-center gap-x-2 rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-zinc-900 shadow-sm hover:bg-zinc-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
 					>
 						<MdOutlinePreview className="-ml-0.5 h-5 w-5" />
 						<span>Show Preview</span>
@@ -29,7 +29,7 @@ const Downloadable: FC<DownloadableProps> = ({
 					href={filePath}
 					target="_blank"
 					download={filename}
-					className="inline-flex items-center gap-x-2 rounded-md bg-teal-600 px-3.5 py-2.5 text-sm font-semibold text-zinc-100 shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
+					className="inline-flex items-center text-center gap-x-2 rounded-md bg-teal-600 px-3.5 py-2.5 text-sm font-semibold text-zinc-100 shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
 				>
 					<Icon className="-ml-0.5 h-5 w-5" />
 					<span>Download {label}</span>
