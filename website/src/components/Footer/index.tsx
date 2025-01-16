@@ -2,6 +2,8 @@ import { Tooltip } from 'flowbite-react';
 import { navigation } from './config';
 
 export default function Footer() {
+	const currentYear: number = new Date().getFullYear();
+
 	return (
 		<footer className="clear-both w-full mx-auto mt-auto sm:z-auto max-w-7xl">
 			<h2 className="sr-only">Social Medias</h2>
@@ -22,7 +24,9 @@ export default function Footer() {
 					))}
 				</div>
 				<div className="mt-8 md:order-1 md:mt-0">
-					<p className="text-xs leading-5 text-center text-zinc-200">&copy; Guilherme Morone Araujo</p>
+					<p className="text-xs leading-5 text-center text-zinc-200">
+						&copy; {currentYear} Guilherme Morone Araujo
+					</p>
 				</div>
 			</section>
 		</footer>

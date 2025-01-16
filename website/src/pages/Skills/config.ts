@@ -22,7 +22,6 @@ import {
 	SiJquery,
 	SiMongodb,
 	SiHaskell,
-	SiCsharp,
 	SiGraphql,
 	SiConstruct3,
 	SiFlutter,
@@ -33,12 +32,11 @@ import {
 	SiApacheairflow,
 	SiTerraform,
 	SiGithub,
-	SiPowershell,
 	SiTailwindcss,
 } from 'react-icons/si';
 import { DiGoogleCloudPlatform, DiRuby } from 'react-icons/di';
 import { BiLogoPostgresql } from 'react-icons/bi';
-import { TbBrandReactNative, TbSql } from 'react-icons/tb';
+import { TbBrandReactNative, TbSql, TbBrandPowershell, TbBrandCSharp } from 'react-icons/tb';
 import { VscTerminalBash } from 'react-icons/vsc';
 import { sortByTitleOrLabelFunction } from '../../utils';
 import type { IconType } from '../../@types/icons';
@@ -73,7 +71,7 @@ export const skills: { Icon: { Element: IconType; color?: string }; label: strin
 	{ Icon: { Element: DiGoogleCloudPlatform, color: 'text-[#2FA1FB]' }, label: 'GCP', rating: 2 },
 	{ Icon: { Element: SiHaskell, color: 'text-[#999999]' }, label: 'Haskell', rating: 2 },
 	{ Icon: { Element: DiRuby, color: 'text-[#9D0401]' }, label: 'Ruby', rating: 1 },
-	{ Icon: { Element: SiCsharp, color: 'text-[#9A4F96]' }, label: 'C#', rating: 1 },
+	{ Icon: { Element: TbBrandCSharp, color: 'text-[#9A4F96]' }, label: 'C#', rating: 1 },
 	{ Icon: { Element: SiConstruct3, color: 'text-[#DAE8F6]' }, label: 'Construct 3', rating: 3 },
 	{ Icon: { Element: SiFlutter, color: 'text-[#54C4F8]' }, label: 'Flutter', rating: 3 },
 	{ Icon: { Element: SiJupyter, color: 'text-[#F47820]' }, label: 'Jupyter Notebooks', rating: 5 },
@@ -84,7 +82,7 @@ export const skills: { Icon: { Element: IconType; color?: string }; label: strin
 	{ Icon: { Element: SiTerraform, color: 'text-[#7B42BC]' }, label: 'Terraform', rating: 3 },
 	{ Icon: { Element: SiGithub }, label: 'GitHub', rating: 5 },
 	{ Icon: { Element: VscTerminalBash }, label: 'Bash', rating: 4 },
-	{ Icon: { Element: SiPowershell, color: 'text-[#2671BE]' }, label: 'PowerShell', rating: 3 },
+	{ Icon: { Element: TbBrandPowershell, color: 'text-[#2671BE]' }, label: 'PowerShell', rating: 3 },
 	{ Icon: { Element: SiTailwindcss, color: 'text-[#09B9D8]' }, label: 'Tailwind CSS', rating: 5 },
 	{ Icon: { Element: SiCyberdefenders }, label: 'Cyber Security', rating: 1 },
 	{ Icon: { Element: SiGraphql, color: 'text-[#E534AB]' }, label: 'GraphQL', rating: 3 },

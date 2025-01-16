@@ -1,10 +1,10 @@
 import Photo from '../Photo';
 import Feed from '../Feed';
 import ObjectFeed from '../Feed/ObjectFeed';
+import Title from '../Title';
 import { classNames } from '../../utils';
 import type { FC } from 'react';
 import type { PageProps } from '../../@types/components';
-import Title from '../Title';
 
 const Page: FC<PageProps> = ({ title, subtitle, photo, activities }) => {
 	return (
