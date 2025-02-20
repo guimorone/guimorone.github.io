@@ -1,4 +1,5 @@
 import type { ForwardRefExoticComponent, PropsWithoutRef, SVGProps, RefAttributes, JSX } from 'react';
+import type { IconType as ReactIconType } from 'react-icons';
 
 type HeroiconType = ForwardRefExoticComponent<
 	PropsWithoutRef<SVGProps<SVGSVGElement>> & {
@@ -9,4 +10,4 @@ type HeroiconType = ForwardRefExoticComponent<
 
 export type DefaultIconType = (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => JSX.Element;
 
-export type IconType = HeroiconType | DefaultIconType;
+export type IconType = HeroiconType | DefaultIconType | ReactIconType;

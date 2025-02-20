@@ -1,5 +1,6 @@
 import { sortByTitleOrLabelFunction } from '../../utils';
 import { PDFIcon } from '../../utils/icons';
+import DiplomaUFPEPTBR from '../../assets/pdfs/Diploma UFPE (PT-BR).pdf';
 import DeutschunterrichtA11 from '../../assets/pdfs/Deutschunterricht - A1.1.pdf';
 import DeutschunterrichtA12 from '../../assets/pdfs/Deutschunterricht - A1.2.pdf';
 import CyberSecurityVolume1Certificate from '../../assets/pdfs/The Complete Cyber Security Course - Volume 1 - Hackers Exposed - Certificate.pdf';
@@ -9,6 +10,18 @@ export const title: string = 'Warehouse';
 export const subtitle: string = 'Here is where you can view other shared files/documents.';
 
 export const documents: { title: string; files: DownloadableProps[] }[] = [
+	{
+		title: 'Education',
+		files: [
+			{
+				title: 'Diploma UFPE (PT-BR)',
+				label: 'Diploma',
+				filePath: DiplomaUFPEPTBR,
+				filename: 'Diploma Guilherme - UFPE (PT-BR)',
+				Icon: PDFIcon,
+			},
+		].sort(sortByTitleOrLabelFunction),
+	},
 	{
 		title: 'Languages',
 		files: [

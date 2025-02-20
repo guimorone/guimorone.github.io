@@ -12,9 +12,9 @@ const Downloadable: FC<DownloadableProps> = ({
 	Icon,
 }) => {
 	return (
-		<div className="flex flex-col items-center gap-y-1">
-			<p className="mb-1.5 text-base text-center leading-6 text-zinc-300">{title}</p>
-			<div className="flex flex-col items-center gap-2 lg:flex-row">
+		<div className="flex flex-col items-center gap-y-1 sm:items-start">
+			<p className="mb-1.5 text-base text-center leading-6 text-zinc-300 sm:text-left">{title}</p>
+			<div className="flex flex-col items-center gap-2 sm:items-start lg:flex-row">
 				{preview && (
 					<a
 						href={filePath}
