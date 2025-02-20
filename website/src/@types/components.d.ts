@@ -51,6 +51,7 @@ export interface DownloadableProps {
 	filename: string;
 	preview?: boolean;
 	Icon: IconType;
+	forceCenter?: boolean;
 }
 
 export interface GridProps {

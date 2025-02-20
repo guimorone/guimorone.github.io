@@ -17,6 +17,7 @@ export default function Home() {
 				filename={filename}
 				filePath={filePath}
 				Icon={Icon}
+				forceCenter
 			/>
 		</div>
 	);

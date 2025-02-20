@@ -1,4 +1,5 @@
 import { MdOutlinePreview } from 'react-icons/md';
+import { classNames } from '../../utils';
 import type { FC } from 'react';
 import type { DownloadableProps } from '../../@types/components';
 
@@ -10,11 +11,21 @@ const Downloadable: FC<DownloadableProps> = ({
 	filename,
 	preview = true,
 	Icon,
+	forceCenter = false,
 }) => {
 	return (
-		<div className="flex flex-col items-center gap-y-1 sm:items-start">
-			<p className="mb-1.5 text-base text-center leading-6 text-zinc-300 sm:text-left">{title}</p>
-			<div className="flex flex-col items-center gap-2 sm:items-start lg:flex-row">
+		<div className={classNames(!forceCenter && 'sm:items-start', 'flex flex-col items-center gap-y-1')}>
+			<p
+				className={classNames(
+					!forceCenter && 'sm:text-left',
+					'mb-1.5 text-base text-center leading-6 text-zinc-300'
+				)}
+			>
+				{title}
+			</p>
+			<div
+				className={classNames(!forceCenter && 'sm:items-start', 'flex flex-col items-center gap-2 lg:flex-row')}
+			>
 				{preview && (
 					<a
 						href={filePath}
