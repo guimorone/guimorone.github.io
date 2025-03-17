@@ -1,5 +1,6 @@
 import { sortByTitleOrLabelFunction } from '../../utils';
 import { PDFIcon } from '../../utils/icons';
+import DiplomaUFPEEN from '../../assets/pdfs/Diploma UFPE (EN).pdf';
 import DiplomaUFPEPTBR from '../../assets/pdfs/Diploma UFPE (PT-BR).pdf';
 import DeutschunterrichtA11 from '../../assets/pdfs/Deutschunterricht - A1.1.pdf';
 import DeutschunterrichtA12 from '../../assets/pdfs/Deutschunterricht - A1.2.pdf';
@@ -13,6 +14,13 @@ export const documents: { title: string; files: DownloadableProps[] }[] = [
 	{
 		title: 'Education',
 		files: [
+			{
+				title: 'Diploma UFPE (EN)',
+				label: 'Diploma',
+				filePath: DiplomaUFPEEN,
+				filename: 'Diploma Guilherme - UFPE (EN)',
+				Icon: PDFIcon,
+			},
 			{
 				title: 'Diploma UFPE (PT-BR)',
 				label: 'Diploma',
