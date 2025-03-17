@@ -1,4 +1,3 @@
-export const INSTAGRAM = 'https://www.instagram.com/guimorone';
 export const GITHUB = 'https://github.com/guimorone';
 export const LINKEDIN = 'https://www.linkedin.com/in/guimorone';
 export const CODEVOLVELABS = 'https://www.codevolvelabs.com.br';
