@@ -8,9 +8,9 @@ export default function About() {
 			<div className="mx-auto lg:pl-20">
 				<Photo src={MyPhoto} alt="My Photo" />
 			</div>
-			<div className="lg:order-first lg:row-span-2">
+			<div className="space-y-6 lg:order-first lg:row-span-2">
 				<h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">{title}</h1>
-				<div className="mt-6 text-base text-justify space-y-7 text-zinc-300">
+				<div className="text-base text-justify space-y-7 text-zinc-300">
 					{descriptions?.map((d, index) => <p key={`about-description-${index}`}>{d}</p>)}
 				</div>
 			</div>
