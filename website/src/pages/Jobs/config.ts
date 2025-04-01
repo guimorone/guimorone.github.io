@@ -30,7 +30,7 @@ export const experiences: ActivityType[] = [
 			'In general, using skills in software, data engineering and backend development with Python, FastAPI, Terraform, Git, Airflow, Bash and cloud computing on AWS.',
 			'Collaborate with cross-functional teams to achieve project goals.',
 			'Ensure high-quality, scalable application development.',
-			'Using Amazon Web Services such as Lambda, DynamoDB, EC2, Athena, S3 and more.',
+			'Using AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions and more.',
 			'Extract data from different sources and make it available for many users in a data lake.',
 		],
 		comments: ['Skills/Technologies: Python · FastAPI · AWS · Terraform · Docker · Airflow · Shell.'],
@@ -136,7 +136,8 @@ export const freelances: ActivityType[] = [
 	{
 		title: 'Mobile Engineer',
 		subtitle: 'InSpace. Aug 2022 - Oct 2022',
-		description: 'Identification of objects (censored specificity) from a mobile camera for legal purposes.',
+		description:
+			'I have worked with the identification of objects (censored specificity) from a mobile camera for legal purposes.',
 		comments: ['Skills/Technologies: TypeScript · Software Development · Redux.js · React Native · React Hooks.'],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: INSPACE_URL },
