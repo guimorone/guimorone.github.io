@@ -24,13 +24,13 @@ export const INSTAGRAM_STATS_PROJECT_URL = 'https://github.com/guimorone/instagr
 export const NQUEENS_PROJECT_URL = 'https://github.com/guimorone/N-Queens';
 export const JOJOSUE_PROJECT_URL = 'https://github.com/guimorone/Jojosue';
 export const GOOGLE_CLOUD_FUNDAMENTALS_COURSE_CERT_URL =
-	'https://www.cloudskillsboost.google/public_profiles/d8f54101-4f80-4aee-8e46-2320e3e20646/badges/3302433?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share';
+	'https://www.cloudskillsboost.google/public_profiles/d8f54101-4f80-4aee-8e46-2320e3e20646/badges/3302433';
 export const GOOGLE_CLOUD_IA_COURSE_CERT_URL =
-	'https://www.cloudskillsboost.google/public_profiles/d8f54101-4f80-4aee-8e46-2320e3e20646/badges/3311200?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share';
+	'https://www.cloudskillsboost.google/public_profiles/d8f54101-4f80-4aee-8e46-2320e3e20646/badges/3311200';
 export const GOOGLE_CLOUD_INFRA_COURSE_CERT_URL =
-	'https://www.cloudskillsboost.google/public_profiles/d8f54101-4f80-4aee-8e46-2320e3e20646/badges/3303084?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share';
+	'https://www.cloudskillsboost.google/public_profiles/d8f54101-4f80-4aee-8e46-2320e3e20646/badges/3303084';
 export const GOOGLE_CLOUD_NETWORKING_COURSE_CERT_URL =
-	'https://www.cloudskillsboost.google/public_profiles/d8f54101-4f80-4aee-8e46-2320e3e20646/badges/3305980?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share';
+	'https://www.cloudskillsboost.google/public_profiles/d8f54101-4f80-4aee-8e46-2320e3e20646/badges/3305980';
 export const UDEMY_WEB_DEV_COURSE_CERT_URL = 'https://ude.my/UC-5d594204-a414-4cb1-a388-72e3daf7c1c6';
 export const UDEMY_FLUTTER_COURSE_CERT_URL = 'https://ude.my/UC-3fd9599a-bff2-4960-8d34-dbb3b41ced55';
 export const UDEMY_CYBER_SECURITY_COURSE_1_URL = 'https://ude.my/UC-1acdc51c-9652-40d8-80af-24d65aa27727';

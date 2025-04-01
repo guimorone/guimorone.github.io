@@ -84,7 +84,7 @@ export const licenses: ActivityType[] = [
 		Icon: { Element: SiGooglecloud, background: 'bg-blue-600' },
 	},
 	{
-		title: 'Google Cloud Computing Foundations: Networking',
+		title: 'Google Cloud Computing Foundations: Networking & Security - Locales',
 		subtitle: 'Google Cloud Skills Boost. Mar 2023',
 		description: 'Credential ID: 3305980',
 		links: [
