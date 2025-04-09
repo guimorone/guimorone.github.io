@@ -12,10 +12,10 @@ import {
 } from '../../constants/urls';
 import type { ActivityType } from '../../@types';
 
-export const title: string = 'Licenses & Certifications';
+export const title: string = 'Courses & Certifications';
 export const subtitle: string = 'Allow me to showcase my certifications on different top-rated online platforms.';
 
-export const licenses: ActivityType[] = [
+export const courses_and_certifications: ActivityType[] = [
 	{
 		title: 'GraphQL by Example',
 		subtitle: 'Udemy. Nov 2024',

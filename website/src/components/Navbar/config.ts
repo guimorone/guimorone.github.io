@@ -12,6 +12,6 @@ export const navigation: NavigationType[] = [
 	{ name: 'Jobs', href: paths.JOBS, Icon: BriefcaseIcon, useLink: true },
 	{ name: 'Skills', href: paths.SKILLS, Icon: GiSkills, useLink: true },
 	{ name: 'Projects', href: paths.PROJECTS, Icon: GrProjects, useLink: true },
-	{ name: 'Licenses & Certifications', href: paths.CERTIFICATIONS, Icon: BiSolidCertification, useLink: true },
+	{ name: 'Courses & Certifications', href: paths.CERTIFICATIONS, Icon: BiSolidCertification, useLink: true },
 	{ name: 'Warehouse', href: paths.WAREHOUSE, Icon: FaWarehouse, useLink: true },
 ];
