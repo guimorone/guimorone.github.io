@@ -2,6 +2,7 @@ import { SiInstagram } from 'react-icons/si';
 import { FaGamepad } from 'react-icons/fa';
 import { RiLockPasswordLine } from 'react-icons/ri';
 import { FaZ, FaChessQueen, FaLink } from 'react-icons/fa6';
+import { BanknotesIcon } from '@heroicons/react/24/solid';
 import { GitHubIcon } from '../../utils/icons';
 import {
 	RANDOM_PASSWORD_GENERATOR_PROJECT_URL,
@@ -56,6 +57,22 @@ export const projects: ActivityType[] = [
 			},
 		],
 		Icon: { Element: RiLockPasswordLine, background: 'bg-red-500' },
+	},
+	{
+		title: 'Cheque Fácil',
+		subtitle: 'Sep 2023 - Dec 2023',
+		description: [
+			'Made a website with 3 more colleagues to an external customer.',
+			'The main purpose is to identify bank check fields easily, so you do not have to type manually.',
+			"The bank check OCR is based on our customer's API, we did not implement it, just the website.",
+			'It also offers API Integration, history download, payments and other features.',
+			'Developed using React, TypeScript, Tailwind CSS and Django (Python).',
+		],
+		comments: [
+			'Skills/Technologies: Django · TypeScript · Software Development · React.js · Redux.js · React Hooks · Tailwind CSS · Continuous Integration and Continuous Delivery (CI/CD) · Docker · Linux · Shell.',
+			'Since is a private project, I can not share the Repository URL.',
+		],
+		Icon: { Element: BanknotesIcon },
 	},
 	{
 		title: 'Type War',

@@ -19,7 +19,7 @@ import {
 } from '../../constants/urls';
 import type { ActivityType } from '../../@types';
 
-export const title: string = 'Experience';
+export const title: string = 'Work Experience';
 export const subtitle: string = 'Allow me to show you my jobs with clients and in tech companies.';
 
 export const experiences: ActivityType[] = [
@@ -117,21 +117,6 @@ export const freelances: ActivityType[] = [
 			{ Icon: LinkedInIcon, label: 'LinkedIn', url: ACASO_LINKEDIN_URL },
 		],
 		Icon: { Element: DevicePhoneMobileIcon, background: 'bg-indigo-600' },
-	},
-	{
-		title: 'Full Stack Developer',
-		subtitle: 'Cheque Fácil. Sep 2023 - Dec 2023',
-		description: [
-			'Made a website with 3 more colleagues to an external customer.',
-			'The main purpose is to identify bank check fields easily, so you do not have to type manually.',
-			"The bank check OCR is based on our customer's API, we did not implement it, just the website.",
-			'It also offers API Integration, history download and other features.',
-			'Developed using React, TypeScript, Tailwind CSS and Django (Python).',
-		],
-		comments: [
-			'Skills/Technologies: Django · TypeScript · Software Development · React.js · Redux.js · React Hooks · Tailwind CSS · Continuous Integration and Continuous Delivery (CI/CD) · Docker · Linux · Shell.',
-		],
-		Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
 	},
 	{
 		title: 'Mobile Engineer',
