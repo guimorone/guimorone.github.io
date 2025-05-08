@@ -1,7 +1,7 @@
 import { SiInstagram } from 'react-icons/si';
 import { FaGamepad } from 'react-icons/fa';
 import { RiLockPasswordLine } from 'react-icons/ri';
-import { FaZ, FaChessQueen, FaLink } from 'react-icons/fa6';
+import { FaZ, FaLink } from 'react-icons/fa6';
 import { BanknotesIcon } from '@heroicons/react/24/solid';
 import { GitHubIcon } from '../../utils/icons';
 import {
@@ -10,7 +10,6 @@ import {
 	TYPEWAR_GAME_PROJECT_URL,
 	ZTYPE_GAME_URL,
 	INSTAGRAM_STATS_PROJECT_URL,
-	NQUEENS_PROJECT_URL,
 	JOJOSUE_PROJECT_URL,
 	URL_SHORTENER_PROJECT_URL,
 } from '../../constants/urls';
@@ -100,14 +99,6 @@ export const projects: ActivityType[] = [
 			},
 		],
 		Icon: { Element: FaGamepad, background: 'bg-[#0A344D]' },
-	},
-	{
-		title: 'N-Queens Solver',
-		subtitle: 'Nov 2019',
-		description: 'A C++ program to solve the N-Queens problem.',
-		comments: ['Skills/Technologies: Programming · C++.'],
-		links: [{ Icon: GitHubIcon, label: 'Project URL', url: NQUEENS_PROJECT_URL }],
-		Icon: { Element: FaChessQueen },
 	},
 	{
 		title: 'Jojosué',

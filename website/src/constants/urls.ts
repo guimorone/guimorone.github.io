@@ -21,7 +21,6 @@ export const TYPEWAR_GAME_URL = 'https://type-war-game-cin.vercel.app';
 export const TYPEWAR_GAME_PROJECT_URL = 'https://github.com/guimorone/projeto-jogos';
 export const ZTYPE_GAME_URL = 'https://zty.pe';
 export const INSTAGRAM_STATS_PROJECT_URL = 'https://github.com/guimorone/instagram-stats';
-export const NQUEENS_PROJECT_URL = 'https://github.com/guimorone/N-Queens';
 export const JOJOSUE_PROJECT_URL = 'https://github.com/guimorone/Jojosue';
 export const GOOGLE_CLOUD_FUNDAMENTALS_COURSE_CERT_URL =
 	'https://www.cloudskillsboost.google/public_profiles/d8f54101-4f80-4aee-8e46-2320e3e20646/badges/3302433';
