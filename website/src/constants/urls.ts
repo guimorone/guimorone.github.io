@@ -1,6 +1,5 @@
 export const GITHUB = 'https://github.com/guimorone';
 export const LINKEDIN = 'https://www.linkedin.com/in/guimorone';
-export const CODEVOLVELABS = 'https://www.codevolvelabs.com.br';
 export const MAILTO_URL = 'mailto:guimorone@gmail.com';
 export const WEBSITE_CODE_URL = 'https://github.com/guimorone/guimorone.github.io';
 export const CIN_UFPE_URL = 'https://portal.cin.ufpe.br';
