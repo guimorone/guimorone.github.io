@@ -1,3 +1,4 @@
+import { AiOutlineDeploymentUnit } from 'react-icons/ai';
 import {
 	FaPython,
 	FaReact,
@@ -33,6 +34,8 @@ import {
 	SiTerraform,
 	SiGithub,
 	SiTailwindcss,
+	SiRedux,
+	SiJest,
 } from 'react-icons/si';
 import { DiGoogleCloudPlatform, DiRuby } from 'react-icons/di';
 import { BiLogoPostgresql } from 'react-icons/bi';
@@ -53,6 +56,7 @@ export const CONSTRUCT_3: SkillType = {
 	label: 'Construct 3',
 	rating: 2,
 };
+export const CI_CD: SkillType = { Icon: { Element: AiOutlineDeploymentUnit }, label: 'CI/CD', rating: 5 };
 export const CPP: SkillType = { Icon: { Element: SiCplusplus, color: 'text-[#659BD3]' }, label: 'C++', rating: 2 };
 export const CSHARP: SkillType = {
 	Icon: { Element: TbBrandCSharp, color: 'text-[#9A4F96]' },
@@ -111,6 +115,11 @@ export const JAVASCRIPT: SkillType = {
 	label: 'JavaScript',
 	rating: 5,
 };
+export const JEST: SkillType = {
+	Icon: { Element: SiJest, color: 'text-[#C63D14]' },
+	label: 'Jest',
+	rating: 1,
+};
 export const JQUERY: SkillType = {
 	Icon: { Element: SiJquery, color: 'text-[#0C68AC]' },
 	label: 'JQuery',
@@ -152,6 +161,11 @@ export const REACT_NATIVE: SkillType = {
 	Icon: { Element: TbBrandReactNative, color: 'text-[#61DBFB]' },
 	label: 'React Native',
 	rating: 3,
+};
+export const REACT_REDUX: SkillType = {
+	Icon: { Element: SiRedux, color: 'text-[#764ABC]' },
+	label: 'React Redux',
+	rating: 4,
 };
 export const RUBY: SkillType = { Icon: { Element: DiRuby, color: 'text-[#9D0401]' }, label: 'Ruby', rating: 1 };
 export const SQL: SkillType = { Icon: { Element: TbSql, color: 'text-[#0279D6]' }, label: 'SQL', rating: 3 };
