@@ -5,7 +5,7 @@ Application using React with TypeScript and Tailwind CSS.
 ## Dependencies
 
 - Node.js v22.15.1
-- npm v11.3.0
+- npm v11.4.0
 
 ## Running Locally
 

@@ -19,3 +19,9 @@ export function sortByTitleOrLabelFunction(e1: GenericData, e2: GenericData): nu
 
 	return element1 > element2 ? 1 : element2 > element1 ? -1 : 0;
 }
+
+export function sortByRatingFunction(e1: GenericData, e2: GenericData): number {
+	if (!('rating' in e1) || !('rating' in e2)) return 0;
+
+	return e1.rating > e2.rating ? -1 : e2.rating > e1.rating ? 1 : 0;
+}

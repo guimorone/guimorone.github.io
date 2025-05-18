@@ -1,7 +1,6 @@
 import type { ReactNode, JSX, ImgHTMLAttributes } from 'react';
-import type { ActivityType } from '.';
+import type { ActivityType, IntRange } from '.';
 import type { IconType } from './icons';
-
 export interface NavbarProps {
 	show?: boolean;
 }
@@ -68,4 +67,8 @@ export interface GridContainerProps {
 export interface CollapsableProps {
 	title: string;
 	children?: ReactNode;
+}
+
+export interface StarsProps {
+	rating: IntRange<1, 6>;
 }
