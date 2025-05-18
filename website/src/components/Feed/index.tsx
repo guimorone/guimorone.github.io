@@ -55,7 +55,7 @@ const Feed: FC<FeedProps> = ({ activities }) => {
 														key={`feed-skill-${idx}`}
 														content={
 															<div className="flex items-center gap-2">
-																<p className="text-xs md:text-sm text-zinc-300">Skill Level:</p>
+																<p className="text-xs md:text-sm text-zinc-300 whitespace-nowrap">Skill Level:</p>
 																<Stars rating={skill.rating} />
 															</div>
 														}
