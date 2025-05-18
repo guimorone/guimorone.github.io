@@ -1,6 +1,19 @@
 import { GiNotebook } from 'react-icons/gi';
 import { GraduationCap, GitHubIcon, ChalkboardUser } from '../../utils/icons';
 import { TCC_ATTENA_URL, TCC_PROJECT_URL } from '../../constants/urls';
+import {
+	CI_CD,
+	CSS,
+	GIT,
+	GITHUB,
+	HTML,
+	JEST,
+	NODE,
+	PYTHON,
+	REACT,
+	REACT_REDUX,
+	TYPESCRIPT,
+} from '../../constants/skills';
 import type { ActivityType } from '../../@types';
 
 export const title: string = 'Education';
@@ -25,9 +38,7 @@ export const experiences: ActivityType[] = [
 			'Dedicated Student Teaching Assistant in the field of Software and Systems Engineering.',
 			'Provided invaluable support to students in software development and requirements engineering, with a primary goal of crafting top-tier applications of exceptional quality.',
 		],
-		comments: [
-			'Skills/Technologies: ReactJS · Redux · NodeJS · Python · HTML · CSS · Unit Tests · Jest · Supertest · Enzyme · TypeScript · Web Development · Responsive Web Design · Software Development · SASS · Programming · REST APIs · Front-End Development · React Hooks and more.',
-		],
+		skills: [CI_CD, CSS, GIT, GITHUB, HTML, JEST, NODE, PYTHON, REACT, REACT_REDUX, TYPESCRIPT],
 		Icon: { Element: ChalkboardUser, background: 'bg-rose-600' },
 	},
 ];

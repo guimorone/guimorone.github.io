@@ -9,15 +9,6 @@ export type Enumerate<N extends number, Acc extends number[] = []> = Acc['length
 
 export type IntRange<F extends number, T extends number> = Exclude<Enumerate<T>, Enumerate<F>>;
 
-export type ActivityType = {
-	title: string;
-	subtitle: string;
-	description?: string | string[];
-	comments?: string[];
-	Icon?: { Element: IconType; background?: string };
-	links?: { Icon: IconType; color?: string; label: string; url: string }[];
-};
-
 export type NavigationType = {
 	name: string;
 	href: string;
@@ -30,4 +21,20 @@ export type SkillType = {
 	Icon: { Element: IconType; color?: string };
 	label: string;
 	rating: IntRange<1, 6>;
+};
+
+export type LanguageSkillType = {
+	label: SkillType['label'];
+	description: string;
+	rating: SkillType['rating'];
+};
+
+export type ActivityType = {
+	title: string;
+	subtitle: string;
+	description?: string | string[];
+	comments?: string[];
+	skills?: SkillType[];
+	Icon?: { Element: IconType; background?: string };
+	links?: { Icon: IconType; color?: string; label: string; url: string }[];
 };

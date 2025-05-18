@@ -1,6 +1,6 @@
-import { sortByTitleOrLabelFunction } from '../../utils';
+import { sortByTitleOrLabelFunction, sortByRatingFunction } from '../../utils';
 import * as skillsDefinitions from '../../constants/skills';
-import type { SkillType } from '../../@types';
+import type { SkillType, LanguageSkillType } from '../../@types';
 
 export const title: string = 'Skills';
 export const subtitle: string =
@@ -52,12 +52,12 @@ export const skills: SkillType[] = [
 	skillsDefinitions.WEBPACK,
 ]
 	.sort(sortByTitleOrLabelFunction)
-	.sort((s1, s2) => s2.rating - s1.rating);
+	.sort(sortByRatingFunction);
 
-export const languages: { label: string; description: string; rating: number }[] = [
-	{ label: 'Portuguese', description: 'Native', rating: 5 },
-	{ label: 'English', description: 'Advanced', rating: 4 },
-	{ label: 'German', description: 'Beginner', rating: 1 },
+export const languages: LanguageSkillType[] = [
+	{ label: 'Portuguese', description: 'Native', rating: 5 as const },
+	{ label: 'English', description: 'Advanced', rating: 4 as const },
+	{ label: 'German', description: 'Beginner', rating: 1 as const },
 ]
 	.sort(sortByTitleOrLabelFunction)
-	.sort((s1, s2) => s2.rating - s1.rating);
+	.sort(sortByRatingFunction);
