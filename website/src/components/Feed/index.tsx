@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Tooltip } from 'flowbite-react';
-import Stars from '../Stars';
-import { classNames, sortByRatingFunction, sortByTitleOrLabelFunction } from '../../utils';
+import { classNames, sortByTitleOrLabelFunction } from '../../utils';
 import { SKILLS } from '../../constants/paths';
 import type { FC } from 'react';
 import type { FeedProps } from '../../@types/components';
@@ -11,14 +10,14 @@ const Feed: FC<FeedProps> = ({ activities }) => {
 		<div className="flow-root">
 			<ul className="-mb-8">
 				{activities.map((item, index) => {
-					const skills = item.skills?.toSorted(sortByTitleOrLabelFunction).toSorted(sortByRatingFunction);
+					const skills = item.skills?.toSorted(sortByTitleOrLabelFunction);
 
 					return (
 						<li key={`feed-${item.title}-${index}`}>
 							<div className="relative pb-8">
-								{index !== activities.length - 1 ? (
+								{index !== activities.length - 1 && (
 									<span className="absolute left-4 top-4 -ml-px h-full w-0.5 bg-zinc-400" aria-hidden="true" />
-								) : null}
+								)}
 								<div className="relative flex gap-x-3">
 									<span
 										className={classNames(
@@ -51,26 +50,14 @@ const Feed: FC<FeedProps> = ({ activities }) => {
 										{skills && (
 											<ul className="flex flex-wrap gap-2 my-2">
 												{skills?.map((skill, idx) => (
-													<Tooltip
-														key={`feed-skill-${idx}`}
-														content={
-															<div className="flex items-center gap-2">
-																<p className="text-xs md:text-sm text-zinc-300 whitespace-nowrap">Skill Level:</p>
-																<Stars rating={skill.rating} />
-															</div>
-														}
-														animation="duration-150"
+													<Link
+														key={`feed-skill-${skill.label}-${idx}`}
+														to={`${SKILLS}?skill=${skill.label}`}
+														className="flex items-center gap-2 px-3 py-1 duration-150 border rounded-full bg-zinc-800 border-zinc-700 hover:bg-zinc-700 hover:border-zinc-600"
 													>
-														<Link
-															to={SKILLS}
-															className="flex items-center gap-2 px-3 py-1 duration-150 border rounded-full bg-zinc-800 border-zinc-700 hover:bg-zinc-700 hover:border-zinc-600"
-														>
-															<skill.Icon.Element
-																className={classNames(skill.Icon.color, 'w-3.5 h-3.5 md:w-4 md:h-4')}
-															/>
-															<p className="text-xs md:text-sm text-zinc-300">{skill.label}</p>
-														</Link>
-													</Tooltip>
+														<skill.Icon.Element className="w-3.5 h-3.5 md:w-4 md:h-4" />
+														<p className="text-xs md:text-sm text-zinc-300">{skill.label}</p>
+													</Link>
 												))}
 											</ul>
 										)}
