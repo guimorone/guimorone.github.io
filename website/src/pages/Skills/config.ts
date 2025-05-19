@@ -17,6 +17,7 @@ export const skills: SkillType[] = [
 	skillsDefinitions.CSHARP,
 	skillsDefinitions.CSS,
 	skillsDefinitions.CYBER_SECURITY,
+	skillsDefinitions.DART,
 	skillsDefinitions.DJANGO,
 	skillsDefinitions.DOCKER,
 	skillsDefinitions.FASTAPI,

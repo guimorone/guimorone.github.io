@@ -10,6 +10,22 @@ import {
 	UDEMY_CYBER_SECURITY_COURSE_1_URL,
 	UDEMY_GRAPHQL_COURSE_URL,
 } from '../../constants/urls';
+import {
+	CSS,
+	CYBER_SECURITY,
+	DART,
+	FLUTTER,
+	GCP,
+	GRAPHQL,
+	HTML,
+	JAVASCRIPT,
+	LINUX,
+	MONGODB,
+	NODE,
+	REACT,
+	SQL,
+	TYPESCRIPT,
+} from '../../constants/skills';
 import type { ActivityType } from '../../@types';
 
 export const title: string = 'Courses & Certifications';
@@ -19,6 +35,7 @@ export const courses_and_certifications: ActivityType[] = [
 	{
 		title: 'GraphQL by Example',
 		subtitle: 'Udemy. Nov 2024',
+		skills: [GRAPHQL, NODE, REACT, JAVASCRIPT, TYPESCRIPT],
 		links: [
 			{
 				Icon: GrCertificate,
@@ -32,6 +49,7 @@ export const courses_and_certifications: ActivityType[] = [
 	{
 		title: 'The Complete Cyber Security Course - Volume 1: Hackers Exposed!',
 		subtitle: 'Udemy. Nov 2024',
+		skills: [CYBER_SECURITY, LINUX],
 		links: [
 			{
 				Icon: GrCertificate,
@@ -45,6 +63,7 @@ export const courses_and_certifications: ActivityType[] = [
 	{
 		title: 'The Complete Flutter Development Bootcamp with Dart',
 		subtitle: 'Udemy. Apr 2024',
+		skills: [DART, FLUTTER],
 		links: [
 			{
 				Icon: GrCertificate,
@@ -59,6 +78,7 @@ export const courses_and_certifications: ActivityType[] = [
 		title: 'Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud - Locales',
 		subtitle: 'Google Cloud Skills Boost. Mar 2023',
 		description: 'Credential ID: 3311200',
+		skills: [GCP],
 		links: [
 			{
 				Icon: GrCertificate,
@@ -73,6 +93,7 @@ export const courses_and_certifications: ActivityType[] = [
 		title: 'Google Cloud Computing Foundations: Infrastructure in Google Cloud - Locales',
 		subtitle: 'Google Cloud Skills Boost. Mar 2023',
 		description: 'Credential ID: 3303084',
+		skills: [GCP],
 		links: [
 			{
 				Icon: GrCertificate,
@@ -87,6 +108,7 @@ export const courses_and_certifications: ActivityType[] = [
 		title: 'Google Cloud Computing Foundations: Networking & Security - Locales',
 		subtitle: 'Google Cloud Skills Boost. Mar 2023',
 		description: 'Credential ID: 3305980',
+		skills: [CYBER_SECURITY, GCP],
 		links: [
 			{
 				Icon: GrCertificate,
@@ -101,6 +123,7 @@ export const courses_and_certifications: ActivityType[] = [
 		title: 'Google Cloud Computing Foundations: Cloud Computing Fundamentals - Locales',
 		subtitle: 'Google Cloud Skills Boost. Mar 2023',
 		description: 'Credential ID: 3302433',
+		skills: [GCP],
 		links: [
 			{
 				Icon: GrCertificate,
@@ -114,6 +137,7 @@ export const courses_and_certifications: ActivityType[] = [
 	{
 		title: 'The Complete 2020 Web Development Bootcamp',
 		subtitle: 'Udemy. Apr 2020',
+		skills: [CSS, HTML, JAVASCRIPT, MONGODB, NODE, REACT, SQL, TYPESCRIPT],
 		links: [
 			{
 				Icon: GrCertificate,

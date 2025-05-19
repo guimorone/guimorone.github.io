@@ -37,6 +37,7 @@ import {
 	SiRedux,
 	SiJest,
 	SiKubernetes,
+	SiDart,
 } from 'react-icons/si';
 import { DiGoogleCloudPlatform, DiRuby } from 'react-icons/di';
 import { BiLogoPostgresql } from 'react-icons/bi';
@@ -70,6 +71,7 @@ export const CYBER_SECURITY: SkillType = {
 	label: 'Cyber Security',
 	rating: 1,
 };
+export const DART: SkillType = { Icon: { Element: SiDart, color: 'text-[#0175C9]' }, label: 'Dart', rating: 2 };
 export const DJANGO: SkillType = {
 	Icon: { Element: SiDjango, color: 'text-[#0A2F20]' },
 	label: 'Django',
@@ -89,7 +91,7 @@ export const FLASK: SkillType = { Icon: { Element: SiFlask }, label: 'Flask', ra
 export const FLUTTER: SkillType = {
 	Icon: { Element: SiFlutter, color: 'text-[#54C4F8]' },
 	label: 'Flutter',
-	rating: 3,
+	rating: 2,
 };
 export const GCP: SkillType = {
 	Icon: { Element: DiGoogleCloudPlatform, color: 'text-[#2FA1FB]' },
