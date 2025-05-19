@@ -36,6 +36,7 @@ import {
 	SiTailwindcss,
 	SiRedux,
 	SiJest,
+	SiKubernetes,
 } from 'react-icons/si';
 import { DiGoogleCloudPlatform, DiRuby } from 'react-icons/di';
 import { BiLogoPostgresql } from 'react-icons/bi';
@@ -131,6 +132,11 @@ export const JUPYTER_NOTEBOOKS: SkillType = {
 	rating: 5,
 };
 export const LINUX: SkillType = { Icon: { Element: FcLinux }, label: 'Linux', rating: 4 };
+export const KUBERNETES: SkillType = {
+	Icon: { Element: SiKubernetes, color: 'text-[#326DE6]' },
+	label: 'Kubernetes',
+	rating: 1,
+};
 export const MONGODB: SkillType = {
 	Icon: { Element: SiMongodb, color: 'text-[#05AC4E]' },
 	label: 'MongoDB',

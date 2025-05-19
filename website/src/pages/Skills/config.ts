@@ -34,6 +34,7 @@ export const skills: SkillType[] = [
 	skillsDefinitions.JEST,
 	skillsDefinitions.JQUERY,
 	skillsDefinitions.JUPYTER_NOTEBOOKS,
+	skillsDefinitions.KUBERNETES,
 	skillsDefinitions.LINUX,
 	skillsDefinitions.MONGODB,
 	skillsDefinitions.NODE,
