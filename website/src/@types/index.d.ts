@@ -18,7 +18,7 @@ export type NavigationType = {
 };
 
 export type SkillType = {
-	Icon: { Element: IconType; color?: string };
+	Icon: { Element: IconType | { withColor: IconType; withoutColor: IconType }; color?: string };
 	label: string;
 	rating: IntRange<1, 6>;
 };

@@ -34,7 +34,14 @@ export default function Skills() {
 								<div className="absolute inset-0 -mx-2 -my-1 rounded-lg bg-zinc-900" />
 							)}
 							<div className="relative flex items-center gap-x-2">
-								<Icon.Element className={classNames(Icon.color, 'w-auto h-4 sm:h-5 md:h-6')} aria-hidden="true" />
+								{typeof Icon.Element === 'object' ? (
+									<Icon.Element.withColor className="w-auto h-4 sm:h-5 md:h-6" aria-hidden="true" />
+								) : (
+									<Icon.Element
+										className={classNames(Icon.color, 'w-auto h-4 sm:h-5 md:h-6')}
+										aria-hidden="true"
+									/>
+								)}
 								<p className="text-sm md:text-base text-zinc-100">{label}</p>
 								<Stars rating={rating} />
 							</div>

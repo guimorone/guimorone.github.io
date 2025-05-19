@@ -11,6 +11,7 @@ import {
 	FaCss3Alt,
 	FaAws,
 	FaC,
+	FaLinux,
 } from 'react-icons/fa6';
 import { FcLinux } from 'react-icons/fc';
 import {
@@ -133,7 +134,11 @@ export const JUPYTER_NOTEBOOKS: SkillType = {
 	label: 'Jupyter Notebooks',
 	rating: 5,
 };
-export const LINUX: SkillType = { Icon: { Element: FcLinux }, label: 'Linux', rating: 4 };
+export const LINUX: SkillType = {
+	Icon: { Element: { withColor: FcLinux, withoutColor: FaLinux } },
+	label: 'Linux',
+	rating: 4,
+};
 export const KUBERNETES: SkillType = {
 	Icon: { Element: SiKubernetes, color: 'text-[#326DE6]' },
 	label: 'Kubernetes',

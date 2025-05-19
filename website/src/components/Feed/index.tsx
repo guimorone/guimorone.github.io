@@ -55,7 +55,11 @@ const Feed: FC<FeedProps> = ({ activities }) => {
 														to={`${SKILLS}?skill=${skill.label}`}
 														className="flex items-center gap-2 px-3 py-1 duration-150 border rounded-full bg-zinc-800 border-zinc-700 hover:bg-zinc-700 hover:border-zinc-600"
 													>
-														<skill.Icon.Element className="w-3.5 h-3.5 md:w-4 md:h-4" />
+														{typeof skill.Icon.Element === 'object' ? (
+															<skill.Icon.Element.withoutColor className="w-3.5 h-3.5 md:w-4 md:h-4" />
+														) : (
+															<skill.Icon.Element className="w-3.5 h-3.5 md:w-4 md:h-4" />
+														)}
 														<p className="text-xs md:text-sm text-zinc-300">{skill.label}</p>
 													</Link>
 												))}
