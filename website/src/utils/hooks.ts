@@ -12,7 +12,7 @@ export function useDocumentTitle(prevailOnUnmount = false): [string, Dispatch<Se
 		() => () => {
 			if (!prevailOnUnmount) document.title = defaultTitle.current;
 		},
-		[]
+		[prevailOnUnmount]
 	);
 
 	return [title, setTitle];

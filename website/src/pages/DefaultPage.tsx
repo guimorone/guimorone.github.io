@@ -15,7 +15,7 @@ export default function DefaultPage() {
 	useEffect(() => {
 		if (pathname === '/') navigate(HOME);
 		else setDocumentTitle(getDocumentTitle(pathname));
-	}, [pathname]);
+	}, [navigate, pathname, setDocumentTitle]);
 
 	return (
 		<div className="flex flex-col justify-between min-h-screen mx-auto">
