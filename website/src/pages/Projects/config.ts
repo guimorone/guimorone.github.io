@@ -1,11 +1,24 @@
-import { REACT_REDUX, CI_CD, DOCKER, BASH } from './../../constants/skills';
 import { SiInstagram } from 'react-icons/si';
 import { FaGamepad } from 'react-icons/fa';
 import { RiLockPasswordLine } from 'react-icons/ri';
 import { FaZ, FaLink } from 'react-icons/fa6';
 import { BanknotesIcon } from '@heroicons/react/24/solid';
 import { GitHubIcon } from '../../utils/icons';
-import { C, DJANGO, LINUX, PYTHON, REACT, TAILWIND_CSS, TYPESCRIPT } from '../../constants/skills';
+import {
+	BASH,
+	C,
+	CI_CD,
+	DOCKER,
+	DJANGO,
+	GIT,
+	GITHUB,
+	LINUX,
+	PYTHON,
+	REACT,
+	REACT_REDUX,
+	TAILWIND_CSS,
+	TYPESCRIPT,
+} from '../../constants/skills';
 import {
 	RANDOM_PASSWORD_GENERATOR_PROJECT_URL,
 	TYPEWAR_GAME_URL,
@@ -27,7 +40,7 @@ export const projects: ActivityType[] = [
 		subtitle: 'Jan 2023 - Nov 2023 and Jun 2024',
 		description:
 			'A Python program to get specific data from Instagram. The project is on hold, but is currently working to get CSV files from followers, followings, and people who do not follow back the account you choose.',
-		skills: [PYTHON],
+		skills: [GIT, GITHUB, PYTHON],
 		links: [{ Icon: GitHubIcon, label: 'Project URL', url: INSTAGRAM_STATS_PROJECT_URL }],
 		Icon: { Element: SiInstagram, background: 'bg-[#B733AA]' },
 	},
@@ -35,7 +48,7 @@ export const projects: ActivityType[] = [
 		title: 'URL Shortener',
 		subtitle: 'April 2024',
 		description: 'Program to generate a shortened URL with a focus on using server-side rendering.',
-		skills: [DJANGO, PYTHON],
+		skills: [DJANGO, GIT, GITHUB, PYTHON],
 		links: [
 			{
 				Icon: GitHubIcon,
@@ -49,7 +62,7 @@ export const projects: ActivityType[] = [
 		title: 'Random Password Generator',
 		subtitle: 'Feb 2024',
 		description: 'Program to generate a secure random password.',
-		skills: [PYTHON],
+		skills: [GIT, GITHUB, PYTHON],
 		links: [
 			{
 				Icon: GitHubIcon,
@@ -70,7 +83,7 @@ export const projects: ActivityType[] = [
 			'Developed using React, TypeScript, Tailwind CSS and Django (Python).',
 		],
 		comments: ['Since is a private project, I can not share the Repository URL.'],
-		skills: [BASH, CI_CD, DJANGO, DOCKER, LINUX, REACT, REACT_REDUX, TAILWIND_CSS, TYPESCRIPT],
+		skills: [BASH, CI_CD, DJANGO, DOCKER, GIT, GITHUB, LINUX, REACT, REACT_REDUX, TAILWIND_CSS, TYPESCRIPT],
 		Icon: { Element: BanknotesIcon },
 	},
 	{
@@ -78,7 +91,7 @@ export const projects: ActivityType[] = [
 		subtitle: 'Feb 2023 - Apr 2023',
 		description:
 			'A 2D game made with other college colleagues. Inspired in the famous ZType game, but in Portuguese.',
-		skills: [DJANGO, REACT, TAILWIND_CSS, TYPESCRIPT],
+		skills: [DJANGO, GIT, GITHUB, REACT, TAILWIND_CSS, TYPESCRIPT],
 		links: [
 			{
 				Icon: FaGamepad,
@@ -103,7 +116,7 @@ export const projects: ActivityType[] = [
 		subtitle: 'May 2019 - Jun 2019',
 		description:
 			'A multiplayer game made with other college colleagues. The game story is about a postman that have to deliver some packages in the neighbourhood, but he will face issues and other players in his way.',
-		skills: [C, LINUX],
+		skills: [C, GIT, GITHUB, LINUX],
 		links: [{ Icon: GitHubIcon, label: 'Project URL', url: JOJOSUE_PROJECT_URL }],
 		Icon: { Element: FaGamepad, background: 'bg-[#B58CD6]' },
 	},

@@ -16,6 +16,8 @@ import {
 	DART,
 	FLUTTER,
 	GCP,
+	GIT,
+	GITHUB,
 	GRAPHQL,
 	HTML,
 	JAVASCRIPT,
@@ -35,7 +37,7 @@ export const coursesAndCertifications: ActivityType[] = [
 	{
 		title: 'GraphQL by Example',
 		subtitle: 'Udemy. Nov 2024',
-		skills: [GRAPHQL, NODE, REACT, JAVASCRIPT, TYPESCRIPT],
+		skills: [GIT, GITHUB, GRAPHQL, NODE, REACT, JAVASCRIPT, TYPESCRIPT],
 		links: [
 			{
 				Icon: GrCertificate,
@@ -63,7 +65,7 @@ export const coursesAndCertifications: ActivityType[] = [
 	{
 		title: 'The Complete Flutter Development Bootcamp with Dart',
 		subtitle: 'Udemy. Apr 2024',
-		skills: [DART, FLUTTER],
+		skills: [DART, FLUTTER, GIT, GITHUB],
 		links: [
 			{
 				Icon: GrCertificate,
@@ -137,7 +139,7 @@ export const coursesAndCertifications: ActivityType[] = [
 	{
 		title: 'The Complete 2020 Web Development Bootcamp',
 		subtitle: 'Udemy. Apr 2020',
-		skills: [CSS, HTML, JAVASCRIPT, MONGODB, NODE, REACT, SQL, TYPESCRIPT],
+		skills: [CSS, GIT, GITHUB, HTML, JAVASCRIPT, MONGODB, NODE, REACT, SQL, TYPESCRIPT],
 		links: [
 			{
 				Icon: GrCertificate,
