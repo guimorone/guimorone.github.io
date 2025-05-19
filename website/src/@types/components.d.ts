@@ -1,13 +1,13 @@
 import type { ReactNode, JSX, ImgHTMLAttributes } from 'react';
 import type { ActivityType, IntRange } from '.';
 import type { IconType } from './icons';
-export interface NavbarProps {
-	show?: boolean;
-}
-
 export interface BannerProps {
 	title?: string;
 	link: { url: string; label: string };
+}
+
+export interface NavbarProps {
+	show?: boolean;
 }
 
 export interface CenterProps {
@@ -18,11 +18,13 @@ export interface CenterProps {
 
 export interface FeedProps {
 	activities: ActivityType[];
+	currentSkill?: string;
 }
 
 export interface ObjectFeedProps {
 	title: string;
 	activities: ActivityType[];
+	currentSkill?: string;
 }
 
 export interface PageProps {
@@ -71,4 +73,11 @@ export interface CollapsableProps {
 
 export interface StarsProps {
 	rating: IntRange<1, 6>;
+}
+
+export interface ModalProps {
+	open: boolean;
+	onClose: () => void;
+	title: string;
+	children: ReactNode;
 }

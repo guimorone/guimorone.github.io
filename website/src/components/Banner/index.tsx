@@ -36,7 +36,7 @@ const Banner: FC<BannerProps> = ({ title = 'Hey, right here!', link }) => {
 						className="-m-1.5 flex-none p-1.5 text-zinc-900 hover:text-zinc-700"
 					>
 						<span className="sr-only">Dismiss</span>
-						<XMarkIcon className="w-5 h-5" aria-hidden="true" />
+						<XMarkIcon className="size-5" aria-hidden="true" />
 					</button>
 				</div>
 			</div>

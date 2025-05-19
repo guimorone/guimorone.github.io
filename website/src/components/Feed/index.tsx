@@ -5,7 +5,7 @@ import { SKILLS } from '../../constants/paths';
 import type { FC } from 'react';
 import type { FeedProps } from '../../@types/components';
 
-const Feed: FC<FeedProps> = ({ activities }) => {
+const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 	return (
 		<div className="flow-root">
 			<ul className="-mb-8">
@@ -25,7 +25,7 @@ const Feed: FC<FeedProps> = ({ activities }) => {
 											'h-8 w-8 rounded-full flex items-center justify-center ring-4 ring-white'
 										)}
 									>
-										{item.Icon && <item.Icon.Element className="w-5 h-5 text-zinc-100" aria-hidden="true" />}
+										{item.Icon && <item.Icon.Element className="size-5 text-zinc-100" aria-hidden="true" />}
 									</span>
 									<div className="flex min-w-0 flex-1 flex-col justify-between pt-1.5 gap-y-2.5">
 										<div className="-space-y-0.5">
@@ -53,14 +53,37 @@ const Feed: FC<FeedProps> = ({ activities }) => {
 													<Link
 														key={`feed-skill-${skill.label}-${idx}`}
 														to={`${SKILLS}?skill=${skill.label}`}
-														className="flex items-center gap-2 px-3 py-1 duration-150 border rounded-full bg-zinc-800 border-zinc-700 hover:bg-zinc-700 hover:border-zinc-600"
+														target={!currentSkill ? '_self' : '_blank'}
+														className={classNames(
+															currentSkill === skill.label
+																? 'bg-zinc-200 border-zinc-100 pointer-events-none'
+																: 'bg-zinc-800 border-zinc-700 hover:bg-zinc-700 hover:border-zinc-600',
+															'flex items-center gap-2 px-3 py-1 duration-150 border rounded-full'
+														)}
 													>
 														{typeof skill.Icon.Element === 'object' ? (
-															<skill.Icon.Element.withoutColor className="w-3.5 h-3.5 md:w-4 md:h-4" />
+															<skill.Icon.Element.withoutColor
+																className={classNames(
+																	currentSkill === skill.label && 'text-zinc-800',
+																	'size-3.5 md:size-4'
+																)}
+															/>
 														) : (
-															<skill.Icon.Element className="w-3.5 h-3.5 md:w-4 md:h-4" />
+															<skill.Icon.Element
+																className={classNames(
+																	currentSkill === skill.label && 'text-zinc-800',
+																	'size-3.5 md:size-4'
+																)}
+															/>
 														)}
-														<p className="text-xs md:text-sm text-zinc-300">{skill.label}</p>
+														<p
+															className={classNames(
+																currentSkill === skill.label ? 'text-zinc-800' : 'text-zinc-300',
+																'text-xs md:text-sm'
+															)}
+														>
+															{skill.label}
+														</p>
 													</Link>
 												))}
 											</ul>

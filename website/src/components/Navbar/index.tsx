@@ -56,7 +56,7 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 												'flex gap-x-1.5 items-center text-sm font-semibold leading-6'
 											)}
 										>
-											<Icon className="w-4 h-4" />
+											<Icon className="size-4" />
 											<span>{name}</span>
 											{isCurrent && (
 												<span className="absolute h-px inset-x-1 -bottom-px bg-gradient-to-r from-teal-400/0 via-teal-400/40 to-teal-400/0"></span>
@@ -67,7 +67,7 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 											href={href}
 											className="flex gap-x-1.5 items-center text-sm font-semibold leading-6 text-zinc-100 hover:underline hover:underline-offset-2"
 										>
-											<Icon className="w-4 h-4" />
+											<Icon className="size-4" />
 											<span>{name}</span>
 										</a>
 									)}
@@ -109,7 +109,7 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 														'-mx-3 flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-zinc-100'
 													)}
 												>
-													<Icon className="w-4 h-4" />
+													<Icon className="size-4" />
 													<span>{name}</span>
 												</Link>
 											) : (
@@ -120,7 +120,7 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 														onClick={handleCloseMobileMenu}
 														className="hidden -mx-3 md:flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-zinc-100 hover:bg-zinc-800"
 													>
-														<Icon className="w-4 h-4" />
+														<Icon className="size-4" />
 														<span>{name}</span>
 													</a>
 												</>

@@ -31,7 +31,7 @@ import type { ActivityType } from '../../@types';
 export const title: string = 'Courses & Certifications';
 export const subtitle: string = 'Allow me to showcase my certifications on different top-rated online platforms.';
 
-export const courses_and_certifications: ActivityType[] = [
+export const coursesAndCertifications: ActivityType[] = [
 	{
 		title: 'GraphQL by Example',
 		subtitle: 'Udemy. Nov 2024',
