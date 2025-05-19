@@ -21,6 +21,7 @@ import {
 	GRAPHQL,
 	HTML,
 	JAVASCRIPT,
+	JQUERY,
 	LINUX,
 	MONGODB,
 	NODE,
@@ -139,7 +140,7 @@ export const coursesAndCertifications: ActivityType[] = [
 	{
 		title: 'The Complete 2020 Web Development Bootcamp',
 		subtitle: 'Udemy. Apr 2020',
-		skills: [CSS, GIT, GITHUB, HTML, JAVASCRIPT, MONGODB, NODE, REACT, SQL, TYPESCRIPT],
+		skills: [CSS, GIT, GITHUB, HTML, JAVASCRIPT, JQUERY, MONGODB, NODE, REACT, SQL, TYPESCRIPT],
 		links: [
 			{
 				Icon: GrCertificate,

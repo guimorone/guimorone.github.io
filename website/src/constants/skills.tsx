@@ -72,7 +72,7 @@ export const CYBER_SECURITY: SkillType = {
 	label: 'Cyber Security',
 	rating: 1,
 };
-export const DART: SkillType = { Icon: { Element: SiDart, color: 'text-[#0175C9]' }, label: 'Dart', rating: 2 };
+export const DART: SkillType = { Icon: { Element: SiDart, color: 'text-[#0175C9]' }, label: 'Dart', rating: 3 };
 export const DJANGO: SkillType = {
 	Icon: { Element: SiDjango, color: 'text-[#0A2F20]' },
 	label: 'Django',
@@ -92,7 +92,7 @@ export const FLASK: SkillType = { Icon: { Element: SiFlask }, label: 'Flask', ra
 export const FLUTTER: SkillType = {
 	Icon: { Element: SiFlutter, color: 'text-[#54C4F8]' },
 	label: 'Flutter',
-	rating: 2,
+	rating: 3,
 };
 export const GCP: SkillType = {
 	Icon: { Element: DiGoogleCloudPlatform, color: 'text-[#2FA1FB]' },
@@ -137,7 +137,7 @@ export const JUPYTER_NOTEBOOKS: SkillType = {
 export const LINUX: SkillType = {
 	Icon: { Element: { withColor: FcLinux, withoutColor: FaLinux } },
 	label: 'Linux',
-	rating: 4,
+	rating: 3,
 };
 export const KUBERNETES: SkillType = {
 	Icon: { Element: SiKubernetes, color: 'text-[#326DE6]' },

@@ -91,7 +91,7 @@ export const projects: ActivityType[] = [
 		subtitle: 'Feb 2023 - Apr 2023',
 		description:
 			'A 2D game made with other college colleagues. Inspired in the famous ZType game, but in Portuguese.',
-		skills: [DJANGO, GIT, GITHUB, REACT, TAILWIND_CSS, TYPESCRIPT],
+		skills: [GIT, GITHUB, REACT, TAILWIND_CSS, TYPESCRIPT],
 		links: [
 			{
 				Icon: FaGamepad,
@@ -116,7 +116,7 @@ export const projects: ActivityType[] = [
 		subtitle: 'May 2019 - Jun 2019',
 		description:
 			'A multiplayer game made with other college colleagues. The game story is about a postman that have to deliver some packages in the neighbourhood, but he will face issues and other players in his way.',
-		skills: [C, GIT, GITHUB, LINUX],
+		skills: [BASH, C, GIT, GITHUB, LINUX],
 		links: [{ Icon: GitHubIcon, label: 'Project URL', url: JOJOSUE_PROJECT_URL }],
 		Icon: { Element: FaGamepad, background: 'bg-[#B58CD6]' },
 	},
