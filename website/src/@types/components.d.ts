@@ -78,6 +78,8 @@ export interface StarsProps {
 export interface ModalProps {
 	open: boolean;
 	onClose: () => void;
+	Icon?: IconType;
 	title: string;
+	subtitle?: string;
 	children: ReactNode;
 }

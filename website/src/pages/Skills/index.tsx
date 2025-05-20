@@ -9,31 +9,40 @@ import ObjectFeed from '../../components/Feed/ObjectFeed';
 import { title, subtitle, skills, languages } from './config';
 import { classNames, getSkillData, checkIfObjectIsEmpty } from '../../utils';
 import { LINKEDIN_SKILLS_URL } from '../../constants/urls';
+import type { SkillType } from '../../@types';
 
 export default function Skills() {
-	const [currentSkill, setCurrentSkill] = useState<string | null>(null);
+	const [currentSkill, setCurrentSkill] = useState<SkillType | null>(null);
 	const paramRef = useRef<HTMLDivElement>(null);
 	const [searchParams, _] = useSearchParams();
 
-	const skill = searchParams.get('skill');
+	const skillSearchParam = searchParams.get('skill');
 
 	useEffect(() => {
-		if (!paramRef.current || !skill) return;
+		if (!paramRef.current || !skillSearchParam) return;
 
 		paramRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
-	}, [skill]);
+	}, [skillSearchParam]);
 
-	const onOpenModal = (skillLabel: string) => setCurrentSkill(skillLabel);
+	const onOpenModal = (skill: SkillType) => setCurrentSkill(skill);
 	const onCloseModal = () => setCurrentSkill(null);
 
-	const skillData = getSkillData(currentSkill ?? '');
+	const skillData = getSkillData(currentSkill?.label ?? '');
+	const modalIcon =
+		typeof currentSkill?.Icon.Element === 'object'
+			? currentSkill?.Icon.Element.withoutColor
+			: currentSkill?.Icon.Element;
+	const modalTitle = currentSkill ? `Experiences with ${currentSkill.label}` : 'Closing Modal';
+	const modalSubtitle = currentSkill ? `Skill Level: ${currentSkill?.rating} stars` : 'Closing Modal';
 
 	return (
 		<>
 			<Modal
 				open={!!currentSkill}
 				onClose={onCloseModal}
-				title={currentSkill ? `Experiences with ${currentSkill}` : 'Closing Modal'}
+				Icon={modalIcon}
+				title={modalTitle}
+				subtitle={modalSubtitle}
 			>
 				<div className="space-y-8">
 					{checkIfObjectIsEmpty(skillData) ? (
@@ -50,7 +59,7 @@ export default function Skills() {
 								key={`skills-modal-${topic}-${index}`}
 								title={topic}
 								activities={skillData[topic as keyof typeof skillData] ?? []}
-								currentSkill={currentSkill ?? undefined}
+								currentSkill={currentSkill?.label ?? undefined}
 							/>
 						))
 					)}
@@ -59,35 +68,35 @@ export default function Skills() {
 			<GridContainer title={title} subtitle={subtitle}>
 				<Collapsable title="Tools">
 					<Grid>
-						{skills?.map(({ Icon, label, rating }, index) => (
+						{skills?.map((skill, index) => (
 							<div
-								key={`skill-${label}-${index}`}
-								ref={skill?.toLowerCase() === label.toLowerCase() ? paramRef : null}
+								key={`skill-${skill.label}-${index}`}
+								ref={skillSearchParam?.toLowerCase() === skill.label.toLowerCase() ? paramRef : null}
 								className="relative flex items-center py-1 rounded-lg gap-x-2 group"
 							>
 								<button
 									type="button"
-									onClick={() => onOpenModal(label)}
+									onClick={() => onOpenModal(skill)}
 									className={classNames(
-										skill?.toLowerCase() === label.toLowerCase() && 'bg-zinc-900',
+										skillSearchParam?.toLowerCase() === skill.label.toLowerCase() && 'bg-zinc-900',
 										'absolute inset-0 -mx-2 -my-1 rounded-lg group-hover:bg-zinc-800 group-active:bg-zinc-900'
 									)}
 								/>
 								<button
 									type="button"
-									onClick={() => onOpenModal(label)}
+									onClick={() => onOpenModal(skill)}
 									className="relative flex items-center gap-x-2"
 								>
-									{typeof Icon.Element === 'object' ? (
-										<Icon.Element.withColor className="w-auto h-4 sm:h-5 md:h-6" aria-hidden="true" />
+									{typeof skill.Icon.Element === 'object' ? (
+										<skill.Icon.Element.withColor className="w-auto h-4 sm:h-5 md:h-6" aria-hidden="true" />
 									) : (
-										<Icon.Element
-											className={classNames(Icon.color, 'w-auto h-4 sm:h-5 md:h-6')}
+										<skill.Icon.Element
+											className={classNames(skill.Icon.color, 'w-auto h-4 sm:h-5 md:h-6')}
 											aria-hidden="true"
 										/>
 									)}
-									<p className="text-sm md:text-base text-zinc-100">{label}</p>
-									<Stars rating={rating} />
+									<p className="text-sm md:text-base text-zinc-100">{skill.label}</p>
+									<Stars rating={skill.rating} />
 								</button>
 							</div>
 						))}
@@ -98,10 +107,10 @@ export default function Skills() {
 						{languages?.map(({ label, description, rating }, index) => (
 							<div
 								key={`language-${label}-${index}`}
-								ref={skill?.toLowerCase() === label.toLowerCase() ? paramRef : null}
+								ref={skillSearchParam?.toLowerCase() === label.toLowerCase() ? paramRef : null}
 								className="relative flex items-center py-1 rounded-lg gap-x-2"
 							>
-								{skill?.toLowerCase() === label.toLowerCase() && (
+								{skillSearchParam?.toLowerCase() === label.toLowerCase() && (
 									<div className="absolute inset-0 -mx-2 -my-1 rounded-lg bg-zinc-900" />
 								)}
 								<div className="relative flex items-center gap-x-2">
