@@ -16,7 +16,7 @@ const Modal: FC<ModalProps> = ({ open, onClose, Icon, title, subtitle, children 
 						transition
 						className="relative transform overflow-hidden rounded-lg bg-zinc-950 px-4 pb-4 pt-5 text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 sm:w-full sm:max-w-xl md:max-w-2xl lg:max-w-3xl sm:p-6 data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
 					>
-						<div className="absolute top-0 right-0 pt-4 pr-4">
+						<div className="absolute top-0 right-0 hidden pt-4 pr-4 sm:block">
 							<button
 								type="button"
 								onClick={onClose}
@@ -42,15 +42,13 @@ const Modal: FC<ModalProps> = ({ open, onClose, Icon, title, subtitle, children 
 								{children}
 							</div>
 						</div>
-						<div className="mt-5 sm:flex sm:mt-4 sm:flex-row-reverse">
-							<button
-								type="button"
-								onClick={onClose}
-								className="inline-flex justify-center w-full px-3 py-2 mt-3 text-sm font-semibold text-zinc-900 bg-zinc-100 rounded-md shadow-sm ring-1 ring-inset ring-zinc\-300 hover:bg-zinc-200 sm:mt-0 sm:w-auto"
-							>
-								Close
-							</button>
-						</div>
+						<button
+							type="button"
+							onClick={onClose}
+							className="inline-flex sm:hidden mt-8 justify-center w-full px-3 py-2 text-sm font-semibold text-zinc-900 bg-zinc-100 rounded-md shadow-sm ring-1 ring-inset ring-zinc\-300 hover:bg-zinc-200 sm:w-auto"
+						>
+							Close
+						</button>
 					</DialogPanel>
 				</div>
 			</div>

@@ -50,10 +50,9 @@ export function getSkillData(skillLabel: string): {
 	const skillData: { [key: string]: ActivityType[] } = {};
 
 	const checkExperience = (experience: ActivityType): boolean => {
-		const skills = experience?.skills?.filter(skill => skill.label === skillLabel);
+		const hasSkill = experience?.skills?.find(skill => skill?.label?.toLowerCase() === skillLabel?.toLowerCase());
 
-		if (!skills || skills.length === 0) return false;
-		return true;
+		return !!hasSkill;
 	};
 
 	works.forEach(work => {
