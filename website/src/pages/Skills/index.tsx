@@ -33,7 +33,9 @@ export default function Skills() {
 			? currentSkill?.Icon.Element.withoutColor
 			: currentSkill?.Icon.Element;
 	const modalTitle = currentSkill ? `Experiences with ${currentSkill.label}` : 'Closing Modal';
-	const modalSubtitle = currentSkill ? `Skill Level: ${currentSkill?.rating} stars` : 'Closing Modal';
+	const modalSubtitle = currentSkill
+		? `Skill Level: ${currentSkill?.rating} ${currentSkill?.rating === 1 ? 'star' : 'stars'}`
+		: 'Closing Modal';
 
 	return (
 		<>
