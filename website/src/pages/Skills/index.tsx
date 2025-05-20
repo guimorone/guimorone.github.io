@@ -14,7 +14,7 @@ import type { SkillType } from '../../@types';
 export default function Skills() {
 	const [currentSkill, setCurrentSkill] = useState<SkillType | null>(null);
 	const paramRef = useRef<HTMLDivElement>(null);
-	const [searchParams, _] = useSearchParams();
+	const [searchParams, setSearchParams] = useSearchParams();
 
 	const skillSearchParam = searchParams.get('skill');
 
@@ -24,10 +24,12 @@ export default function Skills() {
 		paramRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
 	}, [skillSearchParam]);
 
-	const onOpenModal = (skill: SkillType) => setCurrentSkill(skill);
-	const onCloseModal = () => setCurrentSkill(null);
+	const onOpenModal = (skill: SkillType): void => {
+		setCurrentSkill(skill);
+		setSearchParams({ skill: skill.label });
+	};
+	const onCloseModal = (): void => setCurrentSkill(null);
 
-	const skillData = getSkillData(currentSkill?.label ?? '');
 	const modalIcon =
 		typeof currentSkill?.Icon.Element === 'object'
 			? currentSkill?.Icon.Element.withoutColor
@@ -36,6 +38,8 @@ export default function Skills() {
 	const modalSubtitle = currentSkill
 		? `Skill Level: ${currentSkill?.rating} ${currentSkill?.rating === 1 ? 'star' : 'stars'}`
 		: 'Closing Modal';
+
+	const skillData = getSkillData(currentSkill?.label ?? '');
 
 	return (
 		<>
@@ -61,7 +65,7 @@ export default function Skills() {
 								key={`skills-modal-${topic}-${index}`}
 								title={topic}
 								activities={skillData[topic as keyof typeof skillData] ?? []}
-								currentSkill={currentSkill?.label ?? undefined}
+								currentSkill={currentSkill?.label}
 							/>
 						))
 					)}
