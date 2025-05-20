@@ -57,9 +57,9 @@ export const skills: SkillType[] = [
 	.sort(sortByRatingFunction);
 
 export const languages: LanguageSkillType[] = [
-	{ label: 'Portuguese', description: 'Native', rating: 5 as const },
-	{ label: 'English', description: 'Advanced', rating: 4 as const },
-	{ label: 'German', description: 'Beginner', rating: 1 as const },
+	{ label: 'Portuguese', description: 'Native', rating: 5 },
+	{ label: 'English', description: 'Advanced', rating: 4 },
+	{ label: 'German', description: 'Beginner', rating: 1 },
 ]
 	.sort(sortByTitleOrLabelFunction)
 	.sort(sortByRatingFunction);

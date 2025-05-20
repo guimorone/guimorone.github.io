@@ -1,24 +1,43 @@
-import { Rating } from 'flowbite-react';
-import type { FC } from 'react';
+import { Fragment, type FC, type JSX } from 'react';
+import { LiaStar, LiaStarSolid, LiaStarHalfAltSolid } from 'react-icons/lia';
+import { classNames } from '../../utils';
 import type { StarsProps } from '../../@types/components';
 
 const Stars: FC<StarsProps> = ({ rating }) => {
+	const renderStars = (size: 'xs' | 'sm'): JSX.Element => {
+		const iconSize = size === 'xs' ? 14 : 18;
+
+		return (
+			<div
+				className={classNames(
+					size === 'xs' ? 'flex items-center md:hidden' : 'hidden md:flex md:items-center',
+					'gap-x-0.5'
+				)}
+			>
+				{[1, 2, 3, 4, 5].map((star, index) => {
+					const isHalfStar = rating >= star - 0.5 && rating < star;
+					const isFilled = rating >= star;
+
+					return (
+						<Fragment key={`star-${rating}-${star}-${index}`}>
+							{isHalfStar ? (
+								<LiaStarHalfAltSolid className="text-yellow-400" size={iconSize} />
+							) : isFilled ? (
+								<LiaStarSolid className="text-yellow-400" size={iconSize} />
+							) : (
+								<LiaStar className="text-zinc-300" size={iconSize} />
+							)}
+						</Fragment>
+					);
+				})}
+			</div>
+		);
+	};
+
 	return (
 		<>
-			<Rating size="xs" className="flex items-center md:hidden">
-				<Rating.Star filled={rating >= 1} />
-				<Rating.Star filled={rating >= 2} />
-				<Rating.Star filled={rating >= 3} />
-				<Rating.Star filled={rating >= 4} />
-				<Rating.Star filled={rating >= 5} />
-			</Rating>
-			<Rating size="sm" className="hidden md:flex md:items-center">
-				<Rating.Star filled={rating >= 1} />
-				<Rating.Star filled={rating >= 2} />
-				<Rating.Star filled={rating >= 3} />
-				<Rating.Star filled={rating >= 4} />
-				<Rating.Star filled={rating >= 5} />
-			</Rating>
+			{renderStars('xs')}
+			{renderStars('sm')}
 		</>
 	);
 };

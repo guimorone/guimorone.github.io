@@ -53,14 +53,18 @@ export const AIRFLOW: SkillType = {
 };
 export const AWS: SkillType = { Icon: { Element: FaAws, color: 'text-[#FF9900]' }, label: 'AWS', rating: 4 };
 export const BASH: SkillType = { Icon: { Element: VscTerminalBash }, label: 'Bash', rating: 4 };
-export const C: SkillType = { Icon: { Element: FaC, color: 'text-[#5D6BC1]' }, label: 'C', rating: 2 };
+export const C: SkillType = { Icon: { Element: FaC, color: 'text-[#5D6BC1]' }, label: 'C', rating: 2.5 };
 export const CONSTRUCT_3: SkillType = {
 	Icon: { Element: SiConstruct3, color: 'text-[#DAE8F6]' },
 	label: 'Construct 3',
 	rating: 2,
 };
 export const CI_CD: SkillType = { Icon: { Element: AiOutlineDeploymentUnit }, label: 'CI/CD', rating: 5 };
-export const CPP: SkillType = { Icon: { Element: SiCplusplus, color: 'text-[#659BD3]' }, label: 'C++', rating: 2 };
+export const CPP: SkillType = {
+	Icon: { Element: SiCplusplus, color: 'text-[#659BD3]' },
+	label: 'C++',
+	rating: 2.5,
+};
 export const CSHARP: SkillType = {
 	Icon: { Element: TbBrandCSharp, color: 'text-[#9A4F96]' },
 	label: 'C#',
@@ -97,7 +101,7 @@ export const FLUTTER: SkillType = {
 export const GCP: SkillType = {
 	Icon: { Element: DiGoogleCloudPlatform, color: 'text-[#2FA1FB]' },
 	label: 'GCP',
-	rating: 3,
+	rating: 3.5,
 };
 export const GIT: SkillType = { Icon: { Element: FaGitAlt, color: 'text-[#F05033]' }, label: 'Git', rating: 4 };
 export const GITHUB: SkillType = { Icon: { Element: SiGithub }, label: 'GitHub', rating: 5 };
@@ -113,7 +117,7 @@ export const HASKELL: SkillType = {
 	rating: 1,
 };
 export const HTML: SkillType = { Icon: { Element: FaHtml5, color: 'text-[#E54C25]' }, label: 'HTML', rating: 5 };
-export const JAVA: SkillType = { Icon: { Element: FaJava, color: 'text-[#EB2F2E]' }, label: 'Java', rating: 2 };
+export const JAVA: SkillType = { Icon: { Element: FaJava, color: 'text-[#EB2F2E]' }, label: 'Java', rating: 2.5 };
 export const JAVASCRIPT: SkillType = {
 	Icon: { Element: SiJavascript, color: 'text-[#F7DF1C]' },
 	label: 'JavaScript',
@@ -137,7 +141,7 @@ export const JUPYTER_NOTEBOOKS: SkillType = {
 export const LINUX: SkillType = {
 	Icon: { Element: { withColor: FcLinux, withoutColor: FaLinux } },
 	label: 'Linux',
-	rating: 3,
+	rating: 3.5,
 };
 export const KUBERNETES: SkillType = {
 	Icon: { Element: SiKubernetes, color: 'text-[#326DE6]' },
@@ -153,12 +157,12 @@ export const NODE: SkillType = { Icon: { Element: FaNodeJs, color: 'text-[#90C43
 export const POSTGRESQL: SkillType = {
 	Icon: { Element: BiLogoPostgresql, color: 'text-[#306793]' },
 	label: 'PostgreSQL',
-	rating: 3,
+	rating: 3.5,
 };
 export const POWERSHELL: SkillType = {
 	Icon: { Element: TbBrandPowershell, color: 'text-[#2671BE]' },
 	label: 'PowerShell',
-	rating: 3,
+	rating: 3.5,
 };
 export const PYTHON: SkillType = {
 	Icon: { Element: FaPython, color: 'text-[#326FA0]' },
@@ -173,7 +177,7 @@ export const REACT: SkillType = {
 export const REACT_NATIVE: SkillType = {
 	Icon: { Element: TbBrandReactNative, color: 'text-[#61DBFB]' },
 	label: 'React Native',
-	rating: 3,
+	rating: 3.5,
 };
 export const REACT_REDUX: SkillType = {
 	Icon: { Element: SiRedux, color: 'text-[#764ABC]' },
@@ -190,7 +194,7 @@ export const TAILWIND_CSS: SkillType = {
 export const TERRAFORM: SkillType = {
 	Icon: { Element: SiTerraform, color: 'text-[#7B42BC]' },
 	label: 'Terraform',
-	rating: 3,
+	rating: 4,
 };
 export const TYPESCRIPT: SkillType = {
 	Icon: { Element: SiTypescript, color: 'text-[#2E79C7]' },
@@ -201,5 +205,5 @@ export const VUE: SkillType = { Icon: { Element: SiVuedotjs, color: 'text-[#3EB9
 export const WEBPACK: SkillType = {
 	Icon: { Element: SiWebpack, color: 'text-[#8ED6FB]' },
 	label: 'Webpack',
-	rating: 2,
+	rating: 1.5,
 };

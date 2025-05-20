@@ -3,12 +3,6 @@ import type { IconType } from './icons';
 
 export type GenericData = { [key: string]: any };
 
-export type Enumerate<N extends number, Acc extends number[] = []> = Acc['length'] extends N
-	? Acc[number]
-	: Enumerate<N, [...Acc, Acc['length']]>;
-
-export type IntRange<F extends number, T extends number> = Exclude<Enumerate<T>, Enumerate<F>>;
-
 export type NavigationType = {
 	name: string;
 	href: string;
@@ -20,7 +14,7 @@ export type NavigationType = {
 export type SkillType = {
 	Icon: { Element: IconType | { withColor: IconType; withoutColor: IconType }; color?: string };
 	label: string;
-	rating: IntRange<1, 6>;
+	rating: number;
 };
 
 export type LanguageSkillType = {

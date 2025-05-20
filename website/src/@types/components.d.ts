@@ -1,5 +1,5 @@
 import type { ReactNode, JSX, ImgHTMLAttributes } from 'react';
-import type { ActivityType, IntRange } from '.';
+import type { ActivityType, SkillType } from '.';
 import type { IconType } from './icons';
 export interface BannerProps {
 	title?: string;
@@ -72,7 +72,7 @@ export interface CollapsableProps {
 }
 
 export interface StarsProps {
-	rating: IntRange<1, 6>;
+	rating: SkillType['rating'];
 }
 
 export interface ModalProps {
