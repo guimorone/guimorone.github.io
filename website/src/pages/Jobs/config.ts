@@ -105,11 +105,11 @@ export const experiences: ActivityType[] = [
 		title: 'Software Engineer | Full-time',
 		subtitle: 'Oncase. Feb 2022 - Dec 2023 (Feb 2022 - Aug 2022 as an intern)',
 		description: [
+			'In general, utilized skills in web development (Flask, Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing (AWS and GCP).',
 			'Developed Big Data applications with a focus on high efficiency, scalability, and low cost.',
 			'Developed frontend applications using React (JavaScript, TypeScript and HTML/CSS) and Redux.',
 			'Implemented backend functionality using Python frameworks Flask and Django.',
 			'Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.',
-			'In general, utilized skills in web development (Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing.',
 			'Collaborated with cross-functional teams to achieve project goals.',
 			'Enhanced customer relationships through the delivery of top-notch solutions.',
 			'Ensured high-quality and scalable application development.',

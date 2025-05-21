@@ -1,5 +1,7 @@
 export const title: string = "Hello, I'm Guilherme, and here is a nutshell version of who I am.";
 export const descriptions: string[] = [
-	"Originally from Rio but now based in Recife, I've had the privilege of growing up in two vibrant cities. My passions are as diverse as my background, ranging from an avid love for games and books to an insatiable curiosity for travel and technology. Furthermore, I am always eager to explore new opportunities and challenges that can help me grow both as a professional and as a person, fuelled by my passion for learning and applying new technologies to solve real-world problems.",
-	'I have been working on Software Development since 2020, and I am used to developing Big Data applications that demand high efficiency, scalability, and low cost. All my projects demanded skills in web development, data engineering, CI/CD, Docker, GitHub Actions, and cloud computing, in order to deliver quality solutions to clients.',
+	'I am a Software Engineer with a background in Computer Engineering and a strong interest in building reliable, efficient, and scalable systems.',
+	'Since 2019, I have worked on a range of projects involving web development, data engineering, and cloud infrastructure — often with a focus on Big Data applications. I am comfortable working with tools like Python, Django, FastAPI, React, Docker, cloud platforms like AWS and GCP, and more.',
+	'I enjoy solving real-world problems with code, collaborating with teams, and continuously learning new technologies.',
+	'Originally from Rio and now based in Recife, I bring curiosity, adaptability, and a passion for turning ideas into practical solutions.',
 ];
