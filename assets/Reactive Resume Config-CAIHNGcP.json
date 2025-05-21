@@ -241,19 +241,6 @@
           }
         },
         {
-          "id": "bt31lt4gnjxdgt2pkkx5wvyn",
-          "visible": true,
-          "company": "InSpace",
-          "position": "Mobile Engineer | Freelancer",
-          "location": "Recife - PE, Brazil",
-          "date": "August 2022 - October 2022",
-          "summary": "<p>I have worked with the identification of objects (censored specificity) from a mobile camera for legal purposes.</p>",
-          "url": {
-            "label": "Company URL",
-            "href": "https://inspace.tech"
-          }
-        },
-        {
           "id": "wu4bozur9t46rdmmdjf7x92i",
           "visible": true,
           "company": "Oncase",
@@ -264,6 +251,19 @@
           "url": {
             "label": "Company Website",
             "href": "https://www.oncase.com.br"
+          }
+        },
+        {
+          "id": "bt31lt4gnjxdgt2pkkx5wvyn",
+          "visible": true,
+          "company": "InSpace",
+          "position": "Mobile Engineer | Freelancer",
+          "location": "Recife - PE, Brazil",
+          "date": "August 2022 - October 2022",
+          "summary": "<p>I have worked with the identification of objects (censored specificity) from a mobile camera for legal purposes.</p>",
+          "url": {
+            "label": "Company URL",
+            "href": "https://inspace.tech"
           }
         },
         {
