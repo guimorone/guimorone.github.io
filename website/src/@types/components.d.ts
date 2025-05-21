@@ -5,11 +5,6 @@ export interface BannerProps {
 	title?: string;
 	link: { url: string; label: string };
 }
-
-export interface NavbarProps {
-	show?: boolean;
-}
-
 export interface CenterProps {
 	children: ReactNode;
 	className?: string;

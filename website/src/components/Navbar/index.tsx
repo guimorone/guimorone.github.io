@@ -1,13 +1,12 @@
-import { useState, Fragment, type FC } from 'react';
+import { useState, Fragment } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { navigation } from './config';
 import { classNames } from '../../utils';
 import { HOME } from '../../constants/paths';
-import type { NavbarProps } from '../../@types/components';
 
-const Navbar: FC<NavbarProps> = ({ show = true }) => {
+export default function Navbar() {
 	const { pathname } = useLocation();
 	const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
 
@@ -15,12 +14,7 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 	const handleCloseMobileMenu = (): void => setMobileMenuOpen(false);
 
 	return (
-		<header
-			className={classNames(
-				show ? 'visible transition-all duration-500' : 'invisible transition-all duration-500 -translate-y-full',
-				'sticky inset-x-0 top-0 z-40 backdrop-blur-md'
-			)}
-		>
+		<header className="sticky inset-x-0 top-0 z-40 backdrop-blur-md">
 			<nav className="shadow-md" aria-label="Global">
 				<div className="flex items-center justify-between w-full h-auto px-4 py-4 mx-auto max-w-7xl max-h-20 sm:py-6 lg:px-8 gap-x-2">
 					<div className="flex xl:flex-1">
@@ -135,6 +129,4 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 			</Dialog>
 		</header>
 	);
-};
-
-export default Navbar;
+}
