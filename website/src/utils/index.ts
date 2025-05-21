@@ -3,7 +3,7 @@ import { experiences as JobsExperiences, freelances as FreelancesExperiences } f
 import { projects as ProjectsExperiences } from '../pages/Projects/config';
 import { coursesAndCertifications as CoursesCertificationsExperiences } from '../pages/Certifications/config';
 import { DEFAULT_DOCUMENT_TITLE } from '../constants';
-import type { ActivityType, GenericData } from '../@types';
+import type { ActivityType, GenericData, WorkPageType } from '../@types';
 
 export const classNames = (...classes: any[]): string => classes.filter(Boolean).join(' ');
 
@@ -33,27 +33,12 @@ export function sortByRatingFunction(e1: GenericData, e2: GenericData): number {
 	return e1.rating > e2.rating ? -1 : e2.rating > e1.rating ? 1 : 0;
 }
 
-export function getSkillData(skillLabel: string): {
-	Academic?: ActivityType[];
-	Jobs?: ActivityType[];
-	Freelances?: ActivityType[];
-	Projects?: ActivityType[];
-	'Courses & Certifications'?: ActivityType[];
-} {
-	const works: (keyof typeof skillData)[] = [
-		'Academic',
-		'Jobs',
-		'Freelances',
-		'Projects',
-		'Courses & Certifications',
-	];
-	const skillData: { [key: string]: ActivityType[] } = {};
+export function getSkillData(skillLabel: string): Partial<{ [key in WorkPageType]: ActivityType[] }> {
+	const works: WorkPageType[] = ['Academic', 'Jobs', 'Freelances', 'Projects', 'Courses & Certifications'];
+	const skillData: Partial<{ [key in WorkPageType]: ActivityType[] }> = {};
 
-	const checkExperience = (experience: ActivityType): boolean => {
-		const hasSkill = experience?.skills?.find(skill => skill?.label?.toLowerCase() === skillLabel?.toLowerCase());
-
-		return !!hasSkill;
-	};
+	const checkExperience = (experience: ActivityType): boolean =>
+		!!experience?.skills?.find(skill => skill?.label?.toLowerCase() === skillLabel?.toLowerCase());
 
 	works.forEach(work => {
 		let experiences: ActivityType[] = [];

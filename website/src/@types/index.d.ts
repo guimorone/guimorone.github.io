@@ -3,6 +3,18 @@ import type { IconType } from './icons';
 
 export type GenericData = { [key: string]: any };
 
+type PageType =
+	| 'About'
+	| 'Academic'
+	| 'Jobs'
+	| 'Freelances'
+	| 'Projects'
+	| 'Courses & Certifications'
+	| 'Skills'
+	| 'Warehouse';
+
+export type WorkPageType = Exclude<PageType, 'About' | 'Skills' | 'Warehouse'>;
+
 export type NavigationType = {
 	name: string;
 	href: string;
