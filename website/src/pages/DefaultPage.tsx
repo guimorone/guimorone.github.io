@@ -12,6 +12,8 @@ export default function DefaultPage() {
 	const navigate = useNavigate();
 	const [_, setDocumentTitle] = useDocumentTitle();
 
+	useEffect(() => window.scrollTo(0, 0), [pathname]);
+
 	useEffect(() => {
 		if (pathname === '/') navigate(HOME);
 		else setDocumentTitle(getDocumentTitle(pathname));

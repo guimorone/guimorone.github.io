@@ -18,7 +18,7 @@ const Navbar: FC<NavbarProps> = ({ show = true }) => {
 		<header
 			className={classNames(
 				show ? 'visible transition-all duration-500' : 'invisible transition-all duration-500 -translate-y-full',
-				'sticky inset-x-0 top-0 z-50 backdrop-blur-md'
+				'sticky inset-x-0 top-0 z-40 backdrop-blur-md'
 			)}
 		>
 			<nav className="shadow-md" aria-label="Global">

@@ -14,5 +14,4 @@ export default {
 		},
 	},
 	plugins: [forms, typography, flowbite.plugin()],
-	corePlugins: { transitionProperty: false },
 };
