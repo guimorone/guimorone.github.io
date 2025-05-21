@@ -17,14 +17,14 @@ export const documents: { title: string; files: DownloadableProps[] }[] = [
 			{
 				title: 'Diploma UFPE (EN)',
 				label: 'Diploma',
-				filePath: DiplomaUFPEEN,
+				filepath: DiplomaUFPEEN,
 				filename: 'Diploma Guilherme - UFPE (EN)',
 				Icon: PDFIcon,
 			},
 			{
 				title: 'Diploma UFPE (PT-BR)',
 				label: 'Diploma',
-				filePath: DiplomaUFPEPTBR,
+				filepath: DiplomaUFPEPTBR,
 				filename: 'Diploma Guilherme - UFPE (PT-BR)',
 				Icon: PDFIcon,
 			},
@@ -36,14 +36,14 @@ export const documents: { title: string; files: DownloadableProps[] }[] = [
 			{
 				title: "German Course A1.1's conclusion statement",
 				label: 'A1.1',
-				filePath: DeutschunterrichtA11,
+				filepath: DeutschunterrichtA11,
 				filename: 'German Course A1.1 - Guilherme.pdf',
 				Icon: PDFIcon,
 			},
 			{
 				title: "German Course A1.2's conclusion statement",
 				label: 'A1.2',
-				filePath: DeutschunterrichtA12,
+				filepath: DeutschunterrichtA12,
 				filename: 'German Course A1.2 - Guilherme.pdf',
 				Icon: PDFIcon,
 			},
@@ -55,7 +55,7 @@ export const documents: { title: string; files: DownloadableProps[] }[] = [
 			{
 				title: 'The Complete Cyber Security Course - Volume 1',
 				label: 'Certificate',
-				filePath: CyberSecurityVolume1Certificate,
+				filepath: CyberSecurityVolume1Certificate,
 				filename: 'The Complete Cyber Security Course: Hackers Exposed - Volume 1 - Certificate',
 				Icon: PDFIcon,
 			},

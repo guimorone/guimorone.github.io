@@ -48,11 +48,19 @@ export interface DownloadableProps {
 	title: string;
 	label: string;
 	footerText?: string;
-	filePath: string;
+	filepath: string;
 	filename: string;
 	preview?: boolean;
 	Icon: IconType;
 	forceCenter?: boolean;
+	additionalButtons?: {
+		Icon: DownloadableProps['Icon'];
+		bgColor: string;
+		textColor?: string;
+		label: DownloadableProps['label'];
+		filepath: DownloadableProps['filepath'];
+		filename: DownloadableProps['filename'];
+	}[];
 }
 
 export interface GridProps {

@@ -70,7 +70,7 @@ export const CSHARP: SkillType = {
 	label: 'C#',
 	rating: 1,
 };
-export const CSS: SkillType = { Icon: { Element: FaCss3Alt, color: 'text-[#28A9DF]' }, label: 'CSS', rating: 4 };
+export const CSS: SkillType = { Icon: { Element: FaCss3Alt, color: 'text-[#28A9DF]' }, label: 'CSS', rating: 3.5 };
 export const CYBER_SECURITY: SkillType = {
 	Icon: { Element: SiCyberdefenders },
 	label: 'Cyber Security',

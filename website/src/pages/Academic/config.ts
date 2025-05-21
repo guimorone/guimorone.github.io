@@ -24,7 +24,7 @@ export const experiences: ActivityType[] = [
 	{
 		title: 'Bachelor in Computer Engineering',
 		subtitle: 'Federal University of Pernambuco (UFPE). Feb 2019 - Aug 2024',
-    description: 'Final grade (GPA): 9.02/10.0',
+		description: 'Final grade (GPA): 9.02/10.0',
 		Icon: { Element: GraduationCap, background: 'bg-rose-600' },
 		links: [
 			{ Icon: GiNotebook, label: 'Undergraduate Thesis (PT-BR)', url: TCC_ATTENA_URL },
