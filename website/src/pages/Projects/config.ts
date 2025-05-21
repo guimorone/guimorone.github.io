@@ -82,7 +82,7 @@ export const projects: ActivityType[] = [
 			'It also offers API Integration, history download, payments and other features.',
 			'Developed using React, TypeScript, Tailwind CSS and Django (Python).',
 		],
-		comments: ['Since is a private project, I can not share the Repository URL.'],
+		comments: ['Since is a private project, I cannot share the Repository URL.'],
 		skills: [
 			BASH,
 			CI_CD,
