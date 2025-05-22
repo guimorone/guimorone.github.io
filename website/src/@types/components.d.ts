@@ -86,3 +86,8 @@ export interface ModalProps {
 	subtitle?: string;
 	children: ReactNode;
 }
+
+export interface SkillDescriptionProps {
+	currentSkill: SkillType | null;
+	onClose: ModalProps['onClose'];
+}

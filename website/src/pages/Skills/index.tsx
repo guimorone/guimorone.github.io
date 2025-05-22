@@ -3,11 +3,10 @@ import { useSearchParams } from 'react-router-dom';
 import Grid from '../../components/Grid';
 import GridContainer from '../../components/Grid/Container';
 import Collapsable from '../../components/Collapsable';
-import Modal from '../../components/Modal';
 import Stars from '../../components/Stars';
-import ObjectFeed from '../../components/Feed/ObjectFeed';
+import SkillDescription from './SkillDescription';
 import { title, subtitle, skills, languages } from './config';
-import { classNames, getSkillData, checkIfObjectIsEmpty } from '../../utils';
+import { classNames } from '../../utils';
 import { LINKEDIN_SKILLS_URL } from '../../constants/urls';
 import type { SkillType } from '../../@types';
 
@@ -32,47 +31,9 @@ export default function Skills() {
 	};
 	const onCloseModal = (): void => setCurrentSkill(null);
 
-	const modalIcon =
-		typeof currentSkill?.Icon.Element === 'object'
-			? currentSkill?.Icon.Element.withoutColor
-			: currentSkill?.Icon.Element;
-	const modalTitle = currentSkill ? `Experiences with ${currentSkill.label}` : 'Closing Modal';
-	const modalSubtitle = currentSkill
-		? `Skill Level: ${currentSkill?.rating} ${currentSkill?.rating === 1 ? 'star' : 'stars'}`
-		: 'Closing Modal';
-
-	const skillData = getSkillData(currentSkill?.label ?? '');
-
 	return (
 		<>
-			<Modal
-				open={!!currentSkill}
-				onClose={onCloseModal}
-				Icon={modalIcon}
-				title={modalTitle}
-				subtitle={modalSubtitle}
-			>
-				<div className="space-y-8">
-					{checkIfObjectIsEmpty(skillData) ? (
-						<>
-							{currentSkill ? (
-								<h4 className="text-base">Only during graduation.</h4>
-							) : (
-								<h4 className="text-base text-red-300">Nothing to show.</h4>
-							)}
-						</>
-					) : (
-						Object.keys(skillData).map((topic, index) => (
-							<ObjectFeed
-								key={`skills-modal-${topic}-${index}`}
-								title={topic}
-								activities={skillData[topic as keyof typeof skillData] ?? []}
-								currentSkill={currentSkill?.label}
-							/>
-						))
-					)}
-				</div>
-			</Modal>
+			<SkillDescription currentSkill={currentSkill} onClose={onCloseModal} />
 			<GridContainer title={title} subtitle={subtitle}>
 				<Collapsable title="Tools">
 					<Grid>
