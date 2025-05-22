@@ -20,6 +20,18 @@ jobs:
         with:
           ref: ${{ github.sha }}
 
+      - name: Configure Git
+        run: |
+          cd $GITHUB_WORKSPACE
+          git config --global user.name $user_name
+          git config --global user.email $user_email
+          git remote set-url origin https://${github_token}@github.com/${repository}
+        env:
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          repository: ${{ github.repository }}
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -29,12 +41,4 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/website
           npm install
-          git config --global user.name $user_name
-          git config --global user.email $user_email
-          git remote set-url origin https://${github_token}@github.com/${repository}
           npm run deploy
-        env:
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          github_token: ${{ secrets.ACCESS_TOKEN }}
-          repository: ${{ github.repository }}
