@@ -5,14 +5,16 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { getDocumentTitle } from '../utils';
 import { useDocumentTitle } from '../utils/hooks';
-import { HOME } from '../constants/paths';
+import { HOME, SKILLS } from '../constants/paths';
 
 export default function DefaultPage() {
 	const { pathname } = useLocation();
 	const navigate = useNavigate();
 	const [_, setDocumentTitle] = useDocumentTitle();
 
-	useEffect(() => window.scrollTo(0, 0), [pathname]);
+	useEffect(() => {
+		if (pathname !== SKILLS) window.scrollTo(0, 0);
+	}, [pathname]);
 
 	useEffect(() => {
 		if (pathname === '/') navigate(HOME);
