@@ -49,6 +49,7 @@ import {
 	TERRAFORM,
 	TYPESCRIPT,
 	VUE,
+	WEBPACK,
 } from '../../constants/skills';
 import type { ActivityType } from '../../@types';
 
@@ -141,6 +142,7 @@ export const experiences: ActivityType[] = [
 			SQL,
 			TAILWIND_CSS,
 			TYPESCRIPT,
+			WEBPACK,
 		],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: ONCASE_URL },

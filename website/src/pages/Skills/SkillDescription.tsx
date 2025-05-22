@@ -22,7 +22,7 @@ const SkillDescription: FC<SkillDescriptionProps> = ({ currentSkill, onClose }) 
 				{checkIfObjectIsEmpty(skillData) ? (
 					<>
 						{currentSkill ? (
-							<h4 className="text-base">Only during graduation.</h4>
+							<h4 className="text-base">Only during graduation or reading articles/books.</h4>
 						) : (
 							<h4 className="text-base text-red-300">Nothing to show.</h4>
 						)}
