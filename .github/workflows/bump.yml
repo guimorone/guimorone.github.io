@@ -1,0 +1,38 @@
+name: Bump new version
+
+on:
+  workflow_run:
+    workflows: [pages-build-deployment]
+    types:
+      - completed
+
+jobs:
+  bump-new-version:
+    name: Bump new version
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ vars.NODE_VERSION }}
+
+      - name: Read version from package.json
+        id: package-version
+        run: |
+          echo "VERSION=$(node -p "require('./website/package.json').version")" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        if: ${{ steps.package-version.outputs.VERSION != '' }}
+        with:
+          name: Release v${{ steps.package-version.outputs.VERSION }}
+          tag_name: v${{ steps.package-version.outputs.VERSION }}
+          token: ${{ secrets.ACCESS_TOKEN }}
+          generate_release_notes: true
