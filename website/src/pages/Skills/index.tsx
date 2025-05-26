@@ -64,7 +64,7 @@ export default function Skills() {
 											aria-hidden="true"
 										/>
 									)}
-									<p className="text-sm md:text-base text-zinc-100">{skill.label}</p>
+									<span className="text-sm md:text-base text-zinc-100">{skill.label}</span>
 									<Stars rating={skill.rating} />
 								</button>
 							</div>

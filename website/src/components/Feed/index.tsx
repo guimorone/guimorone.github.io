@@ -76,14 +76,14 @@ const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 																)}
 															/>
 														)}
-														<p
+														<span
 															className={classNames(
 																currentSkill === skill.label ? 'text-zinc-800' : 'text-zinc-300',
 																'text-xs md:text-sm'
 															)}
 														>
 															{skill.label}
-														</p>
+														</span>
 													</Link>
 												))}
 											</ul>
