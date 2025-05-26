@@ -1,7 +1,7 @@
 {
   "name": "guimorone.github.io",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://www.guimorone.com",
   "type": "module",
   "scripts": {
@@ -39,7 +39,7 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.20",
     "gh-pages": "^6.3.0",
-    "knip": "^5.57.2",
+    "knip": "^5.58.1",
     "postcss": "^8.5.3",
     "prettier": "^3.5.3",
     "tailwindcss": "^3.4.17",
