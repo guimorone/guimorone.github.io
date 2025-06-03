@@ -105,7 +105,7 @@ export const GCP: SkillType = {
 };
 export const GIT: SkillType = { Icon: { Element: FaGitAlt, color: 'text-[#F05033]' }, label: 'Git', rating: 4 };
 export const GITHUB: SkillType = { Icon: { Element: SiGithub }, label: 'GitHub', rating: 5 };
-export const GO: SkillType = { Icon: { Element: FaGolang, color: 'text-[#05ACD7]' }, label: 'Go', rating: 2 };
+export const GO: SkillType = { Icon: { Element: FaGolang, color: 'text-[#05ACD7]' }, label: 'Go', rating: 4 };
 export const GRAPHQL: SkillType = {
 	Icon: { Element: SiGraphql, color: 'text-[#E534AB]' },
 	label: 'GraphQL',

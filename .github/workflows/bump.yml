@@ -2,7 +2,8 @@ name: Bump new version
 
 on:
   workflow_run:
-    workflows: [pages-build-deployment]
+    workflows:
+      - pages-build-deployment
     types:
       - completed
 

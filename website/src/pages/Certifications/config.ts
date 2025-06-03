@@ -5,10 +5,11 @@ import {
 	GOOGLE_CLOUD_IA_COURSE_CERT_URL,
 	GOOGLE_CLOUD_INFRA_COURSE_CERT_URL,
 	GOOGLE_CLOUD_NETWORKING_COURSE_CERT_URL,
-	UDEMY_WEB_DEV_COURSE_CERT_URL,
-	UDEMY_FLUTTER_COURSE_CERT_URL,
 	UDEMY_CYBER_SECURITY_COURSE_1_URL,
+	UDEMY_FLUTTER_COURSE_CERT_URL,
 	UDEMY_GRAPHQL_COURSE_URL,
+	UDEMY_GO_COURSE_URL,
+	UDEMY_WEB_DEV_COURSE_CERT_URL,
 } from '../../constants/urls';
 import {
 	CSS,
@@ -18,6 +19,7 @@ import {
 	GCP,
 	GIT,
 	GITHUB,
+	GO,
 	GRAPHQL,
 	HTML,
 	JAVASCRIPT,
@@ -35,6 +37,20 @@ export const title: string = 'Courses & Certifications';
 export const subtitle: string = 'Allow me to showcase my certifications on different top-rated online platforms.';
 
 export const coursesAndCertifications: ActivityType[] = [
+	{
+		title: 'Go - The Complete Guide',
+		subtitle: 'Udemy. Jun 2025',
+		skills: [GIT, GITHUB, GO],
+		links: [
+			{
+				Icon: GrCertificate,
+				color: 'text-teal-300 hover:text-teal-200',
+				label: 'Credential URL',
+				url: UDEMY_GO_COURSE_URL,
+			},
+		],
+		Icon: { Element: SiUdemy, background: 'bg-[#A632F1]' },
+	},
 	{
 		title: 'GraphQL by Example',
 		subtitle: 'Udemy. Nov 2024',

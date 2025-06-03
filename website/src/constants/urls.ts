@@ -45,5 +45,6 @@ export const GOOGLE_CLOUD_NETWORKING_COURSE_CERT_URL =
 	'https://www.cloudskillsboost.google/public_profiles/d8f54101-4f80-4aee-8e46-2320e3e20646/badges/3305980';
 export const UDEMY_CYBER_SECURITY_COURSE_1_URL = 'https://ude.my/UC-1acdc51c-9652-40d8-80af-24d65aa27727';
 export const UDEMY_GRAPHQL_COURSE_URL = 'https://ude.my/UC-2f72d8c0-5e8c-4c08-a657-cb379948c6f1';
+export const UDEMY_GO_COURSE_URL = 'https://ude.my/UC-a0724864-1e61-4fcb-94d4-8837ca64b5cc';
 export const UDEMY_FLUTTER_COURSE_CERT_URL = 'https://ude.my/UC-3fd9599a-bff2-4960-8d34-dbb3b41ced55';
 export const UDEMY_WEB_DEV_COURSE_CERT_URL = 'https://ude.my/UC-5d594204-a414-4cb1-a388-72e3daf7c1c6';

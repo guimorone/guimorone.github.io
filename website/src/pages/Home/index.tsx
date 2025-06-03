@@ -5,7 +5,7 @@ import { title, label, footerText, filepath, filename, Icon, additionalButtons }
 export default function Home() {
 	return (
 		<div className="space-y-6 text-center">
-			<h2 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-6xl">Welcome!</h2>
+			<h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-6xl">Welcome!</h1>
 			<p className="text-lg leading-8 text-zinc-300">
 				It is my pleasure to have you here.
 				<br />
