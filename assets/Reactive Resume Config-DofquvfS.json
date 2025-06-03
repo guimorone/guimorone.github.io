@@ -47,6 +47,18 @@
       "id": "certifications",
       "items": [
         {
+          "id": "bs73j84apyaw3f106irwy67o",
+          "visible": true,
+          "name": "Go - The Complete Guide",
+          "issuer": "Udemy",
+          "date": "June 2025",
+          "summary": "",
+          "url": {
+            "label": "Credential URL",
+            "href": "https://ude.my/UC-a0724864-1e61-4fcb-94d4-8837ca64b5cc"
+          }
+        },
+        {
           "id": "abj565wzj72fhkv6vcipx5su",
           "visible": true,
           "name": "GraphQL by Example",
@@ -635,6 +647,14 @@
           "keywords": []
         },
         {
+          "id": "syrnqqsvrmbd3b0fjqh9khgo",
+          "visible": true,
+          "name": "Go",
+          "description": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
           "id": "jdmrcb25b5co8o79nykp7w2e",
           "visible": true,
           "name": "Linux",
@@ -782,14 +802,6 @@
           "id": "m3tzrvpewtkw4o4efeelhn7z",
           "visible": true,
           "name": "Construct 3",
-          "description": "",
-          "level": 2,
-          "keywords": []
-        },
-        {
-          "id": "syrnqqsvrmbd3b0fjqh9khgo",
-          "visible": true,
-          "name": "Go",
           "description": "",
           "level": 2,
           "keywords": []
