@@ -109,7 +109,7 @@ export const GO: SkillType = { Icon: { Element: FaGolang, color: 'text-[#05ACD7]
 export const GRAPHQL: SkillType = {
 	Icon: { Element: SiGraphql, color: 'text-[#E534AB]' },
 	label: 'GraphQL',
-	rating: 3,
+	rating: 3.5,
 };
 export const HASKELL: SkillType = {
 	Icon: { Element: SiHaskell, color: 'text-[#999999]' },
