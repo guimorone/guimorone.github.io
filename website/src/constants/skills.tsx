@@ -49,7 +49,7 @@ import type { SkillType } from '../@types';
 export const AIRFLOW: SkillType = {
 	Icon: { Element: SiApacheairflow, color: 'text-[#FF7557]' },
 	label: 'Airflow',
-	rating: 3,
+	rating: 3.5,
 };
 export const AWS: SkillType = { Icon: { Element: FaAws, color: 'text-[#FF9900]' }, label: 'AWS', rating: 4 };
 export const BASH: SkillType = { Icon: { Element: VscTerminalBash }, label: 'Bash', rating: 4 };
