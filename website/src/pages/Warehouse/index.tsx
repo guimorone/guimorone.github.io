@@ -1,8 +1,8 @@
-import Grid from '../../components/Grid';
-import GridContainer from '../../components/Grid/Container';
 import Collapsable from '../../components/Collapsable';
 import Downloadable from '../../components/Downloadable';
-import { title, subtitle, documents } from './config';
+import Grid from '../../components/Grid';
+import GridContainer from '../../components/Grid/Container';
+import { documents, subtitle, title } from './config';
 
 export default function Warehouse() {
 	return (

@@ -1,49 +1,50 @@
 import { AiOutlineDeploymentUnit } from 'react-icons/ai';
+import { BiLogoPostgresql } from 'react-icons/bi';
+import { DiGoogleCloudPlatform, DiRuby } from 'react-icons/di';
 import {
-	FaPython,
-	FaReact,
-	FaDocker,
-	FaGitAlt,
-	FaJava,
-	FaNodeJs,
-	FaGolang,
-	FaHtml5,
-	FaCss3Alt,
 	FaAws,
 	FaC,
+	FaCss3Alt,
+	FaDocker,
+	FaGitAlt,
+	FaGolang,
+	FaHtml5,
+	FaJava,
 	FaLinux,
+	FaNodeJs,
+	FaPython,
+	FaReact,
 } from 'react-icons/fa6';
 import { FcLinux } from 'react-icons/fc';
 import {
-	SiDjango,
+	SiApacheairflow,
+	SiConstruct3,
 	SiCplusplus,
 	SiCyberdefenders,
-	SiJavascript,
-	SiTypescript,
-	SiFlask,
-	SiJquery,
-	SiMongodb,
-	SiHaskell,
-	SiGraphql,
-	SiConstruct3,
-	SiFlutter,
-	SiJupyter,
-	SiWebpack,
-	SiVuedotjs,
-	SiFastapi,
-	SiApacheairflow,
-	SiTerraform,
-	SiGithub,
-	SiTailwindcss,
-	SiRedux,
-	SiJest,
-	SiKubernetes,
 	SiDart,
+	SiDjango,
+	SiFastapi,
+	SiFlask,
+	SiFlutter,
+	SiGithub,
+	SiGraphql,
+	SiHaskell,
+	SiJavascript,
+	SiJest,
+	SiJquery,
+	SiJupyter,
+	SiKubernetes,
+	SiMongodb,
+	SiRedux,
+	SiTailwindcss,
+	SiTerraform,
+	SiTypescript,
+	SiVuedotjs,
+	SiWebpack,
 } from 'react-icons/si';
-import { DiGoogleCloudPlatform, DiRuby } from 'react-icons/di';
-import { BiLogoPostgresql } from 'react-icons/bi';
-import { TbBrandReactNative, TbSql, TbBrandPowershell, TbBrandCSharp } from 'react-icons/tb';
+import { TbBrandCSharp, TbBrandPowershell, TbBrandReactNative, TbSql } from 'react-icons/tb';
 import { VscTerminalBash } from 'react-icons/vsc';
+
 import type { SkillType } from '../@types';
 
 export const AIRFLOW: SkillType = {

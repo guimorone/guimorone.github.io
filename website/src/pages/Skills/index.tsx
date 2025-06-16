@@ -1,13 +1,16 @@
-import { useState, useRef, useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
+
 import { useSearchParams } from 'react-router-dom';
+
+import Collapsable from '../../components/Collapsable';
 import Grid from '../../components/Grid';
 import GridContainer from '../../components/Grid/Container';
-import Collapsable from '../../components/Collapsable';
 import Stars from '../../components/Stars';
-import SkillDescription from './SkillDescription';
-import { title, subtitle, skills, languages } from './config';
-import { classNames } from '../../utils';
 import { LINKEDIN_SKILLS_URL } from '../../constants/urls';
+import { classNames } from '../../utils';
+import SkillDescription from './SkillDescription';
+import { languages, skills, subtitle, title } from './config';
+
 import type { SkillType } from '../../@types';
 
 export default function Skills() {

@@ -1,4 +1,5 @@
 import { Tooltip } from 'flowbite-react';
+
 import { navigation } from './config';
 
 export default function Footer() {

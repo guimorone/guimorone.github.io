@@ -1,22 +1,6 @@
-import { FaGamepad } from 'react-icons/fa';
 import { CodeBracketIcon, DevicePhoneMobileIcon, GlobeAltIcon } from '@heroicons/react/24/solid';
-import { LinkedInIcon } from '../../utils/icons';
-import {
-	ONCASE_URL,
-	ONCASE_LINKEDIN_URL,
-	INSPACE_URL,
-	INSPACE_LINKEDIN_URL,
-	EDUCANDUS_URL,
-	EDUCANDUS_LINKEDIN_URL,
-	ACASO_URL,
-	ACASO_LINKEDIN_URL,
-	NEUROTECH_URL,
-	NEUROTECH_LINKEDIN_URL,
-	JALAN_URL,
-	JALAN_LINKEDIN_URL,
-	GPC_GESTAO_URL,
-	GPC_GESTAO_LINKEDIN_URL,
-} from '../../constants/urls';
+import { FaGamepad } from 'react-icons/fa';
+
 import {
 	AIRFLOW,
 	AWS,
@@ -50,6 +34,24 @@ import {
 	VUE,
 	WEBPACK,
 } from '../../constants/skills';
+import {
+	ACASO_LINKEDIN_URL,
+	ACASO_URL,
+	EDUCANDUS_LINKEDIN_URL,
+	EDUCANDUS_URL,
+	GPC_GESTAO_LINKEDIN_URL,
+	GPC_GESTAO_URL,
+	INSPACE_LINKEDIN_URL,
+	INSPACE_URL,
+	JALAN_LINKEDIN_URL,
+	JALAN_URL,
+	NEUROTECH_LINKEDIN_URL,
+	NEUROTECH_URL,
+	ONCASE_LINKEDIN_URL,
+	ONCASE_URL,
+} from '../../constants/urls';
+import { LinkedInIcon } from '../../utils/icons';
+
 import type { ActivityType } from '../../@types';
 
 export const title: string = 'Work Experience';

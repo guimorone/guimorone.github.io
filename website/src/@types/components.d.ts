@@ -1,6 +1,7 @@
-import type { ReactNode, JSX, ImgHTMLAttributes } from 'react';
+import type { ImgHTMLAttributes, JSX, ReactNode } from 'react';
 import type { ActivityType, SkillType } from '.';
 import type { IconType } from './icons';
+
 export interface BannerProps {
 	title?: string;
 	link: { url: string; label: string };

@@ -1,10 +1,11 @@
-import { sortByTitleOrLabelFunction } from '../../utils';
-import { PDFIcon } from '../../utils/icons';
-import DiplomaUFPEEN from '../../assets/pdfs/Diploma UFPE (EN).pdf';
-import DiplomaUFPEPTBR from '../../assets/pdfs/Diploma UFPE (PT-BR).pdf';
 import DeutschunterrichtA11 from '../../assets/pdfs/Deutschunterricht - A1.1.pdf';
 import DeutschunterrichtA12 from '../../assets/pdfs/Deutschunterricht - A1.2.pdf';
+import DiplomaUFPEEN from '../../assets/pdfs/Diploma UFPE (EN).pdf';
+import DiplomaUFPEPTBR from '../../assets/pdfs/Diploma UFPE (PT-BR).pdf';
 import CyberSecurityVolume1Certificate from '../../assets/pdfs/The Complete Cyber Security Course - Volume 1 - Hackers Exposed - Certificate.pdf';
+import { sortByTitleOrLabelFunction } from '../../utils';
+import { PDFIcon } from '../../utils/icons';
+
 import type { DownloadableProps } from '../../@types/components';
 
 export const title: string = 'Warehouse';
