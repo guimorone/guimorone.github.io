@@ -1,6 +1,6 @@
 import Downloadable from '../../components/Downloadable';
 import { REACTIVE_RESUME_URL, RESUME_URL } from '../../constants/urls';
-import { title, label, footerText, filepath, filename, Icon, additionalButtons } from './config';
+import { Icon, additionalButtons, filename, filepath, footerText, label, title } from './config';
 
 export default function Home() {
 	return (

@@ -1,5 +1,7 @@
 import { MdOutlinePreview } from 'react-icons/md';
+
 import { classNames } from '../../utils';
+
 import type { FC } from 'react';
 import type { DownloadableProps } from '../../@types/components';
 

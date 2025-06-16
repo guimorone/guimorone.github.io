@@ -1,5 +1,5 @@
 import Page from '../../components/Page';
-import { title, subtitle, coursesAndCertifications } from './config';
+import { coursesAndCertifications, subtitle, title } from './config';
 
 export default function Certifications() {
 	return <Page title={title} subtitle={subtitle} activities={coursesAndCertifications} />;

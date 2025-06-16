@@ -1,4 +1,5 @@
 import Title from '../Title';
+
 import type { FC } from 'react';
 import type { GridContainerProps } from '../../@types/components';
 

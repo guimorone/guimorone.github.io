@@ -1,4 +1,4 @@
-import type { ForwardRefExoticComponent, PropsWithoutRef, SVGProps, RefAttributes, JSX } from 'react';
+import type { ForwardRefExoticComponent, JSX, PropsWithoutRef, RefAttributes, SVGProps } from 'react';
 import type { IconType as ReactIconType } from 'react-icons';
 
 type HeroiconType = ForwardRefExoticComponent<

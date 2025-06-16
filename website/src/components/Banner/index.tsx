@@ -1,6 +1,9 @@
-import { useState, Fragment, type FC } from 'react';
+import { Fragment, useState } from 'react';
+
 import { Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/20/solid';
+
+import type { FC } from 'react';
 import type { BannerProps } from '../../@types/components';
 
 const Banner: FC<BannerProps> = ({ title = 'Hey, right here!', link }) => {

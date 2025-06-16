@@ -1,15 +1,15 @@
-import { SiInstagram } from 'react-icons/si';
+import { BanknotesIcon } from '@heroicons/react/24/solid';
+import { FaLink, FaZ } from 'react-icons/fa6';
 import { FaGamepad } from 'react-icons/fa';
 import { RiLockPasswordLine } from 'react-icons/ri';
-import { FaZ, FaLink } from 'react-icons/fa6';
-import { BanknotesIcon } from '@heroicons/react/24/solid';
-import { GitHubIcon } from '../../utils/icons';
+import { SiInstagram } from 'react-icons/si';
+
 import {
 	BASH,
 	C,
 	CI_CD,
-	DOCKER,
 	DJANGO,
+	DOCKER,
 	GIT,
 	GITHUB,
 	LINUX,
@@ -20,14 +20,16 @@ import {
 	TYPESCRIPT,
 } from '../../constants/skills';
 import {
-	RANDOM_PASSWORD_GENERATOR_PROJECT_URL,
-	TYPEWAR_GAME_URL,
-	TYPEWAR_GAME_PROJECT_URL,
-	ZTYPE_GAME_URL,
 	INSTAGRAM_STATS_PROJECT_URL,
 	JOJOSUE_PROJECT_URL,
+	RANDOM_PASSWORD_GENERATOR_PROJECT_URL,
+	TYPEWAR_GAME_PROJECT_URL,
+	TYPEWAR_GAME_URL,
 	URL_SHORTENER_PROJECT_URL,
+	ZTYPE_GAME_URL,
 } from '../../constants/urls';
+import { GitHubIcon } from '../../utils/icons';
+
 import type { ActivityType } from '../../@types';
 
 export const title: string = 'Projects';
@@ -82,7 +84,7 @@ export const projects: ActivityType[] = [
 			'It also offers API Integration, history download, payments and other features.',
 			'Developed using React, TypeScript, Tailwind CSS and Django (Python).',
 		],
-		comments: ['Since is a private project, I cannot share the Repository URL.'],
+		comments: ['Since it is a private project, I cannot share the Repository URL.'],
 		skills: [
 			BASH,
 			CI_CD,

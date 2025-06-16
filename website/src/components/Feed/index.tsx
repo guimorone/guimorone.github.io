@@ -1,7 +1,9 @@
-import { Link } from 'react-router-dom';
 import { Tooltip } from 'flowbite-react';
-import { classNames, sortByTitleOrLabelFunction } from '../../utils';
+import { Link } from 'react-router-dom';
+
 import { SKILLS } from '../../constants/paths';
+import { classNames, sortByTitleOrLabelFunction } from '../../utils';
+
 import type { FC } from 'react';
 import type { FeedProps } from '../../@types/components';
 

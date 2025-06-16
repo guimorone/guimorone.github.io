@@ -1,5 +1,5 @@
 import Page from '../../components/Page';
-import { title, subtitle, experiences, freelances } from './config';
+import { experiences, freelances, subtitle, title } from './config';
 
 export default function Jobs() {
 	const activities = { Jobs: experiences, Freelances: freelances };

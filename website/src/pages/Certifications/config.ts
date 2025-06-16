@@ -1,16 +1,6 @@
-import { SiGooglecloud, SiUdemy } from 'react-icons/si';
 import { GrCertificate } from 'react-icons/gr';
-import {
-	GOOGLE_CLOUD_FUNDAMENTALS_COURSE_CERT_URL,
-	GOOGLE_CLOUD_IA_COURSE_CERT_URL,
-	GOOGLE_CLOUD_INFRA_COURSE_CERT_URL,
-	GOOGLE_CLOUD_NETWORKING_COURSE_CERT_URL,
-	UDEMY_CYBER_SECURITY_COURSE_1_URL,
-	UDEMY_FLUTTER_COURSE_CERT_URL,
-	UDEMY_GRAPHQL_COURSE_URL,
-	UDEMY_GO_COURSE_URL,
-	UDEMY_WEB_DEV_COURSE_CERT_URL,
-} from '../../constants/urls';
+import { SiGooglecloud, SiUdemy } from 'react-icons/si';
+
 import {
 	CSS,
 	CYBER_SECURITY,
@@ -31,6 +21,18 @@ import {
 	SQL,
 	TYPESCRIPT,
 } from '../../constants/skills';
+import {
+	GOOGLE_CLOUD_FUNDAMENTALS_COURSE_CERT_URL,
+	GOOGLE_CLOUD_IA_COURSE_CERT_URL,
+	GOOGLE_CLOUD_INFRA_COURSE_CERT_URL,
+	GOOGLE_CLOUD_NETWORKING_COURSE_CERT_URL,
+	UDEMY_CYBER_SECURITY_COURSE_1_URL,
+	UDEMY_FLUTTER_COURSE_CERT_URL,
+	UDEMY_GO_COURSE_URL,
+	UDEMY_GRAPHQL_COURSE_URL,
+	UDEMY_WEB_DEV_COURSE_CERT_URL,
+} from '../../constants/urls';
+
 import type { ActivityType } from '../../@types';
 
 export const title: string = 'Courses & Certifications';

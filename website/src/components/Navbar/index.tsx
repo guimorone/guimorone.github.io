@@ -1,10 +1,12 @@
-import { useState, Fragment } from 'react';
-import { useLocation, Link } from 'react-router-dom';
+import { Fragment, useState } from 'react';
+
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { navigation } from './config';
-import { classNames } from '../../utils';
+import { Link, useLocation } from 'react-router-dom';
+
 import { HOME } from '../../constants/paths';
+import { classNames } from '../../utils';
+import { navigation } from './config';
 
 export default function Navbar() {
 	const { pathname } = useLocation();

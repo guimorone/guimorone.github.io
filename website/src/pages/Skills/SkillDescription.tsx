@@ -1,6 +1,7 @@
-import Modal from '../../components/Modal';
 import ObjectFeed from '../../components/Feed/ObjectFeed';
-import { getSkillData, checkIfObjectIsEmpty } from '../../utils';
+import Modal from '../../components/Modal';
+import { checkIfObjectIsEmpty, getSkillData } from '../../utils';
+
 import type { FC } from 'react';
 import type { SkillDescriptionProps } from '../../@types/components';
 

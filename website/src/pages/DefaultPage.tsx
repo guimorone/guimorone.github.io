@@ -1,11 +1,13 @@
 import { useEffect } from 'react';
-import { useLocation, useNavigate, Outlet } from 'react-router-dom';
+
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
+
 import Center from '../components/Center';
-import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import { HOME, SKILLS } from '../constants/paths';
 import { getDocumentTitle } from '../utils';
 import { useDocumentTitle } from '../utils/hooks';
-import { HOME, SKILLS } from '../constants/paths';
 
 export default function DefaultPage() {
 	const { pathname } = useLocation();

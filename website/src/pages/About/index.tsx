@@ -1,6 +1,6 @@
-import Photo from '../../components/Photo';
-import { title, descriptions } from './config';
 import MyPhoto from '../../assets/images/Eu.jpeg';
+import Photo from '../../components/Photo';
+import { descriptions, title } from './config';
 
 export default function About() {
 	return (
