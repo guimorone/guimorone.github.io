@@ -10,7 +10,7 @@ import type { NavigationType } from '../../@types';
 
 export const navigation: NavigationType[] = [
 	{ name: 'About', href: paths.ABOUT, Icon: NewspaperIcon, useLink: true },
-	{ name: 'Academic', href: paths.ACADEMIC, Icon: AcademicCapIcon, useLink: true },
+	{ name: 'Education', href: paths.EDUCATION, Icon: AcademicCapIcon, useLink: true },
 	{ name: 'Jobs', href: paths.JOBS, Icon: BriefcaseIcon, useLink: true },
 	{ name: 'Projects', href: paths.PROJECTS, Icon: GrProjects, useLink: true },
 	{ name: 'Courses & Certifications', href: paths.CERTIFICATIONS, Icon: BiSolidCertification, useLink: true },

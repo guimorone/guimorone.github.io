@@ -5,7 +5,7 @@ export type GenericData = { [key: string]: any };
 
 type PageType =
 	| 'About'
-	| 'Academic'
+	| 'Education'
 	| 'Jobs'
 	| 'Freelances'
 	| 'Projects'

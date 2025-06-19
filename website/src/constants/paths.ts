@@ -1,7 +1,7 @@
 export const DEFAULT = '/';
 export const HOME = '/home';
 export const ABOUT = '/about';
-export const ACADEMIC = '/academic';
+export const EDUCATION = '/education';
 export const JOBS = '/jobs';
 export const PROJECTS = '/projects';
 export const CERTIFICATIONS = '/certifications';
