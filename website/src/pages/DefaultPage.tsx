@@ -1,7 +1,5 @@
 import { useEffect } from 'react';
-
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
-
 import Center from '../components/Center';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';

@@ -1,8 +1,6 @@
 import { useState } from 'react';
-
 import { Transition } from '@headlessui/react';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
-
 import type { FC } from 'react';
 import type { CollapsableProps } from '../../@types/components';
 

@@ -41,11 +41,8 @@ module.exports = {
 				importOrder: [
 					'^react$',
 					'<BUILTIN_MODULES>',
-					'',
 					'<THIRD_PARTY_MODULES>',
-					'',
 					'^[.]',
-					'',
 					'<TYPES>^(node:)',
 					'<TYPES>',
 					'<TYPES>^[.]',

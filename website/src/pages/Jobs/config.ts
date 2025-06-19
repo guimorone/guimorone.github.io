@@ -1,6 +1,5 @@
 import { CodeBracketIcon, DevicePhoneMobileIcon, GlobeAltIcon } from '@heroicons/react/24/solid';
 import { FaGamepad } from 'react-icons/fa';
-
 import {
 	AIRFLOW,
 	AWS,
@@ -50,7 +49,6 @@ import {
 	ONCASE_URL,
 } from '../../constants/urls';
 import { LinkedInIcon } from '../../utils/icons';
-
 import type { ActivityType } from '../../@types';
 
 export const title: string = 'Work Experience';

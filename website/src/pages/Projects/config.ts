@@ -3,7 +3,6 @@ import { FaLink, FaZ } from 'react-icons/fa6';
 import { FaGamepad } from 'react-icons/fa';
 import { RiLockPasswordLine } from 'react-icons/ri';
 import { SiInstagram } from 'react-icons/si';
-
 import {
 	BASH,
 	C,
@@ -30,7 +29,6 @@ import {
 	ZTYPE_GAME_URL,
 } from '../../constants/urls';
 import { GitHubIcon, WebSiteIcon } from '../../utils/icons';
-
 import type { ActivityType } from '../../@types';
 
 export const title: string = 'Projects';

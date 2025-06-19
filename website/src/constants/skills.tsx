@@ -43,7 +43,6 @@ import {
 } from 'react-icons/si';
 import { TbBrandCSharp, TbBrandPowershell, TbBrandReactNative, TbSql } from 'react-icons/tb';
 import { VscTerminalBash } from 'react-icons/vsc';
-
 import type { SkillType } from '../@types';
 
 export const AIRFLOW: SkillType = {
