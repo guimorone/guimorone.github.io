@@ -52,7 +52,6 @@ export const skills: SkillType[] = [
 	skillsDefinitions.TERRAFORM,
 	skillsDefinitions.TYPESCRIPT,
 	skillsDefinitions.VUE,
-	skillsDefinitions.WEBPACK,
 ]
 	.sort(sortByTitleOrLabelFunction)
 	.sort(sortByRatingFunction);

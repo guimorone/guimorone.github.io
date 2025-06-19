@@ -1,7 +1,7 @@
 {
   "name": "guimorone.github.io",
   "private": true,
-  "version": "1.0.4",
+  "version": "1.0.5",
   "homepage": "https://www.guimorone.com",
   "type": "module",
   "scripts": {
@@ -36,11 +36,11 @@
     "autoprefixer": "^10.4.21",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.4.1",
+    "eslint-plugin-prettier": "^5.5.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.20",
     "gh-pages": "^6.3.0",
-    "knip": "^5.61.0",
+    "knip": "^5.61.2",
     "postcss": "^8.5.6",
     "prettier": "^3.5.3",
     "tailwindcss": "^3.4.17",

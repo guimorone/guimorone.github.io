@@ -40,7 +40,6 @@ import {
 	SiTerraform,
 	SiTypescript,
 	SiVuedotjs,
-	SiWebpack,
 } from 'react-icons/si';
 import { TbBrandCSharp, TbBrandPowershell, TbBrandReactNative, TbSql } from 'react-icons/tb';
 import { VscTerminalBash } from 'react-icons/vsc';
@@ -203,8 +202,3 @@ export const TYPESCRIPT: SkillType = {
 	rating: 5,
 };
 export const VUE: SkillType = { Icon: { Element: SiVuedotjs, color: 'text-[#3EB984]' }, label: 'Vue', rating: 2 };
-export const WEBPACK: SkillType = {
-	Icon: { Element: SiWebpack, color: 'text-[#8ED6FB]' },
-	label: 'Webpack',
-	rating: 1.5,
-};

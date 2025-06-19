@@ -32,7 +32,6 @@ import {
 	TERRAFORM,
 	TYPESCRIPT,
 	VUE,
-	WEBPACK,
 } from '../../constants/skills';
 import {
 	ACASO_LINKEDIN_URL,
@@ -142,7 +141,6 @@ export const experiences: ActivityType[] = [
 			SQL,
 			TAILWIND_CSS,
 			TYPESCRIPT,
-			WEBPACK,
 		],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: ONCASE_URL },
