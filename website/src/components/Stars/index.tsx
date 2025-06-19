@@ -1,9 +1,6 @@
 import { Fragment } from 'react';
-
 import { LiaStar, LiaStarHalfAltSolid, LiaStarSolid } from 'react-icons/lia';
-
 import { classNames } from '../../utils';
-
 import type { FC, JSX } from 'react';
 import type { StarsProps } from '../../@types/components';
 

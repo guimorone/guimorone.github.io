@@ -1,6 +1,5 @@
 import * as skillsDefinitions from '../../constants/skills';
 import { sortByRatingFunction, sortByTitleOrLabelFunction } from '../../utils';
-
 import type { LanguageSkillType, SkillType } from '../../@types';
 
 export const title: string = 'Skills';
@@ -52,7 +51,6 @@ export const skills: SkillType[] = [
 	skillsDefinitions.TERRAFORM,
 	skillsDefinitions.TYPESCRIPT,
 	skillsDefinitions.VUE,
-	skillsDefinitions.WEBPACK,
 ]
 	.sort(sortByTitleOrLabelFunction)
 	.sort(sortByRatingFunction);

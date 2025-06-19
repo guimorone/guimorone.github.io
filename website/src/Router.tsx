@@ -1,17 +1,15 @@
 import { Spinner } from 'flowbite-react';
 import { RouterProvider, createHashRouter, redirect } from 'react-router-dom';
-
 import * as urlPaths from './constants/paths';
 import About from './pages/About';
-import Academic from './pages/Academic';
 import Certifications from './pages/Certifications';
 import DefaultPage from './pages/DefaultPage';
+import Education from './pages/Education';
 import Home from './pages/Home';
 import Jobs from './pages/Jobs';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Warehouse from './pages/Warehouse';
-
 import type { FC } from 'react';
 
 const router = createHashRouter([
@@ -21,7 +19,7 @@ const router = createHashRouter([
 		children: [
 			{ path: urlPaths.HOME, element: <Home /> },
 			{ path: urlPaths.ABOUT, element: <About /> },
-			{ path: urlPaths.ACADEMIC, element: <Academic /> },
+			{ path: urlPaths.EDUCATION, element: <Education /> },
 			{ path: urlPaths.JOBS, element: <Jobs /> },
 			{ path: urlPaths.SKILLS, element: <Skills /> },
 			{ path: urlPaths.PROJECTS, element: <Projects /> },

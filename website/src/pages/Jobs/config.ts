@@ -1,6 +1,5 @@
 import { CodeBracketIcon, DevicePhoneMobileIcon, GlobeAltIcon } from '@heroicons/react/24/solid';
 import { FaGamepad } from 'react-icons/fa';
-
 import {
 	AIRFLOW,
 	AWS,
@@ -32,7 +31,6 @@ import {
 	TERRAFORM,
 	TYPESCRIPT,
 	VUE,
-	WEBPACK,
 } from '../../constants/skills';
 import {
 	ACASO_LINKEDIN_URL,
@@ -51,7 +49,6 @@ import {
 	ONCASE_URL,
 } from '../../constants/urls';
 import { LinkedInIcon } from '../../utils/icons';
-
 import type { ActivityType } from '../../@types';
 
 export const title: string = 'Work Experience';
@@ -62,11 +59,12 @@ export const experiences: ActivityType[] = [
 		title: 'Software Engineer | Full-time',
 		subtitle: 'Neurotech. Apr 2024 - Present',
 		description: [
-			'In general, using skills in software, data engineering and backend development with Python, FastAPI, Terraform, Git, Airflow, Bash and cloud computing on AWS.',
+			'In general, using skills in software, data engineering and backend development with Python, FastAPI, Terraform, CI/CD, Docker, Git, Airflow, Bash and cloud computing on AWS and GCP.',
 			'Collaborate with cross-functional teams to achieve project goals.',
 			'Ensure high-quality, scalable application development.',
 			'Using AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions and more.',
-			'Extract data from different sources and make it available for many users in a data lake.',
+			'Extract data from different sources (internet, AWS S3, etc) and make it available in a data lake.',
+			'Automating ETL pipelines with Apache Airflow.',
 		],
 		skills: [
 			AIRFLOW,
@@ -93,10 +91,9 @@ export const experiences: ActivityType[] = [
 		Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
 	},
 	{
-		title: 'Software Engineer | Full-time',
+		title: 'Full Stack Developer | Full-time',
 		subtitle: 'Jalan. Apr 2024 - May 2024',
-		description:
-			'Worked as a Full Stack developer using Vue.js and Quasar along with Python and Lambda Functions (AWS).',
+		description: 'Worked in web apps using Vue.js and Quasar along with Python and AWS Lambda Functions.',
 		skills: [AWS, BASH, GIT, POWERSHELL, PYTHON, VUE],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: JALAN_URL },
@@ -117,6 +114,7 @@ export const experiences: ActivityType[] = [
 			'Enhanced customer relationships through the delivery of top-notch solutions.',
 			'Ensured high-quality and scalable application development.',
 			'Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.',
+			'Automated ETL pipelines with Apache Airflow.',
 			'Utilized Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.',
 		],
 		skills: [
@@ -142,7 +140,6 @@ export const experiences: ActivityType[] = [
 			SQL,
 			TAILWIND_CSS,
 			TYPESCRIPT,
-			WEBPACK,
 		],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: ONCASE_URL },
@@ -150,7 +147,6 @@ export const experiences: ActivityType[] = [
 		],
 		Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
 	},
-
 	{
 		title: 'Game Developer | Internship',
 		subtitle: 'Educandus. May 2020 - Dec 2020 and Jun 2021 - Oct 2021',
@@ -169,7 +165,8 @@ export const freelances: ActivityType[] = [
 	{
 		title: 'Full Stack Developer',
 		subtitle: 'GPC Gestão. Sep 2024 - Oct 2024',
-		description: 'Built an admin website using React with TypeScript and Tailwind CSS.',
+		description:
+			'Built an admin website for viewing, managing and downloading water consumption documents in multiple homes.',
 		skills: [CI_CD, GIT, GITHUB, REACT, TAILWIND_CSS, TYPESCRIPT],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: GPC_GESTAO_URL },
@@ -180,8 +177,9 @@ export const freelances: ActivityType[] = [
 	{
 		title: 'Mobile Engineer',
 		subtitle: 'aca.so. Mar 2024',
-		description: 'Worked as a Mobile Engineer in a freelance project (aca.so mobile app) using React Native.',
-		skills: [GIT, GITHUB, REACT_NATIVE, TYPESCRIPT],
+		description:
+			'Worked in a freelance project (aca.so mobile app) using React Native, React Redux and TypeScript.',
+		skills: [GIT, GITHUB, REACT_NATIVE, REACT_REDUX, TYPESCRIPT],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: ACASO_URL },
 			{ Icon: LinkedInIcon, label: 'LinkedIn', url: ACASO_LINKEDIN_URL },
@@ -191,8 +189,7 @@ export const freelances: ActivityType[] = [
 	{
 		title: 'Mobile Engineer',
 		subtitle: 'InSpace. Aug 2022 - Oct 2022',
-		description:
-			'I have worked with the identification of objects (censored specificity) from a mobile camera for legal purposes.',
+		description: 'Worked with the identification of certain objects from a mobile camera for legal purposes.',
 		skills: [GIT, GITHUB, REACT_NATIVE, REACT_REDUX, TYPESCRIPT],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: INSPACE_URL },

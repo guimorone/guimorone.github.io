@@ -4,7 +4,7 @@ import Page from '../../components/Page';
 import { CIN_UFPE_URL } from '../../constants/urls';
 import { experiences, subtitle, title } from './config';
 
-export default function Academic() {
+export default function Education() {
 	return (
 		<>
 			<Page title={title} subtitle={subtitle} activities={experiences} photo={{ src: UFPE, alt: 'UFPE logo' }} />

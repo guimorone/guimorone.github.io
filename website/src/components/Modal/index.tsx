@@ -1,6 +1,5 @@
 import { Description, Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
-
 import type { FC } from 'react';
 import type { ModalProps } from '../../@types/components';
 

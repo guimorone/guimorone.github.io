@@ -3,7 +3,6 @@ import Feed from '../Feed';
 import ObjectFeed from '../Feed/ObjectFeed';
 import Photo from '../Photo';
 import Title from '../Title';
-
 import type { FC } from 'react';
 import type { PageProps } from '../../@types/components';
 

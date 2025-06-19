@@ -3,7 +3,6 @@ import { FaLink, FaZ } from 'react-icons/fa6';
 import { FaGamepad } from 'react-icons/fa';
 import { RiLockPasswordLine } from 'react-icons/ri';
 import { SiInstagram } from 'react-icons/si';
-
 import {
 	BASH,
 	C,
@@ -26,22 +25,32 @@ import {
 	TYPEWAR_GAME_PROJECT_URL,
 	TYPEWAR_GAME_URL,
 	URL_SHORTENER_PROJECT_URL,
+	WEBSITE_CODE_URL,
 	ZTYPE_GAME_URL,
 } from '../../constants/urls';
-import { GitHubIcon } from '../../utils/icons';
-
+import { GitHubIcon, WebSiteIcon } from '../../utils/icons';
 import type { ActivityType } from '../../@types';
 
 export const title: string = 'Projects';
 export const subtitle: string =
-	"Allow me to show you some side projects I've worked/been working on throughout my career, whether alone or at college. I would also like to advise that none of them have any interest in profits or any kind of commercial usage.";
+	"Allow me to show you some side projects I've worked/been working on throughout my career, whether alone, at college or with other colleagues. I would also like to advise that none of them have any interest in profits or any kind of commercial usage.";
 
 export const projects: ActivityType[] = [
 	{
+		title: 'My Portfolio',
+		subtitle: 'Aug 2023 - Present',
+		description: 'This website you are on now, containing all my relevant information and documents.',
+		skills: [CI_CD, GIT, GITHUB, REACT, TAILWIND_CSS, TYPESCRIPT],
+		links: [{ Icon: GitHubIcon, label: 'Project URL', url: WEBSITE_CODE_URL }],
+		Icon: { Element: WebSiteIcon, background: 'bg-zinc-900' },
+	},
+	{
 		title: 'Instagram Stats',
 		subtitle: 'Jan 2023 - Nov 2023 and Jun 2024',
-		description:
-			'A Python program to get specific data from Instagram. The project is on hold, but is currently working to get CSV files from followers, followings, and people who do not follow back the account you choose.',
+		description: [
+			'A Python program to get specific data from Instagram.',
+			'The main idea is to get CSV files from followers, followings, and people who do not follow back the account you choose.',
+		],
 		skills: [GIT, GITHUB, PYTHON],
 		links: [{ Icon: GitHubIcon, label: 'Project URL', url: INSTAGRAM_STATS_PROJECT_URL }],
 		Icon: { Element: SiInstagram, background: 'bg-[#B733AA]' },
@@ -82,7 +91,6 @@ export const projects: ActivityType[] = [
 			'The main purpose is to identify bank check fields easily, so you do not have to type them manually.',
 			"The bank check OCR is based on our customer's API, we did not implement it, just the website.",
 			'It also offers API Integration, history download, payments and other features.',
-			'Developed using React, TypeScript, Tailwind CSS and Django (Python).',
 		],
 		comments: ['Since it is a private project, I cannot share the Repository URL.'],
 		skills: [

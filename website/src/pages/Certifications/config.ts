@@ -1,6 +1,5 @@
 import { GrCertificate } from 'react-icons/gr';
 import { SiGooglecloud, SiUdemy } from 'react-icons/si';
-
 import {
 	CSS,
 	CYBER_SECURITY,
@@ -32,7 +31,6 @@ import {
 	UDEMY_GRAPHQL_COURSE_URL,
 	UDEMY_WEB_DEV_COURSE_CERT_URL,
 } from '../../constants/urls';
-
 import type { ActivityType } from '../../@types';
 
 export const title: string = 'Courses & Certifications';
