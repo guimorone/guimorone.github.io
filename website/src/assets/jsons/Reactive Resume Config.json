@@ -207,7 +207,7 @@
           "position": "Software Engineer | Full-time",
           "location": "Recife - PE, Brazil",
           "date": "April 2024 - Present",
-          "summary": "<ul><li><p>In general, using skills in software, data engineering and backend development with Python, FastAPI, Terraform, Git, Airflow, Bash and cloud computing on AWS.</p></li><li><p>Collaborate with cross-functional teams to achieve project goals.</p></li><li><p>Ensure high-quality, scalable application development.</p></li><li><p>Using AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions and more.</p></li><li><p>Extract data from different sources and make it available for many users in a data lake.</p></li></ul>",
+          "summary": "<ul><li><p>In general, using skills in software, data engineering and backend development with Python, FastAPI, Terraform, CI/CD, Docker, Git, Airflow, Bash and cloud computing on AWS and GCP.</p></li><li><p>Collaborate with cross-functional teams to achieve project goals.</p></li><li><p>Ensure high-quality, scalable application development.</p></li><li><p>Using AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions and more.</p></li><li><p>Extract data from different sources (internet, AWS S3, etc) and make it available in a data lake.</p></li><li><p>Automating ETL pipelines with Apache Airflow.</p></li></ul>",
           "url": {
             "label": "Company Website",
             "href": "https://www.neurotech.com.br"
@@ -220,7 +220,7 @@
           "position": "Full Stack Developer | Freelancer",
           "location": "Recife - PE, Brazil",
           "date": "September 2024 - October 2024",
-          "summary": "<p>Built an admin website using React with TypeScript and Tailwind CSS.</p>",
+          "summary": "<p>Built an admin website using React with TypeScript and Tailwind CSS for viewing, managing and downloading water consumption documents in multiple homes.</p>",
           "url": {
             "label": "Company Website",
             "href": "https://gpcgestao.com.br"
@@ -233,7 +233,7 @@
           "position": "Software Engineer | Full-time",
           "location": "Recife - PE, Brazil",
           "date": "April 2024 - May 2024",
-          "summary": "<p>Worked as a Full Stack developer using Vue.js and Quasar along with Python and Lambda Functions (AWS).</p>",
+          "summary": "<p>Worked in web apps using Vue.js and Quasar along with Python and AWS Lambda Functions.</p>",
           "url": {
             "label": "Company Website",
             "href": "https://jalan.com.br"
@@ -246,7 +246,7 @@
           "position": "Mobile Engineer | Freelancer",
           "location": "Recife - PE, Brazil",
           "date": "March 2024",
-          "summary": "<p>Worked as a Mobile Engineer in a freelance project (aca.so mobile app) using React Native.</p>",
+          "summary": "<p>Worked in a freelance project (aca.so mobile app) using React Native, React Redux and TypeScript.</p>",
           "url": {
             "label": "Company Website",
             "href": "https://aca.so"
@@ -259,7 +259,7 @@
           "position": "Software Engineer | Full-time",
           "location": "Recife - PE, Brazil",
           "date": "February 2022 - December 2023 (February 2022 - August 2022 as an intern)",
-          "summary": "<ul><li><p>In general, utilized skills in web development (Flask, Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing (AWS and GCP).</p></li><li><p>Developed Big Data applications with a focus on high efficiency, scalability, and low cost.</p></li><li><p>Developed frontend applications using React (JavaScript, TypeScript and HTML/CSS) and Redux.</p></li><li><p>Implemented backend functionality using Python frameworks Flask and Django.</p></li><li><p>Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.</p></li><li><p>Collaborated with cross-functional teams to achieve project goals.</p></li><li><p>Enhanced customer relationships through the delivery of top-notch solutions.</p></li><li><p>Ensured high-quality and scalable application development.</p></li><li><p>Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.</p></li><li><p>Utilized Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.</p></li></ul>",
+          "summary": "<ul><li><p>In general, utilized skills in web development (Flask, Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing (AWS and GCP).</p></li><li><p>Developed Big Data applications with a focus on high efficiency, scalability, and low cost.</p></li><li><p>Developed frontend applications using React (JavaScript, TypeScript and HTML/CSS) and Redux.</p></li><li><p>Implemented backend functionality using Python frameworks Flask and Django.</p></li><li><p>Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.</p></li><li><p>Collaborated with cross-functional teams to achieve project goals.</p></li><li><p>Enhanced customer relationships through the delivery of top-notch solutions.</p></li><li><p>Ensured high-quality and scalable application development.</p></li><li><p>Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.</p></li><li><p>Automated ETL pipelines with Apache Airflow.</p></li><li><p>Utilized Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.</p></li></ul>",
           "url": {
             "label": "Company Website",
             "href": "https://www.oncase.com.br"
@@ -272,7 +272,7 @@
           "position": "Mobile Engineer | Freelancer",
           "location": "Recife - PE, Brazil",
           "date": "August 2022 - October 2022",
-          "summary": "<p>I have worked with the identification of objects (censored specificity) from a mobile camera for legal purposes.</p>",
+          "summary": "<p>Worked with the identification of certain objects from a mobile camera for legal purposes.</p>",
           "url": {
             "label": "Company Website",
             "href": "https://inspace.tech"
@@ -378,12 +378,32 @@
       "id": "projects",
       "items": [
         {
+          "id": "c3vl9hkgla3m81a6iurutgc3",
+          "visible": true,
+          "name": "My Portfolio",
+          "description": "Personal Website",
+          "date": "August 2023 - Present",
+          "summary": "<p>My personal website containing all my relevant information and documents.</p>",
+          "keywords": [
+            "CI/CD",
+            "Git",
+            "GitHub",
+            "React",
+            "Tailwind CSS",
+            "TypeScript"
+          ],
+          "url": {
+            "label": "URL",
+            "href": "https://www.guimorone.com"
+          }
+        },
+        {
           "id": "l9dglbwtj3ervoksqoc4m1tr",
           "visible": true,
           "name": "Instagram Stats",
           "description": "",
           "date": "January 2023 - November 2023 and June 2024",
-          "summary": "<p>A Python program to get specific data from Instagram. The project is on hold, but is currently working to get CSV files from followers, followings, and people who do not follow back the account you choose.</p>",
+          "summary": "<ul><li><p>A Python program to get specific data from Instagram.</p></li><li><p>The main idea is to get CSV files from followers, followings, and people who do not follow back the account you choose.</p></li></ul>",
           "keywords": [
             "Git",
             "GitHub",
@@ -631,6 +651,14 @@
           "keywords": []
         },
         {
+          "id": "ar5x0kafta3m6shgyvxo6uib",
+          "visible": true,
+          "name": "Airflow",
+          "description": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
           "id": "qwii750rqzx6l97odisn902k",
           "visible": true,
           "name": "Bash",
@@ -650,6 +678,14 @@
           "id": "syrnqqsvrmbd3b0fjqh9khgo",
           "visible": true,
           "name": "Go",
+          "description": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "eth3std69m7ejhatu1kcc0qp",
+          "visible": true,
+          "name": "MongoDB",
           "description": "",
           "level": 4,
           "keywords": []
@@ -703,14 +739,6 @@
           "keywords": []
         },
         {
-          "id": "ar5x0kafta3m6shgyvxo6uib",
-          "visible": true,
-          "name": "Airflow",
-          "description": "",
-          "level": 3,
-          "keywords": []
-        },
-        {
           "id": "bs8ge484misv2u7paphzpjxb",
           "visible": true,
           "name": "CSS",
@@ -754,14 +782,6 @@
           "id": "mi1rh8o5ejanghbd3sksqs5i",
           "visible": true,
           "name": "JQuery",
-          "description": "",
-          "level": 3,
-          "keywords": []
-        },
-        {
-          "id": "eth3std69m7ejhatu1kcc0qp",
-          "visible": true,
-          "name": "MongoDB",
           "description": "",
           "level": 3,
           "keywords": []
@@ -866,14 +886,6 @@
           "id": "l59978l01eb9lkki29lqjw8h",
           "visible": true,
           "name": "Ruby",
-          "description": "",
-          "level": 1,
-          "keywords": []
-        },
-        {
-          "id": "y3fdb4aeknarg340fx6fg644",
-          "visible": true,
-          "name": "Webpack",
           "description": "",
           "level": 1,
           "keywords": []

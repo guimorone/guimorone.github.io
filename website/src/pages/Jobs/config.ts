@@ -64,7 +64,7 @@ export const experiences: ActivityType[] = [
 			'Ensure high-quality, scalable application development.',
 			'Using AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions and more.',
 			'Extract data from different sources (internet, AWS S3, etc) and make it available in a data lake.',
-			'Automating ETL workflows with Apache Airflow.',
+			'Automating ETL pipelines with Apache Airflow.',
 		],
 		skills: [
 			AIRFLOW,
@@ -114,7 +114,7 @@ export const experiences: ActivityType[] = [
 			'Enhanced customer relationships through the delivery of top-notch solutions.',
 			'Ensured high-quality and scalable application development.',
 			'Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.',
-			'Automated ETL workflows with Apache Airflow.',
+			'Automated ETL pipelines with Apache Airflow.',
 			'Utilized Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.',
 		],
 		skills: [
@@ -166,7 +166,7 @@ export const freelances: ActivityType[] = [
 		title: 'Full Stack Developer',
 		subtitle: 'GPC Gestão. Sep 2024 - Oct 2024',
 		description:
-			'Built an admin website for viewing and downloading water consumption documents in multiple homes.',
+			'Built an admin website for viewing, managing and downloading water consumption documents in multiple homes.',
 		skills: [CI_CD, GIT, GITHUB, REACT, TAILWIND_CSS, TYPESCRIPT],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: GPC_GESTAO_URL },
@@ -177,7 +177,8 @@ export const freelances: ActivityType[] = [
 	{
 		title: 'Mobile Engineer',
 		subtitle: 'aca.so. Mar 2024',
-		description: 'Worked with the identification of certain objects from a mobile camera for legal purposes.',
+		description:
+			'Worked in a freelance project (aca.so mobile app) using React Native, React Redux and TypeScript.',
 		skills: [GIT, GITHUB, REACT_NATIVE, REACT_REDUX, TYPESCRIPT],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: ACASO_URL },
@@ -188,8 +189,7 @@ export const freelances: ActivityType[] = [
 	{
 		title: 'Mobile Engineer',
 		subtitle: 'InSpace. Aug 2022 - Oct 2022',
-		description:
-			'I have worked with the identification of objects (censored specificity) from a mobile camera for legal purposes.',
+		description: 'Worked with the identification of certain objects from a mobile camera for legal purposes.',
 		skills: [GIT, GITHUB, REACT_NATIVE, REACT_REDUX, TYPESCRIPT],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: INSPACE_URL },

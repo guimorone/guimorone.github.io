@@ -33,13 +33,13 @@ import type { ActivityType } from '../../@types';
 
 export const title: string = 'Projects';
 export const subtitle: string =
-	"Allow me to show you some side projects I've worked/been working on throughout my career, whether alone or at college. I would also like to advise that none of them have any interest in profits or any kind of commercial usage.";
+	"Allow me to show you some side projects I've worked/been working on throughout my career, whether alone, at college or with other colleagues. I would also like to advise that none of them have any interest in profits or any kind of commercial usage.";
 
 export const projects: ActivityType[] = [
 	{
 		title: 'My Portfolio',
 		subtitle: 'Aug 2023 - Present',
-		description: 'This website you are on now, containing all my information and relevant documents.',
+		description: 'This website you are on now, containing all my relevant information and documents.',
 		skills: [CI_CD, GIT, GITHUB, REACT, TAILWIND_CSS, TYPESCRIPT],
 		links: [{ Icon: GitHubIcon, label: 'Project URL', url: WEBSITE_CODE_URL }],
 		Icon: { Element: WebSiteIcon, background: 'bg-zinc-900' },
