@@ -165,7 +165,8 @@ export const freelances: ActivityType[] = [
 	{
 		title: 'Full Stack Developer',
 		subtitle: 'GPC Gestão. Sep 2024 - Oct 2024',
-		description: 'Built an admin website using React with TypeScript and Tailwind CSS.',
+		description:
+			'Built an admin website for viewing and downloading water consumption documents in multiple homes.',
 		skills: [CI_CD, GIT, GITHUB, REACT, TAILWIND_CSS, TYPESCRIPT],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: GPC_GESTAO_URL },
@@ -176,8 +177,8 @@ export const freelances: ActivityType[] = [
 	{
 		title: 'Mobile Engineer',
 		subtitle: 'aca.so. Mar 2024',
-		description: 'Worked as a Mobile Engineer in a freelance project (aca.so mobile app) using React Native.',
-		skills: [GIT, GITHUB, REACT_NATIVE, TYPESCRIPT],
+		description: 'Worked with the identification of certain objects from a mobile camera for legal purposes.',
+		skills: [GIT, GITHUB, REACT_NATIVE, REACT_REDUX, TYPESCRIPT],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: ACASO_URL },
 			{ Icon: LinkedInIcon, label: 'LinkedIn', url: ACASO_LINKEDIN_URL },
