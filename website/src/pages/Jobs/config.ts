@@ -59,11 +59,12 @@ export const experiences: ActivityType[] = [
 		title: 'Software Engineer | Full-time',
 		subtitle: 'Neurotech. Apr 2024 - Present',
 		description: [
-			'In general, using skills in software, data engineering and backend development with Python, FastAPI, Terraform, Git, Airflow, Bash and cloud computing on AWS.',
+			'In general, using skills in software, data engineering and backend development with Python, FastAPI, Terraform, CI/CD, Docker, Git, Airflow, Bash and cloud computing on AWS and GCP.',
 			'Collaborate with cross-functional teams to achieve project goals.',
 			'Ensure high-quality, scalable application development.',
 			'Using AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions and more.',
-			'Extract data from different sources and make it available for many users in a data lake.',
+			'Extract data from different sources (internet, AWS S3, etc) and make it available in a data lake.',
+			'Automating ETL workflows with Apache Airflow.',
 		],
 		skills: [
 			AIRFLOW,
@@ -90,10 +91,9 @@ export const experiences: ActivityType[] = [
 		Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
 	},
 	{
-		title: 'Software Engineer | Full-time',
+		title: 'Full Stack Developer | Full-time',
 		subtitle: 'Jalan. Apr 2024 - May 2024',
-		description:
-			'Worked as a Full Stack developer using Vue.js and Quasar along with Python and Lambda Functions (AWS).',
+		description: 'Worked in web apps using Vue.js and Quasar along with Python and AWS Lambda Functions.',
 		skills: [AWS, BASH, GIT, POWERSHELL, PYTHON, VUE],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: JALAN_URL },
@@ -114,6 +114,7 @@ export const experiences: ActivityType[] = [
 			'Enhanced customer relationships through the delivery of top-notch solutions.',
 			'Ensured high-quality and scalable application development.',
 			'Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.',
+			'Automated ETL workflows with Apache Airflow.',
 			'Utilized Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.',
 		],
 		skills: [
@@ -146,7 +147,6 @@ export const experiences: ActivityType[] = [
 		],
 		Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
 	},
-
 	{
 		title: 'Game Developer | Internship',
 		subtitle: 'Educandus. May 2020 - Dec 2020 and Jun 2021 - Oct 2021',
