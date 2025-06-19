@@ -48,7 +48,7 @@ import type { SkillType } from '../@types';
 export const AIRFLOW: SkillType = {
 	Icon: { Element: SiApacheairflow, color: 'text-[#FF7557]' },
 	label: 'Airflow',
-	rating: 3.5,
+	rating: 4,
 };
 export const AWS: SkillType = { Icon: { Element: FaAws, color: 'text-[#FF9900]' }, label: 'AWS', rating: 4 };
 export const BASH: SkillType = { Icon: { Element: VscTerminalBash }, label: 'Bash', rating: 4 };
@@ -113,7 +113,7 @@ export const GRAPHQL: SkillType = {
 export const HASKELL: SkillType = {
 	Icon: { Element: SiHaskell, color: 'text-[#999999]' },
 	label: 'Haskell',
-	rating: 1,
+	rating: 1.5,
 };
 export const HTML: SkillType = { Icon: { Element: FaHtml5, color: 'text-[#E54C25]' }, label: 'HTML', rating: 5 };
 export const JAVA: SkillType = { Icon: { Element: FaJava, color: 'text-[#EB2F2E]' }, label: 'Java', rating: 2.5 };
@@ -150,7 +150,7 @@ export const KUBERNETES: SkillType = {
 export const MONGODB: SkillType = {
 	Icon: { Element: SiMongodb, color: 'text-[#05AC4E]' },
 	label: 'MongoDB',
-	rating: 3,
+	rating: 4,
 };
 export const NODE: SkillType = { Icon: { Element: FaNodeJs, color: 'text-[#90C43F]' }, label: 'Node', rating: 4 };
 export const POSTGRESQL: SkillType = {
