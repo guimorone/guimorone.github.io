@@ -1,10 +1,10 @@
-# Personal WebSite
+# Personal Website
 
 Application using React with TypeScript and Tailwind CSS.
 
 ## Dependencies
 
-- Node.js v22.16.0
+- Node.js v22.17.0
 - npm v11.4.2
 
 ## Running Locally
