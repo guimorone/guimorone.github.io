@@ -27,7 +27,7 @@
       "name": "Summary",
       "columns": 1,
       "separateLinks": true,
-      "visible": true,
+      "visible": false,
       "id": "summary",
       "content": "<p>I am a Software Engineer with a background in Computer Engineering and a strong interest in building reliable, efficient, and scalable systems.</p><p>Since 2019, I have worked on a range of projects involving web development, data engineering, and cloud infrastructure — often with a focus on Big Data applications. I am comfortable working with tools like Python, Django, FastAPI, React, Docker, cloud platforms like AWS and GCP, and more.</p><p>I enjoy solving real-world problems with code, collaborating with teams, and continuously learning new technologies.</p><p>Originally from Rio and now based in Recife, I bring curiosity, adaptability, and a passion for turning ideas into practical solutions.</p>"
     },
@@ -43,7 +43,7 @@
       "name": "Certifications",
       "columns": 1,
       "separateLinks": true,
-      "visible": true,
+      "visible": false,
       "id": "certifications",
       "items": [
         {
@@ -194,7 +194,7 @@
       ]
     },
     "experience": {
-      "name": "Experience",
+      "name": "Work Experience",
       "columns": 1,
       "separateLinks": true,
       "visible": true,
@@ -207,23 +207,10 @@
           "position": "Software Engineer | Full-time",
           "location": "Recife - PE, Brazil",
           "date": "April 2024 - Present",
-          "summary": "<ul><li><p>In general, using skills in software, data engineering and backend development with Python, FastAPI, Terraform, CI/CD, Docker, Git, Airflow, Bash and cloud computing on AWS and GCP.</p></li><li><p>Collaborate with cross-functional teams to achieve project goals.</p></li><li><p>Ensure high-quality, scalable application development.</p></li><li><p>Using AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions and more.</p></li><li><p>Extract data from different sources (internet, AWS S3, etc) and make it available in a data lake.</p></li><li><p>Automating ETL pipelines with Apache Airflow.</p></li></ul>",
+          "summary": "<ul><li><p>In general, using skills in software, data engineering and backend development with Python, FastAPI, Terraform, CI/CD, Docker, Git, Airflow, Bash and cloud computing on AWS and GCP.</p></li><li><p>Collaborate with cross-functional teams to achieve project goals.</p></li><li><p>Ensure high-quality, scalable application development.</p></li><li><p>Implementing backend functionality using FastAPI.</p></li><li><p>Using AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions and more.</p></li><li><p>Working extracting data from different sources (internet, AWS S3, etc) and make it available in a data lake.</p></li><li><p>Automating ETL pipelines with Apache Airflow.</p></li></ul>",
           "url": {
             "label": "Company Website",
             "href": "https://www.neurotech.com.br"
-          }
-        },
-        {
-          "id": "kydkl182jccnkq6bvyyv6um2",
-          "visible": true,
-          "company": "GPC Gestão",
-          "position": "Full Stack Developer | Freelancer",
-          "location": "Recife - PE, Brazil",
-          "date": "September 2024 - October 2024",
-          "summary": "<p>Built an admin website using React with TypeScript and Tailwind CSS for viewing, managing and downloading water consumption documents in multiple homes.</p>",
-          "url": {
-            "label": "Company Website",
-            "href": "https://gpcgestao.com.br"
           }
         },
         {
@@ -240,19 +227,6 @@
           }
         },
         {
-          "id": "ajtip0we7yzjdfmb4jo8uojm",
-          "visible": true,
-          "company": "aca.so",
-          "position": "Mobile Engineer | Freelancer",
-          "location": "Recife - PE, Brazil",
-          "date": "March 2024",
-          "summary": "<p>Worked in a freelance project (aca.so mobile app) using React Native, React Redux and TypeScript.</p>",
-          "url": {
-            "label": "Company Website",
-            "href": "https://aca.so"
-          }
-        },
-        {
           "id": "wu4bozur9t46rdmmdjf7x92i",
           "visible": true,
           "company": "Oncase",
@@ -263,19 +237,6 @@
           "url": {
             "label": "Company Website",
             "href": "https://www.oncase.com.br"
-          }
-        },
-        {
-          "id": "bt31lt4gnjxdgt2pkkx5wvyn",
-          "visible": true,
-          "company": "InSpace",
-          "position": "Mobile Engineer | Freelancer",
-          "location": "Recife - PE, Brazil",
-          "date": "August 2022 - October 2022",
-          "summary": "<p>Worked with the identification of certain objects from a mobile camera for legal purposes.</p>",
-          "url": {
-            "label": "Company Website",
-            "href": "https://inspace.tech"
           }
         },
         {
@@ -379,7 +340,7 @@
       "items": [
         {
           "id": "c3vl9hkgla3m81a6iurutgc3",
-          "visible": true,
+          "visible": false,
           "name": "My Portfolio",
           "description": "Personal Website",
           "date": "August 2023 - Present",
@@ -455,7 +416,7 @@
           "name": "Cheque Fácil",
           "description": "",
           "date": "September 2023 - December 2023",
-          "summary": "<ul><li><p>Made a website with 3 more colleagues to an external customer.</p></li><li><p>The main purpose is to identify bank check fields easily, so you do not have to type them manually.</p></li><li><p>The bank check OCR is based on our customer's API, we did not implement it, just the website.</p></li><li><p>It also offers API Integration, history download, payments and other features.</p></li></ul>",
+          "summary": "<ul><li><p>Made a website with 3 more colleagues to an external customer.</p></li><li><p>The main purpose is to identify bank check fields easily, so the user does not have to type them manually.</p></li><li><p>The bank check's OCR is done by our customer's API, we did not implement it, just the website.</p></li><li><p>It also offers API Integration, history download, payments and other features.</p></li></ul>",
           "keywords": [
             "Bash",
             "CI/CD",
@@ -899,7 +860,50 @@
         "separateLinks": true,
         "visible": true,
         "id": "rz1jy8dq68qt2qbzjr94tvml",
-        "items": []
+        "items": [
+          {
+            "id": "io8fapv1xy815zqswbz59w19",
+            "visible": true,
+            "name": "GPC Gestão",
+            "description": "Full Stack Developer",
+            "date": "September 2024 - October 2024",
+            "location": "Recife - PE, Brazil",
+            "summary": "<p>Built an admin website using React with TypeScript and Tailwind CSS for viewing, managing and downloading water consumption documents in multiple homes.</p>",
+            "keywords": [],
+            "url": {
+              "label": "Company Website",
+              "href": "https://gpcgestao.com.br"
+            }
+          },
+          {
+            "id": "o6ywpbyb3hgzyq6bjclg2y8m",
+            "visible": true,
+            "name": "aca.so",
+            "description": "Mobile Engineer",
+            "date": "March 2024",
+            "location": "Recife - PE, Brazil",
+            "summary": "<p>Worked in a project (aca.so mobile app) using React Native, React Redux and TypeScript.</p>",
+            "keywords": [],
+            "url": {
+              "label": "Company Website",
+              "href": "https://aca.so"
+            }
+          },
+          {
+            "id": "ufunngpypx4tbk36r583wtoz",
+            "visible": true,
+            "name": "InSpace",
+            "description": "Mobile Engineer",
+            "date": "August 2022 - October 2022",
+            "location": "Recife - PE, Brazil",
+            "summary": "<p>Worked with the identification of certain objects from a mobile camera for legal purposes.</p>",
+            "keywords": [],
+            "url": {
+              "label": "Company Website",
+              "href": "https://inspace.tech"
+            }
+          }
+        ]
       }
     }
   },
@@ -909,6 +913,7 @@
       [
         [
           "profiles",
+          "languages",
           "summary",
           "education",
           "experience",
@@ -923,11 +928,10 @@
       ],
       [
         [
+          "custom.rz1jy8dq68qt2qbzjr94tvml",
           "projects",
           "certifications",
-          "languages",
-          "skills",
-          "custom.rz1jy8dq68qt2qbzjr94tvml"
+          "skills"
         ],
         []
       ]
