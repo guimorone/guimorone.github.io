@@ -62,8 +62,9 @@ export const experiences: ActivityType[] = [
 			'In general, using skills in software, data engineering and backend development with Python, FastAPI, Terraform, CI/CD, Docker, Git, Airflow, Bash and cloud computing on AWS and GCP.',
 			'Collaborate with cross-functional teams to achieve project goals.',
 			'Ensure high-quality, scalable application development.',
+      'Implementing backend functionality using FastAPI.',
 			'Using AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions and more.',
-			'Extract data from different sources (internet, AWS S3, etc) and make it available in a data lake.',
+			'Working extracting data from different sources (internet, AWS S3, etc) and make it available in a data lake.',
 			'Automating ETL pipelines with Apache Airflow.',
 		],
 		skills: [
@@ -107,7 +108,7 @@ export const experiences: ActivityType[] = [
 		description: [
 			'In general, utilized skills in web development (Flask, Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing (AWS and GCP).',
 			'Developed Big Data applications with a focus on high efficiency, scalability, and low cost.',
-			'Developed frontend applications using React (JavaScript, TypeScript and HTML/CSS) and Redux.',
+			'Developed frontend applications using React, React Redux and TypeScript.',
 			'Implemented backend functionality using Python frameworks Flask and Django.',
 			'Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.',
 			'Collaborated with cross-functional teams to achieve project goals.',
@@ -178,7 +179,7 @@ export const freelances: ActivityType[] = [
 		title: 'Mobile Engineer',
 		subtitle: 'aca.so. Mar 2024',
 		description:
-			'Worked in a freelance project (aca.so mobile app) using React Native, React Redux and TypeScript.',
+			'Worked in a project (aca.so mobile app) using React Native, React Redux and TypeScript.',
 		skills: [GIT, GITHUB, REACT_NATIVE, REACT_REDUX, TYPESCRIPT],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: ACASO_URL },

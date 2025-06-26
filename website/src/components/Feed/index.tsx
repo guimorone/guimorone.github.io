@@ -47,6 +47,15 @@ const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 											) : (
 												<p className="text-sm text-justify md:text-base text-zinc-300">{item.description}</p>
 											))}
+										{item.comments && (
+											<ul className="space-y-0.5">
+												{item.comments?.map((comment, idx) => (
+													<li key={`feed-comment-${idx}`} className="text-xs md:text-sm text-zinc-300">
+														{comment}
+													</li>
+												))}
+											</ul>
+										)}
 										{skills && (
 											<ul className="flex flex-wrap gap-2 my-2">
 												{skills?.map((skill, idx) => (
@@ -85,15 +94,6 @@ const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 															{skill.label}
 														</span>
 													</Link>
-												))}
-											</ul>
-										)}
-										{item.comments && (
-											<ul className="space-y-0.5">
-												{item.comments?.map((comment, idx) => (
-													<li key={`feed-comment-${idx}`} className="text-xs md:text-sm text-zinc-300">
-														{comment}
-													</li>
 												))}
 											</ul>
 										)}
