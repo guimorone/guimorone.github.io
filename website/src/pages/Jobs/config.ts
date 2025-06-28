@@ -58,12 +58,14 @@ export const experiences: ActivityType[] = [
 	{
 		title: 'Software Engineer | Full-time',
 		subtitle: 'Neurotech. Apr 2024 - Present',
+		location: 'Recife, Pernambuco, Brazil · Hybrid',
 		description: [
 			'In general, using skills in software, data engineering and backend development with Python, FastAPI, Terraform, CI/CD, Docker, Git, Airflow, Bash and cloud computing on AWS and GCP.',
 			'Collaborate with cross-functional teams to achieve project goals.',
 			'Ensure high-quality, scalable application development.',
+			'Implementing backend functionality using FastAPI.',
 			'Using AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions and more.',
-			'Extract data from different sources (internet, AWS S3, etc) and make it available in a data lake.',
+			'Working extracting data from different sources (internet, AWS S3, etc) and make it available in a data lake.',
 			'Automating ETL pipelines with Apache Airflow.',
 		],
 		skills: [
@@ -93,6 +95,7 @@ export const experiences: ActivityType[] = [
 	{
 		title: 'Full Stack Developer | Full-time',
 		subtitle: 'Jalan. Apr 2024 - May 2024',
+		location: 'Recife, Pernambuco, Brazil · Remote',
 		description: 'Worked in web apps using Vue.js and Quasar along with Python and AWS Lambda Functions.',
 		skills: [AWS, BASH, GIT, POWERSHELL, PYTHON, VUE],
 		links: [
@@ -104,10 +107,11 @@ export const experiences: ActivityType[] = [
 	{
 		title: 'Software Engineer | Full-time',
 		subtitle: 'Oncase. Feb 2022 - Dec 2023 (Feb 2022 - Aug 2022 as an intern)',
+		location: 'Recife, Pernambuco, Brazil · Remote',
 		description: [
 			'In general, utilized skills in web development (Flask, Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing (AWS and GCP).',
 			'Developed Big Data applications with a focus on high efficiency, scalability, and low cost.',
-			'Developed frontend applications using React (JavaScript, TypeScript and HTML/CSS) and Redux.',
+			'Developed frontend applications using React, React Redux and TypeScript.',
 			'Implemented backend functionality using Python frameworks Flask and Django.',
 			'Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.',
 			'Collaborated with cross-functional teams to achieve project goals.',
@@ -150,6 +154,7 @@ export const experiences: ActivityType[] = [
 	{
 		title: 'Game Developer | Internship',
 		subtitle: 'Educandus. May 2020 - Dec 2020 and Jun 2021 - Oct 2021',
+		location: 'Recife, Pernambuco, Brazil · Remote',
 		description:
 			'I have worked as a game developer using Construct 3 software and JavaScript, building educational games for students from preschool to high school levels.',
 		skills: [CONSTRUCT_3, CSS, HTML, JAVASCRIPT],
@@ -165,6 +170,7 @@ export const freelances: ActivityType[] = [
 	{
 		title: 'Full Stack Developer',
 		subtitle: 'GPC Gestão. Sep 2024 - Oct 2024',
+		location: 'Recife, Pernambuco, Brazil · Remote',
 		description:
 			'Built an admin website for viewing, managing and downloading water consumption documents in multiple homes.',
 		skills: [CI_CD, GIT, GITHUB, REACT, TAILWIND_CSS, TYPESCRIPT],
@@ -177,8 +183,8 @@ export const freelances: ActivityType[] = [
 	{
 		title: 'Mobile Engineer',
 		subtitle: 'aca.so. Mar 2024',
-		description:
-			'Worked in a freelance project (aca.so mobile app) using React Native, React Redux and TypeScript.',
+		location: 'Recife, Pernambuco, Brazil · Remote',
+		description: 'Worked in a project (aca.so mobile app) using React Native, React Redux and TypeScript.',
 		skills: [GIT, GITHUB, REACT_NATIVE, REACT_REDUX, TYPESCRIPT],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Website', url: ACASO_URL },
@@ -189,6 +195,7 @@ export const freelances: ActivityType[] = [
 	{
 		title: 'Mobile Engineer',
 		subtitle: 'InSpace. Aug 2022 - Oct 2022',
+		location: 'Recife, Pernambuco, Brazil · Remote',
 		description: 'Worked with the identification of certain objects from a mobile camera for legal purposes.',
 		skills: [GIT, GITHUB, REACT_NATIVE, REACT_REDUX, TYPESCRIPT],
 		links: [
