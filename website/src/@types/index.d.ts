@@ -38,6 +38,7 @@ export type LanguageSkillType = {
 export type ActivityType = {
 	title: string;
 	subtitle: string;
+	location?: string;
 	description?: string | string[];
 	comments?: string[];
 	skills?: SkillType[];

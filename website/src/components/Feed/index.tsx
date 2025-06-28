@@ -9,11 +9,11 @@ const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 	return (
 		<div className="flow-root">
 			<ul className="-mb-8">
-				{activities.map((item, index) => {
-					const skills = item.skills?.toSorted(sortByTitleOrLabelFunction);
+				{activities.map((activity, index) => {
+					const skills = activity.skills?.toSorted(sortByTitleOrLabelFunction);
 
 					return (
-						<li key={`feed-${item.title}-${index}`}>
+						<li key={`feed-${activity.title}-${index}`}>
 							<div className="relative pb-8">
 								{index !== activities.length - 1 && (
 									<span className="absolute left-4 top-4 -ml-px h-full w-0.5 bg-zinc-400" aria-hidden="true" />
@@ -21,23 +21,28 @@ const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 								<div className="relative flex gap-x-3">
 									<span
 										className={classNames(
-											item?.Icon?.background ?? 'bg-teal-600',
+											activity.Icon?.background ?? 'bg-teal-600',
 											'h-8 w-8 rounded-full flex items-center justify-center ring-4 ring-white'
 										)}
 									>
-										{item.Icon && <item.Icon.Element className="size-5 text-zinc-100" aria-hidden="true" />}
+										{activity.Icon && (
+											<activity.Icon.Element className="size-5 text-zinc-100" aria-hidden="true" />
+										)}
 									</span>
 									<div className="flex min-w-0 flex-1 flex-col justify-between pt-1.5 gap-y-2.5">
 										<div className="-space-y-0.5">
-											<h3 className="text-lg md:text-xl text-zinc-100">{item.title}</h3>
-											<p className="text-xs md:text-sm text-zinc-300">{item.subtitle}</p>
+											<h3 className="text-lg md:text-xl text-zinc-100">{activity.title}</h3>
+											<p className="text-xs md:text-sm text-zinc-300">{activity.subtitle}</p>
+											{activity.location && (
+												<p className="text-xs md:text-sm text-zinc-300">{activity.location}</p>
+											)}
 										</div>
-										{item.description &&
-											(item.description instanceof Array ? (
+										{activity.description &&
+											(activity.description instanceof Array ? (
 												<ul className="space-y-0.5 list-inside list-disc">
-													{item.description.map((d, idx) => (
+													{activity.description.map((d, idx) => (
 														<li
-															key={`feed-${item.title}-${index}-description-${idx}`}
+															key={`feed-${activity.title}-${index}-description-${idx}`}
 															className="text-sm text-justify md:text-base text-zinc-300"
 														>
 															{d}
@@ -45,11 +50,11 @@ const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 													))}
 												</ul>
 											) : (
-												<p className="text-sm text-justify md:text-base text-zinc-300">{item.description}</p>
+												<p className="text-sm text-justify md:text-base text-zinc-300">{activity.description}</p>
 											))}
-										{item.comments && (
+										{activity.comments && (
 											<ul className="space-y-0.5">
-												{item.comments?.map((comment, idx) => (
+												{activity.comments?.map((comment, idx) => (
 													<li key={`feed-comment-${idx}`} className="text-xs md:text-sm text-zinc-300">
 														{comment}
 													</li>
@@ -58,7 +63,7 @@ const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 										)}
 										{skills && (
 											<ul className="flex flex-wrap gap-2 my-2">
-												{skills?.map((skill, idx) => (
+												{skills.map((skill, idx) => (
 													<Link
 														key={`feed-skill-${skill.label}-${idx}`}
 														to={`${SKILLS}?skill=${skill.label}`}
@@ -98,7 +103,7 @@ const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 											</ul>
 										)}
 										<div className="flex gap-x-2 md:gap-x-4">
-											{item?.links?.map((link, idx) => (
+											{activity.links?.map((link, idx) => (
 												<a
 													key={`${link.label}-${idx}`}
 													href={link.url}
