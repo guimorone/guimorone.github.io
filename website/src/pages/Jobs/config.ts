@@ -60,7 +60,7 @@ export const experiences: ActivityType[] = [
 		subtitle: 'Neurotech. Apr 2024 - Present',
 		location: 'Recife, Pernambuco, Brazil · Hybrid',
 		description: [
-			'In general, using skills in software, data engineering and backend development with Python, FastAPI, Terraform, CI/CD, Docker, Git, Airflow, Bash and cloud computing on AWS and GCP.',
+			'In general, using skills in data engineering and backend development with Python, FastAPI, Terraform, CI/CD, Docker, Git, Airflow, Bash and cloud computing on AWS and GCP.',
 			'Collaborate with cross-functional teams to achieve project goals.',
 			'Ensure high-quality, scalable application development.',
 			'Implementing backend functionality using FastAPI.',
