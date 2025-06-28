@@ -335,7 +335,7 @@
       "name": "Projects",
       "columns": 1,
       "separateLinks": true,
-      "visible": true,
+      "visible": false,
       "id": "projects",
       "items": [
         {
@@ -386,6 +386,7 @@
             "Django",
             "Git",
             "GitHub",
+            "PostgreSQL",
             "Python"
           ],
           "url": {
@@ -425,6 +426,7 @@
             "Git",
             "GitHub",
             "Linux",
+            "PostegreSQL",
             "Python",
             "React",
             "React Redux",
@@ -549,7 +551,7 @@
         },
         {
           "id": "t0ascuzch3evzs7i2fs5g94n",
-          "visible": true,
+          "visible": false,
           "name": "HTML",
           "description": "",
           "level": 5,
@@ -644,6 +646,14 @@
           "keywords": []
         },
         {
+          "id": "dj9lczy58pp1hum7in2pbzpm",
+          "visible": true,
+          "name": "HTML/CSS",
+          "description": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
           "id": "eth3std69m7ejhatu1kcc0qp",
           "visible": true,
           "name": "MongoDB",
@@ -663,14 +673,6 @@
           "id": "l1gz274rei5fbd7q129p057z",
           "visible": true,
           "name": "Node",
-          "description": "",
-          "level": 4,
-          "keywords": []
-        },
-        {
-          "id": "t4pm1m91kw9z6vfphjc9yc0p",
-          "visible": true,
-          "name": "PostgreSQL",
           "description": "",
           "level": 4,
           "keywords": []
@@ -701,16 +703,8 @@
         },
         {
           "id": "bs8ge484misv2u7paphzpjxb",
-          "visible": true,
+          "visible": false,
           "name": "CSS",
-          "description": "",
-          "level": 3,
-          "keywords": []
-        },
-        {
-          "id": "xzu46jv9en77e37fh8mcucyz",
-          "visible": true,
-          "name": "Dart",
           "description": "",
           "level": 3,
           "keywords": []
@@ -718,7 +712,7 @@
         {
           "id": "aa4bd91l9dqhw09w48ylbrgo",
           "visible": true,
-          "name": "Flutter",
+          "name": "Flutter + Dart",
           "description": "",
           "level": 3,
           "keywords": []
@@ -740,17 +734,17 @@
           "keywords": []
         },
         {
-          "id": "mi1rh8o5ejanghbd3sksqs5i",
+          "id": "wr02g2vz7rcsheakosrkt3r1",
           "visible": true,
-          "name": "JQuery",
+          "name": "PowerShell",
           "description": "",
           "level": 3,
           "keywords": []
         },
         {
-          "id": "wr02g2vz7rcsheakosrkt3r1",
+          "id": "t4pm1m91kw9z6vfphjc9yc0p",
           "visible": true,
-          "name": "PowerShell",
+          "name": "PostgreSQL",
           "description": "",
           "level": 3,
           "keywords": []
@@ -766,22 +760,14 @@
         {
           "id": "mj3ntv491cc87d4svypimcx3",
           "visible": true,
-          "name": "C",
-          "description": "",
-          "level": 2,
-          "keywords": []
-        },
-        {
-          "id": "yuh9v0rmwtamd04z9hepx71i",
-          "visible": true,
-          "name": "C++",
+          "name": "C/C++",
           "description": "",
           "level": 2,
           "keywords": []
         },
         {
           "id": "m3tzrvpewtkw4o4efeelhn7z",
-          "visible": true,
+          "visible": false,
           "name": "Construct 3",
           "description": "",
           "level": 2,
@@ -791,6 +777,14 @@
           "id": "dva2zci1054e037k0jg75f2s",
           "visible": true,
           "name": "Java",
+          "description": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
+          "id": "mi1rh8o5ejanghbd3sksqs5i",
+          "visible": false,
+          "name": "JQuery",
           "description": "",
           "level": 2,
           "keywords": []
@@ -813,7 +807,7 @@
         },
         {
           "id": "oap1clcpd0z22gqkytwepsvp",
-          "visible": true,
+          "visible": false,
           "name": "Cyber Security",
           "description": "",
           "level": 1,
@@ -821,7 +815,7 @@
         },
         {
           "id": "efa0w94d36mqhl6jmacvzq3n",
-          "visible": true,
+          "visible": false,
           "name": "Haskell",
           "description": "",
           "level": 1,
@@ -829,7 +823,7 @@
         },
         {
           "id": "wmr1b58cpaxmg43pr6jumv2e",
-          "visible": true,
+          "visible": false,
           "name": "Jest",
           "description": "",
           "level": 1,
@@ -845,7 +839,7 @@
         },
         {
           "id": "l59978l01eb9lkki29lqjw8h",
-          "visible": true,
+          "visible": false,
           "name": "Ruby",
           "description": "",
           "level": 1,
@@ -913,9 +907,7 @@
       [
         [
           "profiles",
-          "languages",
           "summary",
-          "education",
           "experience",
           "volunteer",
           "references"
@@ -929,11 +921,14 @@
       [
         [
           "custom.rz1jy8dq68qt2qbzjr94tvml",
-          "projects",
-          "certifications",
+          "education",
+          "languages",
           "skills"
         ],
-        []
+        [
+          "projects",
+          "certifications"
+        ]
       ]
     ],
     "css": {
@@ -944,7 +939,7 @@
       "margin": 18,
       "format": "a4",
       "options": {
-        "breakLine": false,
+        "breakLine": true,
         "pageNumbers": true
       }
     },
@@ -962,10 +957,10 @@
         ],
         "size": 14
       },
-      "lineHeight": 1.5,
+      "lineHeight": 1.45,
       "hideIcons": false,
       "underlineLinks": true
     },
-    "notes": ""
+    "notes": "<p>Se for para mostrar os projetos e certificados, tirar da página 2 e criar uma terceira página</p>"
   }
 }

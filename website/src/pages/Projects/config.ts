@@ -12,6 +12,7 @@ import {
 	GIT,
 	GITHUB,
 	LINUX,
+  POSTGRESQL,
 	PYTHON,
 	REACT,
 	REACT_REDUX,
@@ -59,7 +60,7 @@ export const projects: ActivityType[] = [
 		title: 'URL Shortener',
 		subtitle: 'April 2024',
 		description: 'Program to generate a shortened URL with a focus on using server-side rendering.',
-		skills: [DJANGO, GIT, GITHUB, PYTHON],
+		skills: [DJANGO, GIT, GITHUB, POSTGRESQL, PYTHON],
 		links: [
 			{
 				Icon: GitHubIcon,
@@ -101,6 +102,7 @@ export const projects: ActivityType[] = [
 			GIT,
 			GITHUB,
 			LINUX,
+      POSTGRESQL,
 			PYTHON,
 			REACT,
 			REACT_REDUX,
