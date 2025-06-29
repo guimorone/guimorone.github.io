@@ -20,17 +20,19 @@ function capitalizeString(str: string): string {
 export const getDocumentTitle = (pathname: string, separator: string = ' | '): string =>
 	capitalizeString(pathname.slice(1)) + separator + DEFAULT_DOCUMENT_TITLE;
 
-export function sortByTitleOrLabelFunction(e1: GenericData, e2: GenericData): number {
-	const element1: string = e1?.title !== undefined ? e1.title : e1.label;
-	const element2: string = e2?.title !== undefined ? e2.title : e2.label;
+export function sortByTitleOrLabelFunction(e1: GenericData, e2: GenericData): -1 | 0 | 1 {
+	const element1: string = (e1.title !== undefined ? e1.title : e1.label).toLowerCase();
+	const element2: string = (e2.title !== undefined ? e2.title : e2.label).toLowerCase();
 
-	return element1 > element2 ? 1 : element2 > element1 ? -1 : 0;
+	if (element1 === element2) return 0;
+
+	return element1 > element2 ? 1 : -1;
 }
 
-export function sortByRatingFunction(e1: GenericData, e2: GenericData): number {
-	if (!('rating' in e1) || !('rating' in e2)) return 0;
+export function sortByRatingFunction(e1: GenericData, e2: GenericData): -1 | 0 | 1 {
+	if (!('rating' in e1) || !('rating' in e2) || e1.rating === e2.rating) return 0;
 
-	return e1.rating > e2.rating ? -1 : e2.rating > e1.rating ? 1 : 0;
+	return e1.rating > e2.rating ? -1 : 1;
 }
 
 export function getSkillData(skillLabel: string): Partial<{ [key in WorkPageType]: ActivityType[] }> {
