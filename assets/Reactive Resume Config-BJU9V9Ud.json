@@ -340,7 +340,7 @@
       "items": [
         {
           "id": "c3vl9hkgla3m81a6iurutgc3",
-          "visible": false,
+          "visible": true,
           "name": "My Portfolio",
           "description": "Personal Website",
           "date": "August 2023 - Present",
@@ -606,17 +606,17 @@
           "keywords": []
         },
         {
-          "id": "ldb7ea4emz0v43ebd6d26gox",
+          "id": "ar5x0kafta3m6shgyvxo6uib",
           "visible": true,
-          "name": "AWS",
+          "name": "Airflow",
           "description": "",
           "level": 4,
           "keywords": []
         },
         {
-          "id": "ar5x0kafta3m6shgyvxo6uib",
+          "id": "ldb7ea4emz0v43ebd6d26gox",
           "visible": true,
-          "name": "Airflow",
+          "name": "AWS",
           "description": "",
           "level": 4,
           "keywords": []
