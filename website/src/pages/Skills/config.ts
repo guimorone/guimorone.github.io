@@ -27,6 +27,7 @@ export const skills: SkillType[] = [
 	skillsDefinitions.GIT,
 	skillsDefinitions.GITHUB,
 	skillsDefinitions.GO,
+	skillsDefinitions.GRAFANA,
 	skillsDefinitions.GRAPHQL,
 	skillsDefinitions.HASKELL,
 	skillsDefinitions.HTML,
