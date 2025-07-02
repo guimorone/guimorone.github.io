@@ -207,7 +207,7 @@
           "position": "Software Engineer | Full-time",
           "location": "Recife - PE, Brazil",
           "date": "April 2024 - Present",
-          "summary": "<ul><li><p>In general, using skills in data engineering and backend development with Python, FastAPI, Terraform, CI/CD, Docker, Git, Airflow, Bash and cloud computing on AWS and GCP.</p></li><li><p>Collaborate with cross-functional teams to achieve project goals.</p></li><li><p>Ensure high-quality, scalable application development.</p></li><li><p>Implementing backend functionality using FastAPI.</p></li><li><p>Using AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions and more.</p></li><li><p>Working extracting data from different sources (internet, AWS S3, etc) and make it available in a data lake.</p></li><li><p>Automating ETL pipelines with Apache Airflow.</p></li></ul>",
+          "summary": "<ul><li><p>In general, using skills in data engineering and backend development with Python, FastAPI, Go, Terraform, CI/CD, Docker, Git, Airflow, Bash, and cloud computing on AWS and GCP.</p></li><li><p>Collaborate with cross-functional teams to achieve project goals.</p></li><li><p>Ensure high-quality, scalable application development.</p></li><li><p>Implementing backend functionality using Python, FastAPI and Go.</p></li><li><p>Using AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions and more.</p></li><li><p>Working extracting data from different sources (internet, AWS S3, etc) and make it available in a data lake.</p></li><li><p>Automating ETL pipelines with Apache Airflow.</p></li><li><p>Using Grafana to visualise data and logs.</p></li></ul>",
           "url": {
             "label": "Company Website",
             "href": "https://www.neurotech.com.br"
@@ -726,6 +726,14 @@
           "keywords": []
         },
         {
+          "id": "e07uw1pn4vevqyn4ot6d6z23",
+          "visible": true,
+          "name": "Grafana",
+          "description": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
           "id": "p6sqault7xb81yuo7s6x475g",
           "visible": true,
           "name": "GraphQL",
@@ -799,7 +807,7 @@
         },
         {
           "id": "e944ccltfjjreo8jjgx0ezqg",
-          "visible": true,
+          "visible": false,
           "name": "C#",
           "description": "",
           "level": 1,
@@ -957,7 +965,7 @@
         ],
         "size": 14
       },
-      "lineHeight": 1.45,
+      "lineHeight": 1.4,
       "hideIcons": false,
       "underlineLinks": true
     },
