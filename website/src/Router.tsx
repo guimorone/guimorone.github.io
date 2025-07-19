@@ -33,5 +33,7 @@ const router = createHashRouter([
 const FallbackElement: FC = () => <Spinner className="w-6 h-6" aria-hidden="true" />;
 
 export default function Router() {
-	return <RouterProvider router={router} fallbackElement={<FallbackElement />} />;
+	return (
+		<RouterProvider router={router} fallbackElement={<FallbackElement />} future={{ v7_startTransition: false }} />
+	);
 }
