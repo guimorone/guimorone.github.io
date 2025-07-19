@@ -26,10 +26,9 @@ import {
 	TYPEWAR_GAME_PROJECT_URL,
 	TYPEWAR_GAME_URL,
 	URL_SHORTENER_PROJECT_URL,
-	WEBSITE_CODE_URL,
 	ZTYPE_GAME_URL,
 } from '../../constants/urls';
-import { GitHubIcon, WebSiteIcon } from '../../utils/icons';
+import { GitHubIcon } from '../../utils/icons';
 import type { ActivityType } from '../../@types';
 
 export const title: string = 'Projects';
@@ -37,14 +36,6 @@ export const subtitle: string =
 	"Allow me to show you some side projects I've worked/been working on throughout my career, whether alone, at college or with other colleagues. I would also like to advise that none of them have any interest in profits or any kind of commercial usage.";
 
 export const projects: ActivityType[] = [
-	{
-		title: 'My Portfolio',
-		subtitle: 'Aug 2023 - Present',
-		description: 'This website you are on now, containing all my relevant information and documents.',
-		skills: [CI_CD, GIT, GITHUB, REACT, TAILWIND_CSS, TYPESCRIPT],
-		links: [{ Icon: GitHubIcon, label: 'Project URL', url: WEBSITE_CODE_URL }],
-		Icon: { Element: WebSiteIcon, background: 'bg-zinc-900' },
-	},
 	{
 		title: 'Instagram Stats',
 		subtitle: 'Jan 2023 - Nov 2023 and Jun 2024',
