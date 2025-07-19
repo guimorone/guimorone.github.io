@@ -12,12 +12,14 @@ jobs:
     name: Bump new version
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.sha }}
+          ref: ${{ github.event.workflow_run.head_sha }}
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -35,6 +37,6 @@ jobs:
         if: ${{ steps.package-version.outputs.VERSION != '' }}
         with:
           tag_name: v${{ steps.package-version.outputs.VERSION }}
-          token: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           generate_release_notes: true
           make_latest: true
