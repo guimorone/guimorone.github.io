@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { LiaStar, LiaStarHalfAltSolid, LiaStarSolid } from 'react-icons/lia';
 import { classNames } from '../../utils';
 import type { FC, JSX } from 'react';
-import type { StarsProps } from '../../@types/components';
+import type { StarsProps } from '../../types/components';
 
 const Stars: FC<StarsProps> = ({ rating }) => {
 	const renderStars = (size: 'xs' | 'sm'): JSX.Element => {

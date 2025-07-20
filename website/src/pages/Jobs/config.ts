@@ -51,7 +51,7 @@ import {
 	ONCASE_URL,
 } from '../../constants/urls';
 import { LinkedInIcon } from '../../utils/icons';
-import type { ActivityType } from '../../@types';
+import type { ActivityType } from '../../types';
 
 export const title: string = 'Work Experience';
 export const subtitle: string = 'Allow me to show you my jobs with clients and in tech companies.';

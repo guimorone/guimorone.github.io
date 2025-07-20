@@ -5,7 +5,7 @@ import DiplomaUFPEPTBR from '../../assets/pdfs/Diploma UFPE (PT-BR).pdf';
 import CyberSecurityVolume1Certificate from '../../assets/pdfs/The Complete Cyber Security Course - Volume 1 - Hackers Exposed - Certificate.pdf';
 import { sortByTitleOrLabelFunction } from '../../utils';
 import { PDFIcon } from '../../utils/icons';
-import type { DownloadableProps } from '../../@types/components';
+import type { DownloadableProps } from '../../types/components';
 
 export const title: string = 'Warehouse';
 export const subtitle: string = 'Here is where you can view other shared files/documents.';

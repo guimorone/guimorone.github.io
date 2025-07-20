@@ -5,7 +5,7 @@ import { LAST_UPDATE_CV } from '../../constants/dates';
 import { formatDate } from '../../utils/dates';
 import { PDFIcon } from '../../utils/icons';
 import type { IconType } from 'react-icons';
-import type { DownloadableProps } from '../../@types/components';
+import type { DownloadableProps } from '../../types/components';
 
 export const title: string = 'If you just want my Résumé, here it is:';
 export const label: string = 'CV';

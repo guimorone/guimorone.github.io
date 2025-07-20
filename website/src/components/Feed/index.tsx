@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { SKILLS } from '../../constants/paths';
 import { classNames, sortByTitleOrLabelFunction } from '../../utils';
 import type { FC } from 'react';
-import type { FeedProps } from '../../@types/components';
+import type { FeedProps } from '../../types/components';
 
 const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 	return (

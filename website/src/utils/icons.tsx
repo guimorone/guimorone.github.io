@@ -1,4 +1,4 @@
-import type { DefaultIconType } from '../@types/icons';
+import type { DefaultIconType } from '../types/icons';
 
 export const PDFIcon: DefaultIconType = props => (
 	<svg fill="currentColor" viewBox="0 0 512 512" {...props}>

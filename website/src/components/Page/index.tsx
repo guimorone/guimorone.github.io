@@ -4,7 +4,7 @@ import ObjectFeed from '../Feed/ObjectFeed';
 import Photo from '../Photo';
 import Title from '../Title';
 import type { FC } from 'react';
-import type { PageProps } from '../../@types/components';
+import type { PageProps } from '../../types/components';
 
 const Page: FC<PageProps> = ({ title, subtitle, photo, activities }) => {
 	return (

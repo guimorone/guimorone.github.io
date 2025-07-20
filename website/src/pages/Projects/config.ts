@@ -29,7 +29,7 @@ import {
 	ZTYPE_GAME_URL,
 } from '../../constants/urls';
 import { GitHubIcon } from '../../utils/icons';
-import type { ActivityType } from '../../@types';
+import type { ActivityType } from '../../types';
 
 export const title: string = 'Projects';
 export const subtitle: string =
