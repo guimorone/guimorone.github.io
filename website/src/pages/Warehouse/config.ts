@@ -8,7 +8,7 @@ import { PDFIcon } from '../../utils/icons';
 import type { DownloadableProps } from '../../types/components';
 
 export const title: string = 'Warehouse';
-export const subtitle: string = 'Here is where you can view other shared files/documents.';
+export const subtitle: string = 'Here is where you can view other files and documents.';
 
 export const documents: { title: string; files: DownloadableProps[] }[] = [
 	{
