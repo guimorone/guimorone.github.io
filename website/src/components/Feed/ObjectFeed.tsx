@@ -1,7 +1,7 @@
 import Collapsable from '../Collapsable';
 import Feed from '../Feed';
 import type { FC } from 'react';
-import type { ObjectFeedProps } from '../../@types/components';
+import type { ObjectFeedProps } from '../../types/components';
 
 const ObjectFeed: FC<ObjectFeedProps> = ({ title, activities, currentSkill }) => {
 	return (

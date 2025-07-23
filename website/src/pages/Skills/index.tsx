@@ -8,7 +8,7 @@ import { LINKEDIN_SKILLS_URL } from '../../constants/urls';
 import { classNames } from '../../utils';
 import SkillDescription from './SkillDescription';
 import { languages, skills, subtitle, title } from './config';
-import type { SkillType } from '../../@types';
+import type { SkillType } from '../../types';
 
 export default function Skills() {
 	const [currentSkill, setCurrentSkill] = useState<SkillType | null>(null);

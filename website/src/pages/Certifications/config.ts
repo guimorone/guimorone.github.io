@@ -31,7 +31,7 @@ import {
 	UDEMY_GRAPHQL_COURSE_URL,
 	UDEMY_WEB_DEV_COURSE_CERT_URL,
 } from '../../constants/urls';
-import type { ActivityType } from '../../@types';
+import type { ActivityType } from '../../types';
 
 export const title: string = 'Courses & Certifications';
 export const subtitle: string = 'Allow me to showcase my certifications on different top-rated online platforms.';

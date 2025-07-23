@@ -1,7 +1,7 @@
 import { Description, Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import type { FC } from 'react';
-import type { ModalProps } from '../../@types/components';
+import type { ModalProps } from '../../types/components';
 
 const Modal: FC<ModalProps> = ({ open, onClose, Icon, title, subtitle, children }) => {
 	return (

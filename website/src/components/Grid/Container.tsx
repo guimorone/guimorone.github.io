@@ -1,6 +1,6 @@
 import Title from '../Title';
 import type { FC } from 'react';
-import type { GridContainerProps } from '../../@types/components';
+import type { GridContainerProps } from '../../types/components';
 
 const GridContainer: FC<GridContainerProps> = ({ title, subtitle, children }) => {
 	return (

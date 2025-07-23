@@ -14,7 +14,7 @@ import {
 } from '../../constants/skills';
 import { TCC_ATTENA_URL, TCC_PROJECT_URL } from '../../constants/urls';
 import { ChalkboardUser, GitHubIcon, GraduationCap } from '../../utils/icons';
-import type { ActivityType } from '../../@types';
+import type { ActivityType } from '../../types';
 
 export const title: string = 'Education';
 export const subtitle: string =
