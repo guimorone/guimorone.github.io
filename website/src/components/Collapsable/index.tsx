@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
 import type { FC } from 'react';
-import type { CollapsableProps } from '../../@types/components';
+import type { CollapsableProps } from '@/types/components';
 
 const Collapsable: FC<CollapsableProps> = ({ title, children }) => {
 	const [isCollapsed, setIsCollapsed] = useState<boolean>(false);

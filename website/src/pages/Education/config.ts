@@ -1,4 +1,3 @@
-import { GiNotebook } from 'react-icons/gi';
 import {
 	CI_CD,
 	CSS,
@@ -11,10 +10,11 @@ import {
 	REACT,
 	REACT_REDUX,
 	TYPESCRIPT,
-} from '../../constants/skills';
-import { TCC_ATTENA_URL, TCC_PROJECT_URL } from '../../constants/urls';
-import { ChalkboardUser, GitHubIcon, GraduationCap } from '../../utils/icons';
-import type { ActivityType } from '../../@types';
+} from '@/constants/skills';
+import { TCC_ATTENA_URL, TCC_PROJECT_URL } from '@/constants/urls';
+import { ChalkboardUser, GitHubIcon, GraduationCap } from '@/utils/icons';
+import { GiNotebook } from 'react-icons/gi';
+import type { ActivityType } from '@/types';
 
 export const title: string = 'Education';
 export const subtitle: string =

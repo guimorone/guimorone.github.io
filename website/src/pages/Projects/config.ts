@@ -1,8 +1,3 @@
-import { BanknotesIcon } from '@heroicons/react/24/solid';
-import { FaLink, FaZ } from 'react-icons/fa6';
-import { FaGamepad } from 'react-icons/fa';
-import { RiLockPasswordLine } from 'react-icons/ri';
-import { SiInstagram } from 'react-icons/si';
 import {
 	BASH,
 	C,
@@ -18,7 +13,7 @@ import {
 	REACT_REDUX,
 	TAILWIND_CSS,
 	TYPESCRIPT,
-} from '../../constants/skills';
+} from '@/constants/skills';
 import {
 	INSTAGRAM_STATS_PROJECT_URL,
 	JOJOSUE_PROJECT_URL,
@@ -27,9 +22,14 @@ import {
 	TYPEWAR_GAME_URL,
 	URL_SHORTENER_PROJECT_URL,
 	ZTYPE_GAME_URL,
-} from '../../constants/urls';
-import { GitHubIcon } from '../../utils/icons';
-import type { ActivityType } from '../../@types';
+} from '@/constants/urls';
+import { GitHubIcon } from '@/utils/icons';
+import { BanknotesIcon } from '@heroicons/react/24/solid';
+import { FaLink, FaZ } from 'react-icons/fa6';
+import { FaGamepad } from 'react-icons/fa';
+import { RiLockPasswordLine } from 'react-icons/ri';
+import { SiInstagram } from 'react-icons/si';
+import type { ActivityType } from '@/types';
 
 export const title: string = 'Projects';
 export const subtitle: string =

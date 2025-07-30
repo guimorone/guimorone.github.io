@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import type { GridProps } from '../../@types/components';
+import type { GridProps } from '@/types/components';
 
 const Grid: FC<GridProps> = ({ title, children }) => {
 	return (

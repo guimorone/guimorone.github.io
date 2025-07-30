@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import type { TitleProps } from '../../@types/components';
+import type { TitleProps } from '@/types/components';
 
 const Title: FC<TitleProps> = ({ title, subtitle }) => {
 	return (
