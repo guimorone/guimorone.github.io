@@ -27,16 +27,22 @@ jobs:
           node-version: ${{ vars.NODE_VERSION }}
 
       - name: Read version from package.json
-        id: package-version
+        id: app-version
         run: |
           cd $GITHUB_WORKSPACE
           echo "VERSION=$(node -p "require('./website/package.json').version")" >> $GITHUB_OUTPUT
 
+      - name: Fail if version is empty
+        if: ${{ steps.app-version.outputs.VERSION == '' }}
+        run: |
+          echo "Error: Could not read version from package.json. The value is empty."
+          exit 1
+
       - name: Create Release
         uses: softprops/action-gh-release@v2
-        if: ${{ steps.package-version.outputs.VERSION != '' }}
+        if: ${{ steps.app-version.outputs.VERSION != '' }}
         with:
-          tag_name: v${{ steps.package-version.outputs.VERSION }}
+          tag_name: v${{ steps.app-version.outputs.VERSION }}
           token: ${{ secrets.GITHUB_TOKEN }}
           generate_release_notes: true
           make_latest: true
