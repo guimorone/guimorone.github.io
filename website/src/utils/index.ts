@@ -1,9 +1,9 @@
-import { DEFAULT_DOCUMENT_TITLE } from '../constants';
-import { coursesAndCertifications as CoursesCertificationsExperiences } from '../pages/Certifications/config';
-import { experiences as EducationExperiences } from '../pages/Education/config';
-import { freelances as FreelancesExperiences, experiences as JobsExperiences } from '../pages/Jobs/config';
-import { projects as ProjectsExperiences } from '../pages/Projects/config';
-import type { ActivityType, GenericData, WorkPageType } from '../types';
+import { DEFAULT_DOCUMENT_TITLE } from '@/constants';
+import { coursesAndCertifications as CoursesCertificationsExperiences } from '@/pages/Certifications/config';
+import { experiences as EducationExperiences } from '@/pages/Education/config';
+import { freelances as FreelancesExperiences, experiences as JobsExperiences } from '@/pages/Jobs/config';
+import { projects as ProjectsExperiences } from '@/pages/Projects/config';
+import type { ActivityType, GenericData, WorkPageType } from '@/types';
 
 export const classNames = (...classes: any[]): string => classes.filter(Boolean).join(' ');
 

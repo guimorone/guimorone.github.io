@@ -1,5 +1,5 @@
-import Downloadable from '../../components/Downloadable';
-import { REACTIVE_RESUME_URL, RESUME_URL } from '../../constants/urls';
+import Downloadable from '@/components/Downloadable';
+import { REACTIVE_RESUME_URL, RESUME_URL } from '@/constants/urls';
 import { Icon, additionalButtons, filename, filepath, footerText, label, title } from './config';
 
 export default function Home() {

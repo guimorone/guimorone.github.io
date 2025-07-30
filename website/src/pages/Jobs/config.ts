@@ -1,5 +1,3 @@
-import { CodeBracketIcon, DevicePhoneMobileIcon, GlobeAltIcon } from '@heroicons/react/24/solid';
-import { FaGamepad } from 'react-icons/fa';
 import {
 	AIRFLOW,
 	AWS,
@@ -33,7 +31,7 @@ import {
 	TERRAFORM,
 	TYPESCRIPT,
 	VUE,
-} from '../../constants/skills';
+} from '@/constants/skills';
 import {
 	ACASO_LINKEDIN_URL,
 	ACASO_URL,
@@ -49,9 +47,11 @@ import {
 	NEUROTECH_URL,
 	ONCASE_LINKEDIN_URL,
 	ONCASE_URL,
-} from '../../constants/urls';
-import { LinkedInIcon } from '../../utils/icons';
-import type { ActivityType } from '../../types';
+} from '@/constants/urls';
+import { LinkedInIcon } from '@/utils/icons';
+import { CodeBracketIcon, DevicePhoneMobileIcon, GlobeAltIcon } from '@heroicons/react/24/solid';
+import { FaGamepad } from 'react-icons/fa';
+import type { ActivityType } from '@/types';
 
 export const title: string = 'Work Experience';
 export const subtitle: string = 'Allow me to show you my jobs with clients and in tech companies.';

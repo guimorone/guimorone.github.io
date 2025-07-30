@@ -1,11 +1,11 @@
+import ReactiveResumeConfig from '@/assets/jsons/Reactive Resume Config.json?url';
+import CV from '@/assets/pdfs/CV.pdf';
+import { LAST_UPDATE_CV } from '@/constants/dates';
+import { formatDate } from '@/utils/dates';
+import { PDFIcon } from '@/utils/icons';
 import { VscJson } from 'react-icons/vsc';
-import ReactiveResumeConfig from '../../assets/jsons/Reactive Resume Config.json?url';
-import CV from '../../assets/pdfs/CV.pdf';
-import { LAST_UPDATE_CV } from '../../constants/dates';
-import { formatDate } from '../../utils/dates';
-import { PDFIcon } from '../../utils/icons';
 import type { IconType } from 'react-icons';
-import type { DownloadableProps } from '../../types/components';
+import type { DownloadableProps } from '@/types/components';
 
 export const title: string = 'If you just want my Résumé, here it is:';
 export const label: string = 'CV';

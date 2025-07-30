@@ -1,10 +1,10 @@
-import { classNames } from '../../utils';
-import Feed from '../Feed';
-import ObjectFeed from '../Feed/ObjectFeed';
-import Photo from '../Photo';
-import Title from '../Title';
+import Feed from '@/components/Feed';
+import ObjectFeed from '@/components/Feed/ObjectFeed';
+import Photo from '@/components/Photo';
+import Title from '@/components/Title';
+import { classNames } from '@/utils';
 import type { FC } from 'react';
-import type { PageProps } from '../../types/components';
+import type { PageProps } from '@/types/components';
 
 const Page: FC<PageProps> = ({ title, subtitle, photo, activities }) => {
 	return (

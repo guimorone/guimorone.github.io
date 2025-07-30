@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
+import Collapsable from '@/components/Collapsable';
+import Grid from '@/components/Grid';
+import GridContainer from '@/components/Grid/Container';
+import Stars from '@/components/Stars';
+import { LINKEDIN_SKILLS_URL } from '@/constants/urls';
+import { classNames } from '@/utils';
 import { useSearchParams } from 'react-router-dom';
-import Collapsable from '../../components/Collapsable';
-import Grid from '../../components/Grid';
-import GridContainer from '../../components/Grid/Container';
-import Stars from '../../components/Stars';
-import { LINKEDIN_SKILLS_URL } from '../../constants/urls';
-import { classNames } from '../../utils';
 import SkillDescription from './SkillDescription';
 import { languages, skills, subtitle, title } from './config';
-import type { SkillType } from '../../types';
+import type { SkillType } from '@/types';
 
 export default function Skills() {
 	const [currentSkill, setCurrentSkill] = useState<SkillType | null>(null);

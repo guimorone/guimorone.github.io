@@ -1,10 +1,10 @@
+import * as paths from '@/constants/paths';
 import { AcademicCapIcon, BriefcaseIcon, NewspaperIcon } from '@heroicons/react/20/solid';
 import { BiSolidCertification } from 'react-icons/bi';
 import { FaWarehouse } from 'react-icons/fa6';
 import { GiSkills } from 'react-icons/gi';
 import { GrProjects } from 'react-icons/gr';
-import * as paths from '../../constants/paths';
-import type { NavigationType } from '../../types';
+import type { NavigationType } from '@/types';
 
 export const navigation: NavigationType[] = [
 	{ name: 'About', href: paths.ABOUT, Icon: NewspaperIcon, useLink: true },

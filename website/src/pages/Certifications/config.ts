@@ -1,5 +1,3 @@
-import { GrCertificate } from 'react-icons/gr';
-import { SiGooglecloud, SiUdemy } from 'react-icons/si';
 import {
 	CSS,
 	CYBER_SECURITY,
@@ -19,7 +17,7 @@ import {
 	REACT,
 	SQL,
 	TYPESCRIPT,
-} from '../../constants/skills';
+} from '@/constants/skills';
 import {
 	GOOGLE_CLOUD_FUNDAMENTALS_COURSE_CERT_URL,
 	GOOGLE_CLOUD_IA_COURSE_CERT_URL,
@@ -30,8 +28,10 @@ import {
 	UDEMY_GO_COURSE_URL,
 	UDEMY_GRAPHQL_COURSE_URL,
 	UDEMY_WEB_DEV_COURSE_CERT_URL,
-} from '../../constants/urls';
-import type { ActivityType } from '../../types';
+} from '@/constants/urls';
+import { GrCertificate } from 'react-icons/gr';
+import { SiGooglecloud, SiUdemy } from 'react-icons/si';
+import type { ActivityType } from '@/types';
 
 export const title: string = 'Courses & Certifications';
 export const subtitle: string = 'Allow me to showcase my certifications on different top-rated online platforms.';

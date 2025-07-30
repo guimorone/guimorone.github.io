@@ -1,4 +1,4 @@
-import Page from '../../components/Page';
+import Page from '@/components/Page';
 import { experiences, freelances, subtitle, title } from './config';
 
 export default function Jobs() {

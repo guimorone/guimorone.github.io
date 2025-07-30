@@ -1,7 +1,7 @@
+import { GITHUB, LINKEDIN, MAILTO_URL, WEBSITE_CODE_URL } from '@/constants/urls';
+import { GitHubIcon, LinkedInIcon } from '@/utils/icons';
 import { CodeBracketIcon, EnvelopeIcon } from '@heroicons/react/20/solid';
-import { GITHUB, LINKEDIN, MAILTO_URL, WEBSITE_CODE_URL } from '../../constants/urls';
-import { GitHubIcon, LinkedInIcon } from '../../utils/icons';
-import type { NavigationType } from '../../types';
+import type { NavigationType } from '@/types';
 
 export const navigation: NavigationType[] = [
 	{ name: 'GitHub', href: GITHUB, target: '_blank', Icon: GitHubIcon },
