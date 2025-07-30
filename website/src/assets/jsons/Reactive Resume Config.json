@@ -710,14 +710,6 @@
           "keywords": []
         },
         {
-          "id": "aa4bd91l9dqhw09w48ylbrgo",
-          "visible": true,
-          "name": "Flutter + Dart",
-          "description": "",
-          "level": 3,
-          "keywords": []
-        },
-        {
           "id": "qb56g8g38prn190sm9ae4cws",
           "visible": true,
           "name": "GCP",
@@ -777,6 +769,14 @@
           "id": "m3tzrvpewtkw4o4efeelhn7z",
           "visible": false,
           "name": "Construct 3",
+          "description": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
+          "id": "aa4bd91l9dqhw09w48ylbrgo",
+          "visible": true,
+          "name": "Flutter + Dart",
           "description": "",
           "level": 2,
           "keywords": []
