@@ -14,6 +14,7 @@ import {
 	FaNodeJs,
 	FaPython,
 	FaReact,
+	FaRobot,
 } from 'react-icons/fa6';
 import { FcLinux } from 'react-icons/fc';
 import {
@@ -201,6 +202,7 @@ export const REACT_REDUX: SkillType = {
 	label: 'React Redux',
 	rating: 4.5,
 };
+export const RPA: SkillType = { Icon: { Element: FaRobot }, label: 'RPA', rating: 4 };
 export const RUBY: SkillType = { Icon: { Element: DiRuby, color: 'text-[#9D0401]' }, label: 'Ruby', rating: 1 };
 export const SQL: SkillType = { Icon: { Element: TbSql, color: 'text-[#0279D6]' }, label: 'SQL', rating: 3.5 };
 export const TAILWIND_CSS: SkillType = {

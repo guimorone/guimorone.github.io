@@ -48,6 +48,7 @@ export const skills: SkillType[] = [
 	skillsDefinitions.REACT,
 	skillsDefinitions.REACT_NATIVE,
 	skillsDefinitions.REACT_REDUX,
+	skillsDefinitions.RPA,
 	skillsDefinitions.RUBY,
 	skillsDefinitions.SQL,
 	skillsDefinitions.TAILWIND_CSS,
