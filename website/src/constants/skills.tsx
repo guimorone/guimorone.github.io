@@ -18,6 +18,7 @@ import {
 import { FcLinux } from 'react-icons/fc';
 import {
 	SiApacheairflow,
+	SiBitbucket,
 	SiConstruct3,
 	SiCplusplus,
 	SiCyberdefenders,
@@ -32,6 +33,7 @@ import {
 	SiHaskell,
 	SiJavascript,
 	SiJest,
+	SiJira,
 	SiJquery,
 	SiJupyter,
 	SiKubernetes,
@@ -53,6 +55,11 @@ export const AIRFLOW: SkillType = {
 };
 export const AWS: SkillType = { Icon: { Element: FaAws, color: 'text-[#FF9900]' }, label: 'AWS', rating: 4 };
 export const BASH: SkillType = { Icon: { Element: VscTerminalBash }, label: 'Bash', rating: 4 };
+export const BITBUCKET: SkillType = {
+	Icon: { Element: SiBitbucket, color: 'text-[#3186FE]' },
+	label: 'Bitbucket',
+	rating: 4,
+};
 export const C: SkillType = { Icon: { Element: FaC, color: 'text-[#5D6BC1]' }, label: 'C', rating: 2 };
 export const CONSTRUCT_3: SkillType = {
 	Icon: { Element: SiConstruct3, color: 'text-[#DAE8F6]' },
@@ -132,6 +139,11 @@ export const JEST: SkillType = {
 	Icon: { Element: SiJest, color: 'text-[#C63D14]' },
 	label: 'Jest',
 	rating: 1,
+};
+export const JIRA: SkillType = {
+	Icon: { Element: SiJira, color: 'text-[#3186FE]' },
+	label: 'Jira',
+	rating: 5,
 };
 export const JQUERY: SkillType = {
 	Icon: { Element: SiJquery, color: 'text-[#0C68AC]' },
