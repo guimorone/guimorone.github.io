@@ -43,6 +43,12 @@ export const GOOGLE_CLOUD_INFRA_COURSE_CERT_URL =
 	'https://www.cloudskillsboost.google/public_profiles/d8f54101-4f80-4aee-8e46-2320e3e20646/badges/3303084';
 export const GOOGLE_CLOUD_NETWORKING_COURSE_CERT_URL =
 	'https://www.cloudskillsboost.google/public_profiles/d8f54101-4f80-4aee-8e46-2320e3e20646/badges/3305980';
+export const ROBOCORP_RPA_LEVEL_1_CERT_URL =
+	'https://downloads.robocorp.com/certificates/level1python/3411e1e3-f7b9-4a2d-b561-6caaced261fd.pdf';
+export const ROBOCORP_RPA_LEVEL_2_CERT_URL =
+	'https://downloads.robocorp.com/certificates/level1python/d757eb92-d9a9-4ab0-a8c3-854928917e03.pdf';
+export const ROBOCORP_RPA_LEVEL_3_CERT_URL =
+	'https://downloads.robocorp.com/certificates/level1python/36188913-3637-46af-a456-789aa21677d5.pdf';
 export const UDEMY_CYBER_SECURITY_COURSE_1_URL = 'https://ude.my/UC-1acdc51c-9652-40d8-80af-24d65aa27727';
 export const UDEMY_GRAPHQL_COURSE_URL = 'https://ude.my/UC-2f72d8c0-5e8c-4c08-a657-cb379948c6f1';
 export const UDEMY_GO_COURSE_URL = 'https://ude.my/UC-a0724864-1e61-4fcb-94d4-8837ca64b5cc';
