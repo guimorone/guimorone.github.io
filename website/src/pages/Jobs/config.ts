@@ -49,16 +49,30 @@ import {
 	NEUROTECH_URL,
 	ONCASE_LINKEDIN_URL,
 	ONCASE_URL,
+	THOUGHTFUL_LINKEDIN_URL,
+	THOUGHTFUL_URL,
 } from '@/constants/urls';
 import { LinkedInIcon } from '@/utils/icons';
 import { CodeBracketIcon, DevicePhoneMobileIcon, GlobeAltIcon } from '@heroicons/react/24/solid';
 import { FaGamepad } from 'react-icons/fa';
+import { BITBUCKET } from './../../constants/skills';
 import type { ActivityType } from '@/types';
 
 export const title: string = 'Work Experience';
 export const subtitle: string = 'Allow me to show you my jobs with clients and in tech companies.';
 
 export const experiences: ActivityType[] = [
+	{
+		title: 'Forward Developer Engineer | Contract',
+		subtitle: 'Thoughtful AI. Aug 2025 - Present',
+		location: 'Austin, Texas, United States · Remote',
+		skills: [BASH, BITBUCKET, CI_CD, FASTAPI, GIT, GITHUB, JIRA, PYTHON, RPA],
+		links: [
+			{ Icon: GlobeAltIcon, label: 'Company Website', url: THOUGHTFUL_URL },
+			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: THOUGHTFUL_LINKEDIN_URL },
+		],
+		Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
+	},
 	{
 		title: 'Software Engineer | Full-time',
 		subtitle: 'Neurotech. Apr 2024 - Aug 2025',

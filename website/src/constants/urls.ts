@@ -26,6 +26,8 @@ export const NEUROTECH_URL = 'https://www.neurotech.com.br';
 export const NEUROTECH_LINKEDIN_URL = 'https://www.linkedin.com/company/neurotech';
 export const ONCASE_URL = 'https://www.oncase.com.br';
 export const ONCASE_LINKEDIN_URL = 'https://www.linkedin.com/company/oncase';
+export const THOUGHTFUL_URL = 'https://www.thoughtful.ai';
+export const THOUGHTFUL_LINKEDIN_URL = 'https://www.linkedin.com/company/thoughtful-ai';
 
 export const INSTAGRAM_STATS_PROJECT_URL = `${GITHUB}/instagram-stats`;
 export const JOJOSUE_PROJECT_URL = `${GITHUB}/Jojosue`;
