@@ -16,17 +16,10 @@ const Downloadable: FC<DownloadableProps> = ({
 }) => {
 	return (
 		<div className={classNames(!forceCenter && 'sm:items-start', 'flex flex-col items-center gap-y-1')}>
-			<p
-				className={classNames(
-					!forceCenter && 'sm:text-left',
-					'mb-1.5 text-base text-center leading-6 text-zinc-300'
-				)}
-			>
+			<p className={classNames(!forceCenter && 'sm:text-left', 'mb-1.5 text-base text-center leading-6 text-zinc-300')}>
 				{title}
 			</p>
-			<div
-				className={classNames(!forceCenter && 'sm:items-start', 'flex flex-col items-center gap-2 lg:flex-row')}
-			>
+			<div className={classNames(!forceCenter && 'sm:items-start', 'flex flex-col items-center gap-2 lg:flex-row')}>
 				{preview && (
 					<a
 						href={filepath}

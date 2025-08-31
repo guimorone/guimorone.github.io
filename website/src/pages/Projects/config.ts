@@ -105,8 +105,7 @@ export const projects: ActivityType[] = [
 	{
 		title: 'Type War',
 		subtitle: 'Feb 2023 - Apr 2023',
-		description:
-			'A 2D game made with other college colleagues. Inspired in the famous ZType game, but in Portuguese.',
+		description: 'A 2D game made with other college colleagues. Inspired in the famous ZType game, but in Portuguese.',
 		skills: [GIT, GITHUB, REACT, TAILWIND_CSS, TYPESCRIPT],
 		links: [
 			{

@@ -24,9 +24,7 @@ export default function Footer() {
 					))}
 				</div>
 				<div className="mt-8 md:order-1 md:mt-0">
-					<p className="text-xs leading-5 text-center text-zinc-200">
-						&copy; {currentYear} Guilherme Morone Araujo
-					</p>
+					<p className="text-xs leading-5 text-center text-zinc-200">&copy; {currentYear} Guilherme Morone Araujo</p>
 				</div>
 			</section>
 		</footer>

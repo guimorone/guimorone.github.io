@@ -29,7 +29,7 @@ module.exports = {
 				bracketSameLine: false,
 				jsxBracketSameLine: false,
 				jsxSingleQuote: false,
-				printWidth: 115,
+				printWidth: 120,
 				proseWrap: 'preserve',
 				quoteProps: 'as-needed',
 				requirePragma: false,
