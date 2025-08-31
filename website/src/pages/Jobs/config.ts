@@ -61,17 +61,17 @@ export const subtitle: string = 'Allow me to show you my jobs with clients and i
 export const experiences: ActivityType[] = [
 	{
 		title: 'Software Engineer | Full-time',
-		subtitle: 'Neurotech. Apr 2024 - Present',
+		subtitle: 'Neurotech. Apr 2024 - Aug 2025',
 		location: 'Recife, Pernambuco, Brazil · Hybrid',
 		description: [
-			'In general, using skills in data engineering and backend development with Python, FastAPI, Go, Terraform, CI/CD, Docker, Git, Airflow, Bash, and cloud computing on AWS and GCP.',
-			'Collaborate with cross-functional teams to achieve project goals.',
-			'Ensure high-quality, scalable application development.',
-			'Implementing backend functionality using Python, FastAPI and Go.',
-			'Using AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions and more.',
-			'Working extracting data from different sources (internet, AWS S3, etc) and make it available in a data lake.',
-			'Automating ETL pipelines with Apache Airflow.',
-			'Using Grafana to visualise data and logs.',
+			'In general, used skills in data engineering and backend development with Python, FastAPI, Go, Terraform, CI/CD, Docker, Git, Airflow, Bash, and cloud computing on AWS and GCP.',
+			'Collaborated with cross-functional teams to achieve project goals.',
+			'Ensured high-quality, scalable application development.',
+			'Implemented backend functionality using Python, FastAPI, and Go.',
+			'Used AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions, and more.',
+			'Worked on extracting data from different sources (internet, AWS S3, etc) and make it available in a data lake.',
+			'Automated ETL pipelines with Apache Airflow.',
+			'Used Grafana to visualise data and logs.',
 		],
 		skills: [
 			AIRFLOW,
