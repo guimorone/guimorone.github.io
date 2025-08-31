@@ -12,22 +12,24 @@ export const TCC_PROJECT_URL = `${GITHUB}/tcc`;
 
 export const LINKEDIN_SKILLS_URL = 'https://www.linkedin.com/in/guimorone/details/skills';
 
-export const ACASO_URL = 'https://aca.so';
 export const ACASO_LINKEDIN_URL = 'https://www.linkedin.com/company/aca-so';
-export const EDUCANDUS_URL = 'https://educandus.com.br';
+export const ACASO_URL = 'https://aca.so';
 export const EDUCANDUS_LINKEDIN_URL = 'https://www.linkedin.com/company/s.c.a-technology-ltda';
-export const GPC_GESTAO_URL = 'https://gpcgestao.com.br';
+export const EDUCANDUS_URL = 'https://educandus.com.br';
 export const GPC_GESTAO_LINKEDIN_URL = 'https://www.linkedin.com/company/gpcgestao';
-export const INSPACE_URL = 'https://inspace.tech';
+export const GPC_GESTAO_URL = 'https://gpcgestao.com.br';
 export const INSPACE_LINKEDIN_URL = 'https://www.linkedin.com/company/inspacetech';
-export const JALAN_URL = 'https://jalan.com.br';
+export const INSPACE_URL = 'https://inspace.tech';
 export const JALAN_LINKEDIN_URL = 'https://www.linkedin.com/company/jalan-eventos';
-export const NEUROTECH_URL = 'https://www.neurotech.com.br';
+export const JALAN_URL = 'https://jalan.com.br';
 export const NEUROTECH_LINKEDIN_URL = 'https://www.linkedin.com/company/neurotech';
-export const ONCASE_URL = 'https://www.oncase.com.br';
+export const NEUROTECH_URL = 'https://www.neurotech.com.br';
 export const ONCASE_LINKEDIN_URL = 'https://www.linkedin.com/company/oncase';
-export const THOUGHTFUL_URL = 'https://www.thoughtful.ai';
+export const ONCASE_URL = 'https://www.oncase.com.br';
+export const SANDBOX_LINKEDIN_URL = 'https://www.linkedin.com/company/sbx-group';
+export const SANDBOX_URL = 'https://www.sbxgroup.com';
 export const THOUGHTFUL_LINKEDIN_URL = 'https://www.linkedin.com/company/thoughtful-ai';
+export const THOUGHTFUL_URL = 'https://www.thoughtful.ai';
 
 export const INSTAGRAM_STATS_PROJECT_URL = `${GITHUB}/instagram-stats`;
 export const JOJOSUE_PROJECT_URL = `${GITHUB}/Jojosue`;

@@ -49,6 +49,8 @@ import {
 	NEUROTECH_URL,
 	ONCASE_LINKEDIN_URL,
 	ONCASE_URL,
+	SANDBOX_LINKEDIN_URL,
+	SANDBOX_URL,
 	THOUGHTFUL_LINKEDIN_URL,
 	THOUGHTFUL_URL,
 } from '@/constants/urls';
@@ -61,7 +63,29 @@ import type { ActivityType } from '@/types';
 export const title: string = 'Work Experience';
 export const subtitle: string = 'Allow me to show you my jobs with clients and in tech companies.';
 
+const getIcon = (type: 'GAME' | 'MOBILE' | 'SOFTWARE' = 'SOFTWARE'): ActivityType['Icon'] => {
+	switch (type) {
+		case 'GAME':
+			return { Element: FaGamepad, background: 'bg-indigo-600' };
+		case 'MOBILE':
+			return { Element: DevicePhoneMobileIcon, background: 'bg-blue-600' };
+		default:
+			return { Element: CodeBracketIcon, background: 'bg-teal-600' };
+	}
+};
+
 export const experiences: ActivityType[] = [
+	{
+		title: 'Software Engineer | Full-time',
+		subtitle: 'Sandbox Group. Sep 2025 - Present',
+		location: 'São Paulo, São Paulo, Brazil · Remote',
+		skills: [BASH, CI_CD, FASTAPI, GIT, GITHUB, JIRA, PYTHON],
+		links: [
+			{ Icon: GlobeAltIcon, label: 'Company Website', url: SANDBOX_URL },
+			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: SANDBOX_LINKEDIN_URL },
+		],
+		Icon: getIcon(),
+	},
 	{
 		title: 'Forward Deployed Engineer | Contract',
 		subtitle: 'Thoughtful AI. Aug 2025 - Present',
@@ -71,7 +95,7 @@ export const experiences: ActivityType[] = [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: THOUGHTFUL_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: THOUGHTFUL_LINKEDIN_URL },
 		],
-		Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
+		Icon: getIcon(),
 	},
 	{
 		title: 'Software Engineer | Full-time',
@@ -113,7 +137,7 @@ export const experiences: ActivityType[] = [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: NEUROTECH_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: NEUROTECH_LINKEDIN_URL },
 		],
-		Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
+		Icon: getIcon(),
 	},
 	{
 		title: 'Full Stack Developer | Full-time',
@@ -125,7 +149,7 @@ export const experiences: ActivityType[] = [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: JALAN_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: JALAN_LINKEDIN_URL },
 		],
-		Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
+		Icon: getIcon(),
 	},
 	{
 		title: 'Software Engineer | Full-time',
@@ -173,7 +197,7 @@ export const experiences: ActivityType[] = [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: ONCASE_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: ONCASE_LINKEDIN_URL },
 		],
-		Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
+		Icon: getIcon(),
 	},
 	{
 		title: 'Game Developer | Internship',
@@ -186,7 +210,7 @@ export const experiences: ActivityType[] = [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: EDUCANDUS_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: EDUCANDUS_LINKEDIN_URL },
 		],
-		Icon: { Element: FaGamepad, background: 'bg-indigo-600' },
+		Icon: getIcon('GAME'),
 	},
 ];
 
@@ -202,10 +226,10 @@ export const freelances: ActivityType[] = [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: GPC_GESTAO_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: GPC_GESTAO_LINKEDIN_URL },
 		],
-		Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
+		Icon: getIcon(),
 	},
 	{
-		title: 'Mobile Engineer',
+		title: 'Mobile Developer',
 		subtitle: 'aca.so. Mar 2024',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		description: 'Worked in a project (aca.so mobile app) using React Native, React Redux and TypeScript.',
@@ -214,10 +238,10 @@ export const freelances: ActivityType[] = [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: ACASO_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: ACASO_LINKEDIN_URL },
 		],
-		Icon: { Element: DevicePhoneMobileIcon, background: 'bg-indigo-600' },
+		Icon: getIcon('MOBILE'),
 	},
 	{
-		title: 'Mobile Engineer',
+		title: 'Mobile Developer',
 		subtitle: 'InSpace. Aug 2022 - Oct 2022',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		description: 'Worked with the identification of certain objects from a mobile camera for legal purposes.',
@@ -226,6 +250,6 @@ export const freelances: ActivityType[] = [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: INSPACE_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: INSPACE_LINKEDIN_URL },
 		],
-		Icon: { Element: DevicePhoneMobileIcon, background: 'bg-indigo-600' },
+		Icon: getIcon('MOBILE'),
 	},
 ];
