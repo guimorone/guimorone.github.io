@@ -63,7 +63,7 @@ export const subtitle: string = 'Allow me to show you my jobs with clients and i
 
 export const experiences: ActivityType[] = [
 	{
-		title: 'Forward Developer Engineer | Contract',
+		title: 'Forward Deployed Engineer | Contract',
 		subtitle: 'Thoughtful AI. Aug 2025 - Present',
 		location: 'Austin, Texas, United States · Remote',
 		skills: [BASH, BITBUCKET, CI_CD, FASTAPI, GIT, GITHUB, JIRA, PYTHON, RPA],
