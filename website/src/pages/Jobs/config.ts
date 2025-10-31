@@ -112,7 +112,6 @@ export const experiences: ActivityType[] = [
 		description: [
 			'In general, used skills in data engineering and backend development with Python, FastAPI, Go, Terraform, CI/CD, Docker, Git, Airflow, Bash, and cloud computing on AWS and GCP.',
 			'Collaborated with cross-functional teams to achieve project goals.',
-			'Ensured high-quality, scalable application development.',
 			'Implemented backend functionality using Python, FastAPI, and Go.',
 			'Used AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions, and more.',
 			'Worked on extracting data from different sources (internet, AWS S3, etc) and make it available in a data lake.',
@@ -170,8 +169,6 @@ export const experiences: ActivityType[] = [
 			'Implemented backend functionality using Python frameworks Flask and Django.',
 			'Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.',
 			'Collaborated with cross-functional teams to achieve project goals.',
-			'Enhanced customer relationships through the delivery of top-notch solutions.',
-			'Ensured high-quality and scalable application development.',
 			'Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.',
 			'Automated ETL pipelines with Apache Airflow.',
 			'Utilized Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.',
