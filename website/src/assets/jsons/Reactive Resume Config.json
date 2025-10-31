@@ -201,13 +201,39 @@
       "id": "experience",
       "items": [
         {
+          "id": "hwtkz41jgy8bbregr1fsczhs",
+          "visible": true,
+          "company": "Sandbox Group",
+          "position": "Software Engineer | Full-time · Remote",
+          "location": "Poços de Caldas, Minas Gerais, Brazil",
+          "date": "September 2025 - Present",
+          "summary": "<ul><li><p>Working at Kids &amp; Family vertical.</p></li><li><p>Implementing backend functionality using Python, FastAPI, Flask for PlayKids app and SVOD integration.</p></li></ul>",
+          "url": {
+            "label": "Company Website",
+            "href": "https://www.sbxgroup.com"
+          }
+        },
+        {
+          "id": "la3b5nhbrtkelljms1r9x69y",
+          "visible": true,
+          "company": "Thoughtful AI",
+          "position": "Forward Deployed Engineer | Contract · Remote",
+          "location": "Austin, Texas, United States",
+          "date": "August 2025 - Present",
+          "summary": "<ul><li><p>Implementing RPA functionality using Python.</p></li><li><p>Automatizing RCM processes for healthcare companies in the United States.</p></li></ul>",
+          "url": {
+            "label": "Company Website",
+            "href": "https://www.thoughtful.ai"
+          }
+        },
+        {
           "id": "zxk9g141h2h12aildctyh31j",
           "visible": true,
           "company": "Neurotech",
-          "position": "Software Engineer | Full-time",
-          "location": "Recife - PE, Brazil",
-          "date": "April 2024 - Present",
-          "summary": "<ul><li><p>In general, using skills in data engineering and backend development with Python, FastAPI, Go, Terraform, CI/CD, Docker, Git, Airflow, Bash, and cloud computing on AWS and GCP.</p></li><li><p>Collaborate with cross-functional teams to achieve project goals.</p></li><li><p>Ensure high-quality, scalable application development.</p></li><li><p>Implementing backend functionality using Python, FastAPI and Go.</p></li><li><p>Using AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions and more.</p></li><li><p>Working extracting data from different sources (internet, AWS S3, etc) and make it available in a data lake.</p></li><li><p>Automating ETL pipelines with Apache Airflow.</p></li><li><p>Using Grafana to visualise data and logs.</p></li></ul>",
+          "position": "Software Engineer | Full-time · Hybrid",
+          "location": "Recife, Pernambuco, Brazil",
+          "date": "April 2024 - August 2025",
+          "summary": "<ul><li><p>In general, used skills in data engineering and backend development with Python, FastAPI, Go, Terraform, CI/CD, Docker, Git, Airflow, Bash, and cloud computing on AWS and GCP.</p></li><li><p>Collaborated with cross-functional teams to achieve project goals.</p></li><li><p>Implemented backend functionality using Python, FastAPI, and Go.</p></li><li><p>Used AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions, and more.</p></li><li><p>Worked on extracting data from different sources (internet, AWS S3, etc) and make it available in a data lake.</p></li><li><p>Automated ETL pipelines with Apache Airflow.</p></li><li><p>Used Grafana to visualise data and logs.</p></li></ul>",
           "url": {
             "label": "Company Website",
             "href": "https://www.neurotech.com.br"
@@ -217,8 +243,8 @@
           "id": "fzgzlfmwil23aj6d8h2tv7b4",
           "visible": true,
           "company": "Jalan",
-          "position": "Full Stack Developer | Full-time",
-          "location": "Recife - PE, Brazil",
+          "position": "Full Stack Developer | Full-time · Remote",
+          "location": "Recife, Pernambuco, Brazil",
           "date": "April 2024 - May 2024",
           "summary": "<p>Worked in web apps using Vue.js and Quasar along with Python and AWS Lambda Functions.</p>",
           "url": {
@@ -230,26 +256,13 @@
           "id": "wu4bozur9t46rdmmdjf7x92i",
           "visible": true,
           "company": "Oncase",
-          "position": "Software Engineer | Full-time",
-          "location": "Recife - PE, Brazil",
-          "date": "February 2022 - December 2023 (February 2022 - August 2022 as an intern)",
-          "summary": "<ul><li><p>In general, utilized skills in web development (Flask, Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing (AWS and GCP).</p></li><li><p>Developed Big Data applications with a focus on high efficiency, scalability, and low cost.</p></li><li><p>Developed frontend applications using React (JavaScript, TypeScript and HTML/CSS) and Redux.</p></li><li><p>Implemented backend functionality using Python frameworks Flask and Django.</p></li><li><p>Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.</p></li><li><p>Collaborated with cross-functional teams to achieve project goals.</p></li><li><p>Enhanced customer relationships through the delivery of top-notch solutions.</p></li><li><p>Ensured high-quality and scalable application development.</p></li><li><p>Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.</p></li><li><p>Automated ETL pipelines with Apache Airflow.</p></li><li><p>Utilized Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.</p></li></ul>",
+          "position": "Software Engineer | Full-time · Remote",
+          "location": "Recife, Pernambuco, Brazil",
+          "date": "August 2022 - December 2023",
+          "summary": "<ul><li><p>In general, utilized skills in web development (Flask, Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing (AWS and GCP).</p></li><li><p>Developed Big Data applications with a focus on high efficiency, scalability, and low cost.</p></li><li><p>Developed frontend applications using React (JavaScript, TypeScript and HTML/CSS) and Redux.</p></li><li><p>Implemented backend functionality using Python frameworks Flask and Django.</p></li><li><p>Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.</p></li><li><p>Collaborated with cross-functional teams to achieve project goals.</p></li><li><p>Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.</p></li><li><p>Automated ETL pipelines with Apache Airflow.</p></li><li><p>Utilized Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.</p></li></ul>",
           "url": {
             "label": "Company Website",
             "href": "https://www.oncase.com.br"
-          }
-        },
-        {
-          "id": "g2qobuag6agvahd9qfs75ctc",
-          "visible": true,
-          "company": "Educandus",
-          "position": "Game Developer | Internship",
-          "location": "Recife - PE, Brazil",
-          "date": "May 2020 - December 2020 and June 2021 - October 2021",
-          "summary": "<p>I have worked as a game developer using Construct 3 software and JavaScript, building educational games for students from preschool to high school levels.</p>",
-          "url": {
-            "label": "Company Website",
-            "href": "https://educandus.com.br"
           }
         }
       ]
@@ -662,14 +675,6 @@
           "keywords": []
         },
         {
-          "id": "jdmrcb25b5co8o79nykp7w2e",
-          "visible": true,
-          "name": "Linux",
-          "description": "",
-          "level": 4,
-          "keywords": []
-        },
-        {
           "id": "l1gz274rei5fbd7q129p057z",
           "visible": true,
           "name": "Node",
@@ -734,6 +739,14 @@
           "keywords": []
         },
         {
+          "id": "jdmrcb25b5co8o79nykp7w2e",
+          "visible": true,
+          "name": "Linux",
+          "description": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
           "id": "wr02g2vz7rcsheakosrkt3r1",
           "visible": true,
           "name": "PowerShell",
@@ -782,14 +795,6 @@
           "keywords": []
         },
         {
-          "id": "dva2zci1054e037k0jg75f2s",
-          "visible": true,
-          "name": "Java",
-          "description": "",
-          "level": 2,
-          "keywords": []
-        },
-        {
           "id": "mi1rh8o5ejanghbd3sksqs5i",
           "visible": false,
           "name": "JQuery",
@@ -830,6 +835,14 @@
           "keywords": []
         },
         {
+          "id": "dva2zci1054e037k0jg75f2s",
+          "visible": true,
+          "name": "Java",
+          "description": "",
+          "level": 1,
+          "keywords": []
+        },
+        {
           "id": "wmr1b58cpaxmg43pr6jumv2e",
           "visible": false,
           "name": "Jest",
@@ -860,7 +873,7 @@
         "name": "Freelances",
         "columns": 1,
         "separateLinks": true,
-        "visible": true,
+        "visible": false,
         "id": "rz1jy8dq68qt2qbzjr94tvml",
         "items": [
           {
@@ -869,7 +882,7 @@
             "name": "GPC Gestão",
             "description": "Full Stack Developer",
             "date": "September 2024 - October 2024",
-            "location": "Recife - PE, Brazil",
+            "location": "Recife, Pernambuco, Brazil",
             "summary": "<p>Built an admin website using React with TypeScript and Tailwind CSS for viewing, managing and downloading water consumption documents in multiple homes.</p>",
             "keywords": [],
             "url": {
@@ -883,7 +896,7 @@
             "name": "aca.so",
             "description": "Mobile Engineer",
             "date": "March 2024",
-            "location": "Recife - PE, Brazil",
+            "location": "Recife, Pernambuco, Brazil",
             "summary": "<p>Worked in a project (aca.so mobile app) using React Native, React Redux and TypeScript.</p>",
             "keywords": [],
             "url": {
@@ -897,12 +910,49 @@
             "name": "InSpace",
             "description": "Mobile Engineer",
             "date": "August 2022 - October 2022",
-            "location": "Recife - PE, Brazil",
+            "location": "Recife, Pernambuco, Brazil",
             "summary": "<p>Worked with the identification of certain objects from a mobile camera for legal purposes.</p>",
             "keywords": [],
             "url": {
               "label": "Company Website",
               "href": "https://inspace.tech"
+            }
+          }
+        ]
+      },
+      "ew2xg1kjatt9bra8k1gx6goj": {
+        "name": "Internships",
+        "columns": 1,
+        "separateLinks": true,
+        "visible": true,
+        "id": "ew2xg1kjatt9bra8k1gx6goj",
+        "items": [
+          {
+            "id": "piwvz5y2spobblj99t2m8mfv",
+            "visible": true,
+            "name": "Oncase",
+            "description": "Full Stack Developer · Remote",
+            "date": "February 2022 - August 2022",
+            "location": "Recife, Pernambuco, Brazil",
+            "summary": "<p></p>",
+            "keywords": [],
+            "url": {
+              "label": "Company Website",
+              "href": "https://www.oncase.com.br"
+            }
+          },
+          {
+            "id": "t67n2olbb8z0fiuhzew3bfwn",
+            "visible": true,
+            "name": "Educandus",
+            "description": "Game Developer · Remote",
+            "date": "May 2020 - December 2020 and June 2021 - October 2021",
+            "location": "Recife, Pernambuco, Brazil",
+            "summary": "<p>I have worked as a game developer using Construct 3 software and JavaScript, building educational games for students from preschool to high school levels.</p>",
+            "keywords": [],
+            "url": {
+              "label": "Company Website",
+              "href": "https://educandus.com.br"
             }
           }
         ]
@@ -928,6 +978,7 @@
       ],
       [
         [
+          "custom.ew2xg1kjatt9bra8k1gx6goj",
           "custom.rz1jy8dq68qt2qbzjr94tvml",
           "education",
           "languages",
@@ -940,11 +991,11 @@
       ]
     ],
     "css": {
-      "value": "* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}",
+      "value": "",
       "visible": false
     },
     "page": {
-      "margin": 18,
+      "margin": 14,
       "format": "a4",
       "options": {
         "breakLine": true,
@@ -963,12 +1014,12 @@
         "variants": [
           "regular"
         ],
-        "size": 14
+        "size": 13.8
       },
-      "lineHeight": 1.4,
+      "lineHeight": 1.35,
       "hideIcons": false,
       "underlineLinks": true
     },
-    "notes": "<p>Se for para mostrar os projetos e certificados, tirar da página 2 e criar uma terceira página</p>"
+    "notes": "<p>Se for para mostrar os projetos e certificados, tirar da página 2 e criar uma terceira página.</p>"
   }
 }

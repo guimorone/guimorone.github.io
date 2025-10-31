@@ -97,9 +97,7 @@ export default function Navbar() {
 													to={href}
 													onClick={handleCloseMobileMenu}
 													className={classNames(
-														isCurrent
-															? 'bg-zinc-800 hover:cursor-default'
-															: 'hover:bg-zinc-800 hover:cursor-pointer',
+														isCurrent ? 'bg-zinc-800 hover:cursor-default' : 'hover:bg-zinc-800 hover:cursor-pointer',
 														'-mx-3 flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-zinc-100'
 													)}
 												>

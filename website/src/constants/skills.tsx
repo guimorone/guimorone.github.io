@@ -14,10 +14,12 @@ import {
 	FaNodeJs,
 	FaPython,
 	FaReact,
+	FaRobot,
 } from 'react-icons/fa6';
 import { FcLinux } from 'react-icons/fc';
 import {
 	SiApacheairflow,
+	SiBitbucket,
 	SiConstruct3,
 	SiCplusplus,
 	SiCyberdefenders,
@@ -32,6 +34,7 @@ import {
 	SiHaskell,
 	SiJavascript,
 	SiJest,
+	SiJira,
 	SiJquery,
 	SiJupyter,
 	SiKubernetes,
@@ -53,6 +56,11 @@ export const AIRFLOW: SkillType = {
 };
 export const AWS: SkillType = { Icon: { Element: FaAws, color: 'text-[#FF9900]' }, label: 'AWS', rating: 4 };
 export const BASH: SkillType = { Icon: { Element: VscTerminalBash }, label: 'Bash', rating: 4 };
+export const BITBUCKET: SkillType = {
+	Icon: { Element: SiBitbucket, color: 'text-[#3186FE]' },
+	label: 'Bitbucket',
+	rating: 4,
+};
 export const C: SkillType = { Icon: { Element: FaC, color: 'text-[#5D6BC1]' }, label: 'C', rating: 2 };
 export const CONSTRUCT_3: SkillType = {
 	Icon: { Element: SiConstruct3, color: 'text-[#DAE8F6]' },
@@ -122,7 +130,7 @@ export const HASKELL: SkillType = {
 	rating: 1,
 };
 export const HTML: SkillType = { Icon: { Element: FaHtml5, color: 'text-[#E54C25]' }, label: 'HTML', rating: 5 };
-export const JAVA: SkillType = { Icon: { Element: FaJava, color: 'text-[#EB2F2E]' }, label: 'Java', rating: 1.5 };
+export const JAVA: SkillType = { Icon: { Element: FaJava, color: 'text-[#EB2F2E]' }, label: 'Java', rating: 1 };
 export const JAVASCRIPT: SkillType = {
 	Icon: { Element: SiJavascript, color: 'text-[#F7DF1C]' },
 	label: 'JavaScript',
@@ -133,10 +141,15 @@ export const JEST: SkillType = {
 	label: 'Jest',
 	rating: 1,
 };
+export const JIRA: SkillType = {
+	Icon: { Element: SiJira, color: 'text-[#3186FE]' },
+	label: 'Jira',
+	rating: 5,
+};
 export const JQUERY: SkillType = {
 	Icon: { Element: SiJquery, color: 'text-[#0C68AC]' },
 	label: 'JQuery',
-	rating: 2.5,
+	rating: 2,
 };
 export const JUPYTER_NOTEBOOKS: SkillType = {
 	Icon: { Element: SiJupyter, color: 'text-[#F47820]' },
@@ -146,7 +159,7 @@ export const JUPYTER_NOTEBOOKS: SkillType = {
 export const LINUX: SkillType = {
 	Icon: { Element: { withColor: FcLinux, withoutColor: FaLinux } },
 	label: 'Linux',
-	rating: 3.5,
+	rating: 3,
 };
 export const KUBERNETES: SkillType = {
 	Icon: { Element: SiKubernetes, color: 'text-[#326DE6]' },
@@ -187,8 +200,9 @@ export const REACT_NATIVE: SkillType = {
 export const REACT_REDUX: SkillType = {
 	Icon: { Element: SiRedux, color: 'text-[#764ABC]' },
 	label: 'React Redux',
-	rating: 4.5,
+	rating: 4,
 };
+export const RPA: SkillType = { Icon: { Element: FaRobot }, label: 'RPA', rating: 5 };
 export const RUBY: SkillType = { Icon: { Element: DiRuby, color: 'text-[#9D0401]' }, label: 'Ruby', rating: 1 };
 export const SQL: SkillType = { Icon: { Element: TbSql, color: 'text-[#0279D6]' }, label: 'SQL', rating: 3.5 };
 export const TAILWIND_CSS: SkillType = {
@@ -206,4 +220,4 @@ export const TYPESCRIPT: SkillType = {
 	label: 'TypeScript',
 	rating: 5,
 };
-export const VUE: SkillType = { Icon: { Element: SiVuedotjs, color: 'text-[#3EB984]' }, label: 'Vue', rating: 2 };
+export const VUE: SkillType = { Icon: { Element: SiVuedotjs, color: 'text-[#3EB984]' }, label: 'Vue', rating: 1.5 };

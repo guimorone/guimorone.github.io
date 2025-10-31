@@ -25,17 +25,13 @@ const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 											'h-8 w-8 rounded-full flex items-center justify-center ring-4 ring-white'
 										)}
 									>
-										{activity.Icon && (
-											<activity.Icon.Element className="size-5 text-zinc-100" aria-hidden="true" />
-										)}
+										{activity.Icon && <activity.Icon.Element className="size-5 text-zinc-100" aria-hidden="true" />}
 									</span>
 									<div className="flex min-w-0 flex-1 flex-col justify-between pt-1.5 gap-y-2.5">
 										<div className="-space-y-0.5">
 											<h3 className="text-lg md:text-xl text-zinc-100">{activity.title}</h3>
 											<p className="text-xs md:text-sm text-zinc-300">{activity.subtitle}</p>
-											{activity.location && (
-												<p className="text-xs md:text-sm text-zinc-300">{activity.location}</p>
-											)}
+											{activity.location && <p className="text-xs md:text-sm text-zinc-300">{activity.location}</p>}
 										</div>
 										{activity.description &&
 											(activity.description instanceof Array ? (

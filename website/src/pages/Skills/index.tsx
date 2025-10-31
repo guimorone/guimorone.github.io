@@ -51,11 +51,7 @@ export default function Skills() {
 										'absolute inset-0 -mx-2 -my-1 rounded-lg group-hover:bg-zinc-800 group-active:bg-zinc-900'
 									)}
 								/>
-								<button
-									type="button"
-									onClick={() => onOpenModal(skill)}
-									className="relative flex items-center gap-x-2"
-								>
+								<button type="button" onClick={() => onOpenModal(skill)} className="relative flex items-center gap-x-2">
 									{typeof skill.Icon.Element === 'object' ? (
 										<skill.Icon.Element.withColor className="w-auto h-4 sm:h-5 md:h-6" aria-hidden="true" />
 									) : (

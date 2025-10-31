@@ -16,6 +16,7 @@ import {
 	GRAFANA,
 	HTML,
 	JAVASCRIPT,
+	JIRA,
 	JUPYTER_NOTEBOOKS,
 	KUBERNETES,
 	LINUX,
@@ -26,6 +27,7 @@ import {
 	REACT,
 	REACT_NATIVE,
 	REACT_REDUX,
+	RPA,
 	SQL,
 	TAILWIND_CSS,
 	TERRAFORM,
@@ -47,29 +49,74 @@ import {
 	NEUROTECH_URL,
 	ONCASE_LINKEDIN_URL,
 	ONCASE_URL,
+	SANDBOX_LINKEDIN_URL,
+	SANDBOX_URL,
+	THOUGHTFUL_LINKEDIN_URL,
+	THOUGHTFUL_URL,
 } from '@/constants/urls';
 import { LinkedInIcon } from '@/utils/icons';
 import { CodeBracketIcon, DevicePhoneMobileIcon, GlobeAltIcon } from '@heroicons/react/24/solid';
 import { FaGamepad } from 'react-icons/fa';
+import { BITBUCKET } from './../../constants/skills';
 import type { ActivityType } from '@/types';
 
 export const title: string = 'Work Experience';
 export const subtitle: string = 'Allow me to show you my jobs with clients and in tech companies.';
 
+const getIcon = (type: 'GAME' | 'MOBILE' | 'SOFTWARE' = 'SOFTWARE'): ActivityType['Icon'] => {
+	switch (type) {
+		case 'GAME':
+			return { Element: FaGamepad, background: 'bg-indigo-600' };
+		case 'MOBILE':
+			return { Element: DevicePhoneMobileIcon, background: 'bg-blue-600' };
+		default:
+			return { Element: CodeBracketIcon, background: 'bg-teal-600' };
+	}
+};
+
 export const experiences: ActivityType[] = [
 	{
 		title: 'Software Engineer | Full-time',
-		subtitle: 'Neurotech. Apr 2024 - Present',
+		subtitle: 'Sandbox Group. Sep 2025 - Present',
+		location: 'Poços de Caldas, Minas Gerais, Brazil · Remote',
+		description: [
+			'Working at Kids & Family vertical.',
+			'Implementing backend functionality using Python, FastAPI, Flask for PlayKids app and SVOD integration.',
+		],
+		skills: [AWS, BASH, CI_CD, DOCKER, FASTAPI, FLASK, GCP, GIT, GITHUB, JIRA, PYTHON],
+		links: [
+			{ Icon: GlobeAltIcon, label: 'Company Website', url: SANDBOX_URL },
+			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: SANDBOX_LINKEDIN_URL },
+		],
+		Icon: getIcon(),
+	},
+	{
+		title: 'Forward Deployed Engineer | Contract',
+		subtitle: 'Thoughtful AI. Aug 2025 - Present',
+		location: 'Austin, Texas, United States · Remote',
+		description: [
+			'Implementing RPA functionality using Python.',
+			'Automatizing RCM processes for healthcare companies in the United States.',
+		],
+		skills: [AWS, BASH, BITBUCKET, CI_CD, FASTAPI, GIT, GITHUB, JIRA, PYTHON, RPA],
+		links: [
+			{ Icon: GlobeAltIcon, label: 'Company Website', url: THOUGHTFUL_URL },
+			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: THOUGHTFUL_LINKEDIN_URL },
+		],
+		Icon: getIcon(),
+	},
+	{
+		title: 'Software Engineer | Full-time',
+		subtitle: 'Neurotech. Apr 2024 - Aug 2025',
 		location: 'Recife, Pernambuco, Brazil · Hybrid',
 		description: [
-			'In general, using skills in data engineering and backend development with Python, FastAPI, Go, Terraform, CI/CD, Docker, Git, Airflow, Bash, and cloud computing on AWS and GCP.',
-			'Collaborate with cross-functional teams to achieve project goals.',
-			'Ensure high-quality, scalable application development.',
-			'Implementing backend functionality using Python, FastAPI and Go.',
-			'Using AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions and more.',
-			'Working extracting data from different sources (internet, AWS S3, etc) and make it available in a data lake.',
-			'Automating ETL pipelines with Apache Airflow.',
-			'Using Grafana to visualise data and logs.',
+			'In general, used skills in data engineering and backend development with Python, FastAPI, Go, Terraform, CI/CD, Docker, Git, Airflow, Bash, and cloud computing on AWS and GCP.',
+			'Collaborated with cross-functional teams to achieve project goals.',
+			'Implemented backend functionality using Python, FastAPI, and Go.',
+			'Used AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions, and more.',
+			'Worked on extracting data from different sources (internet, AWS S3, etc) and make it available in a data lake.',
+			'Automated ETL pipelines with Apache Airflow.',
+			'Used Grafana to visualise data and logs.',
 		],
 		skills: [
 			AIRFLOW,
@@ -83,11 +130,13 @@ export const experiences: ActivityType[] = [
 			GITHUB,
 			GO,
 			GRAFANA,
+			JIRA,
 			JUPYTER_NOTEBOOKS,
 			KUBERNETES,
 			LINUX,
 			POSTGRESQL,
 			PYTHON,
+			RPA,
 			SQL,
 			TERRAFORM,
 		],
@@ -95,19 +144,19 @@ export const experiences: ActivityType[] = [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: NEUROTECH_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: NEUROTECH_LINKEDIN_URL },
 		],
-		Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
+		Icon: getIcon(),
 	},
 	{
 		title: 'Full Stack Developer | Full-time',
 		subtitle: 'Jalan. Apr 2024 - May 2024',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		description: 'Worked in web apps using Vue.js and Quasar along with Python and AWS Lambda Functions.',
-		skills: [AWS, BASH, GIT, POWERSHELL, PYTHON, VUE],
+		skills: [AWS, BASH, GIT, JIRA, POWERSHELL, PYTHON, VUE],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: JALAN_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: JALAN_LINKEDIN_URL },
 		],
-		Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
+		Icon: getIcon(),
 	},
 	{
 		title: 'Software Engineer | Full-time',
@@ -120,8 +169,6 @@ export const experiences: ActivityType[] = [
 			'Implemented backend functionality using Python frameworks Flask and Django.',
 			'Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.',
 			'Collaborated with cross-functional teams to achieve project goals.',
-			'Enhanced customer relationships through the delivery of top-notch solutions.',
-			'Ensured high-quality and scalable application development.',
 			'Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.',
 			'Automated ETL pipelines with Apache Airflow.',
 			'Utilized Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.',
@@ -140,6 +187,7 @@ export const experiences: ActivityType[] = [
 			GITHUB,
 			HTML,
 			JAVASCRIPT,
+			JIRA,
 			LINUX,
 			MONGODB,
 			POSTGRESQL,
@@ -154,7 +202,7 @@ export const experiences: ActivityType[] = [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: ONCASE_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: ONCASE_LINKEDIN_URL },
 		],
-		Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
+		Icon: getIcon(),
 	},
 	{
 		title: 'Game Developer | Internship',
@@ -167,7 +215,7 @@ export const experiences: ActivityType[] = [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: EDUCANDUS_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: EDUCANDUS_LINKEDIN_URL },
 		],
-		Icon: { Element: FaGamepad, background: 'bg-indigo-600' },
+		Icon: getIcon('GAME'),
 	},
 ];
 
@@ -183,10 +231,10 @@ export const freelances: ActivityType[] = [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: GPC_GESTAO_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: GPC_GESTAO_LINKEDIN_URL },
 		],
-		Icon: { Element: CodeBracketIcon, background: 'bg-indigo-600' },
+		Icon: getIcon(),
 	},
 	{
-		title: 'Mobile Engineer',
+		title: 'Mobile Developer',
 		subtitle: 'aca.so. Mar 2024',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		description: 'Worked in a project (aca.so mobile app) using React Native, React Redux and TypeScript.',
@@ -195,10 +243,10 @@ export const freelances: ActivityType[] = [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: ACASO_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: ACASO_LINKEDIN_URL },
 		],
-		Icon: { Element: DevicePhoneMobileIcon, background: 'bg-indigo-600' },
+		Icon: getIcon('MOBILE'),
 	},
 	{
-		title: 'Mobile Engineer',
+		title: 'Mobile Developer',
 		subtitle: 'InSpace. Aug 2022 - Oct 2022',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		description: 'Worked with the identification of certain objects from a mobile camera for legal purposes.',
@@ -207,6 +255,6 @@ export const freelances: ActivityType[] = [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: INSPACE_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: INSPACE_LINKEDIN_URL },
 		],
-		Icon: { Element: DevicePhoneMobileIcon, background: 'bg-indigo-600' },
+		Icon: getIcon('MOBILE'),
 	},
 ];

@@ -1,9 +1,9 @@
 import path from 'path';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
-import type { UserConfig } from 'vite';
+import type { ConfigEnv, UserConfig } from 'vite';
 
-export default defineConfig(({ command }) => {
+export default defineConfig(({ command }: ConfigEnv): UserConfig => {
 	const config: UserConfig = {
 		plugins: [react()],
 		resolve: {

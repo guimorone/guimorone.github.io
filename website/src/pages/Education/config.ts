@@ -1,16 +1,4 @@
-import {
-	CI_CD,
-	CSS,
-	GIT,
-	GITHUB,
-	HTML,
-	JEST,
-	NODE,
-	PYTHON,
-	REACT,
-	REACT_REDUX,
-	TYPESCRIPT,
-} from '@/constants/skills';
+import { CI_CD, CSS, GIT, GITHUB, HTML, JEST, NODE, PYTHON, REACT, REACT_REDUX, TYPESCRIPT } from '@/constants/skills';
 import { TCC_ATTENA_URL, TCC_PROJECT_URL } from '@/constants/urls';
 import { ChalkboardUser, GitHubIcon, GraduationCap } from '@/utils/icons';
 import { GiNotebook } from 'react-icons/gi';
