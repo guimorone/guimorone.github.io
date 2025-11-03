@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import Collapsable from '@/components/Collapsable';
+import Collapsible from '@/components/Collapsible';
 import Grid from '@/components/Grid';
 import GridContainer from '@/components/Grid/Container';
 import Stars from '@/components/Stars';
@@ -35,7 +35,7 @@ export default function Skills() {
 		<>
 			<SkillDescription currentSkill={currentSkill} onClose={onCloseModal} />
 			<GridContainer title={title} subtitle={subtitle}>
-				<Collapsable title="Tools">
+				<Collapsible title="Tools">
 					<Grid>
 						{skills?.map((skill, index) => (
 							<div
@@ -66,8 +66,8 @@ export default function Skills() {
 							</div>
 						))}
 					</Grid>
-				</Collapsable>
-				<Collapsable title="Languages">
+				</Collapsible>
+				<Collapsible title="Languages">
 					<Grid>
 						{languages?.map(({ label, description, rating }, index) => (
 							<div
@@ -87,7 +87,7 @@ export default function Skills() {
 							</div>
 						))}
 					</Grid>
-				</Collapsable>
+				</Collapsible>
 				<p className="text-xs md:text-sm">
 					If you want to know more,&nbsp;
 					<a href={LINKEDIN_SKILLS_URL} target="_blank" className="text-indigo-300 hover:text-indigo-200">

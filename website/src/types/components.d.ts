@@ -70,7 +70,7 @@ export interface GridContainerProps {
 	children?: ReactNode;
 }
 
-export interface CollapsableProps {
+export interface CollapsibleProps {
 	title: string;
 	children?: ReactNode;
 }

@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
 import type { FC } from 'react';
-import type { CollapsableProps } from '@/types/components';
+import type { CollapsibleProps } from '@/types/components';
 
-const Collapsable: FC<CollapsableProps> = ({ title, children }) => {
-	const [isCollapsed, setIsCollapsed] = useState<boolean>(false);
+const Collapsible: FC<CollapsibleProps> = ({ title, children }) => {
+	const [isExpanded, setIsExpanded] = useState<boolean>(true);
 
-	const handleCollapseToggle = (): void => setIsCollapsed(prev => !prev);
+	const handleCollapseToggle = (): void => setIsExpanded(prev => !prev);
 
 	return (
 		<div className="space-y-6">
@@ -15,16 +15,16 @@ const Collapsable: FC<CollapsableProps> = ({ title, children }) => {
 				onClick={handleCollapseToggle}
 				className="flex items-center gap-x-4 text-zinc-100 hover:text-zinc-300 w-fit"
 			>
-				{isCollapsed ? (
-					<ChevronDownIcon className="w-auto h-8" aria-hidden="true" />
-				) : (
+				{isExpanded ? (
 					<ChevronUpIcon className="w-auto h-8" aria-hidden="true" />
+				) : (
+					<ChevronDownIcon className="w-auto h-8" aria-hidden="true" />
 				)}
 				<h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{title}</h2>
 			</button>
 			<Transition
 				as="div"
-				show={!isCollapsed}
+				show={isExpanded}
 				enter="ease-in duration-300"
 				enterFrom="opacity-0 scale-95"
 				enterTo="opacity-100 scale-100"
@@ -38,4 +38,4 @@ const Collapsable: FC<CollapsableProps> = ({ title, children }) => {
 	);
 };
 
-export default Collapsable;
+export default Collapsible;
