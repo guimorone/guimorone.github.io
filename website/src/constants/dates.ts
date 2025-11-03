@@ -1,1 +1,1 @@
-export const LAST_UPDATE_CV = new Date(2025, 9, 31);
+export const LAST_UPDATE_CV = new Date(2025, 10, 3);

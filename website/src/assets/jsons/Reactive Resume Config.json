@@ -564,7 +564,7 @@
         },
         {
           "id": "t0ascuzch3evzs7i2fs5g94n",
-          "visible": false,
+          "visible": true,
           "name": "HTML",
           "description": "",
           "level": 5,
@@ -574,6 +574,14 @@
           "id": "fvivhgib64p9succtf0wzib9",
           "visible": true,
           "name": "JavaScript",
+          "description": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "q31zh2oa8hdlt0ywhag6cblv",
+          "visible": true,
+          "name": "Jira",
           "description": "",
           "level": 5,
           "keywords": []
@@ -643,6 +651,14 @@
           "keywords": []
         },
         {
+          "id": "k6qvba38aqm7h8msawq8oih9",
+          "visible": true,
+          "name": "Bitbucket",
+          "description": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
           "id": "pbg24evqbpyq3mjqoqkjmatp",
           "visible": true,
           "name": "Git",
@@ -660,7 +676,7 @@
         },
         {
           "id": "dj9lczy58pp1hum7in2pbzpm",
-          "visible": true,
+          "visible": false,
           "name": "HTML/CSS",
           "description": "",
           "level": 4,
@@ -683,6 +699,14 @@
           "keywords": []
         },
         {
+          "id": "t4pm1m91kw9z6vfphjc9yc0p",
+          "visible": true,
+          "name": "PostgreSQL",
+          "description": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
           "id": "k6pni3e3meplp1owubxtiwrb",
           "visible": true,
           "name": "React Native",
@@ -699,16 +723,8 @@
           "keywords": []
         },
         {
-          "id": "d5pm2hyg3ebky00b1qj66p16",
-          "visible": true,
-          "name": "Terraform",
-          "description": "",
-          "level": 4,
-          "keywords": []
-        },
-        {
           "id": "bs8ge484misv2u7paphzpjxb",
-          "visible": false,
+          "visible": true,
           "name": "CSS",
           "description": "",
           "level": 3,
@@ -739,6 +755,14 @@
           "keywords": []
         },
         {
+          "id": "mi1rh8o5ejanghbd3sksqs5i",
+          "visible": true,
+          "name": "JQuery",
+          "description": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
           "id": "jdmrcb25b5co8o79nykp7w2e",
           "visible": true,
           "name": "Linux",
@@ -755,17 +779,17 @@
           "keywords": []
         },
         {
-          "id": "t4pm1m91kw9z6vfphjc9yc0p",
+          "id": "wunacfvmcx9gtfboksnhlpvx",
           "visible": true,
-          "name": "PostgreSQL",
+          "name": "SQL",
           "description": "",
           "level": 3,
           "keywords": []
         },
         {
-          "id": "wunacfvmcx9gtfboksnhlpvx",
+          "id": "d5pm2hyg3ebky00b1qj66p16",
           "visible": true,
-          "name": "SQL",
+          "name": "Terraform",
           "description": "",
           "level": 3,
           "keywords": []
@@ -780,24 +804,32 @@
         },
         {
           "id": "m3tzrvpewtkw4o4efeelhn7z",
-          "visible": false,
+          "visible": true,
           "name": "Construct 3",
           "description": "",
           "level": 2,
           "keywords": []
         },
         {
-          "id": "aa4bd91l9dqhw09w48ylbrgo",
+          "id": "dvvjquwopprwa70o60dhinbf",
           "visible": true,
-          "name": "Flutter + Dart",
+          "name": "Dart",
           "description": "",
           "level": 2,
           "keywords": []
         },
         {
-          "id": "mi1rh8o5ejanghbd3sksqs5i",
+          "id": "cahyktch7teh6iwjr0mwn1b4",
+          "visible": true,
+          "name": "Flutter",
+          "description": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
+          "id": "aa4bd91l9dqhw09w48ylbrgo",
           "visible": false,
-          "name": "JQuery",
+          "name": "Flutter + Dart",
           "description": "",
           "level": 2,
           "keywords": []
@@ -812,7 +844,7 @@
         },
         {
           "id": "e944ccltfjjreo8jjgx0ezqg",
-          "visible": false,
+          "visible": true,
           "name": "C#",
           "description": "",
           "level": 1,
@@ -820,7 +852,7 @@
         },
         {
           "id": "oap1clcpd0z22gqkytwepsvp",
-          "visible": false,
+          "visible": true,
           "name": "Cyber Security",
           "description": "",
           "level": 1,
@@ -828,7 +860,7 @@
         },
         {
           "id": "efa0w94d36mqhl6jmacvzq3n",
-          "visible": false,
+          "visible": true,
           "name": "Haskell",
           "description": "",
           "level": 1,
@@ -860,7 +892,7 @@
         },
         {
           "id": "l59978l01eb9lkki29lqjw8h",
-          "visible": false,
+          "visible": true,
           "name": "Ruby",
           "description": "",
           "level": 1,

@@ -149,7 +149,7 @@ export const JIRA: SkillType = {
 export const JQUERY: SkillType = {
 	Icon: { Element: SiJquery, color: 'text-[#0C68AC]' },
 	label: 'JQuery',
-	rating: 2,
+	rating: 3,
 };
 export const JUPYTER_NOTEBOOKS: SkillType = {
 	Icon: { Element: SiJupyter, color: 'text-[#F47820]' },
