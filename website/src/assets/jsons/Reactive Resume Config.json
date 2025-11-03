@@ -29,7 +29,7 @@
       "separateLinks": true,
       "visible": false,
       "id": "summary",
-      "content": "<p>I am a Software Engineer with a background in Computer Engineering and a strong interest in building reliable, efficient, and scalable systems.</p><p>Since 2019, I have worked on a range of projects involving web development, data engineering, and cloud infrastructure — often with a focus on Big Data applications. I am comfortable working with tools like Python, Django, FastAPI, React, Docker, cloud platforms like AWS and GCP, and more.</p><p>I enjoy solving real-world problems with code, collaborating with teams, and continuously learning new technologies.</p><p>Originally from Rio and now based in Recife, I bring curiosity, adaptability, and a passion for turning ideas into practical solutions.</p>"
+      "content": "<p>I am a Software Engineer with a background in Computer Engineering and a strong interest in building reliable, efficient, and scalable systems.</p><p>Since 2019, I have worked on a range of projects involving web development, data engineering, and cloud infrastructure, often with a focus on Big Data applications. I am comfortable working with tools like Python, Django, FastAPI, React, Docker, cloud platforms like AWS and GCP, and more.</p><p>I enjoy solving real-world problems with code, collaborating with teams, and continuously learning new technologies.</p><p>Originally from Rio and now based in Recife, I bring curiosity, adaptability, and a passion for turning ideas into practical solutions.</p>"
     },
     "awards": {
       "name": "Awards",
@@ -869,6 +869,43 @@
       ]
     },
     "custom": {
+      "ew2xg1kjatt9bra8k1gx6goj": {
+        "name": "Internships",
+        "columns": 1,
+        "separateLinks": true,
+        "visible": true,
+        "id": "ew2xg1kjatt9bra8k1gx6goj",
+        "items": [
+          {
+            "id": "piwvz5y2spobblj99t2m8mfv",
+            "visible": true,
+            "name": "Oncase",
+            "description": "Full Stack Developer · Remote",
+            "date": "February 2022 - August 2022",
+            "location": "Recife, Pernambuco, Brazil",
+            "summary": "<p></p>",
+            "keywords": [],
+            "url": {
+              "label": "Company Website",
+              "href": "https://www.oncase.com.br"
+            }
+          },
+          {
+            "id": "t67n2olbb8z0fiuhzew3bfwn",
+            "visible": true,
+            "name": "Educandus",
+            "description": "Game Developer · Remote",
+            "date": "May 2020 - December 2020 and June 2021 - October 2021",
+            "location": "Recife, Pernambuco, Brazil",
+            "summary": "<p>I have worked as a game developer using Construct 3 software and JavaScript, building educational games for students from preschool to high school levels.</p>",
+            "keywords": [],
+            "url": {
+              "label": "Company Website",
+              "href": "https://educandus.com.br"
+            }
+          }
+        ]
+      },
       "rz1jy8dq68qt2qbzjr94tvml": {
         "name": "Freelances",
         "columns": 1,
@@ -916,43 +953,6 @@
             "url": {
               "label": "Company Website",
               "href": "https://inspace.tech"
-            }
-          }
-        ]
-      },
-      "ew2xg1kjatt9bra8k1gx6goj": {
-        "name": "Internships",
-        "columns": 1,
-        "separateLinks": true,
-        "visible": true,
-        "id": "ew2xg1kjatt9bra8k1gx6goj",
-        "items": [
-          {
-            "id": "piwvz5y2spobblj99t2m8mfv",
-            "visible": true,
-            "name": "Oncase",
-            "description": "Full Stack Developer · Remote",
-            "date": "February 2022 - August 2022",
-            "location": "Recife, Pernambuco, Brazil",
-            "summary": "<p></p>",
-            "keywords": [],
-            "url": {
-              "label": "Company Website",
-              "href": "https://www.oncase.com.br"
-            }
-          },
-          {
-            "id": "t67n2olbb8z0fiuhzew3bfwn",
-            "visible": true,
-            "name": "Educandus",
-            "description": "Game Developer · Remote",
-            "date": "May 2020 - December 2020 and June 2021 - October 2021",
-            "location": "Recife, Pernambuco, Brazil",
-            "summary": "<p>I have worked as a game developer using Construct 3 software and JavaScript, building educational games for students from preschool to high school levels.</p>",
-            "keywords": [],
-            "url": {
-              "label": "Company Website",
-              "href": "https://educandus.com.br"
             }
           }
         ]
