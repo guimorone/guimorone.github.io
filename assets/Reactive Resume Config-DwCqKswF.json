@@ -29,7 +29,7 @@
       "separateLinks": true,
       "visible": false,
       "id": "summary",
-      "content": "<p>I am a Software Engineer with a background in Computer Engineering and a strong interest in building reliable, efficient, and scalable systems.</p><p>Since 2019, I have worked on a range of projects involving web development, data engineering, and cloud infrastructure — often with a focus on Big Data applications. I am comfortable working with tools like Python, Django, FastAPI, React, Docker, cloud platforms like AWS and GCP, and more.</p><p>I enjoy solving real-world problems with code, collaborating with teams, and continuously learning new technologies.</p><p>Originally from Rio and now based in Recife, I bring curiosity, adaptability, and a passion for turning ideas into practical solutions.</p>"
+      "content": "<p>I am a Software Engineer with a background in Computer Engineering and a strong interest in building reliable, efficient, and scalable systems.</p><p>Since 2019, I have worked on a range of projects involving web development, data engineering, and cloud infrastructure, often with a focus on Big Data applications. I am comfortable working with tools like Python, Django, FastAPI, React, Docker, cloud platforms like AWS and GCP, and more.</p><p>I enjoy solving real-world problems with code, collaborating with teams, and continuously learning new technologies.</p><p>Originally from Rio and now based in Recife, I bring curiosity, adaptability, and a passion for turning ideas into practical solutions.</p>"
     },
     "awards": {
       "name": "Awards",
@@ -259,7 +259,7 @@
           "position": "Software Engineer | Full-time · Remote",
           "location": "Recife, Pernambuco, Brazil",
           "date": "August 2022 - December 2023",
-          "summary": "<ul><li><p>In general, utilized skills in web development (Flask, Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing (AWS and GCP).</p></li><li><p>Developed Big Data applications with a focus on high efficiency, scalability, and low cost.</p></li><li><p>Developed frontend applications using React (JavaScript, TypeScript and HTML/CSS) and Redux.</p></li><li><p>Implemented backend functionality using Python frameworks Flask and Django.</p></li><li><p>Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.</p></li><li><p>Collaborated with cross-functional teams to achieve project goals.</p></li><li><p>Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.</p></li><li><p>Automated ETL pipelines with Apache Airflow.</p></li><li><p>Utilized Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.</p></li></ul>",
+          "summary": "<ul><li><p>In general, utilised skills in web development (Flask, Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing (AWS and GCP).</p></li><li><p>Developed Big Data applications with a focus on high efficiency, scalability, and low cost.</p></li><li><p>Developed frontend applications using React (JavaScript, TypeScript and HTML/CSS) and Redux.</p></li><li><p>Implemented backend functionality using Python frameworks Flask and Django.</p></li><li><p>Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.</p></li><li><p>Collaborated with cross-functional teams to achieve project goals.</p></li><li><p>Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.</p></li><li><p>Automated ETL pipelines with Apache Airflow.</p></li><li><p>Utilised Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.</p></li></ul>",
           "url": {
             "label": "Company Website",
             "href": "https://www.oncase.com.br"
@@ -564,7 +564,7 @@
         },
         {
           "id": "t0ascuzch3evzs7i2fs5g94n",
-          "visible": false,
+          "visible": true,
           "name": "HTML",
           "description": "",
           "level": 5,
@@ -574,6 +574,14 @@
           "id": "fvivhgib64p9succtf0wzib9",
           "visible": true,
           "name": "JavaScript",
+          "description": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "q31zh2oa8hdlt0ywhag6cblv",
+          "visible": true,
+          "name": "Jira",
           "description": "",
           "level": 5,
           "keywords": []
@@ -643,6 +651,14 @@
           "keywords": []
         },
         {
+          "id": "k6qvba38aqm7h8msawq8oih9",
+          "visible": true,
+          "name": "Bitbucket",
+          "description": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
           "id": "pbg24evqbpyq3mjqoqkjmatp",
           "visible": true,
           "name": "Git",
@@ -660,7 +676,7 @@
         },
         {
           "id": "dj9lczy58pp1hum7in2pbzpm",
-          "visible": true,
+          "visible": false,
           "name": "HTML/CSS",
           "description": "",
           "level": 4,
@@ -683,6 +699,14 @@
           "keywords": []
         },
         {
+          "id": "t4pm1m91kw9z6vfphjc9yc0p",
+          "visible": true,
+          "name": "PostgreSQL",
+          "description": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
           "id": "k6pni3e3meplp1owubxtiwrb",
           "visible": true,
           "name": "React Native",
@@ -699,16 +723,8 @@
           "keywords": []
         },
         {
-          "id": "d5pm2hyg3ebky00b1qj66p16",
-          "visible": true,
-          "name": "Terraform",
-          "description": "",
-          "level": 4,
-          "keywords": []
-        },
-        {
           "id": "bs8ge484misv2u7paphzpjxb",
-          "visible": false,
+          "visible": true,
           "name": "CSS",
           "description": "",
           "level": 3,
@@ -739,6 +755,14 @@
           "keywords": []
         },
         {
+          "id": "mi1rh8o5ejanghbd3sksqs5i",
+          "visible": true,
+          "name": "JQuery",
+          "description": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
           "id": "jdmrcb25b5co8o79nykp7w2e",
           "visible": true,
           "name": "Linux",
@@ -755,17 +779,17 @@
           "keywords": []
         },
         {
-          "id": "t4pm1m91kw9z6vfphjc9yc0p",
+          "id": "wunacfvmcx9gtfboksnhlpvx",
           "visible": true,
-          "name": "PostgreSQL",
+          "name": "SQL",
           "description": "",
           "level": 3,
           "keywords": []
         },
         {
-          "id": "wunacfvmcx9gtfboksnhlpvx",
+          "id": "d5pm2hyg3ebky00b1qj66p16",
           "visible": true,
-          "name": "SQL",
+          "name": "Terraform",
           "description": "",
           "level": 3,
           "keywords": []
@@ -780,24 +804,32 @@
         },
         {
           "id": "m3tzrvpewtkw4o4efeelhn7z",
-          "visible": false,
+          "visible": true,
           "name": "Construct 3",
           "description": "",
           "level": 2,
           "keywords": []
         },
         {
-          "id": "aa4bd91l9dqhw09w48ylbrgo",
+          "id": "dvvjquwopprwa70o60dhinbf",
           "visible": true,
-          "name": "Flutter + Dart",
+          "name": "Dart",
           "description": "",
           "level": 2,
           "keywords": []
         },
         {
-          "id": "mi1rh8o5ejanghbd3sksqs5i",
+          "id": "cahyktch7teh6iwjr0mwn1b4",
+          "visible": true,
+          "name": "Flutter",
+          "description": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
+          "id": "aa4bd91l9dqhw09w48ylbrgo",
           "visible": false,
-          "name": "JQuery",
+          "name": "Flutter + Dart",
           "description": "",
           "level": 2,
           "keywords": []
@@ -812,7 +844,7 @@
         },
         {
           "id": "e944ccltfjjreo8jjgx0ezqg",
-          "visible": false,
+          "visible": true,
           "name": "C#",
           "description": "",
           "level": 1,
@@ -820,7 +852,7 @@
         },
         {
           "id": "oap1clcpd0z22gqkytwepsvp",
-          "visible": false,
+          "visible": true,
           "name": "Cyber Security",
           "description": "",
           "level": 1,
@@ -828,7 +860,7 @@
         },
         {
           "id": "efa0w94d36mqhl6jmacvzq3n",
-          "visible": false,
+          "visible": true,
           "name": "Haskell",
           "description": "",
           "level": 1,
@@ -860,7 +892,7 @@
         },
         {
           "id": "l59978l01eb9lkki29lqjw8h",
-          "visible": false,
+          "visible": true,
           "name": "Ruby",
           "description": "",
           "level": 1,
@@ -869,6 +901,43 @@
       ]
     },
     "custom": {
+      "ew2xg1kjatt9bra8k1gx6goj": {
+        "name": "Internships",
+        "columns": 1,
+        "separateLinks": true,
+        "visible": true,
+        "id": "ew2xg1kjatt9bra8k1gx6goj",
+        "items": [
+          {
+            "id": "piwvz5y2spobblj99t2m8mfv",
+            "visible": true,
+            "name": "Oncase",
+            "description": "Full Stack Developer · Remote",
+            "date": "February 2022 - August 2022",
+            "location": "Recife, Pernambuco, Brazil",
+            "summary": "<p></p>",
+            "keywords": [],
+            "url": {
+              "label": "Company Website",
+              "href": "https://www.oncase.com.br"
+            }
+          },
+          {
+            "id": "t67n2olbb8z0fiuhzew3bfwn",
+            "visible": true,
+            "name": "Educandus",
+            "description": "Game Developer · Remote",
+            "date": "May 2020 - December 2020 and June 2021 - October 2021",
+            "location": "Recife, Pernambuco, Brazil",
+            "summary": "<p>I have worked as a game developer using Construct 3 software and JavaScript, building educational games for students from preschool to high school levels.</p>",
+            "keywords": [],
+            "url": {
+              "label": "Company Website",
+              "href": "https://educandus.com.br"
+            }
+          }
+        ]
+      },
       "rz1jy8dq68qt2qbzjr94tvml": {
         "name": "Freelances",
         "columns": 1,
@@ -916,43 +985,6 @@
             "url": {
               "label": "Company Website",
               "href": "https://inspace.tech"
-            }
-          }
-        ]
-      },
-      "ew2xg1kjatt9bra8k1gx6goj": {
-        "name": "Internships",
-        "columns": 1,
-        "separateLinks": true,
-        "visible": true,
-        "id": "ew2xg1kjatt9bra8k1gx6goj",
-        "items": [
-          {
-            "id": "piwvz5y2spobblj99t2m8mfv",
-            "visible": true,
-            "name": "Oncase",
-            "description": "Full Stack Developer · Remote",
-            "date": "February 2022 - August 2022",
-            "location": "Recife, Pernambuco, Brazil",
-            "summary": "<p></p>",
-            "keywords": [],
-            "url": {
-              "label": "Company Website",
-              "href": "https://www.oncase.com.br"
-            }
-          },
-          {
-            "id": "t67n2olbb8z0fiuhzew3bfwn",
-            "visible": true,
-            "name": "Educandus",
-            "description": "Game Developer · Remote",
-            "date": "May 2020 - December 2020 and June 2021 - October 2021",
-            "location": "Recife, Pernambuco, Brazil",
-            "summary": "<p>I have worked as a game developer using Construct 3 software and JavaScript, building educational games for students from preschool to high school levels.</p>",
-            "keywords": [],
-            "url": {
-              "label": "Company Website",
-              "href": "https://educandus.com.br"
             }
           }
         ]
