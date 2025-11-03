@@ -163,7 +163,7 @@ export const experiences: ActivityType[] = [
 		subtitle: 'Oncase. Feb 2022 - Dec 2023 (Feb 2022 - Aug 2022 as an intern)',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		description: [
-			'In general, utilized skills in web development (Flask, Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing (AWS and GCP).',
+			'In general, utilised skills in web development (Flask, Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing (AWS and GCP).',
 			'Developed Big Data applications with a focus on high efficiency, scalability, and low cost.',
 			'Developed frontend applications using React, React Redux and TypeScript.',
 			'Implemented backend functionality using Python frameworks Flask and Django.',
@@ -171,7 +171,7 @@ export const experiences: ActivityType[] = [
 			'Collaborated with cross-functional teams to achieve project goals.',
 			'Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.',
 			'Automated ETL pipelines with Apache Airflow.',
-			'Utilized Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.',
+			'Utilised Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.',
 		],
 		skills: [
 			AIRFLOW,

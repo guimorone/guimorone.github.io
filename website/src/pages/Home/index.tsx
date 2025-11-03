@@ -42,7 +42,7 @@ export default function Home() {
 					>
 						Reactive Resume
 					</a>{' '}
-					colaborators!
+					collaborators!
 				</span>
 			</p>
 		</div>
