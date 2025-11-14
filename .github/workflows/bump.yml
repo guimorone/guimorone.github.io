@@ -31,20 +31,21 @@ jobs:
 
       - name: Read version from package.json
         id: app-version
+        working-directory: ${{ github.workspace }}/website
         run: |
-          cd $GITHUB_WORKSPACE
-          VERSION=$(node -p "require('./website/package.json').version" || echo "")
+          VERSION=$(node -p "require('./package.json').version" || echo "")
           if [[ -z "$VERSION" ]]; then
             echo "Error: Could not read version from package.json." >&2
             exit 1
           fi
+
           echo "Found version: $VERSION"
           echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Create Release
-        uses: softprops/action-gh-release@v2
+        if: steps.app-version.outputs.VERSION != ''
+        uses: softprops/action-gh-release@v2.4.2
         with:
           tag_name: v${{ steps.app-version.outputs.VERSION }}
-          token: ${{ secrets.GITHUB_TOKEN }}
           generate_release_notes: true
           make_latest: true

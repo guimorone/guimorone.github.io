@@ -83,7 +83,7 @@ export const experiences: ActivityType[] = [
 			'Working at Kids & Family vertical.',
 			'Implementing backend functionality using Python, FastAPI, Flask for PlayKids app and SVOD integration.',
 		],
-		skills: [AWS, BASH, CI_CD, DOCKER, FASTAPI, FLASK, GCP, GIT, GITHUB, JIRA, PYTHON],
+		skills: [AWS, BASH, CI_CD, DOCKER, FASTAPI, FLASK, GCP, GIT, GITHUB, JIRA, POSTGRESQL, PYTHON],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: SANDBOX_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: SANDBOX_LINKEDIN_URL },
