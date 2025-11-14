@@ -25,6 +25,7 @@ import {
 	SiCyberdefenders,
 	SiDart,
 	SiDjango,
+	SiElasticsearch,
 	SiFastapi,
 	SiFlask,
 	SiFlutter,
@@ -39,6 +40,7 @@ import {
 	SiJupyter,
 	SiKubernetes,
 	SiMongodb,
+	SiMysql,
 	SiRedux,
 	SiTailwindcss,
 	SiTerraform,
@@ -94,6 +96,11 @@ export const DOCKER: SkillType = {
 	Icon: { Element: FaDocker, color: 'text-[#0091E2]' },
 	label: 'Docker',
 	rating: 5,
+};
+export const ELASTICSEARCH: SkillType = {
+	Icon: { Element: SiElasticsearch, color: 'text-[#53C0B2]' },
+	label: 'Elasticsearch',
+	rating: 2,
 };
 export const FASTAPI: SkillType = {
 	Icon: { Element: SiFastapi, color: 'text-[#04978A]' },
@@ -171,11 +178,16 @@ export const MONGODB: SkillType = {
 	label: 'MongoDB',
 	rating: 3.5,
 };
+export const MY_SQL: SkillType = {
+	Icon: { Element: SiMysql, color: 'text-[#17618B]' },
+	label: 'MySQL',
+	rating: 4,
+};
 export const NODE: SkillType = { Icon: { Element: FaNodeJs, color: 'text-[#90C43F]' }, label: 'Node', rating: 4 };
 export const POSTGRESQL: SkillType = {
 	Icon: { Element: BiLogoPostgresql, color: 'text-[#306793]' },
 	label: 'PostgreSQL',
-	rating: 3.5,
+	rating: 4,
 };
 export const POWERSHELL: SkillType = {
 	Icon: { Element: TbBrandPowershell, color: 'text-[#2671BE]' },
