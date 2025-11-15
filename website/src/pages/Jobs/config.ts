@@ -227,7 +227,7 @@ export const experiences: ActivityType[] = [
 export const internships: ActivityType[] = [
 	{
 		title: 'Full Stack Developer',
-		subtitle: 'February 2022 - August 2022',
+		subtitle: 'Oncase. February 2022 - August 2022',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		skills: [AWS, BASH, CSS, FLASK, GIT, GITHUB, HTML, JAVASCRIPT, JIRA, LINUX, MONGODB, PYTHON, REACT, REACT_REDUX],
 		links: [
