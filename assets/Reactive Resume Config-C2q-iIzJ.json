@@ -691,6 +691,14 @@
           "keywords": []
         },
         {
+          "id": "i8gv0x12tbqib4fj576blwh0",
+          "visible": true,
+          "name": "MySQL",
+          "description": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
           "id": "l1gz274rei5fbd7q129p057z",
           "visible": true,
           "name": "Node",
@@ -812,15 +820,23 @@
         },
         {
           "id": "dvvjquwopprwa70o60dhinbf",
-          "visible": true,
+          "visible": false,
           "name": "Dart",
           "description": "",
           "level": 2,
           "keywords": []
         },
         {
-          "id": "cahyktch7teh6iwjr0mwn1b4",
+          "id": "p6wzbcxvau4f7m09e1ll857y",
           "visible": true,
+          "name": "Elasticsearch",
+          "description": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
+          "id": "cahyktch7teh6iwjr0mwn1b4",
+          "visible": false,
           "name": "Flutter",
           "description": "",
           "level": 2,
@@ -828,7 +844,7 @@
         },
         {
           "id": "aa4bd91l9dqhw09w48ylbrgo",
-          "visible": false,
+          "visible": true,
           "name": "Flutter + Dart",
           "description": "",
           "level": 2,
@@ -852,7 +868,7 @@
         },
         {
           "id": "oap1clcpd0z22gqkytwepsvp",
-          "visible": true,
+          "visible": false,
           "name": "Cyber Security",
           "description": "",
           "level": 1,
