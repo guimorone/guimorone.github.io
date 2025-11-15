@@ -178,7 +178,7 @@ export const experiences: ActivityType[] = [
 	},
 	{
 		title: 'Software Engineer | Full-time',
-		subtitle: 'Oncase. Feb 2022 - Dec 2023 (Feb 2022 - Aug 2022 as an intern)',
+		subtitle: 'Oncase. Aug 2022 - Dec 2023',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		description: [
 			'In general, utilised skills in web development (Flask, Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing (AWS and GCP).',
@@ -222,8 +222,22 @@ export const experiences: ActivityType[] = [
 		],
 		Icon: getIcon(),
 	},
+];
+
+export const internships: ActivityType[] = [
 	{
-		title: 'Game Developer | Internship',
+		title: 'Full Stack Developer',
+		subtitle: 'Feb 2022 - Aug 2022',
+		location: 'Recife, Pernambuco, Brazil · Remote',
+		skills: [AWS, BASH, CSS, FLASK, GIT, GITHUB, HTML, JAVASCRIPT, JIRA, LINUX, MONGODB, PYTHON, REACT, REACT_REDUX],
+		links: [
+			{ Icon: GlobeAltIcon, label: 'Company Website', url: ONCASE_URL },
+			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: ONCASE_LINKEDIN_URL },
+		],
+		Icon: getIcon(),
+	},
+	{
+		title: 'Game Developer',
 		subtitle: 'Educandus. May 2020 - Dec 2020 and Jun 2021 - Oct 2021',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		description:
