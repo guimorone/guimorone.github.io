@@ -80,7 +80,7 @@ export const experiences: ActivityType[] = [
 	{
 		title: 'Software Engineer | Full-time',
 		subtitle: 'Sandbox Group. September 2025 - Present',
-		location: 'Poços de Caldas, Minas Gerais, Brazil · Remote',
+		location: 'Bilbao, Spain · Remote',
 		description: [
 			'Working at Kids & Family vertical.',
 			'Implementing backend functionality using Python, FastAPI, Flask for PlayKids app and SVOD integration.',

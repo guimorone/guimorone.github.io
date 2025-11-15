@@ -9,7 +9,7 @@ const Photo: FC<PhotoProps> = ({
 	...props
 }) => (
 	<div className={containerClassName}>
-		<img className={className} src={src} alt={alt} {...props} />
+		<img rel="preload" className={className} src={src} alt={alt} {...props} />
 	</div>
 );
 
