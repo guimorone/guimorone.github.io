@@ -2,5 +2,5 @@
 const locale = 'en';
 
 // INFO: `date.toLocaleDateString()` == short dateStyle
-export const formatDate = (date: Date, dateStyle: 'full' | 'long' | 'medium' | 'short' = 'medium'): string =>
+export const formatDate = (date: Date, dateStyle: 'full' | 'long' | 'medium' | 'short' = 'long'): string =>
 	new Intl.DateTimeFormat(locale, { dateStyle }).format(date);
