@@ -11,7 +11,7 @@ export const subtitle: string =
 export const experiences: ActivityType[] = [
 	{
 		title: 'Bachelor in Computer Engineering',
-		subtitle: 'Federal University of Pernambuco (UFPE). Feb 2019 - Aug 2024',
+		subtitle: 'Federal University of Pernambuco (UFPE). February 2019 - August 2024',
 		description: 'Final grade (GPA): 9.02/10.0',
 		comments: ['MQF Level 6 (Reference Number: MQRIC 2025/28761)'],
 		Icon: { Element: GraduationCap, background: 'bg-rose-600' },
@@ -22,7 +22,7 @@ export const experiences: ActivityType[] = [
 	},
 	{
 		title: 'Student Teaching Assistant',
-		subtitle: 'Federal University of Pernambuco (UFPE). Jun 2022 - Mar 2024',
+		subtitle: 'Federal University of Pernambuco (UFPE). June 2022 - March 2024',
 		description:
 			'Provided essential support to students in software development and requirements engineering, with a strong focus on helping them create high-quality, well-engineered applications.',
 		skills: [CI_CD, CSS, GIT, GITHUB, HTML, JEST, NODE, PYTHON, REACT, REACT_REDUX, TYPESCRIPT],

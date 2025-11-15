@@ -2,6 +2,7 @@ import {
 	AIRFLOW,
 	AWS,
 	BASH,
+	BITBUCKET,
 	CI_CD,
 	CONSTRUCT_3,
 	CSS,
@@ -59,7 +60,6 @@ import {
 import { LinkedInIcon } from '@/utils/icons';
 import { CodeBracketIcon, DevicePhoneMobileIcon, GlobeAltIcon } from '@heroicons/react/24/solid';
 import { FaGamepad } from 'react-icons/fa';
-import { BITBUCKET } from './../../constants/skills';
 import type { ActivityType } from '@/types';
 
 export const title: string = 'Work Experience';
@@ -79,7 +79,7 @@ const getIcon = (type: 'GAME' | 'MOBILE' | 'SOFTWARE' = 'SOFTWARE'): ActivityTyp
 export const experiences: ActivityType[] = [
 	{
 		title: 'Software Engineer | Full-time',
-		subtitle: 'Sandbox Group. Sep 2025 - Present',
+		subtitle: 'Sandbox Group. September 2025 - Present',
 		location: 'Poços de Caldas, Minas Gerais, Brazil · Remote',
 		description: [
 			'Working at Kids & Family vertical.',
@@ -109,7 +109,7 @@ export const experiences: ActivityType[] = [
 	},
 	{
 		title: 'Forward Deployed Engineer | Contract',
-		subtitle: 'Thoughtful AI. Aug 2025 - Present',
+		subtitle: 'Thoughtful AI. August 2025 - Present',
 		location: 'Austin, Texas, United States · Remote',
 		description: [
 			'Implementing RPA functionality using Python.',
@@ -124,7 +124,7 @@ export const experiences: ActivityType[] = [
 	},
 	{
 		title: 'Software Engineer | Full-time',
-		subtitle: 'Neurotech. Apr 2024 - Aug 2025',
+		subtitle: 'Neurotech. April 2024 - August 2025',
 		location: 'Recife, Pernambuco, Brazil · Hybrid',
 		description: [
 			'In general, used skills in data engineering and backend development with Python, FastAPI, Go, Terraform, CI/CD, Docker, Git, Airflow, Bash, and cloud computing on AWS and GCP.',
@@ -166,7 +166,7 @@ export const experiences: ActivityType[] = [
 	},
 	{
 		title: 'Full Stack Developer | Full-time',
-		subtitle: 'Jalan. Apr 2024 - May 2024',
+		subtitle: 'Jalan. April 2024 - May 2024',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		description: 'Worked in web apps using Vue.js and Quasar along with Python and AWS Lambda Functions.',
 		skills: [AWS, BASH, GIT, JIRA, POWERSHELL, PYTHON, VUE],
@@ -178,7 +178,7 @@ export const experiences: ActivityType[] = [
 	},
 	{
 		title: 'Software Engineer | Full-time',
-		subtitle: 'Oncase. Aug 2022 - Dec 2023',
+		subtitle: 'Oncase. August 2022 - December 2023',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		description: [
 			'In general, utilised skills in web development (Flask, Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing (AWS and GCP).',
@@ -227,7 +227,7 @@ export const experiences: ActivityType[] = [
 export const internships: ActivityType[] = [
 	{
 		title: 'Full Stack Developer',
-		subtitle: 'Feb 2022 - Aug 2022',
+		subtitle: 'February 2022 - August 2022',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		skills: [AWS, BASH, CSS, FLASK, GIT, GITHUB, HTML, JAVASCRIPT, JIRA, LINUX, MONGODB, PYTHON, REACT, REACT_REDUX],
 		links: [
@@ -238,7 +238,7 @@ export const internships: ActivityType[] = [
 	},
 	{
 		title: 'Game Developer',
-		subtitle: 'Educandus. May 2020 - Dec 2020 and Jun 2021 - Oct 2021',
+		subtitle: 'Educandus. May 2020 - December 2020 and June 2021 - October 2021',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		description:
 			'I have worked as a game developer using Construct 3 software and JavaScript, building educational games for students from preschool to high school levels.',
@@ -254,7 +254,7 @@ export const internships: ActivityType[] = [
 export const freelances: ActivityType[] = [
 	{
 		title: 'Full Stack Developer',
-		subtitle: 'GPC Gestão. Sep 2024 - Oct 2024',
+		subtitle: 'GPC Gestão. September 2024 - October 2024',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		description:
 			'Built an admin website for viewing, managing and downloading water consumption documents in multiple homes.',
@@ -267,7 +267,7 @@ export const freelances: ActivityType[] = [
 	},
 	{
 		title: 'Mobile Developer',
-		subtitle: 'aca.so. Mar 2024',
+		subtitle: 'aca.so. March 2024',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		description: 'Worked in a project (aca.so mobile app) using React Native, React Redux and TypeScript.',
 		skills: [GIT, GITHUB, REACT_NATIVE, REACT_REDUX, TYPESCRIPT],
@@ -279,7 +279,7 @@ export const freelances: ActivityType[] = [
 	},
 	{
 		title: 'Mobile Developer',
-		subtitle: 'InSpace. Aug 2022 - Oct 2022',
+		subtitle: 'InSpace. August 2022 - October 2022',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		description: 'Worked with the identification of certain objects from a mobile camera for legal purposes.',
 		skills: [GIT, GITHUB, REACT_NATIVE, REACT_REDUX, TYPESCRIPT],
