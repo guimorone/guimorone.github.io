@@ -114,6 +114,7 @@ export const experiences: ActivityType[] = [
 		description: [
 			'Implementing RPA functionality using Python.',
 			'Automatizing RCM processes for healthcare companies in the United States.',
+      'Building internal libraries and tools to help other engineers.'
 		],
 		skills: [AWS, BASH, BITBUCKET, CI_CD, FASTAPI, GIT, GITHUB, JIRA, PYTHON, RPA],
 		links: [
