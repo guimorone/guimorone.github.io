@@ -39,6 +39,7 @@ import {
 	SiJquery,
 	SiJupyter,
 	SiKubernetes,
+	SiMetabase,
 	SiMongodb,
 	SiMysql,
 	SiRedux,
@@ -174,6 +175,11 @@ export const KUBERNETES: SkillType = {
 	label: 'Kubernetes',
 	rating: 1,
 };
+export const METABASE: SkillType = {
+	Icon: { Element: SiMetabase, color: 'text-[#509EE3]' },
+	label: 'Metabase',
+	rating: 3,
+};
 export const MONGODB: SkillType = {
 	Icon: { Element: SiMongodb, color: 'text-[#05AC4E]' },
 	label: 'MongoDB',
@@ -188,7 +194,7 @@ export const NODE: SkillType = { Icon: { Element: FaNodeJs, color: 'text-[#90C43
 export const POSTGRESQL: SkillType = {
 	Icon: { Element: BiLogoPostgresql, color: 'text-[#306793]' },
 	label: 'PostgreSQL',
-	rating: 4,
+	rating: 5,
 };
 export const POWERSHELL: SkillType = {
 	Icon: { Element: TbBrandPowershell, color: 'text-[#2671BE]' },
