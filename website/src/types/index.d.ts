@@ -7,6 +7,7 @@ type PageType =
 	| 'About'
 	| 'Education'
 	| 'Jobs'
+	| 'Internships'
 	| 'Freelances'
 	| 'Projects'
 	| 'Courses & Certifications'

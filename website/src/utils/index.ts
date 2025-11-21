@@ -1,7 +1,11 @@
 import { DEFAULT_DOCUMENT_TITLE } from '@/constants';
 import { coursesAndCertifications as CoursesCertificationsExperiences } from '@/pages/Certifications/config';
 import { experiences as EducationExperiences } from '@/pages/Education/config';
-import { freelances as FreelancesExperiences, experiences as JobsExperiences } from '@/pages/Jobs/config';
+import {
+	freelances as FreelancesExperiences,
+	internships as InternshipsExperiences,
+	experiences as JobsExperiences,
+} from '@/pages/Jobs/config';
 import { projects as ProjectsExperiences } from '@/pages/Projects/config';
 import type { ActivityType, GenericData, WorkPageType } from '@/types';
 
@@ -36,7 +40,14 @@ export function sortByRatingFunction(e1: GenericData, e2: GenericData): -1 | 0 |
 }
 
 export function getSkillData(skillLabel: string): Partial<{ [key in WorkPageType]: ActivityType[] }> {
-	const works: WorkPageType[] = ['Education', 'Jobs', 'Freelances', 'Projects', 'Courses & Certifications'];
+	const works: WorkPageType[] = [
+		'Education',
+		'Jobs',
+		'Internships',
+		'Freelances',
+		'Projects',
+		'Courses & Certifications',
+	];
 	const skillData: Partial<{ [key in WorkPageType]: ActivityType[] }> = {};
 
 	const checkExperience = (experience: ActivityType): boolean =>
@@ -52,6 +63,10 @@ export function getSkillData(skillLabel: string): Partial<{ [key in WorkPageType
 				break;
 			case 'Jobs':
 				experiences = JobsExperiences.filter(checkExperience);
+				if (experiences.length > 0) skillData[work] = experiences;
+				break;
+			case 'Internships':
+				experiences = InternshipsExperiences.filter(checkExperience);
 				if (experiences.length > 0) skillData[work] = experiences;
 				break;
 			case 'Freelances':
