@@ -207,7 +207,7 @@
           "position": "Software Engineer | Full-time · Remote",
           "location": "Bilbao, Spain",
           "date": "September 2025 - Present",
-          "summary": "<ul><li><p>Working at Kids &amp; Family vertical.</p></li><li><p>Implementing backend functionality using Python, FastAPI, Flask for PlayKids app and SVOD integration.</p></li></ul>",
+          "summary": "<ul><li><p>Working at Kids &amp; Family vertical.</p></li><li><p>Implementing backend functionality using Python, FastAPI, Flask, and cloud computing on AWS and GCP for PlayKids App and SVOD integration.</p></li></ul>",
           "url": {
             "label": "Company Website",
             "href": "https://www.sbxgroup.com"
@@ -220,7 +220,7 @@
           "position": "Forward Deployed Engineer | Contract · Remote",
           "location": "Austin, Texas, United States",
           "date": "August 2025 - Present",
-          "summary": "<ul><li><p>Implementing RPA functionality using Python.</p></li><li><p>Automatizing RCM processes for healthcare companies in the United States.</p></li></ul>",
+          "summary": "<ul><li><p>Implementing RPA functionality using Python.</p></li><li><p>Automatizing RCM processes for healthcare companies in the United States.</p></li><li><p>Building internal libraries and tools to help other engineers.</p></li></ul>",
           "url": {
             "label": "Company Website",
             "href": "https://www.thoughtful.ai"
@@ -588,8 +588,16 @@
         },
         {
           "id": "s7gpm7h1pr6pvaufjnzacglx",
-          "visible": true,
+          "visible": false,
           "name": "Jupyter Notebooks",
+          "description": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "t4pm1m91kw9z6vfphjc9yc0p",
+          "visible": true,
+          "name": "PostgreSQL",
           "description": "",
           "level": 5,
           "keywords": []
@@ -606,6 +614,14 @@
           "id": "td9e5ula9nzu0inb1mr0g2bx",
           "visible": true,
           "name": "React",
+          "description": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "ttw94m1aguahbtv9qqj1imku",
+          "visible": false,
+          "name": "Sentry",
           "description": "",
           "level": 5,
           "keywords": []
@@ -659,6 +675,14 @@
           "keywords": []
         },
         {
+          "id": "p6wzbcxvau4f7m09e1ll857y",
+          "visible": true,
+          "name": "Elasticsearch",
+          "description": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
           "id": "pbg24evqbpyq3mjqoqkjmatp",
           "visible": true,
           "name": "Git",
@@ -702,14 +726,6 @@
           "id": "l1gz274rei5fbd7q129p057z",
           "visible": true,
           "name": "Node",
-          "description": "",
-          "level": 4,
-          "keywords": []
-        },
-        {
-          "id": "t4pm1m91kw9z6vfphjc9yc0p",
-          "visible": true,
-          "name": "PostgreSQL",
           "description": "",
           "level": 4,
           "keywords": []
@@ -779,6 +795,14 @@
           "keywords": []
         },
         {
+          "id": "d1bin4k9cjvvdiljhooekgx0",
+          "visible": true,
+          "name": "Metabase",
+          "description": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
           "id": "wr02g2vz7rcsheakosrkt3r1",
           "visible": true,
           "name": "PowerShell",
@@ -812,7 +836,7 @@
         },
         {
           "id": "m3tzrvpewtkw4o4efeelhn7z",
-          "visible": true,
+          "visible": false,
           "name": "Construct 3",
           "description": "",
           "level": 2,
@@ -820,23 +844,15 @@
         },
         {
           "id": "dvvjquwopprwa70o60dhinbf",
-          "visible": false,
+          "visible": true,
           "name": "Dart",
           "description": "",
           "level": 2,
           "keywords": []
         },
         {
-          "id": "p6wzbcxvau4f7m09e1ll857y",
-          "visible": true,
-          "name": "Elasticsearch",
-          "description": "",
-          "level": 2,
-          "keywords": []
-        },
-        {
           "id": "cahyktch7teh6iwjr0mwn1b4",
-          "visible": false,
+          "visible": true,
           "name": "Flutter",
           "description": "",
           "level": 2,
@@ -844,7 +860,7 @@
         },
         {
           "id": "aa4bd91l9dqhw09w48ylbrgo",
-          "visible": true,
+          "visible": false,
           "name": "Flutter + Dart",
           "description": "",
           "level": 2,
@@ -852,7 +868,7 @@
         },
         {
           "id": "fgrgoyigf4mujacvxiqkv30i",
-          "visible": true,
+          "visible": false,
           "name": "Vue",
           "description": "",
           "level": 2,
@@ -860,7 +876,7 @@
         },
         {
           "id": "e944ccltfjjreo8jjgx0ezqg",
-          "visible": true,
+          "visible": false,
           "name": "C#",
           "description": "",
           "level": 1,
@@ -876,7 +892,7 @@
         },
         {
           "id": "efa0w94d36mqhl6jmacvzq3n",
-          "visible": true,
+          "visible": false,
           "name": "Haskell",
           "description": "",
           "level": 1,
@@ -884,7 +900,7 @@
         },
         {
           "id": "dva2zci1054e037k0jg75f2s",
-          "visible": true,
+          "visible": false,
           "name": "Java",
           "description": "",
           "level": 1,
@@ -908,7 +924,7 @@
         },
         {
           "id": "l59978l01eb9lkki29lqjw8h",
-          "visible": true,
+          "visible": false,
           "name": "Ruby",
           "description": "",
           "level": 1,
@@ -1062,9 +1078,9 @@
         "variants": [
           "regular"
         ],
-        "size": 13.8
+        "size": 13.5
       },
-      "lineHeight": 1.35,
+      "lineHeight": 1.3,
       "hideIcons": false,
       "underlineLinks": true
     },

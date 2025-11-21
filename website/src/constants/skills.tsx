@@ -102,7 +102,7 @@ export const DOCKER: SkillType = {
 export const ELASTICSEARCH: SkillType = {
 	Icon: { Element: SiElasticsearch, color: 'text-[#53C0B2]' },
 	label: 'Elasticsearch',
-	rating: 2,
+	rating: 4,
 };
 export const FASTAPI: SkillType = {
 	Icon: { Element: SiFastapi, color: 'text-[#04978A]' },
