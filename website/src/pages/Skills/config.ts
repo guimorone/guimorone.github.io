@@ -4,7 +4,7 @@ import type { LanguageSkillType, SkillType } from '@/types';
 
 export const title: string = 'Skills';
 export const subtitle: string =
-	'Here I show you my expertise in programming languages, frameworks and other technologies, based on time of experience and in how much I used in my projects through life.';
+	"Here I show an overview of my expertise with programming languages, frameworks, software tools, and other technologies, reflecting years of hands-on experience and how frequently I've used them across real projects.";
 
 export const skills: SkillType[] = [
 	skillsDefinitions.AIRFLOW,
@@ -52,6 +52,7 @@ export const skills: SkillType[] = [
 	skillsDefinitions.REACT_REDUX,
 	skillsDefinitions.RPA,
 	skillsDefinitions.RUBY,
+	skillsDefinitions.SENTRY,
 	skillsDefinitions.SQL,
 	skillsDefinitions.TAILWIND_CSS,
 	skillsDefinitions.TERRAFORM,

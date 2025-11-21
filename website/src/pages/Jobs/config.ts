@@ -31,6 +31,7 @@ import {
 	REACT_NATIVE,
 	REACT_REDUX,
 	RPA,
+	SENTRY,
 	SQL,
 	TAILWIND_CSS,
 	TERRAFORM,
@@ -100,6 +101,7 @@ export const experiences: ActivityType[] = [
 			MY_SQL,
 			POSTGRESQL,
 			PYTHON,
+			SENTRY,
 		],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: SANDBOX_URL },

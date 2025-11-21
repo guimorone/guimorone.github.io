@@ -42,6 +42,7 @@ import {
 	SiMongodb,
 	SiMysql,
 	SiRedux,
+	SiSentry,
 	SiTailwindcss,
 	SiTerraform,
 	SiTypescript,
@@ -216,6 +217,7 @@ export const REACT_REDUX: SkillType = {
 };
 export const RPA: SkillType = { Icon: { Element: FaRobot }, label: 'RPA', rating: 5 };
 export const RUBY: SkillType = { Icon: { Element: DiRuby, color: 'text-[#9D0401]' }, label: 'Ruby', rating: 1 };
+export const SENTRY: SkillType = { Icon: { Element: SiSentry, color: 'text-[#FB2D26]' }, label: 'Sentry', rating: 5 };
 export const SQL: SkillType = { Icon: { Element: TbSql, color: 'text-[#0279D6]' }, label: 'SQL', rating: 3.5 };
 export const TAILWIND_CSS: SkillType = {
 	Icon: { Element: SiTailwindcss, color: 'text-[#09B9D8]' },
