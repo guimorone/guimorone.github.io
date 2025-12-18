@@ -1,11 +1,12 @@
 {
   "name": "guimorone.github.io",
   "private": true,
-  "version": "1.3.2",
+  "version": "1.3.3",
   "homepage": "https://www.guimorone.com",
   "type": "module",
+  "packageManager": "bun@1.3.5",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "bun run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
@@ -13,7 +14,7 @@
     "lint-fix": "tsc && eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
     "preview": "vite preview",
     "knip": "knip",
-    "check": "npm run knip && npm run lint-fix"
+    "check": "bun run knip && bun run lint-fix"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.9",
@@ -26,29 +27,29 @@
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
-    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/typography": "^0.5.19",
-    "@types/node": "^22.19.1",
+    "@types/node": "^22.19.3",
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.3.7",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
     "@vitejs/plugin-react": "^4.7.0",
-    "autoprefixer": "^10.4.22",
+    "autoprefixer": "^10.4.23",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.2",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-refresh": "^0.4.24",
+    "eslint-plugin-react-refresh": "^0.4.26",
     "gh-pages": "^6.3.0",
-    "knip": "^5.70.1",
+    "knip": "^5.75.1",
     "postcss": "^8.5.6",
-    "prettier": "^3.6.2",
-    "tailwindcss": "^3.4.18",
+    "prettier": "^3.7.4",
+    "tailwindcss": "^3.4.19",
     "typescript": "^5.9.3",
     "vite": "^5.4.21"
   },
   "engines": {
-    "node": ">=24.11.1"
+    "node": ">=24.12.0"
   }
 }

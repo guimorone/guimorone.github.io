@@ -24,16 +24,16 @@ jobs:
         with:
           ref: ${{ github.event_name == 'workflow_run' && github.repository.default_branch || github.sha }}
 
-      - name: Setup Node
-        uses: actions/setup-node@v6
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: ${{ vars.NODE_VERSION }}
+          bun-version: ${{ vars.BUN_VERSION }}
 
       - name: Read version from package.json
         id: app-version
         working-directory: ${{ github.workspace }}/website
         run: |
-          VERSION=$(node -p "require('./package.json').version" || echo "")
+          VERSION=$(bun -e "console.log(require('./package.json').version)" || echo "")
           if [[ -z "$VERSION" ]]; then
             echo "Error: Could not read version from package.json." >&2
             exit 1
@@ -44,7 +44,7 @@ jobs:
 
       - name: Create Release
         if: steps.app-version.outputs.VERSION != ''
-        uses: softprops/action-gh-release@v2.4.2
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ steps.app-version.outputs.VERSION }}
           generate_release_notes: true
