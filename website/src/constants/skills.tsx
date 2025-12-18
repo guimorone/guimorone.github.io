@@ -233,7 +233,7 @@ export const TAILWIND_CSS: SkillType = {
 export const TERRAFORM: SkillType = {
 	Icon: { Element: SiTerraform, color: 'text-[#7B42BC]' },
 	label: 'Terraform',
-	rating: 3.5,
+	rating: 4,
 };
 export const TYPESCRIPT: SkillType = {
 	Icon: { Element: SiTypescript, color: 'text-[#2E79C7]' },

@@ -104,6 +104,7 @@ export const experiences: ActivityType[] = [
 			POSTGRESQL,
 			PYTHON,
 			SENTRY,
+			TERRAFORM,
 		],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: SANDBOX_URL },

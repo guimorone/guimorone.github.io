@@ -747,6 +747,14 @@
           "keywords": []
         },
         {
+          "id": "d5pm2hyg3ebky00b1qj66p16",
+          "visible": true,
+          "name": "Terraform",
+          "description": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
           "id": "bs8ge484misv2u7paphzpjxb",
           "visible": true,
           "name": "CSS",
@@ -814,14 +822,6 @@
           "id": "wunacfvmcx9gtfboksnhlpvx",
           "visible": true,
           "name": "SQL",
-          "description": "",
-          "level": 3,
-          "keywords": []
-        },
-        {
-          "id": "d5pm2hyg3ebky00b1qj66p16",
-          "visible": true,
-          "name": "Terraform",
           "description": "",
           "level": 3,
           "keywords": []
