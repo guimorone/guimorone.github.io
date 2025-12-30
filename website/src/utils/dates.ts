@@ -1,5 +1,5 @@
 // NOTE: Use `navigator.language` to set the date based on the browser's language
-const locale = 'en';
+const locale = 'en-GB';
 
 // INFO: `date.toLocaleDateString()` == short dateStyle
 export const formatDate = (date: Date, dateStyle: 'full' | 'long' | 'medium' | 'short' = 'long'): string =>
