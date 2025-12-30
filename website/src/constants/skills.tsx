@@ -42,6 +42,7 @@ import {
 	SiMetabase,
 	SiMongodb,
 	SiMysql,
+	SiNextdotjs,
 	SiRedux,
 	SiSentry,
 	SiTailwindcss,
@@ -188,6 +189,11 @@ export const MONGODB: SkillType = {
 export const MY_SQL: SkillType = {
 	Icon: { Element: SiMysql, color: 'text-[#17618B]' },
 	label: 'MySQL',
+	rating: 4,
+};
+export const NEXT_JS: SkillType = {
+	Icon: { Element: SiNextdotjs },
+	label: 'Next.js',
 	rating: 4,
 };
 export const NODE: SkillType = { Icon: { Element: FaNodeJs, color: 'text-[#90C43F]' }, label: 'Node', rating: 4 };

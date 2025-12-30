@@ -43,6 +43,7 @@ export const skills: SkillType[] = [
 	skillsDefinitions.LINUX,
 	skillsDefinitions.METABASE,
 	skillsDefinitions.MONGODB,
+	skillsDefinitions.NEXT_JS,
 	skillsDefinitions.NODE,
 	skillsDefinitions.POSTGRESQL,
 	skillsDefinitions.MY_SQL,

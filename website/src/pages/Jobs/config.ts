@@ -25,6 +25,7 @@ import {
 	METABASE,
 	MONGODB,
 	MY_SQL,
+	NEXT_JS,
 	POSTGRESQL,
 	POWERSHELL,
 	PYTHON,
@@ -86,8 +87,10 @@ export const experiences: ActivityType[] = [
 		description: [
 			'Working at Kids & Family vertical.',
 			'Implementing backend functionality using Python, FastAPI, Flask, and cloud computing on AWS and GCP for PlayKids App and SVOD integration.',
+			'Developing frontend features using Next.js and React.',
 		],
 		skills: [
+			AIRFLOW,
 			AWS,
 			BASH,
 			CI_CD,
@@ -101,10 +104,13 @@ export const experiences: ActivityType[] = [
 			JIRA,
 			METABASE,
 			MY_SQL,
+			NEXT_JS,
 			POSTGRESQL,
 			PYTHON,
+			REACT,
 			SENTRY,
 			TERRAFORM,
+			TYPESCRIPT,
 		],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: SANDBOX_URL },
