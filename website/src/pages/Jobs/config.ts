@@ -94,6 +94,7 @@ export const experiences: ActivityType[] = [
 			AWS,
 			BASH,
 			CI_CD,
+			DJANGO,
 			DOCKER,
 			ELASTICSEARCH,
 			FASTAPI,
@@ -127,7 +128,7 @@ export const experiences: ActivityType[] = [
 			'Automatizing RCM processes for healthcare companies in the United States.',
 			'Building internal libraries and tools to help other engineers.',
 		],
-		skills: [AWS, BASH, BITBUCKET, CI_CD, FASTAPI, GIT, GITHUB, JIRA, PYTHON, RPA],
+		skills: [AWS, BASH, BITBUCKET, CI_CD, FASTAPI, GIT, GITHUB, JIRA, PYTHON, RPA, TERRAFORM],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: THOUGHTFUL_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: THOUGHTFUL_LINKEDIN_URL },
