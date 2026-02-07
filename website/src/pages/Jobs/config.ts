@@ -86,7 +86,7 @@ export const experiences: ActivityType[] = [
 		location: 'Bilbao, Spain · Remote',
 		description: [
 			'Working at Kids & Family vertical.',
-			'Implementing backend functionality using Python, FastAPI, Flask, and cloud computing on AWS and GCP for PlayKids App and SVOD integration.',
+			'Implementing backend functionality using Python, FastAPI, Flask, Terraform and cloud computing on AWS and GCP for PlayKids App and SVOD integration.',
 			'Developing frontend features using Next.js and React.',
 		],
 		skills: [
