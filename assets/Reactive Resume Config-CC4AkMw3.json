@@ -1,0 +1,1108 @@
+{
+  "picture": {
+    "hidden": true,
+    "url": "https://lh3.googleusercontent.com/a/ACg8ocLM1KiAMivOmxZ_AMrhAk-lr0yP3hAN72bT2WW8TjpnalH8u_wzUQ=s96-c",
+    "size": 64,
+    "rotation": 0,
+    "aspectRatio": 1,
+    "borderRadius": 0,
+    "borderColor": "rgba(0, 0, 0, 0)",
+    "borderWidth": 0,
+    "shadowColor": "rgba(0, 0, 0, 0.5)",
+    "shadowWidth": 0
+  },
+  "basics": {
+    "name": "Guilherme Morone Araujo",
+    "headline": "",
+    "email": "guimorone@gmail.com",
+    "phone": "",
+    "location": "Recife - PE, Brazil",
+    "website": {
+      "url": "https://www.guimorone.com",
+      "label": "Portfolio"
+    },
+    "customFields": []
+  },
+  "summary": {
+    "title": "Summary",
+    "columns": 1,
+    "hidden": true,
+    "content": "<p>I am a Software Engineer with a background in Computer Engineering and a strong interest in building reliable, efficient, and scalable systems.</p><p>Since 2019, I have worked on a range of projects involving web development, data engineering, and cloud infrastructure, often with a focus on Big Data applications. I am comfortable working with tools like Python, Django, FastAPI, React, Docker, cloud platforms like AWS and GCP, and more.</p><p>I enjoy solving real-world problems with code, collaborating with teams, and continuously learning new technologies.</p><p>Originally from Rio and now based in Recife, I bring curiosity, adaptability, and a passion for turning ideas into practical solutions.</p>"
+  },
+  "sections": {
+    "profiles": {
+      "title": "Profiles",
+      "columns": 5,
+      "hidden": false,
+      "items": [
+        {
+          "id": "j2alysfjzw8rrq6ce4u719vr",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "icon": "github-logo",
+          "network": "GitHub",
+          "username": "guimorone",
+          "website": {
+            "url": "https://github.com/guimorone",
+            "label": ""
+          }
+        },
+        {
+          "id": "v47kfs5e1o6vr7w94uth75xe",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "icon": "linkedin-logo",
+          "network": "LinkedIn",
+          "username": "guimorone",
+          "website": {
+            "url": "https://www.linkedin.com/in/guimorone",
+            "label": ""
+          }
+        }
+      ]
+    },
+    "experience": {
+      "title": "Work Experience",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "hwtkz41jgy8bbregr1fsczhs",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": true
+          },
+          "company": "Sandbox Group",
+          "position": "Software Engineer | Full-time · Remote",
+          "location": "Bilbao, Spain",
+          "period": "September 2025 - Present",
+          "website": {
+            "url": "https://www.sbxgroup.com",
+            "label": "Company Website"
+          },
+          "description": "<ul><li><p>Working at Kids &amp; Family vertical.</p></li><li><p>Implementing backend functionality using Python, FastAPI, Flask, Terraform and cloud computing on AWS and GCP for PlayKids App and SVOD integration.</p></li><li><p>Developing frontend features using Next.js and React.</p></li></ul><p></p>"
+        },
+        {
+          "id": "la3b5nhbrtkelljms1r9x69y",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": true
+          },
+          "company": "Thoughtful AI",
+          "position": "Forward Deployed Engineer | Contract · Remote",
+          "location": "Austin, Texas, United States",
+          "period": "August 2025 - Present",
+          "website": {
+            "url": "https://www.thoughtful.ai",
+            "label": "Company Website"
+          },
+          "description": "<ul><li><p>Implementing RPA functionality using Python.</p></li><li><p>Automatizing RCM processes for healthcare companies in the United States.</p></li><li><p>Building internal libraries and tools to help other engineers.</p></li></ul>"
+        },
+        {
+          "id": "zxk9g141h2h12aildctyh31j",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": true
+          },
+          "company": "Neurotech",
+          "position": "Software Engineer | Full-time · Hybrid",
+          "location": "Recife, Pernambuco, Brazil",
+          "period": "April 2024 - August 2025",
+          "website": {
+            "url": "https://www.neurotech.com.br",
+            "label": "Company Website"
+          },
+          "description": "<ul><li><p>In general, used skills in data engineering and backend development with Python, FastAPI, Go, Terraform, CI/CD, Docker, Git, Airflow, Bash, and cloud computing on AWS and GCP.</p></li><li><p>Collaborated with cross-functional teams to achieve project goals.</p></li><li><p>Implemented backend functionality using Python, FastAPI, and Go.</p></li><li><p>Used AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions, and more.</p></li><li><p>Worked on extracting data from different sources (internet, AWS S3, etc) and make it available in a data lake.</p></li><li><p>Automated ETL pipelines with Apache Airflow.</p></li><li><p>Used Grafana to visualise data and logs.</p></li></ul>"
+        },
+        {
+          "id": "fzgzlfmwil23aj6d8h2tv7b4",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": true
+          },
+          "company": "Jalan",
+          "position": "Full Stack Developer | Full-time · Remote",
+          "location": "Recife, Pernambuco, Brazil",
+          "period": "April 2024 - May 2024",
+          "website": {
+            "url": "https://jalan.com.br",
+            "label": "Company Website"
+          },
+          "description": "<p>Worked in web apps using Vue.js and Quasar along with Python and AWS Lambda Functions.</p>"
+        },
+        {
+          "id": "wu4bozur9t46rdmmdjf7x92i",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": true
+          },
+          "company": "Oncase",
+          "position": "Software Engineer | Full-time · Remote",
+          "location": "Recife, Pernambuco, Brazil",
+          "period": "August 2022 - December 2023",
+          "website": {
+            "url": "https://www.oncase.com.br",
+            "label": "Company Website"
+          },
+          "description": "<ul><li><p>In general, utilised skills in web development (Flask, Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing (AWS and GCP).</p></li><li><p>Developed Big Data applications with a focus on high efficiency, scalability, and low cost.</p></li><li><p>Developed frontend applications using React (JavaScript, TypeScript and HTML/CSS) and Redux.</p></li><li><p>Implemented backend functionality using Python frameworks Flask and Django.</p></li><li><p>Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.</p></li><li><p>Collaborated with cross-functional teams to achieve project goals.</p></li><li><p>Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.</p></li><li><p>Automated ETL pipelines with Apache Airflow.</p></li><li><p>Utilised Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.</p></li></ul>"
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "qq1gmwmnqgy8d1h8fi2fqqrl",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "school": "Federal University of Pernambuco (UFPE)",
+          "degree": "Bachelor",
+          "area": "Computer Engineering",
+          "grade": "Final grade (GPA): 9.02/10.0",
+          "location": "Recife, Pernambuco, Brazil",
+          "period": "February 2019 - August 2024",
+          "website": {
+            "url": "https://repositorio.ufpe.br/handle/123456789/58235",
+            "label": "Undergraduate Thesis (PT-BR)"
+          },
+          "description": "<ul><li><p>MQF Level 6 (Reference Number: MQRIC 2025/28761).</p></li></ul>"
+        },
+        {
+          "id": "vfbczv6y3g0ka5n6qyjgzwzy",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": true
+          },
+          "school": "Federal University of Pernambuco (UFPE)",
+          "degree": "Student Teaching Assistant",
+          "area": "Software and Systems Engineering",
+          "grade": "",
+          "location": "Recife, Pernambuco, Brazil",
+          "period": "June 2022 - March 2024",
+          "website": {
+            "url": "https://portal.cin.ufpe.br",
+            "label": "University Website"
+          },
+          "description": "<p>Provided essential support to students in software development and requirements engineering, with a strong focus on helping them create high-quality, well-engineered applications.</p>"
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "columns": 1,
+      "hidden": true,
+      "items": [
+        {
+          "id": "c3vl9hkgla3m81a6iurutgc3",
+          "hidden": false,
+          "name": "My Portfolio",
+          "period": "August 2023 - Present",
+          "website": {
+            "url": "https://www.guimorone.com",
+            "label": "URL"
+          },
+          "description": "<p>My personal website containing all my relevant information and documents.</p>"
+        },
+        {
+          "id": "l9dglbwtj3ervoksqoc4m1tr",
+          "hidden": false,
+          "name": "Instagram Stats",
+          "period": "January 2023 - November 2023 and June 2024",
+          "website": {
+            "url": "https://github.com/guimorone/instagram-stats",
+            "label": "Project URL"
+          },
+          "description": "<ul><li><p>A Python program to get specific data from Instagram.</p></li><li><p>The main idea is to get CSV files from followers, followings, and people who do not follow back the account you choose.</p></li></ul>"
+        },
+        {
+          "id": "yj07c5rg45tc3ex9knx870n3",
+          "hidden": false,
+          "name": "URL Shortener",
+          "period": "April 2024",
+          "website": {
+            "url": "https://github.com/guimorone/URL-shortener",
+            "label": "Project URL"
+          },
+          "description": "<p>Program to generate a shortened URL with a focus on using server-side rendering.</p>"
+        },
+        {
+          "id": "sfus3qcrnzcazk7sgw0sfw42",
+          "hidden": false,
+          "name": "Random Password Generator",
+          "period": "February 2024",
+          "website": {
+            "url": "https://github.com/guimorone/random-password-generator",
+            "label": "Project URL"
+          },
+          "description": "<p>Program to generate a secure random password.</p>"
+        },
+        {
+          "id": "axsr35qpeyd6cbt70pywxabf",
+          "hidden": false,
+          "name": "Cheque Fácil",
+          "period": "September 2023 - December 2023",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<ul><li><p>Made a website with 3 more colleagues to an external customer.</p></li><li><p>The main purpose is to identify bank check fields easily, so the user does not have to type them manually.</p></li><li><p>The bank check's OCR is done by our customer's API, we did not implement it, just the website.</p></li><li><p>It also offers API Integration, history download, payments and other features.</p></li></ul>"
+        },
+        {
+          "id": "ww3mui1j9jy0f1ke0g1ssv58",
+          "hidden": false,
+          "name": "Type War",
+          "period": "February 2023 - April 2023",
+          "website": {
+            "url": "https://github.com/guimorone/projeto-jogos",
+            "label": "Project URL"
+          },
+          "description": "<p>A 2D game made with other college colleagues. Inspired in the famous ZType game, but in Portuguese.</p>"
+        },
+        {
+          "id": "bl1td1zqmv1jf0us3n42uoxi",
+          "hidden": false,
+          "name": "Jojosué",
+          "period": "May 2019 - June 2019",
+          "website": {
+            "url": "https://github.com/guimorone/Jojosue",
+            "label": "Project URL"
+          },
+          "description": "<p>A multiplayer game made with other college colleagues. The game story is about a postman that have to deliver some packages in the neighbourhood, but he will face issues and other players in his way.</p>"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "columns": 5,
+      "hidden": false,
+      "items": [
+        {
+          "id": "wec04hzqlax3ob4tgw7luaoc",
+          "hidden": false,
+          "icon": "",
+          "name": "CI/CD",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "b7zysi0d59msju9a5gk6nica",
+          "hidden": false,
+          "icon": "",
+          "name": "Django",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "l6eouzys2wmxn0cvj96mndyp",
+          "hidden": false,
+          "icon": "",
+          "name": "Docker",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "x66uqykl0h0wurp4u75838gp",
+          "hidden": false,
+          "icon": "",
+          "name": "FastAPI",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "duvvyydcbg0aly2jx29qx03b",
+          "hidden": false,
+          "icon": "",
+          "name": "Flask",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "ig2zedzfwc9wl2kw10s79wus",
+          "hidden": false,
+          "icon": "",
+          "name": "GitHub",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "t0ascuzch3evzs7i2fs5g94n",
+          "hidden": false,
+          "icon": "",
+          "name": "HTML",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "fvivhgib64p9succtf0wzib9",
+          "hidden": false,
+          "icon": "",
+          "name": "JavaScript",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "q31zh2oa8hdlt0ywhag6cblv",
+          "hidden": false,
+          "icon": "",
+          "name": "Jira",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "s7gpm7h1pr6pvaufjnzacglx",
+          "hidden": true,
+          "icon": "",
+          "name": "Jupyter Notebooks",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "t4pm1m91kw9z6vfphjc9yc0p",
+          "hidden": false,
+          "icon": "",
+          "name": "PostgreSQL",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "g86th1gatz8fsw1lcxkx9qo0",
+          "hidden": false,
+          "icon": "",
+          "name": "Python",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "td9e5ula9nzu0inb1mr0g2bx",
+          "hidden": false,
+          "icon": "",
+          "name": "React",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "ttw94m1aguahbtv9qqj1imku",
+          "hidden": true,
+          "icon": "",
+          "name": "Sentry",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "lya2vhx33h6k9pdgz32nqlkw",
+          "hidden": false,
+          "icon": "",
+          "name": "Tailwind CSS",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "be7g8pz9cyms0o1u4sgkdx33",
+          "hidden": false,
+          "icon": "",
+          "name": "TypeScript",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "ar5x0kafta3m6shgyvxo6uib",
+          "hidden": false,
+          "icon": "",
+          "name": "Airflow",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "ldb7ea4emz0v43ebd6d26gox",
+          "hidden": false,
+          "icon": "",
+          "name": "AWS",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "qwii750rqzx6l97odisn902k",
+          "hidden": false,
+          "icon": "",
+          "name": "Bash",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "k6qvba38aqm7h8msawq8oih9",
+          "hidden": false,
+          "icon": "",
+          "name": "Bitbucket",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "p6wzbcxvau4f7m09e1ll857y",
+          "hidden": false,
+          "icon": "",
+          "name": "Elasticsearch",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "pbg24evqbpyq3mjqoqkjmatp",
+          "hidden": false,
+          "icon": "",
+          "name": "Git",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "syrnqqsvrmbd3b0fjqh9khgo",
+          "hidden": false,
+          "icon": "",
+          "name": "Go",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "dj9lczy58pp1hum7in2pbzpm",
+          "hidden": true,
+          "icon": "",
+          "name": "HTML/CSS",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "eth3std69m7ejhatu1kcc0qp",
+          "hidden": false,
+          "icon": "",
+          "name": "MongoDB",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "i8gv0x12tbqib4fj576blwh0",
+          "hidden": false,
+          "icon": "",
+          "name": "MySQL",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "j6so3gidjesbwfhanmb6wqu0",
+          "hidden": false,
+          "icon": "",
+          "name": "Next.js",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "l1gz274rei5fbd7q129p057z",
+          "hidden": false,
+          "icon": "",
+          "name": "Node",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "k6pni3e3meplp1owubxtiwrb",
+          "hidden": false,
+          "icon": "",
+          "name": "React Native",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "e2t06z06j3vdbm8nddkfb6ls",
+          "hidden": false,
+          "icon": "",
+          "name": "React Redux",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "d5pm2hyg3ebky00b1qj66p16",
+          "hidden": false,
+          "icon": "",
+          "name": "Terraform",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "bs8ge484misv2u7paphzpjxb",
+          "hidden": false,
+          "icon": "",
+          "name": "CSS",
+          "proficiency": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
+          "id": "qb56g8g38prn190sm9ae4cws",
+          "hidden": false,
+          "icon": "",
+          "name": "GCP",
+          "proficiency": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
+          "id": "e07uw1pn4vevqyn4ot6d6z23",
+          "hidden": false,
+          "icon": "",
+          "name": "Grafana",
+          "proficiency": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
+          "id": "p6sqault7xb81yuo7s6x475g",
+          "hidden": false,
+          "icon": "",
+          "name": "GraphQL",
+          "proficiency": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
+          "id": "mi1rh8o5ejanghbd3sksqs5i",
+          "hidden": false,
+          "icon": "",
+          "name": "JQuery",
+          "proficiency": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
+          "id": "jdmrcb25b5co8o79nykp7w2e",
+          "hidden": false,
+          "icon": "",
+          "name": "Linux",
+          "proficiency": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
+          "id": "d1bin4k9cjvvdiljhooekgx0",
+          "hidden": false,
+          "icon": "",
+          "name": "Metabase",
+          "proficiency": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
+          "id": "wr02g2vz7rcsheakosrkt3r1",
+          "hidden": false,
+          "icon": "",
+          "name": "PowerShell",
+          "proficiency": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
+          "id": "wunacfvmcx9gtfboksnhlpvx",
+          "hidden": false,
+          "icon": "",
+          "name": "SQL",
+          "proficiency": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
+          "id": "mj3ntv491cc87d4svypimcx3",
+          "hidden": false,
+          "icon": "",
+          "name": "C/C++",
+          "proficiency": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
+          "id": "m3tzrvpewtkw4o4efeelhn7z",
+          "hidden": true,
+          "icon": "",
+          "name": "Construct 3",
+          "proficiency": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
+          "id": "dvvjquwopprwa70o60dhinbf",
+          "hidden": true,
+          "icon": "",
+          "name": "Dart",
+          "proficiency": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
+          "id": "cahyktch7teh6iwjr0mwn1b4",
+          "hidden": true,
+          "icon": "",
+          "name": "Flutter",
+          "proficiency": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
+          "id": "aa4bd91l9dqhw09w48ylbrgo",
+          "hidden": false,
+          "icon": "",
+          "name": "Flutter + Dart",
+          "proficiency": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
+          "id": "fgrgoyigf4mujacvxiqkv30i",
+          "hidden": true,
+          "icon": "",
+          "name": "Vue",
+          "proficiency": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
+          "id": "e944ccltfjjreo8jjgx0ezqg",
+          "hidden": true,
+          "icon": "",
+          "name": "C#",
+          "proficiency": "",
+          "level": 1,
+          "keywords": []
+        },
+        {
+          "id": "oap1clcpd0z22gqkytwepsvp",
+          "hidden": true,
+          "icon": "",
+          "name": "Cyber Security",
+          "proficiency": "",
+          "level": 1,
+          "keywords": []
+        },
+        {
+          "id": "efa0w94d36mqhl6jmacvzq3n",
+          "hidden": true,
+          "icon": "",
+          "name": "Haskell",
+          "proficiency": "",
+          "level": 1,
+          "keywords": []
+        },
+        {
+          "id": "dva2zci1054e037k0jg75f2s",
+          "hidden": true,
+          "icon": "",
+          "name": "Java",
+          "proficiency": "",
+          "level": 1,
+          "keywords": []
+        },
+        {
+          "id": "wmr1b58cpaxmg43pr6jumv2e",
+          "hidden": true,
+          "icon": "",
+          "name": "Jest",
+          "proficiency": "",
+          "level": 1,
+          "keywords": []
+        },
+        {
+          "id": "wdqczjb7sn9uty3d466vil88",
+          "hidden": false,
+          "icon": "",
+          "name": "Kubernetes",
+          "proficiency": "",
+          "level": 1,
+          "keywords": []
+        },
+        {
+          "id": "l59978l01eb9lkki29lqjw8h",
+          "hidden": true,
+          "icon": "",
+          "name": "Ruby",
+          "proficiency": "",
+          "level": 1,
+          "keywords": []
+        }
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "columns": 3,
+      "hidden": false,
+      "items": [
+        {
+          "id": "h8pps8dqrq2uvu3wdtxxw32m",
+          "hidden": false,
+          "language": "Portuguese",
+          "fluency": "Native",
+          "level": 5
+        },
+        {
+          "id": "fmh8qyfa3ikyetvbdlcy6ip9",
+          "hidden": false,
+          "language": "English",
+          "fluency": "Advanced",
+          "level": 4
+        },
+        {
+          "id": "ga30tpsvh4ycnr381kdnu30a",
+          "hidden": false,
+          "language": "German",
+          "fluency": "Beginner",
+          "level": 1
+        }
+      ]
+    },
+    "interests": {
+      "title": "Interests",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "awards": {
+      "title": "Awards",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "certifications": {
+      "title": "Certifications",
+      "columns": 1,
+      "hidden": true,
+      "items": [
+        {
+          "id": "bs73j84apyaw3f106irwy67o",
+          "hidden": false,
+          "title": "Go - The Complete Guide",
+          "issuer": "Udemy",
+          "date": "June 2025",
+          "website": {
+            "url": "https://ude.my/UC-a0724864-1e61-4fcb-94d4-8837ca64b5cc",
+            "label": "Credential URL"
+          },
+          "description": ""
+        },
+        {
+          "id": "abj565wzj72fhkv6vcipx5su",
+          "hidden": false,
+          "title": "GraphQL by Example",
+          "issuer": "Udemy",
+          "date": "November 2024",
+          "website": {
+            "url": "https://ude.my/UC-2f72d8c0-5e8c-4c08-a657-cb379948c6f1",
+            "label": "Credential URL"
+          },
+          "description": ""
+        },
+        {
+          "id": "kcowamibtc0ufc5ygdeae3st",
+          "hidden": false,
+          "title": "The Complete Cyber Security Course - Volume 1: Hackers Exposed!",
+          "issuer": "Udemy",
+          "date": "November 2024",
+          "website": {
+            "url": "https://ude.my/UC-1acdc51c-9652-40d8-80af-24d65aa27727",
+            "label": "Credential URL"
+          },
+          "description": ""
+        },
+        {
+          "id": "uivu1l43xc8afcscfew11o64",
+          "hidden": false,
+          "title": "The Complete Flutter Development Bootcamp with Dart",
+          "issuer": "Udemy",
+          "date": "April 2024",
+          "website": {
+            "url": "https://ude.my/UC-3fd9599a-bff2-4960-8d34-dbb3b41ced55",
+            "label": "Credential URL"
+          },
+          "description": ""
+        },
+        {
+          "id": "zwb85al8pyh5xradzmmcra98",
+          "hidden": false,
+          "title": "Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud - Locales",
+          "issuer": "Google Cloud Skills Boost",
+          "date": "March 2023",
+          "website": {
+            "url": "https://www.cloudskillsboost.google/public_profiles/d8f54101-4f80-4aee-8e46-2320e3e20646/badges/3311200",
+            "label": "Credential URL"
+          },
+          "description": "<p>Credential ID: 3311200</p>"
+        },
+        {
+          "id": "f2iols5qlhmeu5einr0uup9p",
+          "hidden": false,
+          "title": "Google Cloud Computing Foundations: Infrastructure in Google Cloud - Locales",
+          "issuer": "Google Cloud Skills Boost",
+          "date": "March 2023",
+          "website": {
+            "url": "https://www.cloudskillsboost.google/public_profiles/d8f54101-4f80-4aee-8e46-2320e3e20646/badges/3303084",
+            "label": "Credential URL"
+          },
+          "description": "<p>Credential ID: 3303084</p>"
+        },
+        {
+          "id": "s9bobfuvz0awqp0y06i19mbq",
+          "hidden": false,
+          "title": "Google Cloud Computing Foundations: Networking & Security - Locales",
+          "issuer": "Google Cloud Skills Boost",
+          "date": "March 2023",
+          "website": {
+            "url": "https://www.cloudskillsboost.google/public_profiles/d8f54101-4f80-4aee-8e46-2320e3e20646/badges/3305980",
+            "label": "Credential URL"
+          },
+          "description": "<p>Credential ID: 3305980</p>"
+        },
+        {
+          "id": "c2k2497y38sbwh1kqzfnr12p",
+          "hidden": false,
+          "title": "Google Cloud Computing Foundations: Cloud Computing Fundamentals - Locales",
+          "issuer": "Google Cloud Skills Boost",
+          "date": "March 2023",
+          "website": {
+            "url": "https://www.cloudskillsboost.google/public_profiles/d8f54101-4f80-4aee-8e46-2320e3e20646/badges/3302433",
+            "label": "Credential URL"
+          },
+          "description": "<p>Credential ID: 3302433</p>"
+        },
+        {
+          "id": "sdbdu23yqj0b50g2iltgreat",
+          "hidden": false,
+          "title": "The Complete 2020 Web Development Bootcamp",
+          "issuer": "Udemy",
+          "date": "April 2020",
+          "website": {
+            "url": "https://ude.my/UC-5d594204-a414-4cb1-a388-72e3daf7c1c6",
+            "label": "Credential URL"
+          },
+          "description": ""
+        }
+      ]
+    },
+    "publications": {
+      "title": "Publications",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "volunteer": {
+      "title": "Volunteering",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "references": {
+      "title": "References",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    }
+  },
+  "customSections": [
+    {
+      "title": "Internships",
+      "columns": 1,
+      "hidden": false,
+      "id": "ew2xg1kjatt9bra8k1gx6goj",
+      "type": "experience",
+      "items": [
+        {
+          "id": "piwvz5y2spobblj99t2m8mfv",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": true
+          },
+          "company": "Oncase",
+          "position": "Full Stack Developer · Remote",
+          "location": "Recife, Pernambuco, Brazil",
+          "period": "February 2022 - August 2022",
+          "website": {
+            "url": "https://www.oncase.com.br",
+            "label": "Company Website"
+          },
+          "description": "<p></p>"
+        },
+        {
+          "id": "t67n2olbb8z0fiuhzew3bfwn",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": true
+          },
+          "company": "Educandus",
+          "position": "Game Developer · Remote",
+          "location": "Recife, Pernambuco, Brazil",
+          "period": "May 2020 - December 2020 and June 2021 - October 2021",
+          "website": {
+            "url": "https://educandus.com.br",
+            "label": "Company Website"
+          },
+          "description": "<p>I have worked as a game developer using Construct 3 software and JavaScript, building educational games for students from preschool to high school levels.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Freelances",
+      "columns": 1,
+      "hidden": true,
+      "id": "rz1jy8dq68qt2qbzjr94tvml",
+      "type": "experience",
+      "items": [
+        {
+          "id": "io8fapv1xy815zqswbz59w19",
+          "hidden": false,
+          "company": "GPC Gestão",
+          "position": "Full Stack Developer",
+          "location": "Recife, Pernambuco, Brazil",
+          "period": "September 2024 - October 2024",
+          "website": {
+            "url": "https://gpcgestao.com.br",
+            "label": "Company Website"
+          },
+          "description": "<p>Built an admin website using React with TypeScript and Tailwind CSS for viewing, managing and downloading water consumption documents in multiple homes.</p>"
+        },
+        {
+          "id": "o6ywpbyb3hgzyq6bjclg2y8m",
+          "hidden": false,
+          "company": "aca.so",
+          "position": "Mobile Engineer",
+          "location": "Recife, Pernambuco, Brazil",
+          "period": "March 2024",
+          "website": {
+            "url": "https://aca.so",
+            "label": "Company Website"
+          },
+          "description": "<p>Worked in a project (aca.so mobile app) using React Native, React Redux and TypeScript.</p>"
+        },
+        {
+          "id": "ufunngpypx4tbk36r583wtoz",
+          "hidden": false,
+          "company": "InSpace",
+          "position": "Mobile Engineer",
+          "location": "Recife, Pernambuco, Brazil",
+          "period": "August 2022 - October 2022",
+          "website": {
+            "url": "https://inspace.tech",
+            "label": "Company Website"
+          },
+          "description": "<p>Worked with the identification of certain objects from a mobile camera for legal purposes.</p>"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "template": "lapras",
+    "layout": {
+      "sidebarWidth": 30.26,
+      "pages": [
+        {
+          "fullWidth": true,
+          "main": [
+            "profiles",
+            "experience",
+            "volunteer",
+            "references",
+            "interests",
+            "awards",
+            "publications"
+          ],
+          "sidebar": []
+        },
+        {
+          "fullWidth": true,
+          "main": [
+            "ew2xg1kjatt9bra8k1gx6goj",
+            "rz1jy8dq68qt2qbzjr94tvml",
+            "education",
+            "languages",
+            "skills",
+            "projects",
+            "certifications"
+          ],
+          "sidebar": []
+        }
+      ]
+    },
+    "css": {
+      "enabled": false,
+      "value": ""
+    },
+    "page": {
+      "gapX": 4,
+      "gapY": 8,
+      "marginX": 14,
+      "marginY": 18,
+      "format": "a4",
+      "locale": "en-US",
+      "hideIcons": false
+    },
+    "design": {
+      "level": {
+        "icon": "star",
+        "type": "circle"
+      },
+      "colors": {
+        "primary": "rgba(22, 163, 74, 1)",
+        "text": "rgba(0, 0, 0, 1)",
+        "background": "rgba(255, 255, 255, 1)"
+      }
+    },
+    "typography": {
+      "body": {
+        "fontFamily": "IBM Plex Serif",
+        "fontWeights": [
+          "400"
+        ],
+        "fontSize": 10,
+        "lineHeight": 1.3
+      },
+      "heading": {
+        "fontFamily": "IBM Plex Serif",
+        "fontWeights": [
+          "600"
+        ],
+        "fontSize": 13,
+        "lineHeight": 2.2
+      }
+    },
+    "notes": "<p>Se for para mostrar os projetos e certificados, tirar da página 2 e criar uma terceira página.</p>"
+  }
+}
