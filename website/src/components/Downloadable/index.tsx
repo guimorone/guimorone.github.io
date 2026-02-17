@@ -39,9 +39,9 @@ const Downloadable: FC<DownloadableProps> = ({
 					<Icon className="-ml-0.5 size-5" />
 					<span>Download {label}</span>
 				</a>
-				{additionalButtons?.map((button, index) => (
+				{additionalButtons?.map(button => (
 					<a
-						key={`additional-button-${button.label}-${index}`}
+						key={`additional-button-${button.label}-${button.filepath}`}
 						href={button.filepath}
 						target="_blank"
 						download={button.filename}

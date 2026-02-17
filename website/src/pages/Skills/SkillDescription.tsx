@@ -28,9 +28,9 @@ const SkillDescription: FC<SkillDescriptionProps> = ({ currentSkill, onClose }) 
 						)}
 					</>
 				) : (
-					Object.keys(skillData).map((topic, index) => (
+					Object.keys(skillData).map(topic => (
 						<ObjectFeed
-							key={`skills-modal-${topic}-${index}`}
+							key={`skills-modal-${topic}`}
 							title={topic}
 							activities={skillData[topic as keyof typeof skillData] ?? []}
 							currentSkill={currentSkill?.label}

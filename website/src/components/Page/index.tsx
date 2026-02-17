@@ -28,9 +28,9 @@ const Page: FC<PageProps> = ({ title, subtitle, photo, activities }) => {
 				<Feed activities={activities} />
 			) : (
 				<div className="mt-12 space-y-12">
-					{Object.keys(activities).map((activitiesTitle, index) => (
+					{Object.keys(activities).map(activitiesTitle => (
 						<ObjectFeed
-							key={`object-feed-${title}-${activitiesTitle}-${index}`}
+							key={`object-feed-${title}-${activitiesTitle}`}
 							title={activitiesTitle}
 							activities={activities[activitiesTitle]}
 						/>

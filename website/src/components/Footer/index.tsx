@@ -9,9 +9,9 @@ export default function Footer() {
 			<h2 className="sr-only">Social Medias</h2>
 			<section className="px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
 				<div className="flex justify-center space-x-6 md:order-2">
-					{navigation.map(({ name, href, target, Icon }, index) => (
+					{navigation.map(({ name, href, target, Icon }) => (
 						<a
-							key={`footer-item-${name}-${index}`}
+							key={href}
 							href={href}
 							target={target}
 							className="text-zinc-200 hover:cursor-pointer hover:text-zinc-400"

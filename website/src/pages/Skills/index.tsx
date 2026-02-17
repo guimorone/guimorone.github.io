@@ -37,9 +37,9 @@ export default function Skills() {
 			<GridContainer title={title} subtitle={subtitle}>
 				<Collapsible title="Tools">
 					<Grid>
-						{skills?.map((skill, index) => (
+						{skills?.map(skill => (
 							<div
-								key={`skill-${skill.label}-${index}`}
+								key={`skill-${skill.label}`}
 								ref={skillSearchParam?.toLowerCase() === skill.label.toLowerCase() ? paramRef : null}
 								className="relative flex items-center py-1 rounded-lg gap-x-2 group"
 							>
@@ -69,9 +69,9 @@ export default function Skills() {
 				</Collapsible>
 				<Collapsible title="Languages">
 					<Grid>
-						{languages?.map(({ label, description, rating }, index) => (
+						{languages?.map(({ label, description, rating }) => (
 							<div
-								key={`language-${label}-${index}`}
+								key={`language-${label}`}
 								ref={skillSearchParam?.toLowerCase() === label.toLowerCase() ? paramRef : null}
 								className="relative flex items-center py-1 rounded-lg gap-x-2"
 							>

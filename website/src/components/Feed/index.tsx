@@ -11,11 +11,12 @@ const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 			<ul className="-mb-8">
 				{activities.map((activity, index) => {
 					const skills = activity.skills?.toSorted(sortByTitleOrLabelFunction);
+					const isLast = index === activities.length - 1;
 
 					return (
-						<li key={`feed-${activity.title}-${index}`}>
+						<li key={`feed-${activity.title}-${activity.subtitle ?? ''}-${activity.location ?? ''}`}>
 							<div className="relative pb-8">
-								{index !== activities.length - 1 && (
+								{!isLast && (
 									<span className="absolute left-4 top-4 -ml-px h-full w-0.5 bg-zinc-400" aria-hidden="true" />
 								)}
 								<div className="relative flex gap-x-3">
@@ -36,9 +37,9 @@ const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 										{activity.description &&
 											(activity.description instanceof Array ? (
 												<ul className="space-y-0.5 list-inside list-disc">
-													{activity.description.map((d, idx) => (
+													{activity.description.map(d => (
 														<li
-															key={`feed-${activity.title}-${index}-description-${idx}`}
+															key={`feed-desc-${activity.title}-${d.slice(0, 40)}`}
 															className="text-sm text-justify md:text-base text-zinc-300"
 														>
 															{d}
@@ -50,8 +51,8 @@ const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 											))}
 										{activity.comments && (
 											<ul className="space-y-0.5">
-												{activity.comments?.map((comment, idx) => (
-													<li key={`feed-comment-${idx}`} className="text-xs md:text-sm text-zinc-300">
+												{activity.comments?.map(comment => (
+													<li key={`feed-comment-${comment.slice(0, 40)}`} className="text-xs md:text-sm text-zinc-300">
 														{comment}
 													</li>
 												))}
@@ -59,9 +60,9 @@ const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 										)}
 										{skills && (
 											<ul className="flex flex-wrap gap-2 my-2">
-												{skills.map((skill, idx) => (
+												{skills.map(skill => (
 													<Link
-														key={`feed-skill-${skill.label}-${idx}`}
+														key={`feed-skill-${skill.label}`}
 														to={`${SKILLS}?skill=${skill.label}`}
 														target={!currentSkill ? '_self' : '_blank'}
 														className={classNames(
@@ -99,9 +100,9 @@ const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 											</ul>
 										)}
 										<div className="flex gap-x-2 md:gap-x-4">
-											{activity.links?.map((link, idx) => (
+											{activity.links?.map(link => (
 												<a
-													key={`${link.label}-${idx}`}
+													key={`feed-link-${link.label}-${link.url}`}
 													href={link.url}
 													target="_blank"
 													className={classNames(link.color ?? 'text-zinc-300 hover:text-zinc-200')}

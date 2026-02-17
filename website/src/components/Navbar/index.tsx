@@ -34,11 +34,11 @@ export default function Navbar() {
 						</button>
 					</div>
 					<div className="hidden xl:flex xl:gap-x-12">
-						{navigation.map(({ name, href, Icon, useLink }, index) => {
+						{navigation.map(({ name, href, Icon, useLink }) => {
 							const isCurrent = useLink && pathname === href;
 
 							return (
-								<Fragment key={`navbar-item-${name}-${index}`}>
+								<Fragment key={href}>
 									{!useLink && <hr className="-mx-6 w-[1.5px] h-auto border-t-0 bg-zinc-400" />}
 									{useLink ? (
 										<Link
@@ -87,11 +87,11 @@ export default function Navbar() {
 					<div className="flow-root mt-6">
 						<div className="-my-6">
 							<div className="py-6 space-y-2">
-								{navigation.map(({ name, href, Icon, useLink }, index) => {
+								{navigation.map(({ name, href, Icon, useLink }) => {
 									const isCurrent = useLink && pathname === href;
 
 									return (
-										<Fragment key={`navbar-menu-item-${name}-${index}`}>
+										<Fragment key={href}>
 											{useLink ? (
 												<Link
 													to={href}

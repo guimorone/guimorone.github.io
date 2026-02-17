@@ -1,10 +1,10 @@
 {
   "name": "guimorone.github.io",
   "private": true,
-  "version": "1.3.5",
+  "version": "1.3.6",
   "homepage": "https://www.guimorone.com",
   "type": "module",
-  "packageManager": "bun@1.3.5",
+  "packageManager": "bun@1.3.9",
   "scripts": {
     "predeploy": "bun run build",
     "deploy": "gh-pages -d dist",
@@ -14,7 +14,8 @@
     "lint-fix": "tsc && eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
     "preview": "vite preview",
     "knip": "knip",
-    "check": "bun run knip && bun run lint-fix"
+    "doctor": "react-doctor . --verbose",
+    "check": "bun run knip && bun run lint-fix && bun run doctor"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.9",
@@ -29,7 +30,7 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
     "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/typography": "^0.5.19",
-    "@types/node": "^22.19.9",
+    "@types/node": "^22.19.11",
     "@types/react": "^18.3.28",
     "@types/react-dom": "^18.3.7",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
@@ -45,11 +46,12 @@
     "knip": "^5.83.1",
     "postcss": "^8.5.6",
     "prettier": "^3.8.1",
+    "react-doctor": "^0.0.17",
     "tailwindcss": "^3.4.19",
     "typescript": "^5.9.3",
     "vite": "^5.4.21"
   },
   "engines": {
-    "node": ">=24.13.0"
+    "node": ">=24.13.1"
   }
 }
