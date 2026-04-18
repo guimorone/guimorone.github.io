@@ -16,6 +16,7 @@ import {
 	GITHUB,
 	GO,
 	GRAFANA,
+	GRAPHQL,
 	HTML,
 	JAVASCRIPT,
 	JIRA,
@@ -86,7 +87,8 @@ export const experiences: ActivityType[] = [
 		location: 'Bilbao, Spain · Remote',
 		description: [
 			'Working at Kids & Family vertical.',
-			'Implementing backend functionality using Python, FastAPI, Flask, Terraform and cloud computing on AWS and GCP for PlayKids App and SVOD integration.',
+			'Implementing backend functionality using Python, FastAPI, Flask, Golang and cloud computing on AWS and GCP for PlayKids App and SVOD integration.',
+			'Creating infrastructure as code (IaC) with Terraform and Kubernetes.',
 			'Developing frontend features using Next.js and React.',
 		],
 		skills: [
@@ -100,8 +102,12 @@ export const experiences: ActivityType[] = [
 			GCP,
 			GIT,
 			GITHUB,
+			GO,
+			GRAPHQL,
 			JIRA,
+			KUBERNETES,
 			METABASE,
+			MONGODB,
 			MY_SQL,
 			NEXT_JS,
 			NODE,
@@ -121,12 +127,12 @@ export const experiences: ActivityType[] = [
 	},
 	{
 		title: 'Forward Deployed Engineer | Contract',
-		subtitle: 'Thoughtful AI. August 2025 - Present',
+		subtitle: 'Thoughtful AI. August 2025 - April 2026',
 		location: 'Austin, Texas, United States · Remote',
 		description: [
-			'Implementing RPA functionality using Python.',
-			'Automatizing RCM processes for healthcare companies in the United States.',
-			'Building internal libraries and tools to help other engineers.',
+			'Implemented RPA functionality using Python.',
+			'Automated RCM processes for healthcare companies in the United States.',
+			'Built internal libraries and tools to help other engineers.',
 		],
 		skills: [AWS, BASH, BITBUCKET, CI_CD, FASTAPI, GIT, GITHUB, JIRA, PYTHON, RPA, TERRAFORM],
 		links: [

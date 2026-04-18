@@ -22,7 +22,7 @@ From `website/`:
 bun run doctor
 ```
 
-Full health check (knip + lint-fix + doctor):
+Full health check (knip + lint:fix + doctor):
 
 ```bash
 bun run check

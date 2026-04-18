@@ -16,7 +16,7 @@
     "headline": "",
     "email": "guimorone@gmail.com",
     "phone": "",
-    "location": "Recife - PE, Brazil",
+    "location": "Recife, Pernambuco, Brazil",
     "website": {
       "url": "https://www.guimorone.com",
       "label": "Portfolio"
@@ -84,7 +84,7 @@
             "url": "https://www.sbxgroup.com",
             "label": "Company Website"
           },
-          "description": "<ul><li><p>Working at Kids &amp; Family vertical.</p></li><li><p>Implementing backend functionality using Python, FastAPI, Flask, Terraform and cloud computing on AWS and GCP for PlayKids App and SVOD integration.</p></li><li><p>Developing frontend features using Next.js and React.</p></li></ul><p></p>",
+          "description": "<ul><li><p>Working at Kids &amp; Family vertical.</p></li><li><p>Implementing backend functionality using Python, FastAPI, Flask, Golang and cloud computing on AWS and GCP for PlayKids App and SVOD integration.</p></li><li><p>Creating infrastructure as code (IaC) with Terraform and Kubernetes.</p></li><li><p>Developing frontend features using Next.js and React.</p></li></ul><p></p>",
           "roles": []
         },
         {
@@ -96,12 +96,12 @@
           "company": "Thoughtful AI",
           "position": "Forward Deployed Engineer | Contract · Remote",
           "location": "Austin, Texas, United States",
-          "period": "August 2025 - Present",
+          "period": "August 2025 - April 2026",
           "website": {
             "url": "https://www.thoughtful.ai",
             "label": "Company Website"
           },
-          "description": "<ul><li><p>Implementing RPA functionality using Python.</p></li><li><p>Automatizing RCM processes for healthcare companies in the United States.</p></li><li><p>Building internal libraries and tools to help other engineers.</p></li></ul>",
+          "description": "<ul><li><p>Implemented RPA functionality using Python.</p></li><li><p>Automated RCM processes for healthcare companies in the United States.</p></li><li><p>Built internal libraries and tools to help other engineers.</p></li></ul><p></p>",
           "roles": []
         },
         {
@@ -380,6 +380,24 @@
           "keywords": []
         },
         {
+          "id": "eth3std69m7ejhatu1kcc0qp",
+          "hidden": false,
+          "icon": "",
+          "name": "MongoDB",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "l1gz274rei5fbd7q129p057z",
+          "hidden": false,
+          "icon": "",
+          "name": "Node",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
           "id": "t4pm1m91kw9z6vfphjc9yc0p",
           "hidden": false,
           "icon": "",
@@ -479,6 +497,15 @@
           "keywords": []
         },
         {
+          "id": "qb56g8g38prn190sm9ae4cws",
+          "hidden": false,
+          "icon": "",
+          "name": "GCP",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
           "id": "pbg24evqbpyq3mjqoqkjmatp",
           "hidden": false,
           "icon": "",
@@ -506,10 +533,19 @@
           "keywords": []
         },
         {
-          "id": "eth3std69m7ejhatu1kcc0qp",
+          "id": "wdqczjb7sn9uty3d466vil88",
           "hidden": false,
           "icon": "",
-          "name": "MongoDB",
+          "name": "Kubernetes",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "jdmrcb25b5co8o79nykp7w2e",
+          "hidden": false,
+          "icon": "",
+          "name": "Linux",
           "proficiency": "",
           "level": 4,
           "keywords": []
@@ -528,15 +564,6 @@
           "hidden": false,
           "icon": "",
           "name": "Next.js",
-          "proficiency": "",
-          "level": 4,
-          "keywords": []
-        },
-        {
-          "id": "l1gz274rei5fbd7q129p057z",
-          "hidden": false,
-          "icon": "",
-          "name": "Node",
           "proficiency": "",
           "level": 4,
           "keywords": []
@@ -578,15 +605,6 @@
           "keywords": []
         },
         {
-          "id": "qb56g8g38prn190sm9ae4cws",
-          "hidden": false,
-          "icon": "",
-          "name": "GCP",
-          "proficiency": "",
-          "level": 3,
-          "keywords": []
-        },
-        {
           "id": "e07uw1pn4vevqyn4ot6d6z23",
           "hidden": false,
           "icon": "",
@@ -609,15 +627,6 @@
           "hidden": false,
           "icon": "",
           "name": "JQuery",
-          "proficiency": "",
-          "level": 3,
-          "keywords": []
-        },
-        {
-          "id": "jdmrcb25b5co8o79nykp7w2e",
-          "hidden": false,
-          "icon": "",
-          "name": "Linux",
           "proficiency": "",
           "level": 3,
           "keywords": []
@@ -744,15 +753,6 @@
           "hidden": true,
           "icon": "",
           "name": "Jest",
-          "proficiency": "",
-          "level": 1,
-          "keywords": []
-        },
-        {
-          "id": "wdqczjb7sn9uty3d466vil88",
-          "hidden": false,
-          "icon": "",
-          "name": "Kubernetes",
           "proficiency": "",
           "level": 1,
           "keywords": []
@@ -1077,9 +1077,9 @@
     },
     "page": {
       "gapX": 4,
-      "gapY": 8,
-      "marginX": 14,
-      "marginY": 18,
+      "gapY": 6,
+      "marginX": 12,
+      "marginY": 12,
       "format": "a4",
       "locale": "en-US",
       "hideIcons": false

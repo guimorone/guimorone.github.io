@@ -119,7 +119,7 @@ export const FLUTTER: SkillType = {
 export const GCP: SkillType = {
 	Icon: { Element: DiGoogleCloudPlatform, color: 'text-[#2FA1FB]' },
 	label: 'GCP',
-	rating: 3.5,
+	rating: 4,
 };
 export const GIT: SkillType = { Icon: { Element: FaGitAlt, color: 'text-[#F05033]' }, label: 'Git', rating: 5 };
 export const GITHUB: SkillType = { Icon: { Element: SiGithub }, label: 'GitHub', rating: 5 };
@@ -175,7 +175,7 @@ export const LINUX: SkillType = {
 export const KUBERNETES: SkillType = {
 	Icon: { Element: SiKubernetes, color: 'text-[#326DE6]' },
 	label: 'Kubernetes',
-	rating: 1,
+	rating: 4,
 };
 export const METABASE: SkillType = {
 	Icon: { Element: SiMetabase, color: 'text-[#509EE3]' },
@@ -185,7 +185,7 @@ export const METABASE: SkillType = {
 export const MONGODB: SkillType = {
 	Icon: { Element: SiMongodb, color: 'text-[#05AC4E]' },
 	label: 'MongoDB',
-	rating: 3.5,
+	rating: 5,
 };
 export const MY_SQL: SkillType = {
 	Icon: { Element: SiMysql, color: 'text-[#17618B]' },

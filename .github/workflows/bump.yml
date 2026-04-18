@@ -44,8 +44,9 @@ jobs:
 
       - name: Create Release
         if: steps.app-version.outputs.VERSION != ''
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: v${{ steps.app-version.outputs.VERSION }}
+          target_commitish: ${{ github.sha }}
           generate_release_notes: true
           make_latest: true
