@@ -17,7 +17,9 @@ export default function Skills() {
 
 	const skillSearchParam = searchParams.get('skill');
 
-	useEffect(() => window.scrollTo(0, 0), []);
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	useEffect(() => {
 		if (!paramRef.current || !skillSearchParam) return;

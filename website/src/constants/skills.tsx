@@ -140,7 +140,7 @@ export const HASKELL: SkillType = {
 	rating: 1,
 };
 export const HTML: SkillType = { Icon: { Element: FaHtml5, color: 'text-[#E54C25]' }, label: 'HTML', rating: 5 };
-export const JAVA: SkillType = { Icon: { Element: FaJava, color: 'text-[#EB2F2E]' }, label: 'Java', rating: 1 };
+export const JAVA: SkillType = { Icon: { Element: FaJava, color: 'text-[#EB2F2E]' }, label: 'Java', rating: 2 };
 export const JAVASCRIPT: SkillType = {
 	Icon: { Element: SiJavascript, color: 'text-[#F7DF1C]' },
 	label: 'JavaScript',

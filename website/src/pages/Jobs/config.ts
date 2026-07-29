@@ -85,7 +85,7 @@ export const experiences: ActivityType[] = [
 	{
 		title: 'Software Engineer | Full-time',
 		subtitle: 'Sandbox Group. September 2025 - Present',
-		location: 'Bilbao, Spain · Hybrid',
+		location: 'Bilbao, Biscay, Spain · Hybrid',
 		description: [
 			'Working at Kids & Family vertical.',
 			'Implementing backend functionality using Python, FastAPI, Flask, Golang and cloud computing on AWS and GCP for PlayKids App and SVOD integration.',
