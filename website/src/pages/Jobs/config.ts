@@ -18,6 +18,7 @@ import {
 	GRAFANA,
 	GRAPHQL,
 	HTML,
+	JAVA,
 	JAVASCRIPT,
 	JIRA,
 	KUBERNETES,
@@ -84,7 +85,7 @@ export const experiences: ActivityType[] = [
 	{
 		title: 'Software Engineer | Full-time',
 		subtitle: 'Sandbox Group. September 2025 - Present',
-		location: 'Bilbao, Spain · Remote',
+		location: 'Bilbao, Spain · Hybrid',
 		description: [
 			'Working at Kids & Family vertical.',
 			'Implementing backend functionality using Python, FastAPI, Flask, Golang and cloud computing on AWS and GCP for PlayKids App and SVOD integration.',
@@ -104,6 +105,7 @@ export const experiences: ActivityType[] = [
 			GITHUB,
 			GO,
 			GRAPHQL,
+			JAVA,
 			JIRA,
 			KUBERNETES,
 			METABASE,
