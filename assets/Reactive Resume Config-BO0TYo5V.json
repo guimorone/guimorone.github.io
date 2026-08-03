@@ -16,7 +16,7 @@
     "headline": "",
     "email": "guimorone@gmail.com",
     "phone": "",
-    "location": "Bilbao, Biscay, Spain",
+    "location": "Recife, Pernambuco, Brazil",
     "website": {
       "url": "https://www.guimorone.com",
       "label": "Portfolio"
@@ -81,15 +81,15 @@
           "id": "hwtkz41jgy8bbregr1fsczhs",
           "hidden": false,
           "company": "Sandbox Group",
-          "position": "Software Engineer | Full-time · Hybrid",
-          "location": "Bilbao, Biscay, Spain",
+          "position": "Software Engineer | Full-time · Remote",
+          "location": "Poços de Caldas, Minas Gerais, Brazil",
           "period": "September 2025 - Present",
           "website": {
             "url": "https://www.sbxgroup.com",
             "label": "Company Website",
             "inlineLink": true
           },
-          "description": "<ul><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Working at Kids &amp; Family vertical for Playkids App and SVOD Integration.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Implementing backend functionality using Python, FastAPI, Flask, Golang and cloud computing on AWS and GCP.</p></li></ul><ul><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Creating infrastructure as code (IaC) with Terraform and Kubernetes.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Developing frontend features using Next.js and React.</p></li></ul><p style=\"text-align: justify;\"></p>",
+          "description": "<ul><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Working at the Kids &amp; Family vertical for PlayKids App and SVOD integration.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Implementing backend features with Python, FastAPI, Flask and Go on AWS and GCP, with infrastructure as code in<br>Terraform and Kubernetes.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Developing frontend features with Next.js and React.</p></li></ul><p style=\"text-align: justify;\"></p>",
           "roles": []
         },
         {
@@ -104,22 +104,22 @@
             "label": "Company Website",
             "inlineLink": true
           },
-          "description": "<ul><li><p>Implemented RPA functionality using Python.</p></li><li><p>Automated RCM processes for healthcare companies in the United States.</p></li><li><p>Built internal libraries and tools to help other engineers.</p></li></ul><p></p>",
+          "description": "<ul><li><p>Implemented RPA in Python to automate RCM processes for healthcare companies in the United States.</p></li><li><p>Built internal libraries and tools for other engineers.</p></li></ul><p></p>",
           "roles": []
         },
         {
           "id": "zxk9g141h2h12aildctyh31j",
           "hidden": false,
-          "company": "Neurotech",
+          "company": "B3",
           "position": "Software Engineer | Full-time · Hybrid",
           "location": "Recife, Pernambuco, Brazil",
           "period": "April 2024 - August 2025",
           "website": {
-            "url": "https://www.neurotech.com.br",
+            "url": "https://www.b3.com.br",
             "label": "Company Website",
             "inlineLink": true
           },
-          "description": "<ul><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Used skills in data engineering and backend development with Python, FastAPI, Go, Terraform, CI/CD, Docker, Git,<br>Airflow, Bash, and cloud computing on AWS and GCP.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Collaborated with cross-functional teams to achieve project goals.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Implemented backend functionality using Python, FastAPI, and Go.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Used AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions, and more.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Worked on extracting data from different sources (internet, AWS S3, etc) and make it available in a data lake.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Automated ETL pipelines with Apache Airflow.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Used Grafana to visualise data and logs.</p></li></ul><p style=\"text-align: justify;\"></p>",
+          "description": "<ul><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Worked at Neurotech (Trillia), acquired by B3.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Data engineering and backend development with Python, FastAPI and Go: extracted data from sources such as the<br>internet and AWS S3 into a data lake, automated ETL pipelines with Airflow and monitored them in Grafana.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Ran workloads on AWS (Lambda, DynamoDB, EC2, Athena, S3, Step Functions) and GCP with Terraform, Docker,<br>CI/CD and Bash.</p></li></ul><p style=\"text-align: justify;\"></p>",
           "roles": []
         },
         {
@@ -149,7 +149,7 @@
             "label": "Company Website",
             "inlineLink": true
           },
-          "description": "<ul><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">In general, utilised skills in web development (Flask, Django, React and HTML/CSS), data engineering, CI/CD, Docker,<br>GitHub Actions, and cloud computing (AWS and GCP).</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Developed Big Data applications with a focus on high efficiency, scalability, and low cost.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Developed frontend applications using React (JavaScript, TypeScript and HTML/CSS) and Redux.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Implemented backend functionality using Python frameworks Flask and Django.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Collaborated with cross-functional teams to achieve project goals.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Automated ETL pipelines with Apache Airflow.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Utilised Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.</p></li></ul><p style=\"text-align: justify;\"></p>",
+          "description": "<ul><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Developed Big Data applications with a focus on high efficiency, scalability and low cost.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Implemented backends with Flask and Django and frontends with React, React Redux and TypeScript.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Automated ETL pipelines with Apache Airflow and CI/CD pipelines with Docker and GitHub Actions.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Hosted applications on GCP (Cloud Run, Artifact Registry) and AWS (Amplify, Route53, Lambda).</p></li></ul><p style=\"text-align: justify;\"></p>",
           "roles": []
         }
       ]
@@ -192,7 +192,7 @@
             "label": "University Website",
             "inlineLink": true
           },
-          "description": "<p>Provided essential support to students in software development and requirements engineering, with a strong focus on helping them create high-quality, well-engineered applications.</p>"
+          "description": "<p>Supported students in software development and requirements engineering, helping them build well-engineered applications.</p>"
         }
       ]
     },
@@ -226,7 +226,7 @@
             "label": "Project URL",
             "inlineLink": false
           },
-          "description": "<ul><li><p>A Python program to get specific data from Instagram.</p></li><li><p>The main idea is to get CSV files from followers, followings, and people who do not follow back the account you choose.</p></li></ul>"
+          "description": "<p>Python program that exports CSV files of an Instagram account's followers, followings and people who do not follow back.</p>"
         },
         {
           "id": "yj07c5rg45tc3ex9knx870n3",
@@ -238,7 +238,7 @@
             "label": "Project URL",
             "inlineLink": false
           },
-          "description": "<p>Program to generate a shortened URL with a focus on using server-side rendering.</p>"
+          "description": "<p>URL shortener focused on server-side rendering.</p>"
         },
         {
           "id": "sfus3qcrnzcazk7sgw0sfw42",
@@ -262,7 +262,7 @@
             "label": "",
             "inlineLink": false
           },
-          "description": "<ul><li><p>Made a website with 3 more colleagues to an external customer.</p></li><li><p>The main purpose is to identify bank check fields easily, so the user does not have to type them manually.</p></li><li><p>The bank check's OCR is done by our customer's API, we did not implement it, just the website.</p></li><li><p>It also offers API Integration, history download, payments and other features.</p></li></ul>"
+          "description": "<ul><li><p>Website built with 3 colleagues for an external customer to read bank check fields automatically instead of typing them, with API integration, history download and payments.</p></li><li><p>OCR is provided by the customer's own API; we built the website.</p></li></ul>"
         },
         {
           "id": "ww3mui1j9jy0f1ke0g1ssv58",
@@ -274,7 +274,7 @@
             "label": "Project URL",
             "inlineLink": false
           },
-          "description": "<p>A 2D game made with other college colleagues. Inspired in the famous ZType game, but in Portuguese.</p>"
+          "description": "<p>A 2D game made with college colleagues, inspired by ZType but in Portuguese.</p>"
         },
         {
           "id": "bl1td1zqmv1jf0us3n42uoxi",
@@ -286,7 +286,7 @@
             "label": "Project URL",
             "inlineLink": false
           },
-          "description": "<p>A multiplayer game made with other college colleagues. The game story is about a postman that have to deliver some packages in the neighbourhood, but he will face issues and other players in his way.</p>"
+          "description": "<p>A multiplayer game made with college colleagues about a postman delivering packages in the neighbourhood while facing obstacles and other players.</p>"
         }
       ]
     },
@@ -833,7 +833,7 @@
     "languages": {
       "title": "Languages",
       "icon": "",
-      "columns": 3,
+      "columns": 4,
       "hidden": false,
       "keepTogether": false,
       "startOnNewPage": false,
@@ -856,6 +856,13 @@
           "id": "ga30tpsvh4ycnr381kdnu30a",
           "hidden": false,
           "language": "German",
+          "fluency": "Beginner",
+          "level": 1
+        },
+        {
+          "id": "sp4n1shb4s1cq7wz3mkx8vt2",
+          "hidden": false,
+          "language": "Spanish",
           "fluency": "Beginner",
           "level": 1
         }
@@ -1072,7 +1079,7 @@
             "label": "Company Website",
             "inlineLink": true
           },
-          "description": "<p>I have worked as a game developer using Construct 3 software and JavaScript, building educational games for students from preschool to high school levels.</p>",
+          "description": "<p>Built educational games for preschool to high school students with Construct 3 and JavaScript.</p>",
           "roles": []
         }
       ]
@@ -1099,7 +1106,7 @@
             "label": "Company Website",
             "inlineLink": false
           },
-          "description": "<p>Built an admin website using React with TypeScript and Tailwind CSS for viewing, managing and downloading water consumption documents in multiple homes.</p>",
+          "description": "<p>Admin website for viewing, managing and downloading water consumption documents across multiple homes.</p>",
           "roles": []
         },
         {
@@ -1114,7 +1121,7 @@
             "label": "Company Website",
             "inlineLink": false
           },
-          "description": "<p>Worked in a project (aca.so mobile app) using React Native, React Redux and TypeScript.</p>",
+          "description": "<p>Worked on the aca.so mobile app with React Native, React Redux and TypeScript.</p>",
           "roles": []
         },
         {
@@ -1144,21 +1151,22 @@
           "fullWidth": true,
           "main": [
             "profiles",
+            "education",
             "experience",
             "volunteer",
             "references",
             "interests",
             "awards",
-            "publications"
+            "publications",
+            "summary"
           ],
           "sidebar": []
         },
         {
           "fullWidth": true,
           "main": [
-            "ew2xg1kjatt9bra8k1gx6goj",
             "rz1jy8dq68qt2qbzjr94tvml",
-            "education",
+            "ew2xg1kjatt9bra8k1gx6goj",
             "languages",
             "skills",
             "projects",
@@ -1170,7 +1178,7 @@
     },
     "page": {
       "gapX": 4,
-      "gapY": 10,
+      "gapY": 12,
       "marginX": 20,
       "marginY": 16,
       "format": "a4",
@@ -1211,6 +1219,17 @@
       }
     },
     "notes": "<p>Se for para mostrar os projetos e certificados, tirar da página 2 e criar uma terceira página.</p>",
-    "styleRules": []
+    "styleRules": [],
+    "stylesheet": {
+      "mode": "legacy",
+      "source": {
+        "languageVersion": 1,
+        "text": "@version 1;\n"
+      },
+      "applied": {
+        "languageVersion": 1,
+        "text": "@version 1;\n"
+      }
+    }
   }
 }
