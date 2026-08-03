@@ -14,6 +14,8 @@ export const LINKEDIN_SKILLS_URL = 'https://www.linkedin.com/in/guimorone/detail
 
 export const ACASO_LINKEDIN_URL = 'https://www.linkedin.com/company/aca-so';
 export const ACASO_URL = 'https://aca.so';
+export const B3_LINKEDIN_URL = 'https://www.linkedin.com/company/b3_oficial';
+export const B3_URL = 'https://www.b3.com.br';
 export const EDUCANDUS_LINKEDIN_URL = 'https://www.linkedin.com/company/s.c.a-technology-ltda';
 export const EDUCANDUS_URL = 'https://educandus.com.br';
 export const GPC_GESTAO_LINKEDIN_URL = 'https://www.linkedin.com/company/gpcgestao';

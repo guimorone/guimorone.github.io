@@ -24,7 +24,7 @@ export const experiences: ActivityType[] = [
 		title: 'Student Teaching Assistant',
 		subtitle: 'Federal University of Pernambuco (UFPE). June 2022 - March 2024',
 		description:
-			'Provided essential support to students in software development and requirements engineering, with a strong focus on helping them create high-quality, well-engineered applications.',
+			'Supported students in software development and requirements engineering, helping them build well-engineered applications.',
 		skills: [CI_CD, CSS, GIT, GITHUB, HTML, JEST, NODE, PYTHON, REACT, REACT_REDUX, TYPESCRIPT],
 		Icon: { Element: ChalkboardUser, background: 'bg-rose-600' },
 	},

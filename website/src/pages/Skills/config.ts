@@ -68,6 +68,7 @@ export const languages: LanguageSkillType[] = [
 	{ label: 'Portuguese', description: 'Native', rating: 5 },
 	{ label: 'English', description: 'Advanced', rating: 4 },
 	{ label: 'German', description: 'Beginner', rating: 1 },
+	{ label: 'Spanish', description: 'Beginner', rating: 1 },
 ]
 	.sort(sortByTitleOrLabelFunction)
 	.sort(sortByRatingFunction);

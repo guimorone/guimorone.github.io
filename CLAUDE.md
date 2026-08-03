@@ -42,6 +42,8 @@ Each directory in `src/pages/` splits data from presentation:
 - `config.ts` exports `title`, `subtitle`, and typed content arrays (`experiences`, `projects`, `documents`, `skills`, …).
 - `index.tsx` is a thin component that feeds that config into a shared renderer — `components/Page` (title + `Feed`/`ObjectFeed` timeline) or `components/Grid/Container` (collapsible grids).
 
+`src/assets/jsons/Reactive Resume Config.json` is a hand-maintained mirror of the same content (experience, education, projects, skills, languages, certifications), served as a raw download from `Home/config.ts`. Nothing parses it, so `tsc` and `knip` cannot catch drift: **any content edit to a `config.ts` must be applied there too.** Match its style — 2-space indent, no trailing newline at EOF, HTML inside single-line strings with escaped `\"` and `&amp;`.
+
 **Content edits belong in `config.ts` and `src/constants/`, not in components.** Adding a job, project, or certification means appending a typed object to a config array; the components need no changes. `ActivityType` in `src/types/index.d.ts` defines what a timeline entry can carry (description as string or bullet array, comments, skills, icon, links).
 
 ### Skills are shared singletons, and they are the join key

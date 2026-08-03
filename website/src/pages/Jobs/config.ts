@@ -45,6 +45,8 @@ import {
 import {
 	ACASO_LINKEDIN_URL,
 	ACASO_URL,
+	B3_LINKEDIN_URL,
+	B3_URL,
 	EDUCANDUS_LINKEDIN_URL,
 	EDUCANDUS_URL,
 	GPC_GESTAO_LINKEDIN_URL,
@@ -83,14 +85,13 @@ const getIcon = (type: 'GAME' | 'MOBILE' | 'SOFTWARE' = 'SOFTWARE'): ActivityTyp
 
 export const experiences: ActivityType[] = [
 	{
-		title: 'Software Engineer | Full-time',
+		title: 'Software Engineer | Full-time', // TODO: Change to Senior Software Engineer
 		subtitle: 'Sandbox Group. September 2025 - Present',
-		location: 'Bilbao, Biscay, Spain · Hybrid',
+		location: 'Poços de Caldas, Minas Gerais, Brazil · Remote', // TODO: Change to Bilbao, Bizkaia, Spain
 		description: [
-			'Working at Kids & Family vertical.',
-			'Implementing backend functionality using Python, FastAPI, Flask, Golang and cloud computing on AWS and GCP for PlayKids App and SVOD integration.',
-			'Creating infrastructure as code (IaC) with Terraform and Kubernetes.',
-			'Developing frontend features using Next.js and React.',
+			'Working at the Kids & Family vertical for PlayKids App and SVOD integration.',
+			'Implementing backend features with Python, FastAPI, Flask and Go on AWS and GCP, with infrastructure as code in Terraform and Kubernetes.',
+			'Developing frontend features with Next.js and React.',
 		],
 		skills: [
 			AWS,
@@ -132,9 +133,8 @@ export const experiences: ActivityType[] = [
 		subtitle: 'Thoughtful AI. August 2025 - April 2026',
 		location: 'Austin, Texas, United States · Remote',
 		description: [
-			'Implemented RPA functionality using Python.',
-			'Automated RCM processes for healthcare companies in the United States.',
-			'Built internal libraries and tools to help other engineers.',
+			'Implemented RPA in Python to automate RCM processes for healthcare companies in the United States.',
+			'Built internal libraries and tools for other engineers.',
 		],
 		skills: [AWS, BASH, BITBUCKET, CI_CD, FASTAPI, GIT, GITHUB, JIRA, PYTHON, RPA, TERRAFORM],
 		links: [
@@ -145,16 +145,12 @@ export const experiences: ActivityType[] = [
 	},
 	{
 		title: 'Software Engineer | Full-time',
-		subtitle: 'Neurotech. April 2024 - August 2025',
+		subtitle: 'B3. April 2024 - August 2025',
 		location: 'Recife, Pernambuco, Brazil · Hybrid',
 		description: [
-			'In general, used skills in data engineering and backend development with Python, FastAPI, Go, Terraform, CI/CD, Docker, Git, Airflow, Bash, and cloud computing on AWS and GCP.',
-			'Collaborated with cross-functional teams to achieve project goals.',
-			'Implemented backend functionality using Python, FastAPI, and Go.',
-			'Used AWS solutions such as Lambda, DynamoDB, EC2, Athena, S3, Step Functions, and more.',
-			'Worked on extracting data from different sources (internet, AWS S3, etc) and make it available in a data lake.',
-			'Automated ETL pipelines with Apache Airflow.',
-			'Used Grafana to visualise data and logs.',
+			'Worked at Neurotech (Trillia), acquired by B3.',
+			'Data engineering and backend development with Python, FastAPI and Go: extracted data from sources such as the internet and AWS S3 into a data lake, automated ETL pipelines with Airflow and monitored them in Grafana.',
+			'Ran workloads on AWS (Lambda, DynamoDB, EC2, Athena, S3, Step Functions) and GCP with Terraform, Docker, CI/CD and Bash.',
 		],
 		skills: [
 			AIRFLOW,
@@ -179,8 +175,10 @@ export const experiences: ActivityType[] = [
 			TERRAFORM,
 		],
 		links: [
-			{ Icon: GlobeAltIcon, label: 'Company Website', url: NEUROTECH_URL },
-			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: NEUROTECH_LINKEDIN_URL },
+			{ Icon: GlobeAltIcon, label: 'Company Website', url: B3_URL },
+			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: B3_LINKEDIN_URL },
+			{ Icon: GlobeAltIcon, label: 'Neurotech Website', url: NEUROTECH_URL },
+			{ Icon: LinkedInIcon, label: "Neurotech's LinkedIn", url: NEUROTECH_LINKEDIN_URL },
 		],
 		Icon: getIcon(),
 	},
@@ -201,15 +199,10 @@ export const experiences: ActivityType[] = [
 		subtitle: 'Oncase. August 2022 - December 2023',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		description: [
-			'In general, utilised skills in web development (Flask, Django, React and HTML/CSS), data engineering, CI/CD, Docker, GitHub Actions, and cloud computing (AWS and GCP).',
-			'Developed Big Data applications with a focus on high efficiency, scalability, and low cost.',
-			'Developed frontend applications using React, React Redux and TypeScript.',
-			'Implemented backend functionality using Python frameworks Flask and Django.',
-			'Implemented effective CI/CD pipelines for seamless integration and deployment through Docker and GitHub Actions.',
-			'Collaborated with cross-functional teams to achieve project goals.',
-			'Hosted applications on Google Cloud Platform using Cloud Run and Artifact Registry.',
-			'Automated ETL pipelines with Apache Airflow.',
-			'Utilised Amazon Web Services for hosting, leveraging services like Amplify, Route53, and Lambda.',
+			'Developed Big Data applications with a focus on high efficiency, scalability and low cost.',
+			'Implemented backends with Flask and Django and frontends with React, React Redux and TypeScript.',
+			'Automated ETL pipelines with Apache Airflow and CI/CD pipelines with Docker and GitHub Actions.',
+			'Hosted applications on GCP (Cloud Run, Artifact Registry) and AWS (Amplify, Route53, Lambda).',
 		],
 		skills: [
 			AIRFLOW,
@@ -277,8 +270,7 @@ export const internships: ActivityType[] = [
 		title: 'Game Developer',
 		subtitle: 'Educandus. May 2020 - December 2020 and June 2021 - October 2021',
 		location: 'Recife, Pernambuco, Brazil · Remote',
-		description:
-			'I have worked as a game developer using Construct 3 software and JavaScript, building educational games for students from preschool to high school levels.',
+		description: 'Built educational games for preschool to high school students with Construct 3 and JavaScript.',
 		skills: [CONSTRUCT_3, CSS, HTML, JAVASCRIPT],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: EDUCANDUS_URL },
@@ -294,7 +286,7 @@ export const freelances: ActivityType[] = [
 		subtitle: 'GPC Gestão. September 2024 - October 2024',
 		location: 'Recife, Pernambuco, Brazil · Remote',
 		description:
-			'Built an admin website for viewing, managing and downloading water consumption documents in multiple homes.',
+			'Admin website for viewing, managing and downloading water consumption documents across multiple homes.',
 		skills: [CI_CD, GIT, GITHUB, REACT, TAILWIND_CSS, TYPESCRIPT],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: GPC_GESTAO_URL },
@@ -306,7 +298,7 @@ export const freelances: ActivityType[] = [
 		title: 'Mobile Developer',
 		subtitle: 'aca.so. March 2024',
 		location: 'Recife, Pernambuco, Brazil · Remote',
-		description: 'Worked in a project (aca.so mobile app) using React Native, React Redux and TypeScript.',
+		description: 'Worked on the aca.so mobile app with React Native, React Redux and TypeScript.',
 		skills: [GIT, GITHUB, REACT_NATIVE, REACT_REDUX, TYPESCRIPT],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: ACASO_URL },

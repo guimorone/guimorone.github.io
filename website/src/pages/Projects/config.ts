@@ -39,10 +39,8 @@ export const projects: ActivityType[] = [
 	{
 		title: 'Instagram Stats',
 		subtitle: 'January 2023 - November 2023 and June 2024',
-		description: [
-			'A Python program to get specific data from Instagram.',
-			'The main idea is to get CSV files from followers, followings, and people who do not follow back the account you choose.',
-		],
+		description:
+			"Python program that exports CSV files of an Instagram account's followers, followings and people who do not follow back.",
 		skills: [GIT, GITHUB, PYTHON],
 		links: [{ Icon: GitHubIcon, label: 'Project URL', url: INSTAGRAM_STATS_PROJECT_URL }],
 		Icon: { Element: SiInstagram, background: 'bg-[#B733AA]' },
@@ -50,7 +48,7 @@ export const projects: ActivityType[] = [
 	{
 		title: 'URL Shortener',
 		subtitle: 'April 2024',
-		description: 'Program to generate a shortened URL with a focus on using server-side rendering.',
+		description: 'URL shortener focused on server-side rendering.',
 		skills: [DJANGO, GIT, GITHUB, POSTGRESQL, PYTHON],
 		links: [
 			{
@@ -79,10 +77,8 @@ export const projects: ActivityType[] = [
 		title: 'Cheque Fácil',
 		subtitle: 'September 2023 - December 2023',
 		description: [
-			'Made a website with 3 more colleagues to an external customer.',
-			'The main purpose is to identify bank check fields easily, so the user does not have to type them manually.',
-			"The bank check's OCR is done by our customer's API, we did not implement it, just the website.",
-			'It also offers API Integration, history download, payments and other features.',
+			'Website built with 3 colleagues for an external customer to read bank check fields automatically instead of typing them, with API integration, history download and payments.',
+			"OCR is provided by the customer's own API; we built the website.",
 		],
 		comments: ['Since it is a private project, I cannot share the Repository URL.'],
 		skills: [
@@ -105,7 +101,7 @@ export const projects: ActivityType[] = [
 	{
 		title: 'Type War',
 		subtitle: 'February 2023 - April 2023',
-		description: 'A 2D game made with other college colleagues. Inspired in the famous ZType game, but in Portuguese.',
+		description: 'A 2D game made with college colleagues, inspired by ZType but in Portuguese.',
 		skills: [GIT, GITHUB, REACT, TAILWIND_CSS, TYPESCRIPT],
 		links: [
 			{
@@ -130,7 +126,7 @@ export const projects: ActivityType[] = [
 		title: 'Jojosué',
 		subtitle: 'May 2019 - June 2019',
 		description:
-			'A multiplayer game made with other college colleagues. The game story is about a postman that have to deliver some packages in the neighbourhood, but he will face issues and other players in his way.',
+			'A multiplayer game made with college colleagues about a postman delivering packages in the neighbourhood while facing obstacles and other players.',
 		skills: [BASH, C, GIT, GITHUB, LINUX],
 		links: [{ Icon: GitHubIcon, label: 'Project URL', url: JOJOSUE_PROJECT_URL }],
 		Icon: { Element: FaGamepad, background: 'bg-[#B58CD6]' },
