@@ -85,9 +85,9 @@ const getIcon = (type: 'GAME' | 'MOBILE' | 'SOFTWARE' = 'SOFTWARE'): ActivityTyp
 
 export const experiences: ActivityType[] = [
 	{
-		title: 'Software Engineer | Full-time', // TODO: Change to Senior Software Engineer
+		title: 'Software Engineer | Full-time',
 		subtitle: 'Sandbox Group. September 2025 - Present',
-		location: 'Poços de Caldas, Minas Gerais, Brazil · Remote', // TODO: Change to Bilbao, Bizkaia, Spain
+		location: 'London Area, United Kingdom · Remote',
 		description: [
 			'Working at the Kids & Family vertical for PlayKids App and SVOD integration.',
 			'Implementing backend features with Python, FastAPI, Flask and Go on AWS and GCP, with infrastructure as code in Terraform and Kubernetes.',
