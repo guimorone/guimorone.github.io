@@ -1,6 +1,7 @@
 {
   "picture": {
     "hidden": true,
+    "fit": "cover",
     "url": "https://lh3.googleusercontent.com/a/ACg8ocLM1KiAMivOmxZ_AMrhAk-lr0yP3hAN72bT2WW8TjpnalH8u_wzUQ=s96-c",
     "size": 64,
     "rotation": 0,
@@ -127,7 +128,7 @@
           "hidden": false,
           "company": "Jalan",
           "position": "Full Stack Developer | Full-time · Remote",
-          "location": "Recife, Pernambuco, Brazil",
+          "location": "São Paulo, São Paulo, Brazil",
           "period": "April 2024 - May 2024",
           "website": {
             "url": "https://jalan.com.br",
@@ -828,7 +829,9 @@
           "level": 1,
           "keywords": []
         }
-      ]
+      ],
+      "keywordLayout": "inline",
+      "layout": "default"
     },
     "languages": {
       "title": "Languages",
@@ -1219,17 +1222,6 @@
       }
     },
     "notes": "<p>Se for para mostrar os projetos e certificados, tirar da página 2 e criar uma terceira página.</p>",
-    "styleRules": [],
-    "stylesheet": {
-      "mode": "legacy",
-      "source": {
-        "languageVersion": 1,
-        "text": "@version 1;\n"
-      },
-      "applied": {
-        "languageVersion": 1,
-        "text": "@version 1;\n"
-      }
-    }
+    "styleRules": []
   }
 }

@@ -15,7 +15,8 @@ export default defineConfig(({ command }: ConfigEnv): UserConfig => {
 	};
 
 	if (command === 'build') {
-		config.resolve.alias['./runtimeConfig'] = './runtimeConfig.browser';
+    if (config.resolve?.alias)
+		  config.resolve.alias['./runtimeConfig'] = './runtimeConfig.browser';
 		config.build = { chunkSizeWarningLimit: 5000 };
 	} else config.define = { global: {} };
 

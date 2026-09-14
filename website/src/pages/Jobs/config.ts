@@ -185,7 +185,7 @@ export const experiences: ActivityType[] = [
 	{
 		title: 'Full Stack Developer | Full-time',
 		subtitle: 'Jalan. April 2024 - May 2024',
-		location: 'Recife, Pernambuco, Brazil · Remote',
+		location: 'São Paulo, São Paulo, Brazil · Remote',
 		description: 'Worked in web apps using Vue.js and Quasar along with Python and AWS Lambda Functions.',
 		skills: [AWS, BASH, GIT, JIRA, POWERSHELL, PYTHON, VUE],
 		links: [

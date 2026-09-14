@@ -4,7 +4,7 @@ Application using React with TypeScript and Tailwind CSS.
 
 ## Dependencies
 
-- [bun](https://bun.com/docs/installation) v1.4.0
+- [bun](https://bun.com/docs/installation) v1.4.2
 
 ## Running Locally
 
