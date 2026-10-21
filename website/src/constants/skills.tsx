@@ -19,6 +19,7 @@ import {
 import { FcLinux } from 'react-icons/fc';
 import {
 	SiApacheairflow,
+	SiApachekafka,
 	SiBitbucket,
 	SiConstruct3,
 	SiCplusplus,
@@ -57,6 +58,11 @@ export const AIRFLOW: SkillType = {
 	Icon: { Element: SiApacheairflow, color: 'text-[#FF7557]' },
 	label: 'Airflow',
 	rating: 4.5,
+};
+export const APACHE_KAFKA: SkillType = {
+	Icon: { Element: SiApachekafka, color: 'text-[#DCE0DF]' },
+	label: 'Apache Kafka',
+	rating: 4,
 };
 export const AWS: SkillType = { Icon: { Element: FaAws, color: 'text-[#FF9900]' }, label: 'AWS', rating: 4 };
 export const BASH: SkillType = { Icon: { Element: VscTerminalBash }, label: 'Bash', rating: 4 };
@@ -127,12 +133,12 @@ export const GO: SkillType = { Icon: { Element: FaGolang, color: 'text-[#05ACD7]
 export const GRAFANA: SkillType = {
 	Icon: { Element: SiGrafana, color: 'text-[#F37220]' },
 	label: 'Grafana',
-	rating: 3.5,
+	rating: 4,
 };
 export const GRAPHQL: SkillType = {
 	Icon: { Element: SiGraphql, color: 'text-[#E534AB]' },
 	label: 'GraphQL',
-	rating: 3,
+	rating: 4,
 };
 export const HASKELL: SkillType = {
 	Icon: { Element: SiHaskell, color: 'text-[#999999]' },
@@ -175,7 +181,7 @@ export const LINUX: SkillType = {
 export const KUBERNETES: SkillType = {
 	Icon: { Element: SiKubernetes, color: 'text-[#326DE6]' },
 	label: 'Kubernetes',
-	rating: 4,
+	rating: 4.5,
 };
 export const METABASE: SkillType = {
 	Icon: { Element: SiMetabase, color: 'text-[#509EE3]' },

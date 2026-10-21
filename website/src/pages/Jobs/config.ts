@@ -1,5 +1,6 @@
 import {
 	AIRFLOW,
+	APACHE_KAFKA,
 	AWS,
 	BASH,
 	BITBUCKET,
@@ -94,6 +95,7 @@ export const experiences: ActivityType[] = [
 			'Developing frontend features with Next.js and React.',
 		],
 		skills: [
+			APACHE_KAFKA,
 			AWS,
 			BASH,
 			CI_CD,
@@ -310,7 +312,8 @@ export const freelances: ActivityType[] = [
 		title: 'Mobile Developer',
 		subtitle: 'InSpace. August 2022 - October 2022',
 		location: 'Recife, Pernambuco, Brazil · Remote',
-		description: 'Worked with the identification of certain objects from a mobile camera for legal purposes.',
+		description:
+			'Worked on the identification of specific objects, such as vehicle license plates, using a mobile camera, for legal purposes.',
 		skills: [GIT, GITHUB, REACT_NATIVE, REACT_REDUX, TYPESCRIPT],
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: INSPACE_URL },

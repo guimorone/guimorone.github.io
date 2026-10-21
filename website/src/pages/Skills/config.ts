@@ -8,6 +8,7 @@ export const subtitle: string =
 
 export const skills: SkillType[] = [
 	skillsDefinitions.AIRFLOW,
+	skillsDefinitions.APACHE_KAFKA,
 	skillsDefinitions.AWS,
 	skillsDefinitions.BASH,
 	skillsDefinitions.BITBUCKET,
