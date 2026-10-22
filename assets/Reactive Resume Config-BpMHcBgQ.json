@@ -14,7 +14,7 @@
   },
   "basics": {
     "name": "Guilherme Morone Araujo",
-    "headline": "",
+    "headline": "Software Engineer | Python, Go, TypeScript | AWS, GCP, Kubernetes, Terraform",
     "email": "guimorone@gmail.com",
     "phone": "",
     "location": "Recife, Pernambuco, Brazil",
@@ -28,11 +28,11 @@
     "title": "Summary",
     "icon": "",
     "columns": 1,
-    "hidden": true,
+    "hidden": false,
     "showHeading": true,
     "keepTogether": false,
     "startOnNewPage": false,
-    "content": "<p>I am a Software Engineer with a background in Computer Engineering and a strong interest in building reliable, efficient, and scalable systems.</p><p>Since 2019, I have worked on a range of projects involving web development, data engineering, and cloud infrastructure, often with a focus on Big Data applications. I am comfortable working with tools like Python, Django, FastAPI, React, Docker, cloud platforms like AWS and GCP, and more.</p><p>I enjoy solving real-world problems with code, collaborating with teams, and continuously learning new technologies.</p><p>I bring curiosity, adaptability, and a passion for turning ideas into practical solutions.</p>"
+    "content": "<p>Software Engineer with 4+ years of professional experience building backend services, RESTful APIs, data pipelines and web applications with Python (FastAPI, Django, Flask), Go and TypeScript. Experienced in deploying and running workloads on AWS and GCP with Docker, Kubernetes, Terraform and CI/CD, and using AI assistants such as Claude Code, ChatGPT and Cursor since 2025.</p>"
   },
   "sections": {
     "profiles": {
@@ -98,7 +98,7 @@
             "label": "Company Website",
             "inlineLink": true
           },
-          "description": "<ul><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Working at the Kids &amp; Family vertical for PlayKids App and SVOD integration.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Implementing backend features with Python, FastAPI, Flask and Go on AWS and GCP, with infrastructure as code in<br>Terraform and Kubernetes.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Developing frontend features with Next.js and React.</p></li></ul><p style=\"text-align: justify;\"></p>",
+          "description": "<ul><li><p>Developing Python (FastAPI, Flask) and Go backend services and RESTful APIs for the PlayKids app and SVOD partner integrations in the Kids &amp; Family vertical.</p></li><li><p>Deploying services to AWS and GCP with Docker, Kubernetes and Terraform through CI/CD pipelines.</p></li><li><p>Building frontend features with Next.js, React and TypeScript.</p></li><li><p>Using Claude Code and Cursor for AI-assisted development, code review and refactoring.</p></li></ul>",
           "roles": []
         },
         {
@@ -118,7 +118,7 @@
             "label": "Company Website",
             "inlineLink": true
           },
-          "description": "<ul><li><p>Implemented RPA in Python to automate RCM processes for healthcare companies in the United States.</p></li><li><p>Built internal libraries and tools for other engineers.</p></li></ul><p></p>",
+          "description": "<ul><li><p>Built Python RPA bots to automate Revenue Cycle Management (RCM) workflows for US healthcare providers, replacing repetitive manual tasks.</p></li><li><p>Built internal Python libraries, FastAPI RESTful APIs and tools that other engineers reused to develop and deploy bots faster.</p></li><li><p>Used ChatGPT and Cursor for AI-assisted development across bots and internal tooling.</p></li></ul>",
           "roles": []
         },
         {
@@ -138,7 +138,7 @@
             "label": "Company Website",
             "inlineLink": true
           },
-          "description": "<ul><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Worked at Neurotech (Trillia), acquired by B3.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Data engineering and backend development with Python, FastAPI and Go: extracted data from sources such as the<br>internet and AWS S3 into a data lake, automated ETL pipelines with Airflow and monitored them in Grafana.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Ran workloads on AWS (Lambda, DynamoDB, EC2, Athena, S3, Step Functions) and GCP with Terraform, Docker,<br>CI/CD and Bash.</p></li></ul><p style=\"text-align: justify;\"></p>",
+          "description": "<ul><li><p>Worked at Neurotech (Trillia), a B3 company, on data engineering and backend development.</p></li><li><p>Built backend services and RESTful APIs with Python, FastAPI and Go, and extracted data from web sources and AWS S3 into a data lake.</p></li><li><p>Automated ETL pipelines with Apache Airflow and monitored them with Grafana dashboards.</p></li><li><p>Provisioned and ran workloads on AWS (Lambda, Step Functions, DynamoDB, Athena, S3, EC2) and GCP with Terraform, Docker and CI/CD.</p></li></ul>",
           "roles": []
         },
         {
@@ -158,7 +158,7 @@
             "label": "",
             "inlineLink": true
           },
-          "description": "<p data-resume-whitespace=\"preserve\">Administrative site for viewing, managing, and downloading water consumption documents for various properties.</p>",
+          "description": "<ul><li><p>Built an admin web app with React, TypeScript and Tailwind CSS to view, manage and download water consumption documents across multiple properties.</p></li></ul>",
           "roles": []
         },
         {
@@ -178,7 +178,7 @@
             "label": "Company Website",
             "inlineLink": true
           },
-          "description": "<p>Worked in web apps using Vue.js and Quasar along with Python and AWS Lambda Functions.</p>",
+          "description": "<ul><li><p>Built web application features with Vue.js and Quasar, backed by Python RESTful APIs on AWS Lambda.</p></li></ul>",
           "roles": []
         },
         {
@@ -198,7 +198,7 @@
             "label": "",
             "inlineLink": true
           },
-          "description": "<p data-resume-whitespace=\"preserve\">Worked on the aca.so mobile app with React Native, React Redux and TypeScript.</p>",
+          "description": "<ul><li><p>Developed features for the aca.so mobile app with React Native, React Redux and TypeScript.</p></li></ul>",
           "roles": []
         },
         {
@@ -218,7 +218,7 @@
             "label": "Company Website",
             "inlineLink": true
           },
-          "description": "<ul><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Developed Big Data applications with a focus on high efficiency, scalability and low cost.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Implemented backends with Flask and Django and frontends with React, React Redux and TypeScript.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Automated ETL pipelines with Apache Airflow and CI/CD pipelines with Docker and GitHub Actions.</p></li><li style=\"text-align: justify;\"><p style=\"text-align: justify;\">Hosted applications on GCP (Cloud Run, Artifact Registry) and AWS (Amplify, Route53, Lambda).</p></li></ul><p style=\"text-align: justify;\"></p>",
+          "description": "<ul><li><p>Developed Big Data applications on GCP and AWS, designed for scalability and low running costs.</p></li><li><p>Built RESTful backends with Python (Flask, Django) and frontends with React, React Redux and TypeScript.</p></li><li><p>Automated ETL pipelines with Apache Airflow and CI/CD pipelines with Docker and GitHub Actions.</p></li><li><p>Deployed applications to GCP (Cloud Run, Artifact Registry) and AWS (Amplify, Route 53, Lambda).</p></li></ul>",
           "roles": [
             {
               "id": "01a15f61-219d-74f5-88c4-ab5224753ea1",
@@ -250,7 +250,7 @@
             "label": "",
             "inlineLink": true
           },
-          "description": "<p data-resume-whitespace=\"preserve\">Worked on the identification of specific objects, such as vehicle license plates, using a mobile camera, for legal purposes.</p>",
+          "description": "<ul><li><p>Built a React Native feature that identifies objects such as vehicle licence plates through the phone camera, for legal use cases.</p></li></ul>",
           "roles": []
         },
         {
@@ -270,7 +270,7 @@
             "label": "",
             "inlineLink": true
           },
-          "description": "<p data-resume-whitespace=\"preserve\">Built educational games for preschool to high school students with Construct 3 and JavaScript.</p>",
+          "description": "<ul><li><p>Built educational games for preschool to secondary school students with Construct 3 and JavaScript.</p></li></ul>",
           "roles": [
             {
               "id": "01a15f64-0a6d-7689-8798-6669e50aa7ed",
@@ -315,7 +315,7 @@
             "label": "Undergraduate Thesis (PT-BR)",
             "inlineLink": false
           },
-          "description": "<p>MQF Level 6 (Reference Number: MQRIC 2025/28761).</p><p></p>"
+          "description": "<p>MQF Level 6 (Reference Number: MQRIC 2025/28761).</p>"
         },
         {
           "id": "vfbczv6y3g0ka5n6qyjgzwzy",
@@ -432,7 +432,7 @@
             "label": "",
             "inlineLink": false
           },
-          "description": "<ul><li><p>Website built with 3 colleagues for an external customer to read bank check fields automatically instead of typing them, with API integration, history download and payments.</p></li><li><p>OCR is provided by the customer's own API; we built the website.</p></li></ul>"
+          "description": "<ul><li><p>Website built with 3 colleagues for an external customer to read bank cheque fields automatically instead of typing them, with API integration, history download and payments.</p></li><li><p>OCR is provided by the customer's own API; we built the website.</p></li></ul>"
         },
         {
           "id": "ww3mui1j9jy0f1ke0g1ssv58",
@@ -490,6 +490,26 @@
           "keywords": []
         },
         {
+          "id": "n4cz8q2wd7kt1vj6xh3pm9ra",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Claude",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "u2gm7v5ks9pe3wb8tq1dz6lh",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Cursor",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
           "id": "b7zysi0d59msju9a5gk6nica",
           "hidden": false,
           "icon": "",
@@ -525,6 +545,16 @@
           "icon": "",
           "iconColor": "",
           "name": "Flask",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "pbg24evqbpyq3mjqoqkjmatp",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Git",
           "proficiency": "",
           "level": 5,
           "keywords": []
@@ -570,21 +600,21 @@
           "keywords": []
         },
         {
-          "id": "wdqczjb7sn9uty3d466vil88",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "Kubernetes",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
           "id": "s7gpm7h1pr6pvaufjnzacglx",
           "hidden": true,
           "icon": "",
           "iconColor": "",
           "name": "Jupyter Notebooks",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "wdqczjb7sn9uty3d466vil88",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Kubernetes",
           "proficiency": "",
           "level": 5,
           "keywords": []
@@ -635,6 +665,26 @@
           "icon": "",
           "iconColor": "",
           "name": "React",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "k9xr4b7tn2qf6cz1md8wy3pe",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "RESTful APIs",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "z7pc3k9xm1wq5rb8tf2nd6gj",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "RPA",
           "proficiency": "",
           "level": 5,
           "keywords": []
@@ -720,6 +770,16 @@
           "keywords": []
         },
         {
+          "id": "w5hq2n8rc4ty7mk1zd9bv3xs",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "ChatGPT",
+          "proficiency": "",
+          "level": 4,
+          "keywords": []
+        },
+        {
           "id": "p6wzbcxvau4f7m09e1ll857y",
           "hidden": false,
           "icon": "",
@@ -735,16 +795,6 @@
           "icon": "",
           "iconColor": "",
           "name": "GCP",
-          "proficiency": "",
-          "level": 4,
-          "keywords": []
-        },
-        {
-          "id": "pbg24evqbpyq3mjqoqkjmatp",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "Git",
           "proficiency": "",
           "level": 4,
           "keywords": []
@@ -1086,11 +1136,65 @@
       "title": "Certifications",
       "icon": "",
       "columns": 1,
-      "hidden": false,
+      "hidden": true,
       "showHeading": true,
       "keepTogether": false,
       "startOnNewPage": false,
       "items": [
+        {
+          "id": "r3kq8w1zp5m2vx7c9tn4yb6d",
+          "hidden": false,
+          "title": "Automation Certification Level III: Work data management",
+          "issuer": "Robocorp",
+          "date": "August 2025",
+          "dates": {
+            "start": "2025-08",
+            "end": null,
+            "present": false
+          },
+          "website": {
+            "url": "https://downloads.robocorp.com/certificates/level1python/36188913-3637-46af-a456-789aa21677d5.pdf",
+            "label": "Credential URL",
+            "inlineLink": true
+          },
+          "description": "<p>Credential ID: 36188913-3637-46af-a456-789aa21677d5</p>"
+        },
+        {
+          "id": "h6tn2c9xq4w8ej1zr5ms7kva",
+          "hidden": false,
+          "title": "Automation Certification Level II: Build a robot",
+          "issuer": "Robocorp",
+          "date": "August 2025",
+          "dates": {
+            "start": "2025-08",
+            "end": null,
+            "present": false
+          },
+          "website": {
+            "url": "https://downloads.robocorp.com/certificates/level1python/d757eb92-d9a9-4ab0-a8c3-854928917e03.pdf",
+            "label": "Credential URL",
+            "inlineLink": true
+          },
+          "description": "<p>Credential ID: d757eb92-d9a9-4ab0-a8c3-854928917e03</p>"
+        },
+        {
+          "id": "y8fd3pz6l1b9qs4wk2xj7mug",
+          "hidden": false,
+          "title": "Automation Certification Level I: Beginner's course",
+          "issuer": "Robocorp",
+          "date": "August 2025",
+          "dates": {
+            "start": "2025-08",
+            "end": null,
+            "present": false
+          },
+          "website": {
+            "url": "https://downloads.robocorp.com/certificates/level1python/3411e1e3-f7b9-4a2d-b561-6caaced261fd.pdf",
+            "label": "Credential URL",
+            "inlineLink": true
+          },
+          "description": "<p>Credential ID: 3411e1e3-f7b9-4a2d-b561-6caaced261fd</p>"
+        },
         {
           "id": "bs73j84apyaw3f106irwy67o",
           "hidden": false,
@@ -1296,8 +1400,9 @@
           "fullWidth": true,
           "main": [
             "profiles",
-            "education",
+            "summary",
             "experience",
+            "education",
             "certifications",
             "languages",
             "projects",
@@ -1306,8 +1411,7 @@
             "references",
             "interests",
             "awards",
-            "publications",
-            "summary"
+            "publications"
           ],
           "sidebar": []
         },
@@ -1348,8 +1452,8 @@
           "400",
           "600"
         ],
-        "fontSize": 10,
-        "lineHeight": 1.3
+        "fontSize": 10.5,
+        "lineHeight": 1.4
       },
       "heading": {
         "fontFamily": "IBM Plex Sans",
@@ -1357,7 +1461,7 @@
           "400",
           "600"
         ],
-        "fontSize": 13,
+        "fontSize": 13.5,
         "lineHeight": 2.2
       }
     },
