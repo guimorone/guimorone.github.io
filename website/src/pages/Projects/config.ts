@@ -11,6 +11,7 @@ import {
 	PYTHON,
 	REACT,
 	REACT_REDUX,
+	REST_API,
 	TAILWIND_CSS,
 	TYPESCRIPT,
 } from '@/constants/skills';
@@ -49,7 +50,7 @@ export const projects: ActivityType[] = [
 		title: 'URL Shortener',
 		subtitle: 'April 2024',
 		description: 'URL shortener focused on server-side rendering.',
-		skills: [DJANGO, GIT, GITHUB, POSTGRESQL, PYTHON],
+		skills: [DJANGO, GIT, GITHUB, POSTGRESQL, PYTHON, REST_API],
 		links: [
 			{
 				Icon: GitHubIcon,
@@ -77,7 +78,7 @@ export const projects: ActivityType[] = [
 		title: 'Cheque Fácil',
 		subtitle: 'September 2023 - December 2023',
 		description: [
-			'Website built with 3 colleagues for an external customer to read bank check fields automatically instead of typing them, with API integration, history download and payments.',
+			'Website built with 3 colleagues for an external customer to read bank cheque fields automatically instead of typing them, with API integration, history download and payments.',
 			"OCR is provided by the customer's own API; we built the website.",
 		],
 		comments: ['Since it is a private project, I cannot share the Repository URL.'],
@@ -93,6 +94,7 @@ export const projects: ActivityType[] = [
 			PYTHON,
 			REACT,
 			REACT_REDUX,
+			REST_API,
 			TAILWIND_CSS,
 			TYPESCRIPT,
 		],

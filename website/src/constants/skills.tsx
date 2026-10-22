@@ -1,4 +1,4 @@
-import { AiOutlineDeploymentUnit } from 'react-icons/ai';
+import { AiFillOpenAI, AiOutlineDeploymentUnit } from 'react-icons/ai';
 import { BiLogoPostgresql } from 'react-icons/bi';
 import { DiGoogleCloudPlatform, DiRuby } from 'react-icons/di';
 import {
@@ -21,8 +21,10 @@ import {
 	SiApacheairflow,
 	SiApachekafka,
 	SiBitbucket,
+	SiClaude,
 	SiConstruct3,
 	SiCplusplus,
+	SiCursor,
 	SiCyberdefenders,
 	SiDart,
 	SiDjango,
@@ -50,7 +52,7 @@ import {
 	SiTypescript,
 	SiVuedotjs,
 } from 'react-icons/si';
-import { TbBrandPowershell, TbBrandReactNative, TbSql } from 'react-icons/tb';
+import { TbApi, TbBrandPowershell, TbBrandReactNative, TbSql } from 'react-icons/tb';
 import { VscTerminalBash } from 'react-icons/vsc';
 import type { SkillType } from '@/types';
 
@@ -59,11 +61,7 @@ export const AIRFLOW: SkillType = {
 	label: 'Airflow',
 	rating: 4.5,
 };
-export const APACHE_KAFKA: SkillType = {
-	Icon: { Element: SiApachekafka, color: 'text-[#DCE0DF]' },
-	label: 'Apache Kafka',
-	rating: 4,
-};
+export const APACHE_KAFKA: SkillType = { Icon: { Element: SiApachekafka }, label: 'Apache Kafka', rating: 4 };
 export const AWS: SkillType = { Icon: { Element: FaAws, color: 'text-[#FF9900]' }, label: 'AWS', rating: 4 };
 export const BASH: SkillType = { Icon: { Element: VscTerminalBash }, label: 'Bash', rating: 4 };
 export const BITBUCKET: SkillType = {
@@ -77,7 +75,9 @@ export const CONSTRUCT_3: SkillType = {
 	label: 'Construct 3',
 	rating: 2,
 };
+export const CHATGPT: SkillType = { Icon: { Element: AiFillOpenAI }, label: 'ChatGPT', rating: 4 };
 export const CI_CD: SkillType = { Icon: { Element: AiOutlineDeploymentUnit }, label: 'CI/CD', rating: 5 };
+export const CLAUDE: SkillType = { Icon: { Element: SiClaude, color: 'text-[#D97757]' }, label: 'Claude', rating: 5 };
 export const CPP: SkillType = {
 	Icon: { Element: SiCplusplus, color: 'text-[#659BD3]' },
 	label: 'C++',
@@ -90,6 +90,7 @@ export const CPP: SkillType = {
 // 	rating: 1,
 // };
 export const CSS: SkillType = { Icon: { Element: FaCss3Alt, color: 'text-[#28A9DF]' }, label: 'CSS', rating: 3.5 };
+export const CURSOR: SkillType = { Icon: { Element: SiCursor }, label: 'Cursor', rating: 5 };
 export const CYBER_SECURITY: SkillType = {
 	Icon: { Element: SiCyberdefenders },
 	label: 'Cyber Security',
@@ -234,6 +235,7 @@ export const REACT_REDUX: SkillType = {
 	label: 'React Redux',
 	rating: 4,
 };
+export const REST_API: SkillType = { Icon: { Element: TbApi }, label: 'RESTful APIs', rating: 5 };
 export const RPA: SkillType = { Icon: { Element: FaRobot }, label: 'RPA', rating: 5 };
 export const RUBY: SkillType = { Icon: { Element: DiRuby, color: 'text-[#9D0401]' }, label: 'Ruby', rating: 1 };
 export const SENTRY: SkillType = { Icon: { Element: SiSentry, color: 'text-[#FB2D26]' }, label: 'Sentry', rating: 5 };

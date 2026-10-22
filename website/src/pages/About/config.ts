@@ -1,7 +1,6 @@
 export const title: string = "Hello, I'm Guilherme, and here is a nutshell version of who I am";
 export const descriptions: string[] = [
-	'I am a Software Engineer with a background in Computer Engineering and a strong interest in building reliable, efficient, and scalable systems.',
-	'Since 2019, I have worked on a range of projects involving web development, data engineering, and cloud infrastructure, often with a focus on Big Data applications. I am comfortable working with tools like Python, Django, FastAPI, React, Docker, cloud platforms like AWS and GCP, and more.',
-	'I enjoy solving real-world problems with code, collaborating with teams, and continuously learning new technologies.',
-	'I bring curiosity, adaptability, and a passion for turning ideas into practical solutions.',
+	'I am a Software Engineer with a degree in Computer Engineering and experience across backend, data engineering, cloud infrastructure and frontend development.',
+	'Since 2019, I have built Python and Go services, RESTful APIs, ETL pipelines and web applications, and deployed them on AWS and GCP with Docker, Kubernetes and Terraform. My core stack includes Python (FastAPI, Django, Flask), Go, TypeScript (React, Next.js) and Apache Airflow. In 2025, I also started using AI assistants such as Claude Code, ChatGPT and Cursor in my day-to-day development.',
+	'I enjoy solving real-world problems with code, working closely with product and engineering teams, and owning features from design to production.',
 ];
