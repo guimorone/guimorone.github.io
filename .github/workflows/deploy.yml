@@ -7,6 +7,15 @@ on:
     paths:
       - website/**
   workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing tag to deploy (e.g. v1.3.10). Leave empty to deploy the current commit.
+        required: false
+        type: string
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
@@ -19,7 +28,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v7
         with:
-          ref: ${{ github.sha }}
+          ref: ${{ inputs.tag || github.sha }}
 
       - name: Configure Git
         run: |
@@ -34,6 +43,12 @@ jobs:
 
       - name: Install Dependencies and Deploy
         working-directory: ${{ github.workspace }}/website
+        env:
+          TAG: ${{ inputs.tag }}
         run: |
           bun install
-          bun run deploy
+          if [[ -n "$TAG" ]]; then
+            bun run deploy -m "Deploy tag $TAG"
+          else
+            bun run deploy
+          fi

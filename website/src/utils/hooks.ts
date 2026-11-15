@@ -1,20 +1,21 @@
-import { useEffect, useRef, useState } from 'react';
-import type { Dispatch, SetStateAction } from 'react';
+import { useCallback, useEffect, useSyncExternalStore } from 'react';
 
-export function useDocumentTitle(prevailOnUnmount = false): [string, Dispatch<SetStateAction<string>>] {
-	const [title, setTitle] = useState<string>(document.title);
-	const defaultTitle = useRef<string>(document.title);
-
+export function useDocumentTitle(title: string): void {
 	useEffect(() => {
 		document.title = title;
 	}, [title]);
+}
 
-	useEffect(
-		() => () => {
-			if (!prevailOnUnmount) document.title = defaultTitle.current;
+export function useMediaQuery(query: string): boolean {
+	const subscribe = useCallback(
+		(onChange: () => void) => {
+			const mediaQueryList = window.matchMedia(query);
+			mediaQueryList.addEventListener('change', onChange);
+
+			return () => mediaQueryList.removeEventListener('change', onChange);
 		},
-		[prevailOnUnmount]
+		[query]
 	);
 
-	return [title, setTitle];
+	return useSyncExternalStore(subscribe, () => window.matchMedia(query).matches);
 }

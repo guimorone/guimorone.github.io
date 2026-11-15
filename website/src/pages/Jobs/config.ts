@@ -54,6 +54,7 @@ import {
 	B3_URL,
 	EDUCANDUS_LINKEDIN_URL,
 	EDUCANDUS_URL,
+	FRACTAL_URL,
 	GPC_GESTAO_LINKEDIN_URL,
 	GPC_GESTAO_URL,
 	INSPACE_LINKEDIN_URL,
@@ -94,6 +95,8 @@ export const experiences: ActivityType[] = [
 		subtitle: 'Sandbox Group. September 2025 - Present',
 		location: 'London, England, United Kingdom · Remote',
 		description: [
+			'Building Fractal since day one: a multi-tenant platform with Prism (CMS), Nexus (subscriptions), Mosaic (experience builder) and Herald (identity).',
+			'Unified our products on shared, tenant-isolated infrastructure, improving maintainability, security and performance.',
 			'Developing Python (FastAPI, Flask) and Go backend services and RESTful APIs for the PlayKids app and SVOD partner integrations in the Kids & Family vertical.',
 			'Deploying services to AWS and GCP with Docker, Kubernetes and Terraform through CI/CD pipelines.',
 			'Building frontend features with Next.js, React and TypeScript.',
@@ -135,6 +138,7 @@ export const experiences: ActivityType[] = [
 		links: [
 			{ Icon: GlobeAltIcon, label: 'Company Website', url: SANDBOX_URL },
 			{ Icon: LinkedInIcon, label: "Company's LinkedIn", url: SANDBOX_LINKEDIN_URL },
+			{ Icon: GlobeAltIcon, label: 'Fractal Website', url: FRACTAL_URL },
 		],
 		Icon: getIcon(),
 	},

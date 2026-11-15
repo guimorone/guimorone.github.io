@@ -33,7 +33,16 @@ Single-page React 18 + TypeScript + Tailwind SPA, statically hosted on GitHub Pa
 
 ### Routing uses a hash router on purpose
 
-`src/Router.tsx` builds a `createHashRouter` because GitHub Pages can't rewrite deep links to `index.html`. Routes are keyed off the string constants in `src/constants/paths.ts`; unknown paths `redirect()` to `/`. Every page renders inside `src/pages/DefaultPage.tsx`, the layout route that supplies Navbar/Footer, scroll-to-top on navigation, and the document title (derived from the pathname via `getDocumentTitle` + `useDocumentTitle`). `/skills` is deliberately excluded from the scroll reset because it self-scrolls to a deep-linked skill.
+`src/Router.tsx` builds a `createHashRouter` because GitHub Pages can't rewrite deep links to `index.html`. Routes are keyed off the string constants in `src/constants/paths.ts`; `/` and unknown paths render `<Navigate to={HOME} replace />`, so there is one redirect hop and no Back-button trap. Every page renders inside `src/pages/DefaultPage.tsx`, the layout route that supplies Navbar/Footer, `<ScrollRestoration />` (top on new navigations, restored on Back/Forward), and the document title (derived from the pathname via `getDocumentTitle` + `useDocumentTitle(title)` in `src/utils/hooks.ts`). Navigations that only change UI state on the same page pass `preventScrollReset` so the page does not jump.
+
+### UI state is derived, not mirrored
+
+Prefer deriving state from the URL or the environment over keeping parallel `useState` copies:
+
+- **Skills modal**: the URL on `/skills` is the single source of truth. `?skill=<label>` is the selected skill (highlighted and scrolled into view, matched case-insensitively) and `&modal=open` says the modal is showing. Opening sets both, closing drops only `modal` so the highlight stays; both go through `getSkillSearchParams` in `src/utils` with `preventScrollReset: true`, and the param names live in `src/constants/paths.ts`. Deep links, refresh and Back/Forward therefore always match what is on screen, and `Feed` skill chips are plain same-tab `Link`s that open the modal. `SkillDescription` keeps the last shown skill only so the 200 ms close animation still has content.
+- **Navbar mobile menu**: stores the pathname it was opened on, so any route change closes it; it is also forced closed at the `xl` breakpoint via `useMediaQuery` (`useSyncExternalStore` over `matchMedia`) so the Dialog never keeps the page scroll-locked on desktop.
+- **Collapsible**: uses `unmount={false}`, so collapsed children keep their state and refs, and exposes `aria-expanded`/`aria-controls`.
+- **Banner**: dismissal is persisted in `localStorage` per link URL, wrapped in `try/catch` so it still renders when storage is blocked.
 
 ### `config.ts` + `index.tsx` per page
 
@@ -53,7 +62,7 @@ Each directory in `src/pages/` splits data from presentation:
 `getSkillData()` in `src/utils/index.ts` inverts that relationship: it imports **every** page config and filters each for entries mentioning a skill label, powering the "where I used this" modal on `/skills`. Consequences worth knowing before you refactor:
 
 - `src/utils/index.ts` deliberately depends on `src/pages/*/config.ts`. Adding a new category of experience means extending the `WorkPageType` union in `src/types/index.d.ts` **and** the `works` array and `switch` in `getSkillData`, or the new content silently won't appear in skill modals.
-- Matching is by lowercased `label` string. `Feed` deep-links each skill chip to `/skills?skill=<label>`, and `/skills` scrolls to and highlights the matching entry by label. Renaming a skill's `label` breaks those links.
+- Matching is by lowercased `label` string. `Feed` deep-links each skill chip to `/skills?skill=<label>`, and `/skills` opens that skill's modal and scrolls its entry into view. Renaming a skill's `label` breaks those links.
 
 ### Icons
 
@@ -72,7 +81,9 @@ Three icon shapes coexist under one `IconType` union (`src/types/icons.d.ts`): H
 ## Deploy and versioning
 
 - `.github/workflows/deploy.yml`: pushes to `main` touching `website/**` run `bun run deploy` → `predeploy` builds (`tsc && vite build`) → `gh-pages -d dist` pushes to the `gh-pages` branch. There is no CI lint/typecheck job other than the `tsc` inside the build, so a type error fails the deploy.
-- `.github/workflows/bump.yml`: after the Pages deployment completes, reads `version` from `website/package.json` and cuts a GitHub release tagged `v<version>`. **Bump `website/package.json` version manually** when a release is wanted — the workflow only tags what it finds.
+- Rollbacks: running the Deployment workflow manually with the optional `tag` input checks out that tag and deploys it with the gh-pages commit message `Deploy tag <tag>`.
+- `.github/workflows/bump.yml`: after the Pages deployment completes, reads `version` from `website/package.json` and cuts a GitHub release tagged `v<version>`. It skips deployments whose gh-pages commit message starts with "Deploy tag", so a rollback never creates or re-marks a release. **Bump `website/package.json` version manually** when a release is wanted, since the workflow only tags what it finds.
+- Dependencies are updated in-range with `bun update --save`; major upgrades (React 19, react-router 7, Tailwind 4, ESLint 10, Vite 8, TypeScript 7) are deliberately deferred.
 
 ## Gotchas
 

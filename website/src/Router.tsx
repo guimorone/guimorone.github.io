@@ -1,5 +1,4 @@
-import { Spinner } from 'flowbite-react';
-import { RouterProvider, createHashRouter, redirect } from 'react-router-dom';
+import { Navigate, RouterProvider, createHashRouter } from 'react-router-dom';
 import * as urlPaths from './constants/paths';
 import About from './pages/About';
 import Certifications from './pages/Certifications';
@@ -10,13 +9,15 @@ import Jobs from './pages/Jobs';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Warehouse from './pages/Warehouse';
-import type { FC } from 'react';
+
+const redirectHome = <Navigate to={urlPaths.HOME} replace />;
 
 const router = createHashRouter([
 	{
 		path: urlPaths.DEFAULT,
 		element: <DefaultPage />,
 		children: [
+			{ index: true, element: redirectHome },
 			{ path: urlPaths.HOME, element: <Home /> },
 			{ path: urlPaths.ABOUT, element: <About /> },
 			{ path: urlPaths.EDUCATION, element: <Education /> },
@@ -27,13 +28,9 @@ const router = createHashRouter([
 			{ path: urlPaths.WAREHOUSE, element: <Warehouse /> },
 		],
 	},
-	{ path: '*', loader: () => redirect(urlPaths.DEFAULT) },
+	{ path: '*', element: redirectHome },
 ]);
 
-const FallbackElement: FC = () => <Spinner className="w-6 h-6" aria-hidden="true" />;
-
 export default function Router() {
-	return (
-		<RouterProvider router={router} fallbackElement={<FallbackElement />} future={{ v7_startTransition: false }} />
-	);
+	return <RouterProvider router={router} future={{ v7_startTransition: false }} />;
 }

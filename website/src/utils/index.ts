@@ -1,4 +1,5 @@
 import { DEFAULT_DOCUMENT_TITLE } from '@/constants';
+import { MODAL_OPEN_VALUE, MODAL_SEARCH_PARAM, SKILL_SEARCH_PARAM } from '@/constants/paths';
 import { coursesAndCertifications as CoursesCertificationsExperiences } from '@/pages/Certifications/config';
 import { experiences as EducationExperiences } from '@/pages/Education/config';
 import {
@@ -7,9 +8,16 @@ import {
 	experiences as JobsExperiences,
 } from '@/pages/Jobs/config';
 import { projects as ProjectsExperiences } from '@/pages/Projects/config';
+import { createSearchParams } from 'react-router-dom';
 import type { ActivityType, GenericData, WorkPageType } from '@/types';
 
 export const classNames = (...classes: any[]): string => classes.filter(Boolean).join(' ');
+
+export const getSkillSearchParams = (skillLabel: string, openModal: boolean): URLSearchParams =>
+	createSearchParams({
+		[SKILL_SEARCH_PARAM]: skillLabel,
+		...(openModal && { [MODAL_SEARCH_PARAM]: MODAL_OPEN_VALUE }),
+	});
 
 export const checkIfObjectIsEmpty = (obj: object): boolean =>
 	!obj || (!Object.keys(obj).length && Object.getPrototypeOf(obj) === Object.prototype);

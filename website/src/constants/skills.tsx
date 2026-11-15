@@ -202,7 +202,7 @@ export const MY_SQL: SkillType = {
 export const NEXT_JS: SkillType = {
 	Icon: { Element: SiNextdotjs },
 	label: 'Next.js',
-	rating: 4,
+	rating: 5,
 };
 export const NODE: SkillType = { Icon: { Element: FaNodeJs, color: 'text-[#90C43F]' }, label: 'Node', rating: 5 };
 export const POSTGRESQL: SkillType = {

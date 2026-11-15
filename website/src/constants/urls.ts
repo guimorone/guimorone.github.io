@@ -4,7 +4,7 @@ export const MAILTO_URL = 'mailto:guimorone@gmail.com';
 export const WEBSITE_CODE_URL = `${GITHUB}/guimorone.github.io`;
 
 export const REACTIVE_RESUME_URL = 'https://rxresu.me';
-export const RESUME_URL = `${REACTIVE_RESUME_URL}/guimorone/cv`;
+export const RESUME_URL = 'https://rx.cv/guimorone/cv';
 
 export const CIN_UFPE_URL = 'https://portal.cin.ufpe.br';
 export const TCC_ATTENA_URL = 'https://repositorio.ufpe.br/handle/123456789/58235';
@@ -22,6 +22,7 @@ export const GPC_GESTAO_LINKEDIN_URL = 'https://www.linkedin.com/company/gpcgest
 export const GPC_GESTAO_URL = 'https://gpcgestao.com.br';
 export const INSPACE_LINKEDIN_URL = 'https://www.linkedin.com/company/inspacetech';
 export const INSPACE_URL = 'https://inspace.tech';
+export const FRACTAL_URL = 'https://getfractal.net';
 export const JALAN_LINKEDIN_URL = 'https://www.linkedin.com/company/jalan-eventos';
 export const JALAN_URL = 'https://jalan.com.br';
 export const NEUROTECH_LINKEDIN_URL = 'https://www.linkedin.com/company/neurotech';

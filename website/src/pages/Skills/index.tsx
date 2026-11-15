@@ -1,85 +1,85 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import Collapsible from '@/components/Collapsible';
 import Grid from '@/components/Grid';
 import GridContainer from '@/components/Grid/Container';
 import Stars from '@/components/Stars';
+import { MODAL_OPEN_VALUE, MODAL_SEARCH_PARAM, SKILL_SEARCH_PARAM } from '@/constants/paths';
 import { LINKEDIN_SKILLS_URL } from '@/constants/urls';
-import { classNames } from '@/utils';
+import { classNames, getSkillSearchParams } from '@/utils';
 import { useSearchParams } from 'react-router-dom';
 import SkillDescription from './SkillDescription';
 import { languages, skills, subtitle, title } from './config';
 import type { SkillType } from '@/types';
 
 export default function Skills() {
-	const [currentSkill, setCurrentSkill] = useState<SkillType | null>(null);
-	const paramRef = useRef<HTMLDivElement>(null);
 	const [searchParams, setSearchParams] = useSearchParams();
+	const selectedRef = useRef<HTMLDivElement>(null);
 
-	const skillSearchParam = searchParams.get('skill');
+	const skillSearchParam = searchParams.get(SKILL_SEARCH_PARAM)?.toLowerCase();
+	const selectedSkill = skills.find(skill => skill.label.toLowerCase() === skillSearchParam) ?? null;
+	const isModalOpen = searchParams.get(MODAL_SEARCH_PARAM) === MODAL_OPEN_VALUE;
 
 	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
-
-	useEffect(() => {
-		if (!paramRef.current || !skillSearchParam) return;
-
-		paramRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
-	}, [skillSearchParam]);
+		selectedRef.current?.scrollIntoView({ block: 'nearest' });
+	}, [selectedSkill]);
 
 	const onOpenModal = (skill: SkillType): void => {
-		setCurrentSkill(skill);
-		setSearchParams({ skill: skill.label });
+		setSearchParams(getSkillSearchParams(skill.label, true), { preventScrollReset: true });
 	};
-	const onCloseModal = (): void => setCurrentSkill(null);
+	const onCloseModal = (): void => {
+		if (selectedSkill) setSearchParams(getSkillSearchParams(selectedSkill.label, false), { preventScrollReset: true });
+	};
 
 	return (
 		<>
-			<SkillDescription currentSkill={currentSkill} onClose={onCloseModal} />
+			<SkillDescription currentSkill={isModalOpen ? selectedSkill : null} onClose={onCloseModal} />
 			<GridContainer title={title} subtitle={subtitle}>
 				<Collapsible title="Tools">
 					<Grid>
-						{skills?.map(skill => (
-							<div
-								key={`skill-${skill.label}`}
-								ref={skillSearchParam?.toLowerCase() === skill.label.toLowerCase() ? paramRef : null}
-								className="relative flex items-center py-1 rounded-lg gap-x-2 group"
-							>
-								<button
-									type="button"
-									onClick={() => onOpenModal(skill)}
-									className={classNames(
-										skillSearchParam?.toLowerCase() === skill.label.toLowerCase() && 'bg-zinc-900',
-										'absolute inset-0 -mx-2 -my-1 rounded-lg group-hover:bg-zinc-800 group-active:bg-zinc-900'
-									)}
-								/>
-								<button type="button" onClick={() => onOpenModal(skill)} className="relative flex items-center gap-x-2">
-									{typeof skill.Icon.Element === 'object' ? (
-										<skill.Icon.Element.withColor className="w-auto h-4 sm:h-5 md:h-6" aria-hidden="true" />
-									) : (
-										<skill.Icon.Element
-											className={classNames(skill.Icon.color, 'w-auto h-4 sm:h-5 md:h-6')}
-											aria-hidden="true"
-										/>
-									)}
-									<span className="text-sm md:text-base text-zinc-100">{skill.label}</span>
-									<Stars rating={skill.rating} />
-								</button>
-							</div>
-						))}
+						{skills.map(skill => {
+							const isSelected = skill === selectedSkill;
+
+							return (
+								<div
+									key={`skill-${skill.label}`}
+									ref={isSelected ? selectedRef : null}
+									className="relative flex items-center py-1 rounded-lg gap-x-2 group"
+								>
+									<button
+										type="button"
+										tabIndex={-1}
+										aria-hidden="true"
+										onClick={() => onOpenModal(skill)}
+										className={classNames(
+											isSelected && 'bg-zinc-900',
+											'absolute inset-0 -mx-2 -my-1 rounded-lg group-hover:bg-zinc-800 group-active:bg-zinc-900'
+										)}
+									/>
+									<button
+										type="button"
+										onClick={() => onOpenModal(skill)}
+										className="relative flex items-center gap-x-2"
+									>
+										{typeof skill.Icon.Element === 'object' ? (
+											<skill.Icon.Element.withColor className="w-auto h-4 sm:h-5 md:h-6" aria-hidden="true" />
+										) : (
+											<skill.Icon.Element
+												className={classNames(skill.Icon.color, 'w-auto h-4 sm:h-5 md:h-6')}
+												aria-hidden="true"
+											/>
+										)}
+										<span className="text-sm md:text-base text-zinc-100">{skill.label}</span>
+										<Stars rating={skill.rating} />
+									</button>
+								</div>
+							);
+						})}
 					</Grid>
 				</Collapsible>
 				<Collapsible title="Languages">
 					<Grid>
-						{languages?.map(({ label, description, rating }) => (
-							<div
-								key={`language-${label}`}
-								ref={skillSearchParam?.toLowerCase() === label.toLowerCase() ? paramRef : null}
-								className="relative flex items-center py-1 rounded-lg gap-x-2"
-							>
-								{skillSearchParam?.toLowerCase() === label.toLowerCase() && (
-									<div className="absolute inset-0 -mx-2 -my-1 rounded-lg bg-zinc-900" />
-								)}
+						{languages.map(({ label, description, rating }) => (
+							<div key={`language-${label}`} className="relative flex items-center py-1 rounded-lg gap-x-2">
 								<div className="relative flex items-center gap-x-2">
 									<p className="text-sm md:text-base text-zinc-100">
 										{label} <span className="text-xs md:text-md text-zinc-300">({description})</span>

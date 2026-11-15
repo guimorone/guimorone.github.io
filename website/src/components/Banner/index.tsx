@@ -4,10 +4,31 @@ import { XMarkIcon } from '@heroicons/react/20/solid';
 import type { FC } from 'react';
 import type { BannerProps } from '@/types/components';
 
-const Banner: FC<BannerProps> = ({ title = 'Hey, right here!', link }) => {
-	const [isShowing, setIsShowing] = useState<boolean>(true);
+const getStorageKey = (url: string): string => `banner-dismissed:${url}`;
 
-	const handleCloseBanner = (): void => setIsShowing(false);
+function isDismissed(url: string): boolean {
+	try {
+		return localStorage.getItem(getStorageKey(url)) === 'true';
+	} catch {
+		return false;
+	}
+}
+
+function saveDismissed(url: string): void {
+	try {
+		localStorage.setItem(getStorageKey(url), 'true');
+	} catch {
+		return;
+	}
+}
+
+const Banner: FC<BannerProps> = ({ title = 'Hey, right here!', link }) => {
+	const [isShowing, setIsShowing] = useState<boolean>(() => !isDismissed(link.url));
+
+	const handleCloseBanner = (): void => {
+		setIsShowing(false);
+		saveDismissed(link.url);
+	};
 
 	return (
 		<Transition

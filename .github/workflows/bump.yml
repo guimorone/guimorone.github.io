@@ -13,7 +13,8 @@ jobs:
     name: Bump new version
     runs-on: ubuntu-latest
     if: >-
-      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' &&
+        !startsWith(github.event.workflow_run.head_commit.message, 'Deploy tag ')) ||
       (github.event_name == 'workflow_dispatch')
     permissions:
       contents: write

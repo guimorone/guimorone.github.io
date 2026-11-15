@@ -1,5 +1,5 @@
 import { SKILLS } from '@/constants/paths';
-import { classNames, sortByTitleOrLabelFunction } from '@/utils';
+import { classNames, getSkillSearchParams, sortByTitleOrLabelFunction } from '@/utils';
 import { Tooltip } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import type { FC } from 'react';
@@ -63,8 +63,11 @@ const Feed: FC<FeedProps> = ({ activities, currentSkill }) => {
 												{skills.map(skill => (
 													<Link
 														key={`feed-skill-${skill.label}`}
-														to={`${SKILLS}?skill=${skill.label}`}
-														target={!currentSkill ? '_self' : '_blank'}
+														to={{
+															pathname: SKILLS,
+															search: getSkillSearchParams(skill.label, true).toString(),
+														}}
+														preventScrollReset={!!currentSkill}
 														className={classNames(
 															currentSkill === skill.label
 																? 'bg-zinc-200 border-zinc-100 pointer-events-none'

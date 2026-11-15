@@ -1,17 +1,23 @@
 import { Fragment, useState } from 'react';
 import { HOME } from '@/constants/paths';
 import { classNames } from '@/utils';
-import { Dialog, DialogPanel } from '@headlessui/react';
+import { useMediaQuery } from '@/utils/hooks';
+import { Dialog, DialogBackdrop, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Link, useLocation } from 'react-router-dom';
 import { navigation } from './config';
 
+const DESKTOP_MEDIA_QUERY = '(min-width: 1280px)';
+
 export default function Navbar() {
 	const { pathname } = useLocation();
-	const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
+	const isDesktop = useMediaQuery(DESKTOP_MEDIA_QUERY);
+	const [menuOpenedOn, setMenuOpenedOn] = useState<string | null>(null);
 
-	const handleOpenMobileMenu = (): void => setMobileMenuOpen(true);
-	const handleCloseMobileMenu = (): void => setMobileMenuOpen(false);
+	const mobileMenuOpen = !isDesktop && menuOpenedOn === pathname;
+
+	const handleOpenMobileMenu = (): void => setMenuOpenedOn(pathname);
+	const handleCloseMobileMenu = (): void => setMenuOpenedOn(null);
 
 	return (
 		<header className="sticky inset-x-0 top-0 z-40 backdrop-blur-md">
@@ -43,6 +49,7 @@ export default function Navbar() {
 									{useLink ? (
 										<Link
 											to={href}
+											aria-current={isCurrent ? 'page' : undefined}
 											className={classNames(
 												isCurrent
 													? 'text-teal-400 hover:cursor-default relative'
@@ -71,9 +78,15 @@ export default function Navbar() {
 					</div>
 				</div>
 			</nav>
-			<Dialog as="div" className="xl:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-				<div className="fixed inset-0 z-50" />
-				<DialogPanel className="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-gradient-to-b from-zinc-500 to-zinc-900 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+			<Dialog as="div" className="xl:hidden" open={mobileMenuOpen} onClose={handleCloseMobileMenu}>
+				<DialogBackdrop
+					transition
+					className="fixed inset-0 z-50 transition-opacity duration-300 data-[closed]:opacity-0"
+				/>
+				<DialogPanel
+					transition
+					className="fixed inset-y-0 right-0 z-50 transition duration-300 ease-out data-[closed]:translate-x-full w-full px-6 py-6 overflow-y-auto bg-gradient-to-b from-zinc-500 to-zinc-900 sm:max-w-sm sm:ring-1 sm:ring-white/10"
+				>
 					<div className="flex items-center justify-between">
 						<button
 							type="button"
@@ -96,6 +109,7 @@ export default function Navbar() {
 												<Link
 													to={href}
 													onClick={handleCloseMobileMenu}
+													aria-current={isCurrent ? 'page' : undefined}
 													className={classNames(
 														isCurrent ? 'bg-zinc-800 hover:cursor-default' : 'hover:bg-zinc-800 hover:cursor-pointer',
 														'-mx-3 flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-zinc-100'
