@@ -98,7 +98,7 @@
             "label": "Company Website",
             "inlineLink": true
           },
-          "description": "<ul><li><p>Developing Python (FastAPI, Flask) and Go backend services and RESTful APIs for the PlayKids app and SVOD partner integrations in the Kids &amp; Family vertical.</p></li><li><p>Deploying services to AWS and GCP with Docker, Kubernetes and Terraform through CI/CD pipelines.</p></li><li><p>Building frontend features with Next.js, React and TypeScript.</p></li><li><p>Using Claude Code and Cursor for AI-assisted development, code review and refactoring.</p></li></ul>",
+          "description": "<ul><li style=\"text-align: justify;\"><p data-resume-whitespace=\"preserve\">Building Fractal since day one: a multi-tenant platform with Prism (CMS), Nexus (subscriptions), Mosaic (experience builder) and Herald (identity).</p></li><li style=\"text-align: justify;\"><p data-resume-whitespace=\"preserve\">Unified our products on shared, tenant-isolated infrastructure, improving maintainability, security and performance.</p></li><li><p data-resume-whitespace=\"preserve\">Developing Python (FastAPI, Flask) and Go backend services and RESTful APIs for the PlayKids app and SVOD partner integrations in the Kids &amp; Family vertical.</p></li><li><p>Deploying services to AWS and GCP with Docker, Kubernetes and Terraform through CI/CD pipelines.</p></li><li><p>Building frontend features with Next.js, React and TypeScript.</p></li><li><p>Using Claude Code and Cursor for AI-assisted development, code review and refactoring.</p></li></ul>",
           "roles": []
         },
         {
@@ -229,7 +229,7 @@
                 "end": "2022-08",
                 "present": false
               },
-              "description": ""
+              "description": "<p></p>"
             }
           ]
         },
@@ -473,252 +473,12 @@
     "skills": {
       "title": "Skills",
       "icon": "",
-      "columns": 5,
+      "columns": 6,
       "hidden": false,
       "showHeading": true,
       "keepTogether": false,
       "startOnNewPage": false,
       "items": [
-        {
-          "id": "wec04hzqlax3ob4tgw7luaoc",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "CI/CD",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "n4cz8q2wd7kt1vj6xh3pm9ra",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "Claude",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "u2gm7v5ks9pe3wb8tq1dz6lh",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "Cursor",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "b7zysi0d59msju9a5gk6nica",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "Django",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "l6eouzys2wmxn0cvj96mndyp",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "Docker",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "x66uqykl0h0wurp4u75838gp",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "FastAPI",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "duvvyydcbg0aly2jx29qx03b",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "Flask",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "pbg24evqbpyq3mjqoqkjmatp",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "Git",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "ig2zedzfwc9wl2kw10s79wus",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "GitHub",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "t0ascuzch3evzs7i2fs5g94n",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "HTML",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "fvivhgib64p9succtf0wzib9",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "JavaScript",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "q31zh2oa8hdlt0ywhag6cblv",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "Jira",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "s7gpm7h1pr6pvaufjnzacglx",
-          "hidden": true,
-          "icon": "",
-          "iconColor": "",
-          "name": "Jupyter Notebooks",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "wdqczjb7sn9uty3d466vil88",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "Kubernetes",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "eth3std69m7ejhatu1kcc0qp",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "MongoDB",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "l1gz274rei5fbd7q129p057z",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "Node",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "t4pm1m91kw9z6vfphjc9yc0p",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "PostgreSQL",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "g86th1gatz8fsw1lcxkx9qo0",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "Python",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "td9e5ula9nzu0inb1mr0g2bx",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "React",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "k9xr4b7tn2qf6cz1md8wy3pe",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "RESTful APIs",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "z7pc3k9xm1wq5rb8tf2nd6gj",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "RPA",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "ttw94m1aguahbtv9qqj1imku",
-          "hidden": true,
-          "icon": "",
-          "iconColor": "",
-          "name": "Sentry",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "lya2vhx33h6k9pdgz32nqlkw",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "Tailwind CSS",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
-        {
-          "id": "be7g8pz9cyms0o1u4sgkdx33",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "TypeScript",
-          "proficiency": "",
-          "level": 5,
-          "keywords": []
-        },
         {
           "id": "ar5x0kafta3m6shgyvxo6uib",
           "hidden": false,
@@ -751,7 +511,7 @@
         },
         {
           "id": "qwii750rqzx6l97odisn902k",
-          "hidden": false,
+          "hidden": true,
           "icon": "",
           "iconColor": "",
           "name": "Bash",
@@ -770,6 +530,26 @@
           "keywords": []
         },
         {
+          "id": "e944ccltfjjreo8jjgx0ezqg",
+          "hidden": true,
+          "icon": "",
+          "iconColor": "",
+          "name": "C#",
+          "proficiency": "",
+          "level": 1,
+          "keywords": []
+        },
+        {
+          "id": "mj3ntv491cc87d4svypimcx3",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "C/C++",
+          "proficiency": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
           "id": "w5hq2n8rc4ty7mk1zd9bv3xs",
           "hidden": false,
           "icon": "",
@@ -777,6 +557,96 @@
           "name": "ChatGPT",
           "proficiency": "",
           "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "wec04hzqlax3ob4tgw7luaoc",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "CI/CD",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "n4cz8q2wd7kt1vj6xh3pm9ra",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Claude",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "m3tzrvpewtkw4o4efeelhn7z",
+          "hidden": true,
+          "icon": "",
+          "iconColor": "",
+          "name": "Construct 3",
+          "proficiency": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
+          "id": "bs8ge484misv2u7paphzpjxb",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "CSS",
+          "proficiency": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
+          "id": "u2gm7v5ks9pe3wb8tq1dz6lh",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Cursor",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "oap1clcpd0z22gqkytwepsvp",
+          "hidden": true,
+          "icon": "",
+          "iconColor": "",
+          "name": "Cyber Security",
+          "proficiency": "",
+          "level": 1,
+          "keywords": []
+        },
+        {
+          "id": "dvvjquwopprwa70o60dhinbf",
+          "hidden": true,
+          "icon": "",
+          "iconColor": "",
+          "name": "Dart",
+          "proficiency": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
+          "id": "b7zysi0d59msju9a5gk6nica",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Django",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "l6eouzys2wmxn0cvj96mndyp",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Docker",
+          "proficiency": "",
+          "level": 5,
           "keywords": []
         },
         {
@@ -790,6 +660,46 @@
           "keywords": []
         },
         {
+          "id": "x66uqykl0h0wurp4u75838gp",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "FastAPI",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "duvvyydcbg0aly2jx29qx03b",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Flask",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "cahyktch7teh6iwjr0mwn1b4",
+          "hidden": true,
+          "icon": "",
+          "iconColor": "",
+          "name": "Flutter",
+          "proficiency": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
+          "id": "aa4bd91l9dqhw09w48ylbrgo",
+          "hidden": true,
+          "icon": "",
+          "iconColor": "",
+          "name": "Flutter + Dart",
+          "proficiency": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
           "id": "qb56g8g38prn190sm9ae4cws",
           "hidden": false,
           "icon": "",
@@ -797,6 +707,26 @@
           "name": "GCP",
           "proficiency": "",
           "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "pbg24evqbpyq3mjqoqkjmatp",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Git",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "ig2zedzfwc9wl2kw10s79wus",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "GitHub",
+          "proficiency": "",
+          "level": 5,
           "keywords": []
         },
         {
@@ -830,6 +760,26 @@
           "keywords": []
         },
         {
+          "id": "efa0w94d36mqhl6jmacvzq3n",
+          "hidden": true,
+          "icon": "",
+          "iconColor": "",
+          "name": "Haskell",
+          "proficiency": "",
+          "level": 1,
+          "keywords": []
+        },
+        {
+          "id": "t0ascuzch3evzs7i2fs5g94n",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "HTML",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
           "id": "dj9lczy58pp1hum7in2pbzpm",
           "hidden": true,
           "icon": "",
@@ -840,6 +790,76 @@
           "keywords": []
         },
         {
+          "id": "dva2zci1054e037k0jg75f2s",
+          "hidden": true,
+          "icon": "",
+          "iconColor": "",
+          "name": "Java",
+          "proficiency": "",
+          "level": 2,
+          "keywords": []
+        },
+        {
+          "id": "fvivhgib64p9succtf0wzib9",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "JavaScript",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "wmr1b58cpaxmg43pr6jumv2e",
+          "hidden": true,
+          "icon": "",
+          "iconColor": "",
+          "name": "Jest",
+          "proficiency": "",
+          "level": 1,
+          "keywords": []
+        },
+        {
+          "id": "q31zh2oa8hdlt0ywhag6cblv",
+          "hidden": true,
+          "icon": "",
+          "iconColor": "",
+          "name": "Jira",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "mi1rh8o5ejanghbd3sksqs5i",
+          "hidden": true,
+          "icon": "",
+          "iconColor": "",
+          "name": "JQuery",
+          "proficiency": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
+          "id": "s7gpm7h1pr6pvaufjnzacglx",
+          "hidden": true,
+          "icon": "",
+          "iconColor": "",
+          "name": "Jupyter Notebooks",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "wdqczjb7sn9uty3d466vil88",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Kubernetes",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
           "id": "jdmrcb25b5co8o79nykp7w2e",
           "hidden": false,
           "icon": "",
@@ -847,6 +867,26 @@
           "name": "Linux",
           "proficiency": "",
           "level": 4,
+          "keywords": []
+        },
+        {
+          "id": "d1bin4k9cjvvdiljhooekgx0",
+          "hidden": true,
+          "icon": "",
+          "iconColor": "",
+          "name": "Metabase",
+          "proficiency": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
+          "id": "eth3std69m7ejhatu1kcc0qp",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "MongoDB",
+          "proficiency": "",
+          "level": 5,
           "keywords": []
         },
         {
@@ -866,7 +906,57 @@
           "iconColor": "",
           "name": "Next.js",
           "proficiency": "",
-          "level": 4,
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "l1gz274rei5fbd7q129p057z",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Node",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "t4pm1m91kw9z6vfphjc9yc0p",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "PostgreSQL",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "wr02g2vz7rcsheakosrkt3r1",
+          "hidden": true,
+          "icon": "",
+          "iconColor": "",
+          "name": "PowerShell",
+          "proficiency": "",
+          "level": 3,
+          "keywords": []
+        },
+        {
+          "id": "g86th1gatz8fsw1lcxkx9qo0",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Python",
+          "proficiency": "",
+          "level": 5,
+          "keywords": []
+        },
+        {
+          "id": "td9e5ula9nzu0inb1mr0g2bx",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "React",
+          "proficiency": "",
+          "level": 5,
           "keywords": []
         },
         {
@@ -881,7 +971,7 @@
         },
         {
           "id": "e2t06z06j3vdbm8nddkfb6ls",
-          "hidden": false,
+          "hidden": true,
           "icon": "",
           "iconColor": "",
           "name": "React Redux",
@@ -890,53 +980,43 @@
           "keywords": []
         },
         {
-          "id": "d5pm2hyg3ebky00b1qj66p16",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "Terraform",
-          "proficiency": "",
-          "level": 4,
-          "keywords": []
-        },
-        {
-          "id": "bs8ge484misv2u7paphzpjxb",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "CSS",
-          "proficiency": "",
-          "level": 3,
-          "keywords": []
-        },
-        {
-          "id": "mi1rh8o5ejanghbd3sksqs5i",
+          "id": "k9xr4b7tn2qf6cz1md8wy3pe",
           "hidden": true,
           "icon": "",
           "iconColor": "",
-          "name": "JQuery",
+          "name": "RESTful APIs",
           "proficiency": "",
-          "level": 3,
+          "level": 5,
           "keywords": []
         },
         {
-          "id": "d1bin4k9cjvvdiljhooekgx0",
+          "id": "z7pc3k9xm1wq5rb8tf2nd6gj",
           "hidden": true,
           "icon": "",
           "iconColor": "",
-          "name": "Metabase",
+          "name": "RPA",
           "proficiency": "",
-          "level": 3,
+          "level": 5,
           "keywords": []
         },
         {
-          "id": "wr02g2vz7rcsheakosrkt3r1",
-          "hidden": false,
+          "id": "l59978l01eb9lkki29lqjw8h",
+          "hidden": true,
           "icon": "",
           "iconColor": "",
-          "name": "PowerShell",
+          "name": "Ruby",
           "proficiency": "",
-          "level": 3,
+          "level": 1,
+          "keywords": []
+        },
+        {
+          "id": "ttw94m1aguahbtv9qqj1imku",
+          "hidden": true,
+          "icon": "",
+          "iconColor": "",
+          "name": "Sentry",
+          "proficiency": "",
+          "level": 5,
           "keywords": []
         },
         {
@@ -950,63 +1030,33 @@
           "keywords": []
         },
         {
-          "id": "mj3ntv491cc87d4svypimcx3",
-          "hidden": false,
-          "icon": "",
-          "iconColor": "",
-          "name": "C/C++",
-          "proficiency": "",
-          "level": 2,
-          "keywords": []
-        },
-        {
-          "id": "m3tzrvpewtkw4o4efeelhn7z",
+          "id": "lya2vhx33h6k9pdgz32nqlkw",
           "hidden": true,
           "icon": "",
           "iconColor": "",
-          "name": "Construct 3",
+          "name": "Tailwind CSS",
           "proficiency": "",
-          "level": 2,
+          "level": 5,
           "keywords": []
         },
         {
-          "id": "dvvjquwopprwa70o60dhinbf",
-          "hidden": true,
-          "icon": "",
-          "iconColor": "",
-          "name": "Dart",
-          "proficiency": "",
-          "level": 2,
-          "keywords": []
-        },
-        {
-          "id": "cahyktch7teh6iwjr0mwn1b4",
-          "hidden": true,
-          "icon": "",
-          "iconColor": "",
-          "name": "Flutter",
-          "proficiency": "",
-          "level": 2,
-          "keywords": []
-        },
-        {
-          "id": "aa4bd91l9dqhw09w48ylbrgo",
+          "id": "d5pm2hyg3ebky00b1qj66p16",
           "hidden": false,
           "icon": "",
           "iconColor": "",
-          "name": "Flutter + Dart",
+          "name": "Terraform",
           "proficiency": "",
-          "level": 2,
+          "level": 4,
           "keywords": []
         },
         {
-          "id": "dva2zci1054e037k0jg75f2s",
+          "id": "be7g8pz9cyms0o1u4sgkdx33",
           "hidden": false,
           "icon": "",
           "iconColor": "",
-          "name": "Java",
+          "name": "TypeScript",
           "proficiency": "",
-          "level": 2,
+          "level": 5,
           "keywords": []
         },
         {
@@ -1017,56 +1067,6 @@
           "name": "Vue",
           "proficiency": "",
           "level": 2,
-          "keywords": []
-        },
-        {
-          "id": "e944ccltfjjreo8jjgx0ezqg",
-          "hidden": true,
-          "icon": "",
-          "iconColor": "",
-          "name": "C#",
-          "proficiency": "",
-          "level": 1,
-          "keywords": []
-        },
-        {
-          "id": "oap1clcpd0z22gqkytwepsvp",
-          "hidden": true,
-          "icon": "",
-          "iconColor": "",
-          "name": "Cyber Security",
-          "proficiency": "",
-          "level": 1,
-          "keywords": []
-        },
-        {
-          "id": "efa0w94d36mqhl6jmacvzq3n",
-          "hidden": true,
-          "icon": "",
-          "iconColor": "",
-          "name": "Haskell",
-          "proficiency": "",
-          "level": 1,
-          "keywords": []
-        },
-        {
-          "id": "wmr1b58cpaxmg43pr6jumv2e",
-          "hidden": true,
-          "icon": "",
-          "iconColor": "",
-          "name": "Jest",
-          "proficiency": "",
-          "level": 1,
-          "keywords": []
-        },
-        {
-          "id": "l59978l01eb9lkki29lqjw8h",
-          "hidden": true,
-          "icon": "",
-          "iconColor": "",
-          "name": "Ruby",
-          "proficiency": "",
-          "level": 1,
           "keywords": []
         }
       ],
@@ -1428,7 +1428,7 @@
       "marginX": 10,
       "marginY": 8,
       "format": "a4",
-      "locale": "en-US",
+      "locale": "en-GB",
       "dateFormat": "long",
       "hideLinkUnderline": false,
       "hideIcons": false,
@@ -1437,12 +1437,17 @@
     "design": {
       "level": {
         "icon": "star",
-        "type": "circle"
+        "type": "hidden"
       },
       "colors": {
         "primary": "rgba(18, 131, 60, 1)",
         "text": "rgba(0, 0, 0, 1)",
         "background": "rgba(255, 255, 255, 1)"
+      },
+      "entry": {
+        "layout": "stacked",
+        "lead": "role",
+        "accent": "none"
       }
     },
     "typography": {
@@ -1461,12 +1466,16 @@
           "400",
           "600"
         ],
-        "fontSize": 13.5,
+        "fontSize": 12.5,
         "lineHeight": 2.2
       }
     },
     "notes": "<p>Se for para mostrar os projetos e certificados, tirar da página 2 e criar uma terceira página.</p>",
     "styleRules": [],
+    "web": {
+      "showCredit": true,
+      "css": ""
+    },
     "check": {
       "ignored": [
         "MISSING_PHONE:/basics/phone"
